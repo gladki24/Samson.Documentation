@@ -1,0 +1,3 @@
+var settings = MongoClientSettings.FromConnectionString("mongodb+srv://<username>:<password>@samsonwebdatabase.fkwz8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+var client = new MongoClient(settings);
+var database = client.GetDatabase("test");
