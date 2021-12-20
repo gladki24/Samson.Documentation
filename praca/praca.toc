@@ -1,0 +1,17 @@
+\babel@toc {polish}{}
+\contentsline {chapter}{Streszczenie}{1}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Wstęp}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Analiza tematu}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Wymagania i narzędzia}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}[Właściwy dla kierunku - np. Specyfikacja zewnętrzna]}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {5}[Właściwy dla kierunku - np.Specyfikacja wewnętrzna]}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{21}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{23}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{25}{chapter*.3}%
+\contentsline {chapter}{Spis skrótów i symboli}{29}{appendix*.4}%
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\contentsline {chapter}{Źródła}{31}{appendix*.5}%
+\contentsline {chapter}{Zawartość dołączonej płyty}{35}{appendix*.6}%

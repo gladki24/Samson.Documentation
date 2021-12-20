@@ -335,15 +335,35 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych 
 			\item System powinien pozwolić na obsłużenie równoczesnego dostępu do aplikacji dla conajmniej stu użytkowników równocześnie.
 			\item Aplikacja powinna być dostępna dla użytkowników przez siedem dni w tygnodniu w godzinach 3-22.
 		\end{itemize}
-
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{diagram_przypadków_użycia.png}
-			\caption{Diagram przypadków użycia.}
-			\label{fig:3}
-		\end{figure}
+	
 	\item Diagram przypadków użycia (UML)
 	\\ Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
+	
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{diagram_przypadków_użycia.png}
+	\caption{Diagram przypadków użycia.}
+	\label{fig:3}
+\end{figure}
+	
+	\item Narzędzia
+	
+	Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
+	
+	Językiem programowania użytym do stworzenia części serwerowej został C\# firmy Microsoft. Bliskie podobieństwo do języka Java oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego.
+	
+	Platformą programistyczną systemu informatycznego został .NET 5, który pozwala na tworzenie aplikacji wieloplatformowych. Dzięki wykorzystaniu następcy .NET Core, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem Microsoft jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym będzie pracować aplikacja.
+	
+	Do stworzenia interfejsu REST API została wykorzystana biblioteka ASP.NET Core, która pozwala na stworzenie metod, które będą konsumowane przez warstwę prezentacji. ASP.NET Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu JWT jak i komunikację z wykorzystaniem protokołu HTTPS.
+	
+	W celu wykorzystania wzorca projektowego CQRS zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę Autofac, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników.
+	
+	Jako bazę danych wykorzystano MongoDB. MongoDB jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie JSON, który jest czytelny dla człowieka. Baza danych należy do nierelacyjnych baz danych NoSQL, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów.
+	
+	Językiem programowania użytym w części wizualnej aplikacji jest język TypeScript zaprojektowany przez firmę Microsoft. W odróżnieniu od języka JavaScript, TypeScript oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego.
+	
+	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie komponentów wielokrotnego użytku oraz hermetyzację logiki w postaci serwisów aplikacyjnych. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript.
+	
 	\item Opis narzędzi, metodyk eksperymentalnych, metod modelowania
 		\begin{itemize}
 			\item Narzędzia
