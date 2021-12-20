@@ -280,17 +280,17 @@ Innym wyzwaniem stawianym przed właścicielami siłowni jest stworzenie oferty 
 
 Ważnym wyzwaniem stawianym przez pandemię koronawirusa jest reagowanie na częste zmiany w przepisach dotyczących wstępu na obiekty sportowe. Taka sytuacja zmusza właścicieli do ciągłego monitorowania sytuacji i reagowania na zmiany dotyczące przepisów sanitarnych. Każda taka zmiana zmusza siłownię do wdrożenia nowych restrykcji w postaci limitów osób na siłowni. Pomocą w realizowaniu narzuconych obostrzeń byłoby stworzenie systemu, który ustalałby jaka jest maksymalna liczba osób w obiekcie na podstawie wprowadzonych danych. System powinien również zapewniać możliwość kontrolowania liczby osób, które znajdują się w danej chwili w obiekcie siłowni.
 
-Kolejnym problemem jest ilość użytkowników korzystających z system informatycznego. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać żądania dużej liczby klientów. Aby zapewnić ciągłość działania systemu ważne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonywane \textit{w górę} (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub \textit{w szerz} (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\footnote{\cite{bib:mongodb_guide}}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami.
+Kolejnym problemem jest ilość użytkowników korzystających z system informatycznego. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać żądania dużej liczby klientów. Aby zapewnić ciągłość działania systemu ważne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonywane \textit{w górę} (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub \textit{w szerz} (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\cite{bib:mongodb_guide}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami.
 
-Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, prowadzenie inwentarza wyposażenia oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
+Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań \cite{bib:perfectgym} \cite{bib:wodguru}, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, prowadzenie inwentarza wyposażenia oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
 
 Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawowe funkcjonalności potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, a tym samym złym doświadczeniom płynącym z korzystania z serwisu internetowego, system musi być podatny na zmiany. Aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
 
 \chapter{Wymagania i narzędzia}
 
-\begin{itemize}
-	\item Wymagania funkcjonalne
-	\\ Wymienione punkty stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcje  zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
+
+	\section{Wymagania funkcjonalne} 
+	Wymienione punkty stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcje  zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
 		\begin{itemize}
 			\item Tworzenie konta trenera personalnego - w systemie powinna istnieć możliwość dodawania kont, dla pracowników siłowni w celu zarządzania zasobami siłowni.
 			\item Rejestracja konta klienta - system powinien pozwalać na samodzielne zarejestrowanie się użytkownika w celu skorzystania z funkcjonalności serwisu internetowego sieci siłowni.
@@ -328,7 +328,7 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 			\item Otwarcie bramki wyjściowej - bramka wyjściowa powinna pozwolić na wyjście z terenu siłowni.
 		\end{itemize}
 			
-	\item Wymagania niefunkcjonalne
+	\section {Wymagania niefunkcjonalne}
 		\begin {itemize}
 			\item Wyświetlanie elementów interfejsu użytkownika powinno zostać dostosowane do standardowych rozdzielczości ekranów komputerów osobistych.
 			\item Poprawny sposób działania w nowoczesnych przeglądarkach: Mozilla Firefox, Google Chrome, Microsoft Edge.
@@ -336,8 +336,8 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 			\item Aplikacja powinna być dostępna dla użytkowników przez siedem dni w tygodniu w godzinach 3-22.
 		\end{itemize}
 	
-	\item Diagram przypadków użycia (UML)
-	\\ Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
+	\section {Diagram przypadków użycia (UML)}
+	Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
 	
 \begin{figure}
 	\centering
@@ -346,29 +346,29 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 	\label{fig:3}
 \end{figure}
 	
-	\item Narzędzia
+	\section{Narzędzia}
 	
 	Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
 	
-	Językiem programowania użytym do stworzenia części serwerowej został C\# firmy Microsoft. Bliskie podobieństwo do języka Java oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego.
+	Językiem programowania użytym do stworzenia części serwerowej został C\# firmy Microsoft. Bliskie podobieństwo do języka Java oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego \cite{bib:csharp}.
 	
-	Platformą programistyczną warstwy serwerowej został .NET 5, który pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka C\#. Dzięki użyciu następcy .NET Core'a, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem Microsoft jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować.
+	Platformą programistyczną warstwy serwerowej został .NET 5, który pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka C\#. Dzięki użyciu następcy .NET Core'a, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem Microsoft jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
 	
-	Do stworzenia interfejsu REST API została wykorzystana biblioteka ASP.NET Core, która pozwala na dodawanie metod HTTP, które będą następnie konsumowane przez warstwę prezentacji. ASP.NET Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu JWT jak i komunikację z wykorzystaniem protokołu HTTPS.
+	Do stworzenia interfejsu REST API została wykorzystana biblioteka ASP.NET Core, która pozwala na dodawanie metod HTTP, które będą następnie konsumowane przez warstwę prezentacji. ASP.NET Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu JWT jak i komunikację z wykorzystaniem protokołu HTTPS\cite{bib:asp}.
 	
-	W celu wykorzystania wzorca projektowego CQRS zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę Autofac, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników.
+	W celu wykorzystania wzorca projektowego CQRS zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę Autofac, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników\cite{bib:autofactag}.
 	
-	Jako bazę danych wykorzystano MongoDB. MongoDB jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie JSON, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych NoSQL, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
+	Jako bazę danych wykorzystano MongoDB. MongoDB jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie JSON, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych NoSQL, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów\cite{bib:mongodb_guide}. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
 	
-	Językiem programowania użytym w części wizualnej aplikacji jest język TypeScript zaprojektowany przez firmę Microsoft. W odróżnieniu od języka JavaScript, TypeScript oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego.
+	Językiem programowania użytym w części wizualnej aplikacji jest język TypeScript zaprojektowany przez firmę Microsoft. W odróżnieniu od języka JavaScript, TypeScript oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego\cite{bib:typescript}.
 	
-	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu SPA.
+	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu SPA\cite{bib:anuglar}\cite{bib:typescript}.
 	
 	W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę Angular Material z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię Google Material do tworzenia warstw wizualizacji aplikacji internetowych.
 	
 	W warstwie prezentacji wykorzystano bibliotekę NgXS, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy Redux, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz tworzenie stanów, które są deterministyczne.
 	
-	\item Metodyka pracy nad projektowaniem i implementacją
+	\section {Metodyka pracy nad projektowaniem i implementacją}
 	
 	Prace rozpoczęto od utworzenia osobnych repozytoriów kodu z uwzględnieniem reprezentowanej warstwy aplikacji. Te warstwy to:
 	\begin{itemize}
@@ -395,8 +395,6 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 		\item Integracja z warstwą serwerową
 		\item Dodanie obsługi żetonu JWT w komunikacji z warstwą serwerową
 	\end{enumerate}
-	
-\end{itemize}
 
 \chapter{Specyfikacja zewnętrzna}
 Jeśli to Specyfikacja zewnętrzna:
@@ -406,7 +404,7 @@ Jeśli to Specyfikacja zewnętrzna:
 \item  sposób aktywacji
 \item  kategorie użytkowników
 \item  sposób obsługi
-\item   administracja systemem
+\item  administracja systemem
 \item  kwestie bezpieczeństwa
 \item  przykład działania
 \item  scenariusze korzystania z systemu (ilustrowane zrzutami z ekranu lub generowanymi dokumentami)

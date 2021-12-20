@@ -1,8 +1,41 @@
 \begin{thebibliography}{1}
 
+\bibitem{bib:anuglar}
+Angular: The modern web developer's platform.
+
+\bibitem{bib:wodguru}
+Funkcjonalności, które ułatwią zarządzanie twoim klubem.
+
+\bibitem{bib:autofactag}
+Instance per lifetime scope.
+
+\bibitem{bib:perfectgym}
+Oprogramowanie crm: Maksymalizuj potencjał zdobywania klientów dzięki
+  narzędziom do pozyskiwania leadów i zmieniaj kontakty w płacących
+  klientów.
+
+\bibitem{bib:csharp}
+Joseph Albahari,  Ben Albahari.
+\newblock {\em C\# 7.0 w pigułce}.
+\newblock Helion SA, ul. Kościuszki 1c, 44-100 Gliwice, 2018.
+
 \bibitem{bib:mongodb_guide}
 Shannon Bradshaw, Eoin Brazil, Kristina Chodorow.
 \newblock {\em Przewodnik po MongoDB: Wydajna i skalowalna baza danych}.
 \newblock Helion SA, ul. Kościuszki 1c, 44-100 Gliwice, 2021.
+
+\bibitem{bib:asp}
+Dino Esposito.
+\newblock {\em Programowanie w ASP.NET Core}.
+\newblock APN Promise SA, ul. Domaniewska 44a, 02-672 Warszawa, 2017.
+
+\bibitem{bib:dotnet5introduction}
+Richard Lander.
+\newblock Introducing .net 5.
+
+\bibitem{bib:typescript}
+Nathan Rozentals.
+\newblock {\em Język TypeScript: Tajniki kodu}.
+\newblock Helion SA, ul. Kościuszki 1c, 44-100 Gliwice, 2018.
 
 \end{thebibliography}

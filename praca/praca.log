@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.16)  20 DEC 2021 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.16)  20 DEC 2021 21:40
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -637,7 +637,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 (C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<logo_pl.jpg, id=51, 746.79pt x 960.58875pt>
+<logo_pl.jpg, id=71, 746.79pt x 960.58875pt>
 File: logo_pl.jpg Graphic file (type jpg)
 <use logo_pl.jpg>
 Package pdftex.def Info: logo_pl.jpg  used on input line 186.
@@ -655,7 +655,46 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 
 
 ]
-(praca.toc)
+(praca.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
+.
+ (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
+.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+6.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+6.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \openout4 = `praca.toc'.
 
@@ -711,55 +750,6 @@ Rozdzia\l  2.
 Underfull \vbox (badness 4048) has occurred while \output is active []
 
  [5]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-83.
-
-(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-83.
-
-(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-283.
-
-(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-283.
-
-(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 283.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 283
-.
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 283
-.
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 283.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -809,7 +799,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-<diagram_przypadkÃ³w_uÅ¼ycia.png, id=139, 1379.90532pt x 1340.00626pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
+<diagram_przypadkÃ³w_uÅ¼ycia.png, id=167, 1379.90532pt x 1340.00626pt>
 File: diagram_przypadkÃ³w_uÅ¼ycia.png Graphic file (type png)
 <use diagram_przypadkÃ³w_uÅ¼ycia.png>
 Package pdftex.def Info: diagram_przypadkÃ³w_uÅ¼ycia.png  used on input line 34
@@ -824,7 +823,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -833,27 +832,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13 <./diagram_przypadkÃ³w_uÅ¼ycia.png>]
-Overfull \hbox (7.94383pt too wide) in paragraph at lines 357--358
-[]\T1/lmr/m/n/12 Do stwo-rze-nia in-ter-fejsu REST API zo-staªa wy-ko-rzy-stana
- bi-blio-teka ASP.NET
- []
-
-
-Overfull \hbox (4.6146pt too wide) in paragraph at lines 359--360
-\T1/lmr/m/n/12 st¦p-nia mo»-li-wo±¢ wstrzy-ki-wa-nia obiek-tów ozna-czo-nych at
-ry-bu-tami oraz okre-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14]
+[14 <./diagram_przypadkÃ³w_uÅ¼ycia.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -863,9 +842,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-Overfull \hbox (4.25534pt too wide) in paragraph at lines 381--382
-[]\T1/lmr/m/it/12 Samson.Web.Application.Api \T1/lmr/m/n/12 - pro-jekt za-wie-r
-a-j¡cy kod kon-tro-le-rów plat-
+Overfull \hbox (3.38707pt too wide) in paragraph at lines 381--382
+\T1/lmr/m/n/12 formy ASP.NET, mo-dele wy-ko-rzy-sty-wane do za-py-ta« HTTP oraz
+ klasy obiek-
  []
 
 
@@ -900,7 +879,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Rozdzia\l  4.
 File: logo_pl.jpg Graphic file (type jpg)
 <use logo_pl.jpg>
-Package pdftex.def Info: logo_pl.jpg  used on input line 423.
+Package pdftex.def Info: logo_pl.jpg  used on input line 415.
 (pdftex.def)             Requested size: 85.35826pt x 109.78381pt.
 [19]
 
@@ -1013,7 +992,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-36.
+28.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [37]
@@ -1048,37 +1027,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  [41] (praca.aux)
 Package rerunfilecheck Info: File `praca.out' has not changed.
-(rerunfilecheck)             Checksum: 20F6DDFA31116BA6C26178A0856C89BC;1990.
+(rerunfilecheck)             Checksum: 1E8911EE32B3ECC059601AE64A430C53;2659.
  ) 
 Here is how much of TeX's memory you used:
- 14222 strings out of 478927
- 208413 string characters out of 2862391
+ 14217 strings out of 478927
+ 208484 string characters out of 2862391
  824066 words of memory out of 3000000
- 31630 multiletter control sequences out of 15000+600000
- 477261 words of font info for 82 fonts, out of 8000000 for 9000
+ 31625 multiletter control sequences out of 15000+600000
+ 465261 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,66p,945b,1881s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
-st, replaced by a fixed one
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/
-fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm
--rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program F
-iles/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dv
-ips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/f
-onts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
-mr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/
-public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C
-:/Program Files/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTe
-X/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on praca.pdf (45 pages, 724009 bytes).
+ 60i,12n,66p,847b,1881s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTe
+X/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/
+lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program
+ Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/
+dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm
+/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/
+urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8
+a.pfb>
+Output written on praca.pdf (45 pages, 689540 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 166 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
