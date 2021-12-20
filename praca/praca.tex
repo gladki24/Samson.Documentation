@@ -270,59 +270,59 @@ Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego 
 
 \chapter{Analiza tematu}
 
-Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiam jak największej grupie klientów. Stawia to nowe wyzwania w organizacji pracy pracowników i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
+Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupie klientów. Stawia to nowe wyzwania w organizacji pracy pracowników i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
 
 Innym problemem jest coraz większa liczba sieci siłowni, która w swojej ofercie zawiera możliwość udziału w wydarzeniach grupowych, które pozwalają na uczestnictwo w grupowej sesji, gdzie pracownik siłowni nadzoruje czy uczestnicy wykonują ćwiczenia w sposób bezpieczny dla ich zdrowia. Pozwolenie na zgłoszenie chęci udziału w takim wydarzeniu poprzez aplikacje internetową może zwiększyć atrakcyjność oferty danej sieci siłowni w obliczu rosnącej konkurencji na rynku sieci siłowni.
 
-Sieć siłowni staje w obliczniu innych wyzwań, które nie są znane małym sieciom siłowni lub pojedynczym obiektom. Zarządzanie wyposażeniem może być utrudnione ze względu na liczbę posiadanych urządzeń i liczbę obiektów siłowni należących do sieci. System powinien gromadzić informacje na temat posiadanego sprzętu, aby skrócić czas, jaki jest potrzebny to przeprowadzenia inwentaryzacji posiadanych akcesoriów i sprzętów do ćwiczeń.
+Sieć siłowni staje w obliczu innych wyzwań, które nie są znane małym sieciom siłowni lub pojedynczym obiektom. Zarządzanie wyposażeniem może być utrudnione ze względu na liczbę posiadanych urządzeń i liczbę obiektów siłowni należących do sieci. System powinien gromadzić informacje na temat posiadanego sprzętu, aby skrócić czas, jaki jest potrzebny to przeprowadzenia inwentaryzacji posiadanych akcesoriów i sprzętów do ćwiczeń.
 
 Innym wyzwaniem stawianym przed właścicielami siłowni jest stworzenie oferty treningów personalnych dla klientów, którzy oczekują indywidualnego podejścia do treningu. Rozwiązaniem jest stworzenie modułu, który pozwalałby na rezerwowanie przez klientów terminów treningów. Takie rozwiązanie może zwiększyć atrakcyjność danej sieci oraz pozwolić na sprawniejsze organizowanie czasu trenerów personalnych należących do sieci siłowni.
 
 Ważnym wyzwaniem stawianym przez pandemię koronawirusa jest reagowanie na częste zmiany w przepisach dotyczących wstępu na obiekty sportowe. Taka sytuacja zmusza właścicieli do ciągłego monitorowania sytuacji i reagowania na zmiany dotyczące przepisów sanitarnych. Każda taka zmiana zmusza siłownię do wdrożenia nowych restrykcji w postaci limitów osób na siłowni. Pomocą w realizowaniu narzuconych obostrzeń byłoby stworzenie systemu, który ustalałby jaka jest maksymalna liczba osób w obiekcie na podstawie wprowadzonych danych. System powinien również zapewniać możliwość kontrolowania liczby osób, które znajdują się w danej chwili w obiekcie siłowni.
 
-Kolejnym problemem jest ilość użytkowników korzystających z rozwiązania. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać dużą ilość klientów. Zasoby wykorzystywane do działania systemu powinny być wystarczające do sprawnego działania aplikacji przy dużym obciążeniu spowodowanym ogromną liczbą aktywnie zalogowanych użytkowników. Aby zapewnić ciągłość działania systemu potrzebne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonanywane w górę (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub w szerz (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\footnote{\cite{bib:mongodb_guide}}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rodzielenie obciążenia pomiędzy różnymi maszynami.
+Kolejnym problemem jest ilość użytkowników korzystających z system informatycznego. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać żądania dużej liczby klientów. Aby zapewnić ciągłość działania systemu ważne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonywane \textit{w górę} (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub \textit{w szerz} (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\footnote{\cite{bib:mongodb_guide}}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami.
 
-Aktualnie w sieci Internet możemy znaleźć wiele rozwiązań wymienionych wcześniej problemów w postaci systemów informatycznych. Duża część oferowanych rozwiązań posiada możliwość zarządzania bazą klientów, prowadzenie inwentarza wyposażenia oraz możliwość stworzenia oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych wcześniej problemów, jednak żadno z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
+Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, prowadzenie inwentarza wyposażenia oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
 
-Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawowe funkcjonalności potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, a tym samym złym doświadczeniom płynącym z korzystania z serwisu internetowego, system musi być podatny na zmiany. System powinien cechować się skalowalnością w celu zapewnienia dużej szybkości działania nawet w przypadku ogromnej liczby obiektów w sieci siłowni. Aby to osiągnąć system powinien zostać utworzony na infrastrukturze, która pozwoli na skalowanie wszerz. Warstwa serwerowa aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie do architektury mikroserwisów, które pozwolą na wydajne obsługiwanie żądań z warstwy prezentacji, zapewnienie ciągłości pracy systemu w przypadku awarii oraz skalowalność w przypadku rozrastającej się sieci siłowni.
+Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawowe funkcjonalności potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, a tym samym złym doświadczeniom płynącym z korzystania z serwisu internetowego, system musi być podatny na zmiany. Aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
 
 \chapter{Wymagania i narzędzia}
 
 \begin{itemize}
 	\item Wymagania funkcjonalne
-	\\ Wymienione wymagania funkcjonalne stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcjonalności zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
+	\\ Wymienione punkty stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcje  zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
 		\begin{itemize}
 			\item Tworzenie konta trenera personalnego - w systemie powinna istnieć możliwość dodawania kont, dla pracowników siłowni w celu zarządzania zasobami siłowni.
 			\item Rejestracja konta klienta - system powinien pozwalać na samodzielne zarejestrowanie się użytkownika w celu skorzystania z funkcjonalności serwisu internetowego sieci siłowni.
-			\item Logowanie się na wcześniej utworzone konto użytkownika - w celu weryfikacji użytkownika, system powinien pozwalać na autoryzację użytkownika poprzez formularz logowania.
-			\item Przeglądanie dostępnej oferty karnetów na siłownie - aby użytkownik mógł dokonać zakupu karnetu to musi posiadać możliwość sprawdzenia dostępnej oferty sieci siłowni.
-			\item Przedłużenie karnetu przypisanego do konta użytkowniak - użytkownik posiadający już karnet może go przedłużyć.
-			\item Zakup karnetu - użytkownik nie posiadający karnetu posiada możliwość zakupu karnetu w celu wejścia do obiektu siłowni.
+			\item Logowanie się na wcześniej utworzone konto użytkownika - w celu weryfikacji użytkownika, system powinien pozwalać na autoryzację poprzez formularz logowania.
+			\item Przeglądanie dostępnej oferty karnetów na siłownie - użytkownik w celu zakupu karnetu musi mieć możliwość przeglądania dostępnej oferty.
+			\item Przedłużenie karnetu przypisanego do konta użytkownika - użytkownik posiadający już karnet może go przedłużyć.
+			\item Zakup karnetu - użytkownik, powinien mieć możliwość zakupu karnetu w celu wejścia do siłowni.
 			\item Utworzenie nowego typu karnetu - pracownicy siłowni powinni mieć możliwość stworzenia oferty karnetów.
-			\item Usunięcie istniejącego rodzaju karnetu - pracownicy siłowni powinni mieć możliwość usunięcia z oferty karnetów.
+			\item Usunięcie istniejącego rodzaju karnetu - pracownicy siłowni powinni mieć możliwość usunięcia z oferty wcześniej utworzonych karnetów.
 			\item Edycja istniejącego typu karnetu - pracownicy siłowni powinni mieć możliwość dokonania zmian w istniejącej ofercie karnetów.
 			\item Edycja informacji o koncie użytkownika - użytkownik serwisu powinien mieć możliwość edycji informacji zawartych w swoim profilu.
-			\item Archiwizacja konta użytkownika - użytkownik serwisu powinien mieć możliwość zarchiwizowania swojego konta, gdy nie jest już zaintresowany korzystaniem z serwisu.
+			\item Archiwizacja konta użytkownika - użytkownik serwisu powinien mieć możliwość zarchiwizowania swojego konta, gdy nie jest już zainteresowany dalszym korzystaniem z serwisu.
 			\item Przeglądanie listy dostępny wydarzeń - użytkownicy powinni mieć możliwość przeglądania listy dostępnych wydarzeń.
 			\item Utworzenie nowego wydarzenia - trenerzy personalni powinni mieć możliwość dodawania wydarzeń, które będą miały miejsce na terenie siłowni.
 			\item Odwołanie wydarzenia - trener personalny powinien mieć możliwość odwołania zaplanowanego wydarzenia.
 			\item Edycja wydarzenia - trener personalny powinien mieć możliwość wprowadzenia zmian w zaplanowanym wydarzeniu.
 			\item Możliwość zapisania się na udział w wydarzeniu - klient powinien mieć możliwość zdeklarowania chęci udziału w wydarzeniu.
 			\item Rezygnacja z udziału w wydarzeniu - klient powinien mieć możliwość zrezygnowania z udziału w wydarzeniu, w którym wcześniej zdeklarował chęć udziału.
-			\item Utworzenie nowego obiektu siłowni - pracownicy powinni mieć możliwość utworzenis nowych obiektów sieci siłowni.
+			\item Utworzenie nowego obiektu siłowni - pracownicy powinni mieć możliwość utworzenia nowych obiektów sieci siłowni.
 			\item Możliwość zdefiniowania ograniczeń dostępu do siłowni - pracownicy powinni mieć możliwość zdefiniowania limitu osób jaki może się znajdować w obiekcie siłowni.
 			\item Możliwość dodania nowych pomieszczeń dla obiektu siłowni - pracownicy powinni mieć możliwość dodania nowych pomieszczeń do obiektu siłowni.
 			\item Możliwość usunięcia pomieszczeń z obiektu siłowni - pracownicy powinni mieć możliwość usunięcia pomieszczenia, które zostało utworzone w danym obiekcie siłowni.
 			\item Możliwość zdefiniowania akcesoriów i sprzętu do ćwiczeń - pracownicy powinni mieć możliwość zdefiniowania akcesoriów dostępnych w danym obiekcie siłowni.
 			\item Edycja zdefiniowanych akcesoriów i sprzętu do ćwiczeń - pracownicy powinni mieć możliwość edycji wcześniej zdefiniowanych akcesoriów i sprzętu do ćwiczeń.
 			\item Możliwość uruchomienia aplikacji w trybie bramki wejściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wejściowej w celu kontroli liczby klientów znajdujących się w siłowni.
-			\item Możliwość uruchomienia aplikacji w trybie bramki wyjściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wyjściowej w celu kontrolki liczby klientów wychodzących z siłowni.
+			\item Możliwość uruchomienia aplikacji w trybie bramki wyjściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wyjściowej w celu kontroli liczby klientów wychodzących z siłowni.
 			\item Przeglądanie listy dostępnych treningów indywidualnych - użytkownicy powinni mieć możliwość przeglądania listy dostępnych treningów osobisty.
 			\item Możliwość zapisania się na udział w treningu indywidualnym - klient powinien mieć możliwość zapisania się na wcześniej utworzony trening indywidualny z trenerem personalnym.
-			\item Utworzenie trenignu indywidualnego - trener perosonalny powinien mieć możliwość utworzenia sesji treningów indywidualnych.
+			\item Utworzenie treningu indywidualnego - trener personalny powinien mieć możliwość utworzenia sesji treningów indywidualnych.
 			\item Odwołanie treningu indywidualnego - trener personalny powinien mieć możliwość odwołania wcześniej zaplanowanych treningów personalnych.
 			\item Rezygnacja z udziału w treningu personalnym - klient powinien mieć możliwość zrezygnowania z udziału w treningu personalnym.
-			\item Odmowa wejścia na siłownie - bramka wejściowa powinna mieć możliwość odmówienia wejścia na siłwonie w przypadku braku ważnego karnetu lub osiągnięciu maksymalnej liczby klientów na terenie obiektu siłowni.
+			\item Odmowa wejścia na siłownie - bramka wejściowa powinna mieć możliwość odmówienia wejścia klientowi na siłownie w przypadku braku ważnego karnetu lub osiągnięciu maksymalnej liczby klientów na terenie obiektu siłowni.
 			\item Sprawdzenie czy jest możliwość wejścia na siłownię - bramka wejściowa powinna informować o limicie osób, jaki może znajdować się w obiekcie siłowni.
 			\item Otwarcie bramki wejściowej - bramka wejściowa powinna pozwolić na wejście na teren siłowni po spełnieniu warunków.
 			\item Otwarcie bramki wyjściowej - bramka wyjściowa powinna pozwolić na wyjście z terenu siłowni.
@@ -330,10 +330,10 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych 
 			
 	\item Wymagania niefunkcjonalne
 		\begin {itemize}
-			\item Wyświetlanie elementów interejsu użytkownika powinno zostać dostosowane do standardowych rozdzielczości ekranów komputerów osobistych.
+			\item Wyświetlanie elementów interfejsu użytkownika powinno zostać dostosowane do standardowych rozdzielczości ekranów komputerów osobistych.
 			\item Poprawny sposób działania w nowoczesnych przeglądarkach: Mozilla Firefox, Google Chrome, Microsoft Edge.
-			\item System powinien pozwolić na obsłużenie równoczesnego dostępu do aplikacji dla conajmniej stu użytkowników równocześnie.
-			\item Aplikacja powinna być dostępna dla użytkowników przez siedem dni w tygnodniu w godzinach 3-22.
+			\item System powinien pozwolić na obsłużenie równoczesnego dostępu do aplikacji dla co najmniej stu użytkowników równocześnie.
+			\item Aplikacja powinna być dostępna dla użytkowników przez siedem dni w tygodniu w godzinach 3-22.
 		\end{itemize}
 	
 	\item Diagram przypadków użycia (UML)
@@ -352,39 +352,53 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych 
 	
 	Językiem programowania użytym do stworzenia części serwerowej został C\# firmy Microsoft. Bliskie podobieństwo do języka Java oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego.
 	
-	Platformą programistyczną systemu informatycznego został .NET 5, który pozwala na tworzenie aplikacji wieloplatformowych. Dzięki wykorzystaniu następcy .NET Core, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem Microsoft jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym będzie pracować aplikacja.
+	Platformą programistyczną warstwy serwerowej został .NET 5, który pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka C\#. Dzięki użyciu następcy .NET Core'a, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem Microsoft jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować.
 	
-	Do stworzenia interfejsu REST API została wykorzystana biblioteka ASP.NET Core, która pozwala na stworzenie metod, które będą konsumowane przez warstwę prezentacji. ASP.NET Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu JWT jak i komunikację z wykorzystaniem protokołu HTTPS.
+	Do stworzenia interfejsu REST API została wykorzystana biblioteka ASP.NET Core, która pozwala na dodawanie metod HTTP, które będą następnie konsumowane przez warstwę prezentacji. ASP.NET Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu JWT jak i komunikację z wykorzystaniem protokołu HTTPS.
 	
 	W celu wykorzystania wzorca projektowego CQRS zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę Autofac, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników.
 	
-	Jako bazę danych wykorzystano MongoDB. MongoDB jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie JSON, który jest czytelny dla człowieka. Baza danych należy do nierelacyjnych baz danych NoSQL, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów.
+	Jako bazę danych wykorzystano MongoDB. MongoDB jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie JSON, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych NoSQL, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
 	
 	Językiem programowania użytym w części wizualnej aplikacji jest język TypeScript zaprojektowany przez firmę Microsoft. W odróżnieniu od języka JavaScript, TypeScript oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego.
 	
-	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie komponentów wielokrotnego użytku oraz hermetyzację logiki w postaci serwisów aplikacyjnych. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu SPA (Single page application).
+	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu SPA.
 	
 	W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę Angular Material z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię Google Material do tworzenia warstw wizualizacji aplikacji internetowych.
 	
 	W warstwie prezentacji wykorzystano bibliotekę NgXS, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy Redux, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz tworzenie stanów, które są deterministyczne.
 	
-	\item Opis narzędzi, metodyk eksperymentalnych, metod modelowania
-		\begin{itemize}
-			\item Narzędzia
-			\item Metodyki eksperymentalne
-			\item Metody modelowania
-		\end{itemize}
+	\item Metodyka pracy nad projektowaniem i implementacją
+	
+	Prace rozpoczęto od utworzenia osobnych repozytoriów kodu z uwzględnieniem reprezentowanej warstwy aplikacji. Te warstwy to:
+	\begin{itemize}
+		\item \textit{Samson.Web.Application} - warstwa serwerowa aplikacji. Zawiera kod, który będzie uruchamiany po stronie serwera.
+		\item \textit{Samson.Web.Ui} - warstwa prezentacji aplikacji. Zawiera kod, który będzie uruchamiany na maszynie klienta w celu prezentacji interfejsu użytkownika.
+	\end{itemize}
 
-	\item metodyka pracy nad projektowaniem i implementacją - dla prac, w których ma to zastosowanie
+	Następnie podzielono kod warstwy serwerowej na projekty platformy programistycznej .NET. Każdy z projektów został utworzony w taki sposób, aby mógł być zastąpiony w przypadku zmian szczegółów implementacji aplikacji. Podział wygląda następująco:
+	\begin{itemize}
+		\item \textit{Samson.Web.Application.Api} - projekt zawierający kod kontrolerów platformy ASP.NET, modele wykorzystywane do zapytań HTTP oraz klasy obiektów reprezentujące odpowiedzi serwera na żądania HTTP.
+		\item \textit{Samson.Web.Application.Identity} - projekt, który zawiera konfigurację oraz serwisy odpowiedzialne za autoryzację użytkownika.
+		\item \textit{Samson.Web.Application.Infrastructure} - projekt posiadający w swojej strukturze utworzone atrybuty, rozszerzenia klas, kod oprogramowania pośredniczącego (ang. \ang Middleware) oraz interfejsy wykorzystywane pomiędzy, różnymi projektami rozwiązania .NET.
+		\item \textit{Samson.Web.Application.Persistence} - projekt zawierający kod klas implementujących wzorzec repozytorium. Odpowiada za dodawania i modyfikacje modeli w bazie danych.
+		\item \textit{Samson.Web.Application.ReadModels} - projekt platformy .NET implementujący odczyt z bazy danych.
+		\item \textit{Samson.Web.Application.UnitTests} - projekt biblioteki NUnit zawierający kod testów jednostkowych.
+		\item \textit{Samson.Web.Application.WebHost} - główny projekt aplikacji. Zawiera konfigurację warstwy serwerowej aplikacji
+		\item \textit{Samson.Web.Models} - projekt zawierający modele, enumy oraz domenę aplikacji
+	\end{itemize}
+	
+	W następnych krokach implementowano aplikacje tworząc w pierwszej kolejności kontrolery platformy ASP.NET, a w krokach późniejszych dodawano szczegóły implementacji w postaci domeny, warstwy zapisu, warstwy odczytu, modeli. Najważniejsze klasy domenowe zostały uzupełnione testami jednostkowymi w celu zapewnienia poprawności działania. Gdy część serwerowa aplikacji została zakończona, rozpoczęto prace nad warstwą interfejsu użytkownika. Warstwa prezentacji była implementowana w następującej kolejności:
+	\begin{enumerate}
+		\item Opakowanie komponentów z bibliotek zewnętrznych
+		\item Utworzenie widoków i formularzy
+		\item Integracja z warstwą serwerową
+		\item Dodanie obsługi żetonu JWT w komunikacji z warstwą serwerową
+	\end{enumerate}
+	
 \end{itemize}
 
-\begin{itemize}
-\item przypadki użycia (diagramy UML) - dla prac, w których mają zastosowanie
-\item opis narzędzi, metod eksperymentalnych, metod modelowania itp.
-\item metodyka pracy nad projektowaniem i implementacją - dla prac, w których ma to zastosowanie
-\end{itemize}
-
-\chapter{[Właściwy dla kierunku - np. Specyfikacja zewnętrzna]}
+\chapter{Specyfikacja zewnętrzna}
 Jeśli to Specyfikacja zewnętrzna:
 \begin{itemize}
 \item  wymagania sprzętowe i programowe
@@ -406,7 +420,7 @@ Jeśli to Specyfikacja zewnętrzna:
 \end{figure}
 
 
-\chapter{[Właściwy dla kierunku - np.Specyfikacja wewnętrzna]}
+\chapter{Specyfikacja wewnętrzna}
 Jeśli to Specyfikacja wewnętrzna:
 \begin{itemize}
 \item przedstawienie idei
@@ -509,12 +523,18 @@ class descriptor_gaussian : virtual public descriptor
 \addcontentsline{toc}{chapter}{Spis skrótów i symboli}
 
 \begin{itemize}
-\item[DNA] kwas deoksyrybonukleinowy (ang. \ang{deoxyribonucleic acid})
 \item[MVC] model -- widok -- kontroler (ang. \ang{model--view--controller}) 
-\item[$N$] liczebność zbioru danych
-\item[$\mu$] stopnień przyleżności do zbioru
-\item[$\mathbb{E}$] zbiór krawędzi grafu
-\item[$\mathcal{L}$] transformata Laplace'a 
+\item[SPA] jednostronicowa aplikacja internetowa (ang. \ang{Single page application})
+\item[CQRS] (ang. \ang{Command and Query Responsibility Segregation})
+\item[TS] (ang. \ang{TypeScript]})
+\item[JS] (ang. \ang{JavaScript})
+\item[REST] (ang. \ang{Representational state transfer})
+\item[API] aplikacyjny interfejs programistyczny (ang. \ang{Application programming interface})
+\item[JWT] (ang. \ang{JSON Web Token})
+\item[JSON] (ang. \ang{JavaScript Object Notation})
+\item[HTTP] (ang. \ang{Hypertext Transfer Protocol})
+\item[HTTPS] (ang. \ang{Hypertext Transfer Protocol Secure})
+\item[NoSQL] nierelacyjna baza danych
 \end{itemize}
 
 
