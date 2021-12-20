@@ -1,10 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                        %
-% Szablon pracy dyplomowej inzynierskiej % 
-%                                        %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 \documentclass[a4paper,twoside,12pt]{book}
 \usepackage[utf8]{inputenc}                                      
@@ -167,13 +160,13 @@ escapeinside={@*}{*@},%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\newcommand{\autor}{Imię Nazwisko}
-\newcommand{\promotor}{dr inż. Imię Nazwisko}
+\newcommand{\autor}{Seweryn Gładysz}
+\newcommand{\promotor}{dr inż. Ewa Płuciennik}
 \newcommand{\konsultant}{dr inż. Imię Nazwisko}
-\newcommand{\tytul}{Tytuł pracy dyplomowej inżynierskiej}
+\newcommand{\tytul}{System zarządzania siecią siłowni oparty o bazę dokumentową}
 \newcommand{\polsl}{Politechnika Śląska}
 \newcommand{\wydzial}{Wydział Automatyki, Elektroniki i Informatyki}
-\newcommand{\kierunek}{Kierunek: Wpisac wlasciwy}
+\newcommand{\kierunek}{Kierunek: Informatyka}
 
 
 \begin{document}
@@ -275,22 +268,93 @@ Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego 
 \item jednoznaczne określenie wkładu autora, w przypadku prac wieloosobowych – tabela z autorstwem poszczególnych elementów pracy
 \end{itemize}
 
+\chapter{Analiza tematu}
 
-\chapter{[Analiza tematu]}
+Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiam jak największej grupie klientów. Stawia to nowe wyzwania w organizacji pracy pracowników i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
 
-\begin{itemize}
-\item sformułowanie problemu
-\item osadzenie tematu w kontekście aktualnego stanu wiedzy ( state of the art ) o poruszanym problemie
-\item  studia literaturowe \cite{bib:artykul,bib:ksiazka,bib:konferencja,bib:url} -  opis znanych rozwiązań (także opisanych naukowo, jeżeli problem jest poruszany w publikacjach naukowych), algorytmów, 
-\end{itemize}
+Innym problemem jest coraz większa liczba sieci siłowni, która w swojej ofercie zawiera możliwość udziału w wydarzeniach grupowych, które pozwalają na uczestnictwo w grupowej sesji, gdzie pracownik siłowni nadzoruje czy uczestnicy wykonują ćwiczenia w sposób bezpieczny dla ich zdrowia. Pozwolenie na zgłoszenie chęci udziału w takim wydarzeniu poprzez aplikacje internetową może zwiększyć atrakcyjność oferty danej sieci siłowni w obliczu rosnącej konkurencji na rynku sieci siłowni.
 
+Sieć siłowni staje w obliczniu innych wyzwań, które nie są znane małym sieciom siłowni lub pojedynczym obiektom. Zarządzanie wyposażeniem może być utrudnione ze względu na liczbę posiadanych urządzeń i liczbę obiektów siłowni należących do sieci. System powinien gromadzić informacje na temat posiadanego sprzętu, aby skrócić czas, jaki jest potrzebny to przeprowadzenia inwentaryzacji posiadanych akcesoriów i sprzętów do ćwiczeń.
 
+Innym wyzwaniem stawianym przed właścicielami siłowni jest stworzenie oferty treningów personalnych dla klientów, którzy oczekują indywidualnego podejścia do treningu. Rozwiązaniem jest stworzenie modułu, który pozwalałby na rezerwowanie przez klientów terminów treningów. Takie rozwiązanie może zwiększyć atrakcyjność danej sieci oraz pozwolić na sprawniejsze organizowanie czasu trenerów personalnych należących do sieci siłowni.
 
+Ważnym wyzwaniem stawianym przez pandemię koronawirusa jest reagowanie na częste zmiany w przepisach dotyczących wstępu na obiekty sportowe. Taka sytuacja zmusza właścicieli do ciągłego monitorowania sytuacji i reagowania na zmiany dotyczące przepisów sanitarnych. Każda taka zmiana zmusza siłownię do wdrożenia nowych restrykcji w postaci limitów osób na siłowni. Pomocą w realizowaniu narzuconych obostrzeń byłoby stworzenie systemu, który ustalałby jaka jest maksymalna liczba osób w obiekcie na podstawie wprowadzonych danych. System powinien również zapewniać możliwość kontrolowania liczby osób, które znajdują się w danej chwili w obiekcie siłowni.
+
+Kolejnym problemem jest ilość użytkowników korzystających z rozwiązania. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać dużą ilość klientów. Zasoby wykorzystywane do działania systemu powinny być wystarczające do sprawnego działania aplikacji przy dużym obciążeniu spowodowanym ogromną liczbą aktywnie zalogowanych użytkowników. Aby zapewnić ciągłość działania systemu potrzebne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonanywane w górę (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub w szerz (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\footnote{\cite{bib:mongodb_guide}}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rodzielenie obciążenia pomiędzy różnymi maszynami.
+
+Aktualnie w sieci Internet możemy znaleźć wiele rozwiązań wymienionych wcześniej problemów w postaci systemów informatycznych. Duża część oferowanych rozwiązań posiada możliwość zarządzania bazą klientów, prowadzenie inwentarza wyposażenia oraz możliwość stworzenia oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych wcześniej problemów, jednak żadno z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
+
+Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawowe funkcjonalności potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, a tym samym złym doświadczeniom płynącym z korzystania z serwisu internetowego, system musi być podatny na zmiany. System powinien cechować się skalowalnością w celu zapewnienia dużej szybkości działania nawet w przypadku ogromnej liczby obiektów w sieci siłowni. Aby to osiągnąć system powinien zostać utworzony na infrastrukturze, która pozwoli na skalowanie wszerz. Warstwa serwerowa aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie do architektury mikroserwisów, które pozwolą na wydajne obsługiwanie żądań z warstwy prezentacji, zapewnienie ciągłości pracy systemu w przypadku awarii oraz skalowalność w przypadku rozrastającej się sieci siłowni.
 
 \chapter{Wymagania i narzędzia}
 
 \begin{itemize}
-\item wymagania funkcjonalne i niefunkcjonalne
+	\item Wymagania funkcjonalne
+	\\ Wymienione wymagania funkcjonalne stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcjonalności zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
+		\begin{itemize}
+			\item Tworzenie konta trenera personalnego - w systemie powinna istnieć możliwość dodawania kont, dla pracowników siłowni w celu zarządzania zasobami siłowni.
+			\item Rejestracja konta klienta - system powinien pozwalać na samodzielne zarejestrowanie się użytkownika w celu skorzystania z funkcjonalności serwisu internetowego sieci siłowni.
+			\item Logowanie się na wcześniej utworzone konto użytkownika - w celu weryfikacji użytkownika, system powinien pozwalać na autoryzację użytkownika poprzez formularz logowania.
+			\item Przeglądanie dostępnej oferty karnetów na siłownie - aby użytkownik mógł dokonać zakupu karnetu to musi posiadać możliwość sprawdzenia dostępnej oferty sieci siłowni.
+			\item Przedłużenie karnetu przypisanego do konta użytkowniak - użytkownik posiadający już karnet może go przedłużyć.
+			\item Zakup karnetu - użytkownik nie posiadający karnetu posiada możliwość zakupu karnetu w celu wejścia do obiektu siłowni.
+			\item Utworzenie nowego typu karnetu - pracownicy siłowni powinni mieć możliwość stworzenia oferty karnetów.
+			\item Usunięcie istniejącego rodzaju karnetu - pracownicy siłowni powinni mieć możliwość usunięcia z oferty karnetów.
+			\item Edycja istniejącego typu karnetu - pracownicy siłowni powinni mieć możliwość dokonania zmian w istniejącej ofercie karnetów.
+			\item Edycja informacji o koncie użytkownika - użytkownik serwisu powinien mieć możliwość edycji informacji zawartych w swoim profilu.
+			\item Archiwizacja konta użytkownika - użytkownik serwisu powinien mieć możliwość zarchiwizowania swojego konta, gdy nie jest już zaintresowany korzystaniem z serwisu.
+			\item Przeglądanie listy dostępny wydarzeń - użytkownicy powinni mieć możliwość przeglądania listy dostępnych wydarzeń.
+			\item Utworzenie nowego wydarzenia - trenerzy personalni powinni mieć możliwość dodawania wydarzeń, które będą miały miejsce na terenie siłowni.
+			\item Odwołanie wydarzenia - trener personalny powinien mieć możliwość odwołania zaplanowanego wydarzenia.
+			\item Edycja wydarzenia - trener personalny powinien mieć możliwość wprowadzenia zmian w zaplanowanym wydarzeniu.
+			\item Możliwość zapisania się na udział w wydarzeniu - klient powinien mieć możliwość zdeklarowania chęci udziału w wydarzeniu.
+			\item Rezygnacja z udziału w wydarzeniu - klient powinien mieć możliwość zrezygnowania z udziału w wydarzeniu, w którym wcześniej zdeklarował chęć udziału.
+			\item Utworzenie nowego obiektu siłowni - pracownicy powinni mieć możliwość utworzenis nowych obiektów sieci siłowni.
+			\item Możliwość zdefiniowania ograniczeń dostępu do siłowni - pracownicy powinni mieć możliwość zdefiniowania limitu osób jaki może się znajdować w obiekcie siłowni.
+			\item Możliwość dodania nowych pomieszczeń dla obiektu siłowni - pracownicy powinni mieć możliwość dodania nowych pomieszczeń do obiektu siłowni.
+			\item Możliwość usunięcia pomieszczeń z obiektu siłowni - pracownicy powinni mieć możliwość usunięcia pomieszczenia, które zostało utworzone w danym obiekcie siłowni.
+			\item Możliwość zdefiniowania akcesoriów i sprzętu do ćwieczeń - pracownicy powinni mieć możliwość zdefiniowania akcesoriów dostępnych w danym obiekcie siłowni.
+			\item Edycja zdefiniowanych akcesoriów i sprzętu do ćwiczeń - pracownicy powinni mieć możliwość edycji wcześniej zdefiniowanych akcesoriów i sprzętu do ćwiczeń.
+			\item Możliwość uruchomienia aplikacji w trybie bramki wejściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wejściowej w celu kontroli liczby klientów znajdujących się w siłowni.
+			\item Możliwość uruchomienia aplikacji w trybie bramki wyjściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wyjściowej w celu kontrolki liczby klientów wychodzących z siłowni.
+			\item Przeglądanie listy dostępnych treningów indywidualnych - użytkownicy powinni mieć możliwość przeglądania listy dostępnych treningów osobisty.
+			\item Możliwość zapisania się na udział w treningu indywidualnym - klient powinien mieć możliwość zapisania się na wcześniej utworzony trening indywidualny z trenerem personalnym.
+			\item Utworzenie trenignu indywidualnego - trener perosonalny powinien mieć możliwość utworzenia sesji treningów indywidualnych.
+			\item Odwołanie treningu indywidualnego - trener personalny powinien mieć możliwość odwołania wcześniej zaplanowanych treningów personalnych.
+			\item Rezygnacja z udziału w treningu personalnym - klient powinien mieć możliwość zrezygnowania z udziału w treningu personalnym.
+			\item Odmowa wejścia na siłownie - bramka wejściowa powinna mieć możliwość odmówienia wejścia na siłwonie w przypadku braku ważnego karnetu lub osiągnięciu maksymalnej liczby klientów na terenie obiektu siłowni.
+			\item Sprawdzenie czy jest możliwość wejścia na siłownię - bramka wejściowa powinna informować o limicie osób, jaki może znajdować się w obiekcie siłowni.
+			\item Otwarcie bramki wejściowej - bramka wejściowa powinna pozwolić na wejście na teren siłowni po spełnieniu warunków.
+			\item Otwarcie bramki wyjściowej - bramka wyjściowa powinna pozwolić na wyjście z terenu siłowni.
+		\end{itemize}
+			
+	\item Wymagania niefunkcjonalne
+		\begin {itemize}
+			\item Wyświetlanie elementów interejsu użytkownika powinno zostać dostosowane do standardowych rozdzielczości ekranów komputerów osobistych.
+			\item Poprawny sposób działania w nowoczesnych przeglądarkach: Mozilla Firefox, Google Chrome, Microsoft Edge.
+			\item System powinien pozwolić na obsłużenie równoczesnego dostępu do aplikacji dla conajmniej stu użytkowników równocześnie.
+			\item Aplikacja powinna być dostępna dla użytkowników przez siedem dni w tygnodniu w godzinach 3-22.
+		\end{itemize}
+
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{diagram_przypadków_użycia.png}
+			\caption{Diagram przypadków użycia.}
+			\label{fig:3}
+		\end{figure}
+	\item Diagram przypadków użycia (UML)
+	\\ Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
+	\item Opis narzędzi, metodyk eksperymentalnych, metod modelowania
+		\begin{itemize}
+			\item Narzędzia
+			\item Metodyki eksperymentalne
+			\item Metody modelowania
+		\end{itemize}
+
+	\item metodyka pracy nad projektowaniem i implementacją - dla prac, w których ma to zastosowanie
+\end{itemize}
+
+\begin{itemize}
 \item przypadki użycia (diagramy UML) - dla prac, w których mają zastosowanie
 \item opis narzędzi, metod eksperymentalnych, metod modelowania itp.
 \item metodyka pracy nad projektowaniem i implementacją - dla prac, w których ma to zastosowanie
