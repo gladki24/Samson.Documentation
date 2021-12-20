@@ -313,7 +313,7 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych 
 			\item Możliwość zdefiniowania ograniczeń dostępu do siłowni - pracownicy powinni mieć możliwość zdefiniowania limitu osób jaki może się znajdować w obiekcie siłowni.
 			\item Możliwość dodania nowych pomieszczeń dla obiektu siłowni - pracownicy powinni mieć możliwość dodania nowych pomieszczeń do obiektu siłowni.
 			\item Możliwość usunięcia pomieszczeń z obiektu siłowni - pracownicy powinni mieć możliwość usunięcia pomieszczenia, które zostało utworzone w danym obiekcie siłowni.
-			\item Możliwość zdefiniowania akcesoriów i sprzętu do ćwieczeń - pracownicy powinni mieć możliwość zdefiniowania akcesoriów dostępnych w danym obiekcie siłowni.
+			\item Możliwość zdefiniowania akcesoriów i sprzętu do ćwiczeń - pracownicy powinni mieć możliwość zdefiniowania akcesoriów dostępnych w danym obiekcie siłowni.
 			\item Edycja zdefiniowanych akcesoriów i sprzętu do ćwiczeń - pracownicy powinni mieć możliwość edycji wcześniej zdefiniowanych akcesoriów i sprzętu do ćwiczeń.
 			\item Możliwość uruchomienia aplikacji w trybie bramki wejściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wejściowej w celu kontroli liczby klientów znajdujących się w siłowni.
 			\item Możliwość uruchomienia aplikacji w trybie bramki wyjściowej - aplikacja powinna pozwolić użytkownikowi na uruchomienie aplikacji w trybie bramki wyjściowej w celu kontrolki liczby klientów wychodzących z siłowni.
@@ -362,7 +362,11 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnaniu aktualnych 
 	
 	Językiem programowania użytym w części wizualnej aplikacji jest język TypeScript zaprojektowany przez firmę Microsoft. W odróżnieniu od języka JavaScript, TypeScript oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego.
 	
-	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie komponentów wielokrotnego użytku oraz hermetyzację logiki w postaci serwisów aplikacyjnych. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript.
+	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie komponentów wielokrotnego użytku oraz hermetyzację logiki w postaci serwisów aplikacyjnych. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu SPA (Single page application).
+	
+	W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę Angular Material z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię Google Material do tworzenia warstw wizualizacji aplikacji internetowych.
+	
+	W warstwie prezentacji wykorzystano bibliotekę NgXS, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy Redux, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz tworzenie stanów, które są deterministyczne.
 	
 	\item Opis narzędzi, metodyk eksperymentalnych, metod modelowania
 		\begin{itemize}
