@@ -6,16 +6,29 @@
 \contentsline {section}{\numberline {3.1}Wymagania funkcjonalne}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Wymagania niefunkcjonalne}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Diagram przypadków użycia (UML)}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Narzędzia}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Narzędzia}{14}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Metodyka pracy nad projektowaniem i implementacją}{15}{section.3.5}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{19}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{25}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{27}{chapter*.3}%
-\contentsline {chapter}{Spis skrótów i symboli}{31}{appendix*.4}%
+\contentsline {section}{\numberline {4.1}Wymagania sprzętowe}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Instalacja}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Instalacja bazy danych MongoDB}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Instalacja środowiska .NET 5}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Instalacja środowiska Node.js}{27}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Instalacja \textit {http-server}}{32}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Sposób aktywacji}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Uruchomienie warstwy serwerowej}{33}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Uruchomienie warstwy prezentacji}{34}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Kategorie użytkowników}{35}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Kwestie bezpieczeństwa}{35}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Przykład działania}{36}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Scenariusze korzystania z systemu}{36}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{39}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{41}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{44}{chapter*.3}%
+\contentsline {chapter}{Spis skrótów i symboli}{47}{appendix*.4}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
@@ -38,5 +51,7 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
-\contentsline {chapter}{Źródła}{33}{appendix*.5}%
-\contentsline {chapter}{Zawartość dołączonej płyty}{37}{appendix*.6}%
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{Źródła}{49}{appendix*.5}%
+\contentsline {chapter}{Zawartość dołączonej płyty}{53}{appendix*.6}%

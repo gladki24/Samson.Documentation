@@ -13,6 +13,9 @@
 %\usepackage{pgfplots}
 \usepackage{mathtools}
 \usepackage{geometry}
+\usepackage{float}
+\usepackage{afterpage}
+\usepackage{placeins}
 \usepackage[page]{appendix} % toc,
 \renewcommand{\appendixtocname}{Dodatki}
 \renewcommand{\appendixpagename}{Dodatki}
@@ -339,7 +342,7 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 	\section {Diagram przypadków użycia (UML)}
 	Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
 	
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{diagram_przypadków_użycia.png}
 	\caption{Diagram przypadków użycia.}
@@ -397,25 +400,327 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 	\end{enumerate}
 
 \chapter{Specyfikacja zewnętrzna}
-Jeśli to Specyfikacja zewnętrzna:
+\section {Wymagania sprzętowe}
+Aby aplikacja działała w poprawny sposób wymagany są:
+	\begin{itemize}
+		\item System operacyjny w wersji \cite{bib:requirementsWin}\cite{bib:requirementsMac}\cite{bib:requirementsLinux}\cite{bib:requirementsMongo}\cite{bib:requirementsFramework}:
+		\begin {itemize}
+			\item \textit{Windows} w wersjach 11/10/8.1
+			\item \textit{Windows 7} z \textit{Service Pack 1}
+			\item \textit{Windows Server Core 2012 R2}
+			\item Nano Server w wersji nowszej niż 1809
+			\item \textit{MacOS} 12.0 \textit{Monterey}
+			\item \textit{MacOS} 11.0 \textit{Big Sur}
+			\item \textit{MacOS} 10.15 \textit{Catalina}
+			\item \textit{Linux Alpine} w wersji nowszej niż 3.12 włącznie
+			\item \textit{Linux CentOS} w wersjach 8/7
+			\item \textit{Linux Debian} w werjsach 11/10/9
+			\item \textit{Linux Fedora} w wersjach 35/34/33/32
+			\item \textit{Linux OpenSuse} w wersji 15
+			\item \textit{Linux RedHat} w wersjach 8/7
+			\item \textit{Linux SLES} w wersji 15
+			\item \textit{Linux Ubuntu} w wersjach 21.10/21.04/20.04
+		\end {itemize}	
+		\item Procesor z więcej niż jednym rdzeniem o taktowaniu nie mniejszym niż 1GHZ
+		\item Pamięć operacyjna większa niż 4GB RAM
+		\item Minimalna przestrzeń na dysku to 4,5 GB pamięci
+		\item Zainstalowana nowoczesna przeglądarka WWW taka jak:
+		\begin{itemize}
+			\item \textit{Google Chrome} w najnowszej wersji
+			\item \textit{Mozilla Firefox} w najnowszej wersji
+			\item \textit{Microsoft Edge} w najnowszej wersji
+			\item \textit{Opera} w najnowszej wersji
+		\end{itemize}
+	\end{itemize}
+
+Są to minimalne wymagania do uruchomienia bazy danych MongoDB oraz aplikacji z wykorzystaniem platformy uruchomieniowej .NET 5. Ponadto wymagane są dodatkowe zasoby potrzebne do uruchomienia przeglądarki w której wyświetlony zostanie interfejs użytkownika.
+
+\section {Instalacja}
+
+\subsection{Instalacja bazy danych MongoDB}
+W celu zainstalowania aplikacji, trzeba spełnić wymagania wymienione w poprzednim punkcie. Instalacja zostaje rozpoczęta od pobrania i zainstalowania serwera bazy danych MongoDB w wersji Community \href{https://www.mongodb.com/try/download/community}{z strony twórców}.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodbsite}
+	\caption{Strona z której można pobrać instalator serwera bazy danych MongoDB}
+	\label{fig:mongodbsite}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+Instalacja oprogramowania do zarządzania bazą danych rozpoczyna się od uruchomienia wcześniej pobranego kreatora.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb1}
+	\caption{Rozpoczęcie instalacji serwera}
+	\label{fig:mongodb1}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+Po zapoznaniu się z warunkami licencyjnymi, aby kontynuować użytkownik musi zaznaczyć pole z podpisem \textit{I accept the terms in the License Agreement}, a następnie przycisnąć \textit{Next}.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb2}
+	\caption{Umowa licencyjna \textit{MongoDB Community Edition}}
+	\label{fig:mongodb2}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+W widoku formularza wyboru typu instalacji trzeba wybrać opcję \textit{Completed}, aby zainstalować wszystkie potrzebne narzędzia do działania serwera.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb3}
+	\caption{Typ instalacji w instalatorze \textit{MongoDB Community Edition}}
+	\label{fig:mongodb3}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+W następnym widoku, gdzie widać konfiguracje serwera, ustawienia powinny zostać domyślne.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb4}
+	\caption{Początkowa konfiguracja serwera bazy danych}
+	\label{fig:mongodb4}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+Po naciśnięciu przycisku \textit{Next} powinna być widoczna opcja zainstalowania \textit{MongoDB Compass}. Oprogramowanie \textit{MongoDB Compass} jest opcjonalne, więc opcja instalacji może zostać odznaczona.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mogndodb5}
+	\caption{Informacja o możliwości instalacji klienta bazy danych \textit{MongoDB Compass}}
+	\label{fig:mogndodb5}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+W następnym kroku, aby zainstalować serwer bazy danych trzeba nacisnąć przycisk \textit{Install}.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb6}
+	\caption{Rozpoczęcie instalacji \textit{MongoDB}}
+	\label{fig:mongodb6}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+Aby zakończyć instalację po zakończeniu się procesu instalacji trzeba przycisnąć przycisk \textit{Finish}. W tym momencie na maszynie użytkownika powinna znajdować się w pełni sprawny serwer bazy danych MongoDB.
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb_finish}
+	\caption{Zakończenie instalacji \textit{MongoDB}}
+	\label{fig:mongodbfinish}
+\end{figure}
+\afterpage{\clearpage}
+\FloatBarrier
+
+\subsection{Instalacja środowiska .NET 5}
+Podobnie jak w przypadku \textit{MongoDB}, aby zainstalować środowisko \textit{.NET 5} trzeba przejść na \href{https://dotnet.microsoft.com/en-us/download/dotnet/5.0}{stronę, gdzie możliwe jest pobranie SDK .NET 5}. W pierwszej kolejności wymagane jest wybranie odpowiedniej wersji instalatora dla zainstalowanego systemu operacyjnego oraz architektury maszyny.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk}
+	\caption{Strona twórców środowiska \textit{.NET}}
+	\label{fig:dotnetsdk}
+\end{figure}
+
+W kolejnym kroku trzeba uruchomić pobrany kreator instalacji \textit{SDK .NET 5}. Pierwszym widokiem jest formularz informujący o dostępnej dokumentacji oraz składnikach instalacji. Po zapoznaniu się z informacji trzeba przycisnąć przycisk \textit{Zainstaluj} w celu instalacji środowiska uruchomieniowego.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet1}
+	\caption{Rozpoczęcie instalacji środowiska \textit{.NET }5}
+	\label{fig:dotnet1}
+\end{figure}
+
+W kolejnym kroku kreator zainstaluje na maszynie wymagane składniki. Kiedy instalator zakończy działanie zamknięcie kreatora wymaga przyciśnięcia w przycisk \textit{Zamknij}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish}
+	\caption{Zakończenie instalacji środowiska \textit{.NET 5}}
+	\label{fig:dotnetfinish}
+\end{figure}
+
+Aby sprawdzić czy instalacja przebiegła pomyślnie trzeba uruchomić konsolę \textit{Windows Powershell} dla systemów rodziny \textit{Windows} lub odpowiedniego terminala dla posiadanej dystrybucji \textit{Linux}. Następnie trzeba wpisać komendę \textit{dotnet --version}. Jeśli instalacja przebiegła pomyślnie użytkownik powinien zobaczyć w konsoli informację o zainstalowanej wersji środowiska \textit{.NET}.
+
+\subsection{Instalacja środowiska Node.js}
+Przedostatnim krokiem, jaki trzeba wykonać, aby zainstalować projekt jest instalacja środowiska, które pozwoli na uruchomienie serwera WWW dzięki, któremu będzie można uruchomić aplikację stworzoną przy pomocy platformy programistycznej Angular. Serwer WWW musi mieć możliwość przekierowania wszystkich zapytań do wybranego adresu URL. Jest to istotne w przypadku aplikacji typu SPA, gdzie to aplikacja odpowiada za nawigacje pomiędzy widokami. W tej pracy zaprezentowana zostanie instalacja serwera \textit{http-server}, który obsługuje takie przekierowania.
+
+W pierwszej kolejności zainstalowana musi być platforma uruchomieniowa \textit{Node.js}, która pozwala na wykonywanie skryptów napisanych w języku \textit{JavaScript}. Kreator instalacji można pobrać z strony twórców \href{https://nodejs.org/en/}{środowiska}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node_page}
+	\caption{Strona Node.js}
+	\label{fig:nodepage}
+\end{figure}
+
+Kolejnym krokiem jest uruchomienie programu instalującego środowisko uruchomieniowe. Aby to zrobić trzeba przejśc w miejsce gdzie pobrano plik instalatora a następnie uruchomić go. Wyświetlony powinien zostać następujący widok.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node1}
+	\caption{Rozpoczęcie instalacji środowiska \textit{Node.js}}
+	\label{fig:node1}
+\end{figure}
+
+Po przyciśnięciu przycisku \textit{Next} oczom użytkownika powinien ukazać się formularz z informacjami o licencji oprogramowania. Aby przejść dalej użytkownik powinien zapoznać sie z licencją a następnie zaakceptować ją. Po zaakceptowaniu licencji użytkownik musi przejść do kolejnego widoku za pomocą przycisku \textit{Next}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node2}
+	\caption{Licencja środowiska \textit{Node.js}}
+	\label{fig:node2}
+\end{figure}
+
+Następnym etapem instalacji jest wybór ścieżki do folderu, gdzie ma zostać zainstalowane oprogramowanie. Po wyborze dogodnej lokalizacji trzeba przejść do kolejnego widoku.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node3}
+	\caption{Ścieżka do folderu docelowego \textit{Node.js}}
+	\label{fig:node3}
+\end{figure}
+
+W kolejnym kroku użytkownik musi wybrać składniki instalacji. W tym przypadku pozostać powinny domyślne opcje. Istotne jest aby zainstalowane zostało narzędzie \textit{NPM}, które pozwoli na instalacje serwera WWW.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node4}
+	\caption{Składniki instalatora Node.js}
+	\label{fig:node4}
+\end{figure}
+
+Jednym z ostatnich kroków instalatora jest widok z informacją o możliwości zainstalowania dodatkowego narzędzia \textit{Chocolatey}. Narzędzie to nie jest potrzebne w działaniu, więc można wyłączyć opcję instalacji narzędzia.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node5}
+	\caption{Formularz umożliwający instalację dodatkowego narzędzia \textit{Cocolatey}}
+	\label{fig:node5}
+\end{figure}
+
+W kolejnych etapach instalacji użytkownik powinien uruchomić instalacje za pomocą przycisku \textit{Install}. Po zakończonej instalacji instalator powinien wyświetlić informację o zakończeniu pracy.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node6}
+	\caption{Potwierdzenie instalacji środowiska \textit{Node.js}}
+	\label{fig:node6}
+\end{figure}
+
+Aby sprawdzić czy instalacja przebiegła pomyślnie, można uruchomić polecenie \textit{node -v}, które powinno zwrócić informację o zainstalowanej wersji \textit{Node.js}.
+
+\section {Instalacja \textit{http-server}}
+Ostatnim etapem instalacji systemu jest instalacja serwera WWW, który obsługuje możliwość przekierowań do pliku \textit{index.html}. Aby zainstalować serwer \textit{http-server} w terminalu trzeba uruchomić następujące polecenie:
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		npm install -g http-server
+	\end{lstlisting}
+	\caption{Instalacja paczki \textit{http-server}}
+	\label{fig:httpServerInstall}
+\end{figure}
+
+Polecenie to zainstaluje paczkę \textit{npm} dla użytku globalnego. Dzięki instalacji globalnej użytkownik będzie mógł uruchomić serwer WWW z każdej lokalizacji.
+
+\section {Sposób aktywacji}
+\subsection{Uruchomienie warstwy serwerowej}
+Aby uruchomić aplikację stworzoną z wykorzystaniem platformy .NET istnieje potrzebna skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku wykonywalnego użytkownik musi przejść do folderu w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala trzeba wywołać komendę:
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		dotnet build --configuration Release
+	\end{lstlisting}
+	\caption{Kompilacja projektu \textit{ASP.NET}}
+	\label{fig:dotnetCompilation}
+\end{figure}
+
+W folderze \textit{./Samson.Web.Application.WebHost/bin/Release/net5.0} powinien powstać folder zawierający wyniki kompilacji. Następnie w celu uruchomienia pliku wykonywalnego użytkownik powinien przejść do folderu ./Samson.Web.Application.WebHost/bin/Release/net5.0 przy pomocy komendy:
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		cd ./Samson.Web.Application.WebHost/bin/Release/net5.0
+	\end{lstlisting}
+	\caption{Przejście do folderu zawierającego plik wykonywalny}
+	\label{fig:aspnetChangeFolder}
+\end{figure}
+
+Aby uruchomić warstwę serwerową aplikacji wymagane jest dodanie odpowiednich zmiennych środowiskowych przy pomocy poniższego polecenia. Przeznaczenie zmiennych jest następujące:
 \begin{itemize}
-\item  wymagania sprzętowe i programowe
-\item  sposób instalacji
-\item  sposób aktywacji
-\item  kategorie użytkowników
-\item  sposób obsługi
-\item  administracja systemem
-\item  kwestie bezpieczeństwa
-\item  przykład działania
-\item  scenariusze korzystania z systemu (ilustrowane zrzutami z ekranu lub generowanymi dokumentami)
+	\item \textit{MongoDB:DatabaseName} - nazwa bazy danych jaka zostanie utworzona w środowisku \textit{MongoDB}.
+	\item \textit{Authentication:JWT:Key} - klucz wykorzystywany do funkcji mieszające, które jest wykorzystywana do zabezpieczenia żetonu \textit{JWT}.
+	\item \textit{ASPNETCORE_ENVIRONMENT} - oznaczenie typu środowiska. Nie powinna zostać zmieniana.
+	\item \textit{ConnectionString:MongoDB:Atlas} - ciąg znaków określający parametry połączenia z bazą danych. Jeżeli w trakcie instalacji serwera \textit{MongoDB} wartości domyślnie nie zostały zmienione to proponowany ciąg znaków powinien pozwolić na poprawne połączenie z bazą danych.
+\end{itemize}
+Poniższe wartości mogą zostać zmodyfikowane, ale zalecane jest aby pozostały w niezmienione formie ze względu na proponowaną w wcześniejszych krokach konfigurację.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		$env:MongoDB:DatabaseName="SamsonDatabase";
+		$env:Authentication:JWT:Key="Top secret key to provide JWT token";
+		$env:ASPNETCORE_ENVIRONMENT="Release"
+		$env:ConnectionString:MongoDB:Atlas="mongodb://localhost:27017/?readPreference=primary&ssl=false";
+	\end{lstlisting}
+	\caption{Ustawienie wartości zmiennych środowiskowych}
+	\label{fig:varEnvironment}
+\end{figure}
+
+Ostatnim krokiem w uruchomieniu warstwy serwerowej jest uruchomienie poniższego polecenia.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		start Samson.Web.Application.WebHost.exe
+	\end{lstlisting}
+	\caption{Uruchomienie warstwy serwerowej aplikacji}
+	\label{fig:aspNetRun}
+\end{figure}
+
+\subsection{Uruchomienie warstwy prezentacji}
+Tak jak w przypadku warstwy serwerowej, warstwa prezentacji musi zostać skompilowana do postaci, która może zostać obsłużona przez serwer WWW. Aby to zrobić trzeba uruchomić terminal a następnie przejść do lokalizacji w której znajduje się projekt \textit{Samson.Web.Ui}. Kolejnym krokiem jest wywołanie poleceń, które zainstalują wymagane zależności a następnie utworzą paczkę wynikową:
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		npm install; npm run build
+	\end{lstlisting}
+	\caption{Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}
+	\label{fig:installAndBuildAngularProejct}
+\end{figure}
+
+Końcowym krokiem uruchamiania warstwy interfejsu użytkownika jest uruchomienie serwera WWW z opcją przekierowania do pliku index.html.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+		cd dist/samson-web-ui; http-server --proxy http://localhost:8080?
+	\end{lstlisting}
+	\caption{Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}
+	\label{fig:runWWWServer}
+\end{figure}
+
+Po wywołaniu poprzedniego polecania aplikacja internetowa powinna być dostępna pod adresem: \textit{http://localhost:8080}.
+
+\section {Kategorie użytkowników}
+
+Aplikacja internetowa kategoryzuje użytkowników na dwie kategorie:
+\begin{itemize}
+	\item Trenerów personalnych - pełnią rolę administratorów w systemie. Posiadają możliwość modyfikacji zasobów siłowni, takich jak sprzęt do ćwiczeń, obiektów, pomieszczeń oraz możliwość organizacji wydarzeń i treningów indywidualnych.
+	\item Klientów - użytkownik który posiadają możliwość zakupu karnetu, zgłoszenia chęci udziału w treningu indywidualnym lub wydarzeniu.
 \end{itemize}
 
-\begin{figure}
-\centering
-\includegraphics[width=3cm]{logo_pl.jpg}
-\caption{Podpis rysunku po rysunkiem.}
-\label{fig:2}
-\end{figure}
+\section {Kwestie bezpieczeństwa}
+
+System wykorzystuje żeton bezpieczeństwa \textit{JWT}. Żeton ten generowany jest w części serwerowej aplikacji w trakcie logowania użytkownika. Kiedy użytkownik poprawnie zaloguje się do systemu, serwer przesyła żeton do warstwy interfejsu użytkownika, gdzie zostaje zapisany w \textit{localstorage} przeglądarki. Warstwa prezentacji dodaje za każdym razem żeton do nagłówka żądania protokołu HTTP, które będzie wymagało uwierzytelnienia użytkownika. W momencie gdy warstwa serwerowa otrzyma taki żeton sprawdza zapisane w nim dane o jego terminie ważności i dostępach, które posiada użytkownik. Jeśli użytkownik systemu posiada odpowiednie uprawnienia do zasobu to otrzymuje odpowiedź na żądanie, w przeciwnym razie system zwraca informacje o błędzie oznaczone statusem 401 (Unauthorized). Brak przesłania żetonu w nagłówku do metody wymagającej autoryzacji skończy się za każdym razem błędem oraz informacją o próbie nieautoryzowanego dostępu do wrażliwych danych.
+
+\section {Przykład działania}
+
+\section {Scenariusze korzystania z systemu}
+
 
 
 \chapter{Specyfikacja wewnętrzna}
@@ -533,6 +838,7 @@ class descriptor_gaussian : virtual public descriptor
 \item[HTTP] (ang. \ang{Hypertext Transfer Protocol})
 \item[HTTPS] (ang. \ang{Hypertext Transfer Protocol Secure})
 \item[NoSQL] nierelacyjna baza danych
+\item[WWW] światowa rozległa sieć komputerowa (ang. \ang{World Wide Web})
 \end{itemize}
 
 

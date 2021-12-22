@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{bib:anuglar}
 Angular: The modern web developer's platform.
@@ -6,13 +6,28 @@ Angular: The modern web developer's platform.
 \bibitem{bib:wodguru}
 Funkcjonalności, które ułatwią zarządzanie twoim klubem.
 
+\bibitem{bib:requirementsLinux}
+Install .net on linux.
+
+\bibitem{bib:requirementsMac}
+Install .net on macos.
+
+\bibitem{bib:requirementsWin}
+Install .net on windows.
+
 \bibitem{bib:autofactag}
 Instance per lifetime scope.
+
+\bibitem{bib:requirementsFramework}
+.net framework system requirements.
 
 \bibitem{bib:perfectgym}
 Oprogramowanie crm: Maksymalizuj potencjał zdobywania klientów dzięki
   narzędziom do pozyskiwania leadów i zmieniaj kontakty w płacących
   klientów.
+
+\bibitem{bib:requirementsMongo}
+Production notes.
 
 \bibitem{bib:csharp}
 Joseph Albahari,  Ben Albahari.

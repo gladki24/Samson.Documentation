@@ -1,0 +1,4 @@
+$env:MongoDB:DatabaseName="SamsonDatabase";
+$env:Authentication:JWT:Key="Top secret key to provide JWT token";
+$env:ASPNETCORE_ENVIRONMENT="Release"
+$env:ConnectionString:MongoDB:Atlas="mongodb://localhost:27017/?readPreference=primary&ssl=false";
