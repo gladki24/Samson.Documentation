@@ -272,6 +272,7 @@ Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego 
 \end{itemize}
 
 \chapter{Analiza tematu}
+W tej części zaprezentowana zostanie analiza tematu, w skład której wchodzi przedstawienie wyzwań, którym musi sprostać system oraz założenia dotyczące systemu. W dalszej części rozdziału znajduje się przegląd dostępnych rozwiązań na rynku komercyjnym.
 
 Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupie klientów. Stawia to nowe wyzwania w organizacji pracy pracowników i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
 
@@ -290,7 +291,7 @@ Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań \cite
 Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawowe funkcjonalności potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, a tym samym złym doświadczeniom płynącym z korzystania z serwisu internetowego, system musi być podatny na zmiany. Aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
 
 \chapter{Wymagania i narzędzia}
-
+W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą zostać spełnione. W dalszej części znajdują się wymagania niefunkcjonalne oraz diagramy przypadków użycia. Rozdział kończy się opisem wykorzystanych narzędzi i metodyki pracy nad projektem.
 
 	\section{Wymagania funkcjonalne} 
 	Wymienione punkty stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcje  zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
@@ -400,6 +401,8 @@ Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych
 	\end{enumerate}
 
 \chapter{Specyfikacja zewnętrzna}
+W tym rozdziale można znaleźć spis wymagań sprzętowych, których spełnienie jest pozwala na poprawne działanie systemu. W dalszej części znajduje się instrukcja instalacji systemu oraz opis sposoby jego aktywacji. Kolejne podrozdziały opisują kategorie użytkowników i metody, które zostały wykorzystane do zabezpieczenia wrażliwych danych. Rozdział kończy się przykładami działania aplikacji w postaci zrzutów ekranu i opisów.
+
 \section {Wymagania sprzętowe}
 Aby aplikacja działała w poprawny sposób wymagany są:
 	\begin{itemize}
@@ -617,7 +620,7 @@ W kolejnych etapach instalacji użytkownik powinien uruchomić instalacje za pom
 
 Aby sprawdzić czy instalacja przebiegła pomyślnie, można uruchomić polecenie \textit{node -v}, które powinno zwrócić informację o zainstalowanej wersji \textit{Node.js}.
 
-\section {Instalacja \textit{http-server}}
+\subsection {Instalacja \textit{http-server}}
 Ostatnim etapem instalacji systemu jest instalacja serwera WWW, który obsługuje możliwość przekierowań do pliku \textit{index.html}. Aby zainstalować serwer \textit{http-server} w terminalu trzeba uruchomić następujące polecenie:
 \begin{figure} [H]
 	\centering
@@ -632,15 +635,17 @@ Polecenie to zainstaluje paczkę \textit{npm} dla użytku globalnego. Dzięki in
 
 \section {Sposób aktywacji}
 \subsection{Uruchomienie warstwy serwerowej}
-Aby uruchomić aplikację stworzoną z wykorzystaniem platformy .NET istnieje potrzebna skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku wykonywalnego użytkownik musi przejść do folderu w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala trzeba wywołać komendę:
+Aby uruchomić aplikację stworzoną z wykorzystaniem platformy .NET istnieje potrzebna skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku \textit{exe} użytkownik musi przejść do folderu w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala trzeba wywołać komendy:
 \begin{figure} [H]
 	\centering
 	\begin{lstlisting}
+		dotnet restore;
 		dotnet build --configuration Release
 	\end{lstlisting}
 	\caption{Kompilacja projektu \textit{ASP.NET}}
 	\label{fig:dotnetCompilation}
 \end{figure}
+Pierwsza z komend wymusza instalację zewnętrznych zależności, które są zawarte w postaci paczek \textit{NuGet'owych}. Paczki te pozwalają na udostępnianie kod napisanego przy wykorzystaniu platformy \textit{.NET}, a następnie mogą zostać wykorzystane do innych projektów przy pomocy narzędzia \textit{NuGet}. Druga komenda buduje projekt i zwraca wynik w postaci dynamicznych bibliotek \textit{dll} i pliku wykonywalnego \textit{exe}.
 
 W folderze \textit{./Samson.Web.Application.WebHost/bin/Release/net5.0} powinien powstać folder zawierający wyniki kompilacji. Następnie w celu uruchomienia pliku wykonywalnego użytkownik powinien przejść do folderu ./Samson.Web.Application.WebHost/bin/Release/net5.0 przy pomocy komendy:
 \begin{figure} [H]
@@ -655,8 +660,8 @@ W folderze \textit{./Samson.Web.Application.WebHost/bin/Release/net5.0} powinien
 Aby uruchomić warstwę serwerową aplikacji wymagane jest dodanie odpowiednich zmiennych środowiskowych przy pomocy poniższego polecenia. Przeznaczenie zmiennych jest następujące:
 \begin{itemize}
 	\item \textit{MongoDB:DatabaseName} - nazwa bazy danych jaka zostanie utworzona w środowisku \textit{MongoDB}.
-	\item \textit{Authentication:JWT:Key} - klucz wykorzystywany do funkcji mieszające, które jest wykorzystywana do zabezpieczenia żetonu \textit{JWT}.
-	\item \textit{ASPNETCORE_ENVIRONMENT} - oznaczenie typu środowiska. Nie powinna zostać zmieniana.
+	\item \textit{Authentication:JWT:Key} - klucz wykorzystywany do funkcji mieszającej, która jest wykorzystywana do zabezpieczenia żetonu \textit{JWT}.
+	\item \textit{ASPNETCORE\_ENVIRONMENT} - oznaczenie typu środowiska. Nie powinna zostać zmieniana.
 	\item \textit{ConnectionString:MongoDB:Atlas} - ciąg znaków określający parametry połączenia z bazą danych. Jeżeli w trakcie instalacji serwera \textit{MongoDB} wartości domyślnie nie zostały zmienione to proponowany ciąg znaków powinien pozwolić na poprawne połączenie z bazą danych.
 \end{itemize}
 Poniższe wartości mogą zostać zmodyfikowane, ale zalecane jest aby pozostały w niezmienione formie ze względu na proponowaną w wcześniejszych krokach konfigurację.
@@ -718,24 +723,308 @@ Aplikacja internetowa kategoryzuje użytkowników na dwie kategorie:
 System wykorzystuje żeton bezpieczeństwa \textit{JWT}. Żeton ten generowany jest w części serwerowej aplikacji w trakcie logowania użytkownika. Kiedy użytkownik poprawnie zaloguje się do systemu, serwer przesyła żeton do warstwy interfejsu użytkownika, gdzie zostaje zapisany w \textit{localstorage} przeglądarki. Warstwa prezentacji dodaje za każdym razem żeton do nagłówka żądania protokołu HTTP, które będzie wymagało uwierzytelnienia użytkownika. W momencie gdy warstwa serwerowa otrzyma taki żeton sprawdza zapisane w nim dane o jego terminie ważności i dostępach, które posiada użytkownik. Jeśli użytkownik systemu posiada odpowiednie uprawnienia do zasobu to otrzymuje odpowiedź na żądanie, w przeciwnym razie system zwraca informacje o błędzie oznaczone statusem 401 (Unauthorized). Brak przesłania żetonu w nagłówku do metody wymagającej autoryzacji skończy się za każdym razem błędem oraz informacją o próbie nieautoryzowanego dostępu do wrażliwych danych.
 
 \section {Przykład działania}
+W tej części pracy zaprezentowano przykładowe scenariusze działania systemu. Prezentowane są one z perspektywy różnych użytkowników, ze względu na różnice w posiadanych uprawnieniach.
 
-\section {Scenariusze korzystania z systemu}
+\subsection{Rejestracja i logowanie}
+Jako pierwsze zaprezentowane zostanie logowanie i rejestracja w systemie. Są to jedne z początkowych widoków jakie zobaczyć użytkownik korzystając z systemu.
+\subsubsection{Rejestracja}
+Rejestracja pozwala na utworzenie, konta klienta. Konto daje dostęp do systemu i jego możliwości.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja}
+	\caption{Rejestracja klienta}
+	\label{fig:rejestracja}
+\end{figure}
+Jeżeli użytkownik wypełni wszystkie wymagane dane oraz wybierze nazwę konta, która nie została wcześniej wykorzystane przez innego klienta to powinien zobacz informację o poprawnie stworzonym użytkowniku.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone}
+	\caption{Klient został zarejestrowany w systemie}
+	\label{fig:kontoutworzone}
+\end{figure}
+
+\subsubsection{Logowanie}
+Klient i trener personalny ma możliwość zalogowania się do systemu w celu skorzystania z jego funkcjonalności.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie}
+	\caption{Widok logowania do systemu}
+	\label{fig:logowanie}
+\end{figure}
+Użytkownik zostanie zalogowany jeśli wypełni w sposób poprawny dane w formularzu logowania.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano}
+	\caption{Widok po zalogowaniu do systemu}
+	\label{fig:zalogowano}
+\end{figure}
+
+\subsection{Administracja systemem}
+System powinien udostępniać możliwość zarządzania systemem oraz zasobami sieci siłowni przy jego pomocy. Aplikacja pozwala na zarządzanie obiektami siłowni, pomieszczeniami, które do tych obiektów zostały przypisane, sprzętem do ćwiczeń, akcesoriami oraz ofertą karnetów.
+
+\subsubsection{Dodawanie konta trenerów personalnych}
+Użytkownik ma możliwość utworzenia konta trenera personalnego.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_personalnego}
+	\caption{Formularz tworzenia konta trenera personalnego}
+	\label{fig:tworzeniekontatrenerapersonalnego}
+\end{figure}
+
+\subsubsection{Zarządzanie obiektami siłowni}
+Trenerzy personalni pełnią rolę administratorów, co pozwala im na zarządzanie obiektami siłowni.
+W pierwszej kolejności utworzony zostanie nowy obiekt sieci siłowni. W trakcie procesu dodawania obiektu wymagane jest, aby podana została nazwa oraz ilość osób jaka może przebywać na jednym metrze kwadratowym siłowni.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/obiekty/tworzenie}
+	\caption{Formularz tworzenia obiektu siłowni}
+	\label{fig:tworzenie}
+\end{figure}
+
+W formularzu edycji obiektów powinna wyświetlić się możliwość wybrania wcześniej utworzonej siłowni w celu aktualizacji informacji o niej. Widok ten poza edycją nazwy i ilości osób jaka może przebywać na jednym metrze kwadratowym pozwala również na zarchiwizowanie obiektu siłowni.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/obiekty/edycja}
+	\caption{Formularz edycji i archiwizacji obiektów siłowni}
+	\label{fig:edycja}
+\end{figure}
 
 
+\subsubsection{Zarządzanie pomieszczeniami}
+System udostępnia możliwość dodawania pomieszczeń do obiektów siłowni. Pomieszczenia są istotne ze względu na możliwość przypisania do nich akcesoriów do ćwiczeń oraz wyliczania maksymalnej liczby osób, która może znajdować się na siłowni. W formularzu muszą zostać podane informacje o siłowni w której znajduje się pomieszczenie, nazwa pomieszczenia oraz jego szerokość i długość.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie}
+	\caption{Formularz dodawania pomieszczenia do obiektu siłowni}
+	\label{fig:dodawanie_pomieszczenia}
+\end{figure}
+
+Wcześniej utworzone pomieszczenie może zostać zarchiwizowane.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie}
+	\caption{Formularz archiwizacji pomieszczenia}
+	\label{fig:archwizacja_pomieszczenia}
+\end{figure}
+
+
+\subsubsection{Zarządzaniem sprzętem do ćwiczeń i akcesoriami}
+System informatyczny powinien udostępniać możliwość stworzenia listy posiadanych akcesoriów do ćwiczeń. Dzięki takiej liście personel ma dostęp do informacji o posiadanym sprzęcie co pozwala na przeprowadzanie inwentaryzacji zasobów. Aby dodać sprzęt wymagane jest podanie informacji o kodzie producenta, nazwie, typie oraz siłowni w której znajduje się akcesorium.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun}
+	\caption{Formularz dodawania sprzętu do ćwiczeń}
+	\label{fig:dodawanieakcesoriun}
+\end{figure}
+
+Wcześniej utworzone informacje o akcesorium mogą zostać zaktualizowane lub zarchiwizowane przy pomocy formularza.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium}
+	\caption{Formularz edycji i archiwizacji akcesoriów}
+	\label{fig:aktualizacjaakcesorium}
+\end{figure}
+
+\subsubsection{Zarządzanie ofertą karnetów}
+Ostatnią funkcjonalnością udostępnioną przez moduł administracji jest funkcja zarządzania ofertą karnetów. System pozwala na utworzenie nowego typu karnetu, jeśli podane zostaną informacje o jego nazwie, czasie trwania w dniach oraz cenie.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu}
+	\caption{Formularz dodawania karnetu do oferty}
+	\label{fig:tworzeniekarnetu}
+\end{figure}
+
+Wcześniej utworzone karnety mogą zostać zaktualizowane lub zarchiwizowane.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu}
+	\caption{Formularz edycji i archiwizacji karnetów}
+	\label{fig:edycjakarnetu}
+\end{figure}
+
+
+\subsection{Wydarzenia}
+Moduł wydarzeń udostępnia możliwość tworzenia, przeglądania, anulowania i zgłaszania chęci wzięcia udziału w wydarzeniu w zależności od rodzaju konta użytkownika.
+\subsubsection{Tworzenie wydarzenia}
+Konto trenera personalnego pozwala na tworzenie wydarzeń w których będą mogli brać udział klienci w określonym czasie.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia}
+	\caption{Forumlarz tworzenia wydarzenia}
+	\label{fig:dodawaniewydarzenia}
+\end{figure}
+
+\subsubsection{Listy wydarzeń}
+Klienci i trenerzy personalni mają dostęp do listy wszystkich wydarzeń. Z poziomu tej listy użytkownicy mogą przejść do poglądu wydarzenia, gdzie znajdują się dodatkowe opcje zarządzania wydarzeniem.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia}
+	\caption{Lista wszystkich wydarzeń}
+	\label{fig:wszystkiewydarzenia}
+\end{figure}
+
+Trenerzy personalni mają dodatkowo możliwość wyświetlenia listy wydarzeń, które sami stworzyli.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen}
+	\caption{Lista utworzony wydarzeń przez trenera personalnego}
+	\label{fig:trenerlistawydarzen}
+\end{figure}
+
+Klienci natomiast mają możliwość wyświetlenia wydarzeń w których zgłosili chęć wzięcia udziału.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen}
+	\caption{Lista wydarzeń klienta}
+	\label{fig:klientlistawydarzen}
+\end{figure}
+
+\subsubsection{Podgląd wydarzeń}
+Systemu udostępnia widok poglądu wydarzenia. Użytkownicy mogą przeglądać wszystkie wydarzenia, ale dostępne opcje są zależne od roli jaką pełni danych użytkownik. Trener personalny w podglądzie wydarzenia zobaczy opcję anulowania wydarzenia.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie}
+	\caption{Podgląd wydarzenia jako trener personalny}
+	\label{fig:trenerpodladwydarzenie}
+\end{figure}
+
+Klient na tym samym widoku zobaczy opcję zgłoszenia chęci udziału w wydarzeniu lub zrezygnowania z udziału w wydarzeniu.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia}
+	\caption{Pogląd wydarzenia jako klient}
+	\label{fig:klientpodladwydarzenia}
+\end{figure}
+
+\subsection{Treningi indywidualne}
+Kolejnym modułem w systemie jest moduł treningów indywidualnych. Moduł ten pozwala na organizowanie treningów w których brać będzie udział klient pod nadzorem trenera personalnego. Pozwala na to na utworzenie oferty dostosowanej do klientów, którzy chcą ćwiczyć pod okiem specjalistów.
+
+\subsubsection{Tworzenie treningów indywidualnych}
+Trener personalny posiada możliwość utworzenia treningu. Aby dodać trening, użytkownik z rolą trenera musi wskazać w formularzu, gdzie odbędzie się trening oraz w jakim terminie.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu}
+	\caption{Formularz dodawania treningu}
+	\label{fig:dodawanietreningu}
+\end{figure}
+
+\subsubsection{Listy treningów indywidualnych}
+System pozwala klientom na pogląd listy dostępnych treningów. Treningi w statusie \textit{Open} oznaczają treningi, w których żaden użytkownik nie zgłosił chęci wzięcia udziału.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi}
+	\caption{Lista dostępnych treningów indywidualnych}
+	\label{fig:klientdostepnetreningi}
+\end{figure}
+
+Z perspektywy klienta dostępna jest również lista treningów na które się zapisał.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow}
+	\caption{Lista treningów na które zapisał się klient}
+	\label{fig:klientlistatreningow}
+\end{figure}
+
+Trener personalny natomiast posiada możliwość poglądu utworzonych przez siebie wydarzeń.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow}
+	\caption{Lista utworzonych treningów przez trenera}
+	\label{fig:trenerlistatreningow}
+\end{figure}
+
+Lista pozwala na odwołanie treningu lub potwierdzenie go. To jakie opcje są dostępne jest zależne od statusu w jakim znajduje się dany trening.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener}
+	\caption{Lista z dostępnymi opcjami zarządzania treningiem}
+	\label{fig:treningopcjetrener}
+\end{figure}
+
+\subsection{Karnety}
+System posiada moduł karnetów, gdzie klient może sprawdzić ważność karnetu, dostępną ofertę, zakupić lub przedłużyć karnet.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/karnety/lista_karnetow}
+	\caption{Oferta karnetów oraz informacje o posiadanym karnecie}
+	\label{fig:listakarnetow}
+\end{figure}
+
+\subsection{Tryb bramek}
+Istotnym z punktu widzenia pandemicznych obostrzeń jest moduł bramek. Systemu udostępnia tryb bramek, które pozwala na podłączenie aplikacji do bramek i wyświetlaczy w celu kontroli liczby osób znajdujących aktualnie na siłowni.
+\subsubsection{Bramka wejściowa}
+Głównym zadaniem bramki wejściowej jest kontrolowanie ważności posiadanego karnetu oraz kontroli czy na siłowni nie znajduje się zbyt duża liczba osób w stosunku do obowiązujących obostrzeń. Aby wejść na siłownie klient musi podać lub zeskanować za pomocą skanera swój kod identyfikacyjny. Formularz powinien w tym momencie wyświetlić informację o tym czy istnieje możliwość wejścia na siłownie. To czy można wejść na siłownię zależy od liczby osób, która się na siłowni oraz ważności karnetu klienta.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa}
+	\caption{Widok wyświetlany na wyświetlaczu bramki wejściowej}
+	\label{fig:bramkawejsciowa}
+\end{figure}
+
+\subsubsection{Bramka wyjściowa}
+Zadaniem bramki wyjściowej jest usuwanie z listy klientów osób, które już nie korzystają z usług danego obiektu siłowni.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa}
+	\caption{Widok wyświetlany na wyświetlaczu bramki wyjściowej}
+	\label{fig:bramkawyjsciowa}
+\end{figure}
 
 \chapter{Specyfikacja wewnętrzna}
-Jeśli to Specyfikacja wewnętrzna:
+Rozdział przestawia ideę stająca za architekturą wykorzystaną do stworzenia projektu. Następnie opisana zostaje architektura systemu z podziałem na warstwy z uwzględnieniem komunikacji pomiędzy nimi. W dalszej części rozdziału znajduje się przedstawienie organizacji bazy danych i spis wykorzystanych bibliotek zewnętrznych. W kolejnej części znajduje się przegląd najważniejszych klas i algorytmów. Rozdział zakończony jest opisem zastosowanych wzorców projektowych.
+
+\section{Idea}
+Głównym celem stworzenia systemu była chęć ułatwienia prowadzenia sieci siłowni w dobie pandemii koronawirusa. System udostępnia rozwiązania pozwalające na kontrolowanie liczby osób znajdujących się na siłowni oraz zdefiniowanie różnych limitów z uwzględnieniem lokalizacji danego obiektu. W przypadku sieci siłowni istotne jest stworzenie rozwiązania, które będzie przygotowane zmiany w liczbie siłowni i klientów. System powinien być na tyle skalowalny by obsłużyć dużą liczbę jednoczesnych żądań. Ponadto sieć siłowni powinna posiadać aplikacje internetową, która pozwoli na korzystanie z systemu na wielu różnych urządzeniach.
+
+\section{Architektura systemu}
+System został podzielony na dwie główne warstwy. Architektura została zaprezentowana w postaci następującego rysunku:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../diagramy/architektura}
+	\caption{Architektura systemu}
+	\label{fig:architektura}
+\end{figure}
+
+\subsubsection{Warstwa serwerowa}
+Warstwa serwerowa to część aplikacji znajdująca się na serwerze. Jej głównym zadaniem jest obsługiwanie żądań wysyłanych przez część kliencką systemu. Warstwa serwerowa składa się z głównego projektu \textit{Samson.Web.Application} w którego skład wchodzą projekty platformy .NET:
 \begin{itemize}
-\item przedstawienie idei
-\item architektura systemu
-\item opis struktur danych (i organizacji baz danych)
-\item komponenty, moduły, biblioteki, przegląd ważniejszych klas (jeśli występują)
-\item przegląd ważniejszych algorytmów (jeśli występują)
-\item szczegóły implementacji wybranych fragmentów, zastosowane wzorce projektowe
-\item diagramy UML
+	\item \textit{Samson.Web.Application} - projekt w skład którego wchodzą serwisy aplikacyjne realizujące logikę biznesową. Ważnymi składowymi projektu są klasy obsługi komend (ang. \ang{command handler}), których zadaniem jest aktualizacja danych oraz klasy obsługi zapytań (ang. \ang{query handler}), które odpowiadają za odczyt danych z bazy.
+	\item \textit{Samson.Web.Application.Api} - projekt, który przy pomocy kontrolerów (ang. \ang{controllers}) obsługuje otrzymane żądania z warstwy klienckiej. Metoda klasy kontrolera tworzy komendę (ang. \ang{command}) lub zapytanie (ang. \ang{query}), które jest następnie przekazywane do mediatora (ang. \ang{mediator}). Mediator rozdziela je do odpowiedniej klasy obsługi komendy lub klasy obsługi zapytań. Takie podejście pozwala na stworzenie skalowalnej architektury podatnej na zmiany. Dzięki takiemu podejściu klasy kontrolerów nie muszą wstrzykiwać zależności w postaci serwisów aplikacyjny lub klas repozytorium (ang. \ang{repository}).
+	\item \textit{Samson.Web.Application.Identity} - to projekt odpowiedzialny za tworzenie żetonów JWT oraz sprawdzanie ich poprawności. \textit{Samson.Web.Application.Identity} pełni kluczową rolę w ochronie systemu przed nieautoryzowanym dostępem.
+	\item \textit{Samson.Web.Application.Infrastructure} - projekt w skład, którego wchodzą atrybuty, oprogramowanie pośrednie (ang. \ang{middleware}) oraz klasy wykorzystywane w pozostały projektach warstwy serwerowej. Projekt zawiera także klasy globalnej obsługi błędów (ang. \ang{global error handler}), których zadaniem jest przechwytywanie wyjątków (ang. \ang{exception}), które nie zostały wcześniej obsłużone.
+	\item \textit{Samson.Web.Application.Models} - zawierający klasy modeli, obiekty transferu danych (ang. \ang{Data transfer object}), struktury danych oraz wyliczenia (ang. \ang{enum}).
+	\item \textit{Samson.Web.Application.Persistence} - projekt pełniący kluczową rolę, jeśli chodzi o zapis danych. Projekt zawiera klasy encji (ang. \ang{entity}) oraz klasy repozytoriów. Klasy repozytoriów tworzą warstwę odpowiedzialną za aktualizację danych przy pomocy sterownika \textit{MongoDB .NET Driver}.
+	\item \textit{Samson.Web.Application.ReadModels} - w przeciwieństwie do poprzedniego projektu, w skład \textit{Samson.Web.Application.ReadModels} wchodzą klasy odpowiedzialne za odczyt danych z bazy. Zadanie to jest realizowana przy wykorzystaniu klas odczytu modeli (ang. \ang{read model}) w których znajduje się kod realizujący zapytania do bazy przy pomocy wstawek \textit{JavaScript} lub składni \textit{LINQ}.
+	\item \textit{Samson.Web.Application.UnitTests} - projekt zawierający kod testów jednostkowych
+	\item \textit{Samson.Web.Application.WebHost} - projekt, który jest punktem początkowym aplikacji. W projekcie można znaleźć pliki konfiguracji z rozszerzeniem \textit{JSON}.
 \end{itemize}
+Istotną częścią warstwy serwerowej jest baza danych, która odpowiada za przechowywanie danych w sposób uporządkowany i trwały. Projekt główny realizuje komunikację z bazą danych przy pomocy sterownika, który pozwala na zintegrowanie technologii \textit{.NET} i bazy \textit{MongoDB}.
+
+\subsubsection{Warstwa prezentacji}
+Warstwa prezentacji wysyła żądania do warstwy serwerowej przy pomocy metod \textit{HTTP} i interfejsu \textit{REST API}, który jest punktem łączącym obie warstwy. Podstawowym zadaniem, które realizuje ta warstwa jest graficzna prezentacja funkcjonalności w celu uproszczenia korzystania z systemu.
 
 
+\section{Organizacja bazy danych}
+Baza danych \textit{MongoDB} jest dokumentową, niereleacyjną bazą danych \textit{NoSQL}, więc nie posiada typowej struktury bazy \textit{SQL}. W przeciwieństwie do baz relacyjnych w bazie \textit{MongoDB} często stosuje się denormalizacje struktury w celu poprawienia wydajności odczytu danych. Wadą tego rozwiązania jest potrzeba ręcznego aktualizowania powielonych dokumentów oraz mniejsza wydajność zapisu.
+
+Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza. Na schemacie uwzględnione zostały relacje, które mają charakter poglądowy ze względu na to, że w bazie \textit{MongoDB} nie istnieją prawdziwe relacje pomiędzy kolekcjami.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../diagramy/schemat_bazy}
+	\caption{Poglądowy schemat bazy danych}
+	\label{fig:schematbazy}
+\end{figure}
+
+\section{Wykorzystane zewnętrzne rozwiązania}
+\subsection{Wykorzystane platformy programistyczne}
+\subsection{Wykorzystane biblioteki}
+
+\section{Przegląd najważniejszych klas}
+
+\section{Przegląd najważniejszych algorytmów}
+
+\section{Wykorzystane wzorce projektowe}
 
 Krótka wstawka kodu w linii tekstu jest możliwa, np. \lstinline|descriptor|, a nawet \lstinline|descriptor_gaussian|. 
 Dłuższe fragmenty lepiej jest umieszczać jako rysunek, np. kod na rysunku \ref{fig:pseudokod}, a naprawdę długie fragmenty – w załączniku.
@@ -839,6 +1128,8 @@ class descriptor_gaussian : virtual public descriptor
 \item[HTTPS] (ang. \ang{Hypertext Transfer Protocol Secure})
 \item[NoSQL] nierelacyjna baza danych
 \item[WWW] światowa rozległa sieć komputerowa (ang. \ang{World Wide Web})
+\item[DTO] obiekt transferu danych (ang. \ang{Data transfer object})
+\item[LINQ] (ang. \ang{Language-Integrated Query})
 \end{itemize}
 
 

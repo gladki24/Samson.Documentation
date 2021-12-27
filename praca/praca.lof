@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram przypadków użycia.}}{13}{figure.3.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram przypadków użycia.}}{14}{figure.3.1}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
@@ -29,12 +29,73 @@
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Przejście do folderu zawierającego plik wykonywalny}}{33}{figure.4.21}%
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Ustawienie wartości zmiennych środowiskowych}}{34}{figure.4.22}%
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Uruchomienie warstwy serwerowej aplikacji}}{34}{figure.4.23}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{34}{figure.4.24}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{35}{figure.4.24}%
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{35}{figure.4.25}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Rejestracja klienta}}{37}{figure.4.26}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Klient został zarejestrowany w systemie}}{37}{figure.4.27}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Widok logowania do systemu}}{38}{figure.4.28}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Widok po zalogowaniu do systemu}}{39}{figure.4.29}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Formularz tworzenia konta trenera personalnego}}{40}{figure.4.30}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Formularz tworzenia obiektu siłowni}}{40}{figure.4.31}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Formularz edycji i archiwizacji obiektów siłowni}}{41}{figure.4.32}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Formularz dodawania pomieszczenia do obiektu siłowni}}{41}{figure.4.33}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Formularz archiwizacji pomieszczenia}}{42}{figure.4.34}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Formularz dodawania sprzętu do ćwiczeń}}{42}{figure.4.35}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Formularz edycji i archiwizacji akcesoriów}}{43}{figure.4.36}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Formularz dodawania karnetu do oferty}}{43}{figure.4.37}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Formularz edycji i archiwizacji karnetów}}{44}{figure.4.38}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Forumlarz tworzenia wydarzenia}}{44}{figure.4.39}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista wszystkich wydarzeń}}{45}{figure.4.40}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Lista utworzony wydarzeń przez trenera personalnego}}{45}{figure.4.41}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Lista wydarzeń klienta}}{45}{figure.4.42}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Podgląd wydarzenia jako trener personalny}}{46}{figure.4.43}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Pogląd wydarzenia jako klient}}{46}{figure.4.44}%
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Formularz dodawania treningu}}{47}{figure.4.45}%
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Lista dostępnych treningów indywidualnych}}{47}{figure.4.46}%
+\contentsline {figure}{\numberline {4.47}{\ignorespaces Lista treningów na które zapisał się klient}}{48}{figure.4.47}%
+\contentsline {figure}{\numberline {4.48}{\ignorespaces Lista utworzonych treningów przez trenera}}{48}{figure.4.48}%
+\contentsline {figure}{\numberline {4.49}{\ignorespaces Lista z dostępnymi opcjami zarządzania treningiem}}{48}{figure.4.49}%
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Oferta karnetów oraz informacje o posiadanym karnecie}}{49}{figure.4.50}%
+\contentsline {figure}{\numberline {4.51}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wejściowej}}{50}{figure.4.51}%
+\contentsline {figure}{\numberline {4.52}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wyjściowej}}{50}{figure.4.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Klasa \lstinline |descriptor_gaussian|.}}{38}{figure.5.1}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Architektura systemu}}{52}{figure.5.1}%
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Poglądowy schemat bazy danych}}{55}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Klasa \lstinline |descriptor_gaussian|.}}{57}{figure.5.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 

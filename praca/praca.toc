@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {3.2}Wymagania niefunkcjonalne}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Diagram przypadków użycia (UML)}{13}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Narzędzia}{14}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Metodyka pracy nad projektowaniem i implementacją}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Metodyka pracy nad projektowaniem i implementacją}{16}{section.3.5}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{19}{chapter.4}%
@@ -16,19 +16,37 @@
 \contentsline {subsection}{\numberline {4.2.1}Instalacja bazy danych MongoDB}{20}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Instalacja środowiska .NET 5}{25}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Instalacja środowiska Node.js}{27}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Instalacja \textit {http-server}}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Sposób aktywacji}{33}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Uruchomienie warstwy serwerowej}{33}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Uruchomienie warstwy prezentacji}{34}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Kategorie użytkowników}{35}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Kwestie bezpieczeństwa}{35}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Przykład działania}{36}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Scenariusze korzystania z systemu}{36}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{37}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{39}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{41}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{44}{chapter*.3}%
-\contentsline {chapter}{Spis skrótów i symboli}{47}{appendix*.4}%
+\contentsline {subsection}{\numberline {4.2.4}Instalacja \textit {http-server}}{32}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Sposób aktywacji}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Uruchomienie warstwy serwerowej}{33}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Uruchomienie warstwy prezentacji}{34}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Kategorie użytkowników}{35}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Kwestie bezpieczeństwa}{35}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Przykład działania}{36}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Rejestracja i logowanie}{36}{subsection.4.6.1}%
+\contentsline {subsubsection}{Rejestracja}{36}{section*.3}%
+\contentsline {subsubsection}{Logowanie}{38}{section*.4}%
+\contentsline {subsection}{\numberline {4.6.2}Administracja systemem}{39}{subsection.4.6.2}%
+\contentsline {subsubsection}{Dodawanie konta trenerów personalnych}{39}{section*.5}%
+\contentsline {subsubsection}{Zarządzanie obiektami siłowni}{40}{section*.6}%
+\contentsline {subsubsection}{Zarządzanie pomieszczeniami}{41}{section*.7}%
+\contentsline {subsubsection}{Zarządzaniem sprzętem do ćwiczeń i akcesoriami}{42}{section*.8}%
+\contentsline {subsubsection}{Zarządzanie ofertą karnetów}{43}{section*.9}%
+\contentsline {subsection}{\numberline {4.6.3}Wydarzenia}{44}{subsection.4.6.3}%
+\contentsline {subsubsection}{Tworzenie wydarzenia}{44}{section*.10}%
+\contentsline {subsubsection}{Listy wydarzeń}{45}{section*.11}%
+\contentsline {subsubsection}{Podgląd wydarzeń}{46}{section*.12}%
+\contentsline {subsection}{\numberline {4.6.4}Treningi indywidualne}{46}{subsection.4.6.4}%
+\contentsline {subsubsection}{Tworzenie treningów indywidualnych}{47}{section*.13}%
+\contentsline {subsubsection}{Listy treningów indywidualnych}{47}{section*.14}%
+\contentsline {subsection}{\numberline {4.6.5}Karnety}{48}{subsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.6.6}Tryb bramek}{49}{subsection.4.6.6}%
+\contentsline {subsubsection}{Bramka wejściowa}{49}{section*.15}%
+\contentsline {subsubsection}{Bramka wyjściowa}{50}{section*.16}%
+\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Idea}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Architektura systemu}{52}{section.5.2}%
+\contentsline {subsubsection}{Warstwa serwerowa}{52}{section*.17}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
@@ -53,5 +71,49 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
-\contentsline {chapter}{Źródła}{49}{appendix*.5}%
-\contentsline {chapter}{Zawartość dołączonej płyty}{53}{appendix*.6}%
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {subsubsection}{Warstwa prezentacji}{54}{section*.18}%
+\contentsline {section}{\numberline {5.3}Organizacja bazy danych}{54}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Wykorzystane zewnętrzne rozwiązania}{56}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Wykorzystane platformy programistyczne}{56}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Wykorzystane biblioteki}{56}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Przegląd najważniejszych klas}{56}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Przegląd najważniejszych algorytmów}{56}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Wykorzystane wzorce projektowe}{56}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{59}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{61}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{64}{chapter*.19}%
+\contentsline {chapter}{Spis skrótów i symboli}{67}{appendix*.20}%
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{Źródła}{69}{appendix*.21}%
+\contentsline {chapter}{Zawartość dołączonej płyty}{73}{appendix*.22}%
