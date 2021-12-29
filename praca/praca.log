@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.16)  27 DEC 2021 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.16)  29 DEC 2021 19:06
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -654,7 +654,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 (C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<logo_pl.jpg, id=179, 746.79pt x 960.58875pt>
+<logo_pl.jpg, id=167, 746.79pt x 960.58875pt>
 File: logo_pl.jpg Graphic file (type jpg)
 <use logo_pl.jpg>
 Package pdftex.def Info: logo_pl.jpg  used on input line 189.
@@ -824,7 +824,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-<diagram_przypadków_użycia.png, id=302, 1379.90532pt x 1340.00626pt>
+<diagram_przypadków_użycia.png, id=287, 1379.90532pt x 1340.00626pt>
 File: diagram_przypadków_użycia.png Graphic file (type png)
 <use diagram_przypadków_użycia.png>
 Package pdftex.def Info: diagram_przypadków_użycia.png  used on input line 34
@@ -855,18 +855,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.358 	
+l.355 	
         <./diagram_przypadków_użycia.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15]
-Overfull \hbox (3.38707pt too wide) in paragraph at lines 385--386
+Overfull \hbox (3.38707pt too wide) in paragraph at lines 366--367
 \T1/lmr/m/n/12 formy ASP.NET, mo-dele wy-ko-rzy-sty-wane do za-py-ta� HTTP oraz
  klasy obiek-
  []
@@ -879,36 +870,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18
+Rozdzia\l  4.
+[17
 
 ]
-Rozdzia\l  4.
-[19]
-<../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png, id=364, 1429.59094pt x 688
+<../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png, id=327, 1429.59094pt x 688
 .07062pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png Graphic file (type png
 )
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png  us
-ed on input line 448.
+ed on input line 429.
 (pdftex.def)             Requested size: 292.77629pt x 140.9084pt.
 
 
@@ -919,21 +901,92 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb1.png, id=369, 371.88937pt x 292.091
+[18]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb1.png, id=332, 371.88937pt x 292.091
 25pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb1.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb1.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb1.png  used 
-on input line 459.
+on input line 440.
 (pdftex.def)             Requested size: 292.77629pt x 229.96066pt.
-<../zrzuty_ekranu/instalcja_mongodb/mongodb2.png, id=370, 371.88937pt x 292.091
+<../zrzuty_ekranu/instalcja_mongodb/mongodb2.png, id=333, 371.88937pt x 292.091
 25pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb2.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb2.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb2.png  used 
-on input line 470.
+on input line 451.
 (pdftex.def)             Requested size: 292.77629pt x 229.96066pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.456 \FloatBarrier
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.456 \FloatBarrier
+                    <../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png> <../zr
+zuty_ekranu/instalcja_mongodb/mongodb1.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb3.png, id=340, 371.88937pt x 290.585
+63pt>
+File: ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png  used 
+on input line 462.
+(pdftex.def)             Requested size: 292.77629pt x 228.77531pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.470 \FloatBarrier
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.470 \FloatBarrier
+                    <../zrzuty_ekranu/instalcja_mongodb/mongodb2.png> <../zrzut
+y_ekranu/instalcja_mongodb/mongodb3.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb4.png, id=347, 371.13657pt x 289.08p
+t>
+File: ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png  used 
+on input line 473.
+(pdftex.def)             Requested size: 292.77629pt x 228.04869pt.
+<../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png, id=348, 372.64218pt x 291.33
+844pt>
+File: ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png  used
+ on input line 484.
+(pdftex.def)             Requested size: 292.77629pt x 228.90567pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -945,25 +998,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [21
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.475 \FloatBarrier
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.4.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.475 \FloatBarrier
-                    <../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png> <../zr
-zuty_ekranu/instalcja_mongodb/mongodb1.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb3.png, id=378, 371.88937pt x 290.585
-63pt>
-File: ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png  used 
-on input line 481.
-(pdftex.def)             Requested size: 292.77629pt x 228.77531pt.
+l.489 \FloatBarrier
+                    <../zrzuty_ekranu/instalcja_mongodb/mongodb4.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb6.png, id=355, 371.13657pt x 289.832
+81pt>
+File: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png  used 
+on input line 495.
+(pdftex.def)             Requested size: 292.77629pt x 228.64256pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -976,32 +1023,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.489 \FloatBarrier
+l.503 \FloatBarrier
                    pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.4.4}) has been already used, duplicate ignored
+(name{figure.4.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.489 \FloatBarrier
-                    <../zrzuty_ekranu/instalcja_mongodb/mongodb2.png> <../zrzut
-y_ekranu/instalcja_mongodb/mongodb3.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb4.png, id=385, 371.13657pt x 289.08p
-t>
-File: ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png  used 
-on input line 492.
-(pdftex.def)             Requested size: 292.77629pt x 228.04869pt.
-<../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png, id=386, 372.64218pt x 291.33
-844pt>
-File: ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png  used
- on input line 503.
-(pdftex.def)             Requested size: 292.77629pt x 228.90567pt.
+l.503 \FloatBarrier
+                    <../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png> <../zrzu
+ty_ekranu/instalcja_mongodb/mongodb6.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png, id=362, 369.63094pt x 2
+89.83281pt>
+File: ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png Graphic file (type 
+png)
+<use ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png 
+ used on input line 506.
+(pdftex.def)             Requested size: 292.77629pt x 229.57127pt.
+<../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png, id=364, 1428.08531pt x 687
+.31781pt>
+File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png Graphic file (type png
+)
+<use ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png  us
+ed on input line 517.
+(pdftex.def)             Requested size: 292.77629pt x 140.90106pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1016,19 +1065,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.508 \FloatBarrier
-                    <../zrzuty_ekranu/instalcja_mongodb/mongodb4.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb6.png, id=392, 371.13657pt x 289.832
-81pt>
-File: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png  used 
-on input line 514.
-(pdftex.def)             Requested size: 292.77629pt x 228.64256pt.
+l.521 
+       <../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png>]
+<../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png, id=370, 484.05844pt x 359.844
+38pt>
+File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png  used 
+on input line 525.
+(pdftex.def)             Requested size: 292.77629pt x 217.65434pt.
+<../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png, id=371, 488.57532pt x 3
+62.85562pt>
+File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png Graphic file (type 
+png)
+<use ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png 
+ used on input line 534.
+(pdftex.def)             Requested size: 292.77629pt x 217.44376pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1040,102 +1097,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.522 \FloatBarrier
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.4.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.522 \FloatBarrier
-                    <../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png> <../zrzu
-ty_ekranu/instalcja_mongodb/mongodb6.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png, id=399, 369.63094pt x 2
-89.83281pt>
-File: ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png Graphic file (type 
-png)
-<use ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png 
- used on input line 525.
-(pdftex.def)             Requested size: 292.77629pt x 229.57127pt.
-<../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png, id=401, 1428.08531pt x 687
-.31781pt>
-File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png Graphic file (type png
-)
-<use ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png  us
-ed on input line 536.
-(pdftex.def)             Requested size: 292.77629pt x 140.90106pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.540 
-       <../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png>]
-<../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png, id=407, 484.05844pt x 359.844
-38pt>
-File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png  used 
-on input line 544.
-(pdftex.def)             Requested size: 292.77629pt x 217.65434pt.
-<../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png, id=408, 488.57532pt x 3
-62.85562pt>
-File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png Graphic file (type 
-png)
-<use ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png 
- used on input line 553.
-(pdftex.def)             Requested size: 292.77629pt x 217.44376pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26
-
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.557 
+l.538 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.557 
+l.538 
        <../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png> <../zrzuty_ekranu/i
 nstalacja_dotnet5/dotnet1.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node_page.png, id=416, 1429.59094pt x 621.0
+<../zrzuty_ekranu/instalacja_nodejs/node_page.png, id=379, 1429.59094pt x 621.0
 7031pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node_page.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node_page.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node_page.png  used
- on input line 566.
+ on input line 547.
 (pdftex.def)             Requested size: 292.77629pt x 127.18756pt.
 
-Overfull \hbox (14.45465pt too wide) in paragraph at lines 563--569
+Overfull \hbox (14.45465pt too wide) in paragraph at lines 544--550
 []\T1/lmr/m/n/12 W pierw-szej ko-lej-no-�ci za-in-sta-lo-wana musi by� plat-for
 ma uru-cho-mie-niowa \T1/lmr/m/it/12 Node.js\T1/lmr/m/n/12 ,
  []
@@ -1148,24 +1130,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.570 
+l.551 
        <../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node1.png, id=423, 372.64218pt x 290.58563p
+<../zrzuty_ekranu/instalacja_nodejs/node1.png, id=385, 372.64218pt x 290.58563p
 t>
 File: ../zrzuty_ekranu/instalacja_nodejs/node1.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node1.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node1.png  used on 
-input line 574.
+input line 555.
 (pdftex.def)             Requested size: 292.77629pt x 228.31418pt.
-<../zrzuty_ekranu/instalacja_nodejs/node2.png, id=424, 370.38374pt x 289.08pt>
+<../zrzuty_ekranu/instalacja_nodejs/node2.png, id=386, 370.38374pt x 289.08pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node2.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node2.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node2.png  used on 
-input line 582.
+input line 563.
 (pdftex.def)             Requested size: 292.77629pt x 228.51184pt.
 
 
@@ -1176,24 +1158,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.586 
+l.567 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.586 
+l.567 
        <../zrzuty_ekranu/instalacja_nodejs/node_page.png> <../zrzuty_ekranu/ins
 talacja_nodejs/node1.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node3.png, id=431, 370.38374pt x 289.83281p
+<../zrzuty_ekranu/instalacja_nodejs/node3.png, id=393, 370.38374pt x 289.83281p
 t>
 File: ../zrzuty_ekranu/instalacja_nodejs/node3.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node3.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node3.png  used on 
-input line 590.
+input line 571.
 (pdftex.def)             Requested size: 292.77629pt x 229.10692pt.
 
 
@@ -1204,30 +1186,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.596 
+l.577 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.596 
+l.577 
        <../zrzuty_ekranu/instalacja_nodejs/node2.png> <../zrzuty_ekranu/instala
 cja_nodejs/node3.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node4.png, id=438, 371.88937pt x 292.84406p
+<../zrzuty_ekranu/instalacja_nodejs/node4.png, id=401, 371.88937pt x 292.84406p
 t>
 File: ../zrzuty_ekranu/instalacja_nodejs/node4.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node4.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node4.png  used on 
-input line 599.
+input line 580.
 (pdftex.def)             Requested size: 292.77629pt x 230.55334pt.
-<../zrzuty_ekranu/instalacja_nodejs/node5.png, id=439, 370.38374pt x 289.08pt>
+<../zrzuty_ekranu/instalacja_nodejs/node5.png, id=402, 370.38374pt x 289.08pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node5.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node5.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node5.png  used on 
-input line 608.
+input line 589.
 (pdftex.def)             Requested size: 292.77629pt x 228.51184pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1241,17 +1223,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.612 
+l.593 
        <../zrzuty_ekranu/instalacja_nodejs/node4.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node6.png, id=445, 372.64218pt x 289.08pt>
+<../zrzuty_ekranu/instalacja_nodejs/node6.png, id=408, 372.64218pt x 289.08pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node6.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node6.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node6.png  used on 
-input line 616.
+input line 597.
 (pdftex.def)             Requested size: 292.77629pt x 227.1312pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1265,11 +1247,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.620 
+l.601 
        <../zrzuty_ekranu/instalacja_nodejs/node5.png>]
 Underfull \vbox (badness 3514) has occurred while \output is active []
 
@@ -1282,18 +1264,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.647 \end{figure}
+l.628 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.647 \end{figure}
+l.628 \end{figure}
                    <../zrzuty_ekranu/instalacja_nodejs/node6.png>]
-Overfull \hbox (154.96461pt too wide) in paragraph at lines 650--658
+Overfull \hbox (154.96461pt too wide) in paragraph at lines 631--639
 \T1/lmr/m/n/12 wy-ko-ny-wal-nego u�yt-kow-nik po-wi-nien przej�� do fol-deru ./
 Sam-son.Web.Application.WebHost/bin/Release/net5.0
  []
@@ -1306,17 +1288,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 0}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.664 	\item \textit
+l.645 	\item \textit
                     {ASPNETCORE\_ENVIRONMENT} - oznaczenie typu środowiska....
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.21})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.664 	\item \textit
+l.645 	\item \textit
                     {ASPNETCORE\_ENVIRONMENT} - oznaczenie typu środowiska....
 ]
 
@@ -1327,16 +1309,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.699 \end{figure}
+l.680 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.699 \end{figure}
+l.680 \end{figure}
                   ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1346,24 +1328,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.724 
+l.705 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.724 
+l.705 
       ]
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png, id=497, 1445
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png, id=460, 1445
 .4pt x 687.31781pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png Graphic 
 file (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejes
-tracja.png  used on input line 734.
+tracja.png  used on input line 715.
 (pdftex.def)             Requested size: 418.25368pt x 198.88707pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1377,22 +1359,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36]
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png, id=503, 
+[34]
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png, id=466, 
 1445.4pt x 685.05937pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png Grap
 hic file (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto
-_utworzone.png  used on input line 741.
+_utworzone.png  used on input line 722.
 (pdftex.def)             Requested size: 418.25368pt x 198.23355pt.
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png, id=504, 1445.4
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png, id=467, 1445.4
 pt x 687.31781pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logow
-anie.png  used on input line 750.
+anie.png  used on input line 731.
 (pdftex.def)             Requested size: 418.25368pt x 198.88707pt.
 
 Underfull \vbox (badness 2529) has occurred while \output is active []
@@ -1406,25 +1388,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.753 \end{figure}
+l.734 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.27}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.753 \end{figure}
+l.734 \end{figure}
                    <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracj
 a.png> <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png>]
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png, id=511, 1445.
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png, id=474, 1445.
 4pt x 687.31781pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png Graphic f
 ile (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalog
-owano.png  used on input line 757.
+owano.png  used on input line 738.
 (pdftex.def)             Requested size: 418.25368pt x 198.88707pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1438,20 +1420,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.761 
+l.742 
        <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png>]
 <../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_personaln
-ego.png, id=518, 1445.4pt x 686.565pt>
+ego.png, id=481, 1445.4pt x 686.565pt>
 File: ../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_pers
 onalnego.png Graphic file (type png)
 <use ../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_perso
 nalnego.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie
-_konta_trenera_personalnego.png  used on input line 769.
+_konta_trenera_personalnego.png  used on input line 750.
 (pdftex.def)             Requested size: 418.25368pt x 198.66922pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1465,25 +1447,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.773 
+l.754 
        <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png>]
-<../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png, id=526, 1420.55719pt x 374.1
+<../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png, id=488, 1420.55719pt x 374.1
 4781pt>
 File: ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png Graphic file (type png)
 <use ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png  used
- on input line 779.
+ on input line 760.
 (pdftex.def)             Requested size: 418.25368pt x 110.1614pt.
-<../zrzuty_ekranu/dzialanie/obiekty/edycja.png, id=527, 1418.29875pt x 458.4628
+<../zrzuty_ekranu/dzialanie/obiekty/edycja.png, id=489, 1418.29875pt x 458.4628
 1pt>
 File: ../zrzuty_ekranu/dzialanie/obiekty/edycja.png Graphic file (type png)
 <use ../zrzuty_ekranu/dzialanie/obiekty/edycja.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/obiekty/edycja.png  used on
- input line 787.
+ input line 768.
 (pdftex.def)             Requested size: 418.25368pt x 135.19638pt.
 
 
@@ -1494,33 +1476,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
 0}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.790 \end{figure}
+l.771 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.31}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.790 \end{figure}
+l.771 \end{figure}
                    <../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_kont
 a_trenera_personalnego.png> <../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png>]
-<../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png, id=535, 1445.4pt x 624
+<../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png, id=497, 1445.4pt x 624
 .83438pt>
 File: ../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png Graphic file (type
  png)
 <use ../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png
-  used on input line 797.
+  used on input line 778.
 (pdftex.def)             Requested size: 418.25368pt x 180.80643pt.
-<../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png, id=536, 1407.00656pt x 
+<../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png, id=498, 1407.00656pt x 
 362.85562pt>
 File: ../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png 
- used on input line 805.
+ used on input line 786.
 (pdftex.def)             Requested size: 418.25368pt x 107.86092pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1530,33 +1512,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.808 \end{figure}
+l.789 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.33}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.808 \end{figure}
+l.789 \end{figure}
                    <../zrzuty_ekranu/dzialanie/obiekty/edycja.png> <../zrzuty_e
 kranu/dzialanie/pomieszczenia/dodawanie.png>]
-<../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png, id=544, 1394.20
+<../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png, id=507, 1394.20
 876pt x 615.80063pt>
 File: ../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png Graphic fil
 e (type png)
 <use ../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesor
-iun.png  used on input line 815.
+iun.png  used on input line 796.
 (pdftex.def)             Requested size: 418.25368pt x 184.73221pt.
-<../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png, id=545, 1398
+<../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png, id=508, 1398
 .72563pt x 630.10406pt>
 File: ../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png Graphic 
 file (type png)
 <use ../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akce
-sorium.png  used on input line 823.
+sorium.png  used on input line 804.
 (pdftex.def)             Requested size: 418.25368pt x 188.40773pt.
 
 
@@ -1567,33 +1549,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.827 
+l.808 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.35}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.827 
+l.808 
        <../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png> <../zrzuty_ekran
 u/dzialanie/akcesoria/dodawanie_akcesoriun.png>]
-<../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png, id=553, 1413.78188pt
+<../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png, id=516, 1413.78188pt
  x 376.40625pt>
 File: ../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png Graphic file (ty
 pe png)
 <use ../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.p
-ng  used on input line 832.
+ng  used on input line 813.
 (pdftex.def)             Requested size: 418.25368pt x 111.35477pt.
-<../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png, id=554, 1411.52344pt x 
+<../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png, id=517, 1411.52344pt x 
 456.95718pt>
 File: ../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png 
- used on input line 840.
+ used on input line 821.
 (pdftex.def)             Requested size: 418.25368pt x 135.40083pt.
 
 Underfull \vbox (badness 4967) has occurred while \output is active []
@@ -1607,33 +1589,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
 6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.844 
+l.825 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.37}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.844 
+l.825 
        <../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png> <../z
 rzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png>]
-<../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png, id=562, 1419.0
+<../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png, id=525, 1419.0
 5156pt x 533.74406pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarz
-enia.png  used on input line 852.
+enia.png  used on input line 833.
 (pdftex.def)             Requested size: 418.25368pt x 157.31467pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png, id=563, 1415.2
+<../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png, id=526, 1415.2
 875pt x 246.9225pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarz
-enia.png  used on input line 861.
+enia.png  used on input line 842.
 (pdftex.def)             Requested size: 418.25368pt x 72.96959pt.
 
 
@@ -1644,41 +1626,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
 8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.864 \end{figure}
+l.845 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.39}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.864 \end{figure}
+l.845 \end{figure}
                    <../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png> <../
 zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png>]
-<../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png, id=571, 1416.
+<../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png, id=534, 1416.
 04031pt x 252.945pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png Graphic f
 ile (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wyd
-arzen.png  used on input line 869.
+arzen.png  used on input line 850.
 (pdftex.def)             Requested size: 418.25368pt x 74.71075pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png, id=572, 1410.
+<../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png, id=535, 1410.
 77063pt x 246.1697pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png Graphic f
 ile (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wyd
-arzen.png  used on input line 877.
+arzen.png  used on input line 858.
 (pdftex.def)             Requested size: 418.25368pt x 72.98003pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png, id=573, 14
+<../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png, id=536, 14
 16.79312pt x 317.68687pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png Graphi
 c file (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wy
-darzenie.png  used on input line 886.
+darzenie.png  used on input line 867.
 (pdftex.def)             Requested size: 418.25368pt x 93.78467pt.
 
 
@@ -1689,39 +1671,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+[43pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 0}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.889 \end{figure}
+l.870 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.41}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.889 \end{figure}
+l.870 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.42}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.889 \end{figure}
+l.870 \end{figure}
                    <../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.
 png> <../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png> <../zrzu
 ty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png>]
-<../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png, id=583, 14
+<../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png, id=545, 14
 12.27625pt x 315.42844pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png Graphi
 c file (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wy
-darzenia.png  used on input line 894.
+darzenia.png  used on input line 875.
 (pdftex.def)             Requested size: 418.25368pt x 93.41637pt.
-<../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png, id=584, 1413.02907
+<../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png, id=546, 1413.02907
 pt x 430.60875pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png Graphic file (
 type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu
-.png  used on input line 906.
+.png  used on input line 887.
 (pdftex.def)             Requested size: 418.25368pt x 127.45555pt.
 
 
@@ -1732,33 +1714,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.909 \end{figure}
+l.890 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.44}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.909 \end{figure}
+l.890 \end{figure}
                    <../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarze
 nie.png> <../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png>]
-<../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png, id=592, 1413
+<../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png, id=554, 1413
 .78188pt x 245.41687pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png Graphic 
 file (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_tr
-eningi.png  used on input line 915.
+eningi.png  used on input line 896.
 (pdftex.def)             Requested size: 418.25368pt x 72.6033pt.
-<../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png, id=593, 1414.5
+<../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png, id=555, 1414.5
 3468pt x 246.1697pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/klient_lista_treni
-ngow.png  used on input line 923.
+ngow.png  used on input line 904.
 (pdftex.def)             Requested size: 418.25368pt x 72.7847pt.
 
 Underfull \vbox (badness 2961) has occurred while \output is active []
@@ -1772,41 +1754,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.927 
+l.908 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.46}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.927 
+l.908 
        <../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png> <../zrzuty_
 ekranu/dzialanie/treningi/klient_dostepne_treningi.png>]
-<../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png, id=602, 1410.7
+<../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png, id=565, 1410.7
 7063pt x 244.66406pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/trener_lista_treni
-ngow.png  used on input line 931.
+ngow.png  used on input line 912.
 (pdftex.def)             Requested size: 418.25368pt x 72.53366pt.
-<../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png, id=603, 1409.265
+<../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png, id=566, 1409.265
 pt x 240.9pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png Graphic file
  (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/trening_opcje_tren
-er.png  used on input line 939.
+er.png  used on input line 920.
 (pdftex.def)             Requested size: 418.25368pt x 71.49495pt.
-<../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png, id=604, 1416.79312pt x 
+<../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png, id=567, 1416.79312pt x 
 487.8225pt>
 File: ../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png 
- used on input line 948.
+ used on input line 929.
 (pdftex.def)             Requested size: 418.25368pt x 144.01059pt.
 
 
@@ -1817,31 +1799,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+[46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.952 
+l.933 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.48}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.952 
+l.933 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.49}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.952 
+l.933 
        <../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png> <../zrz
 uty_ekranu/dzialanie/treningi/trener_lista_treningow.png> <../zrzuty_ekranu/dzi
 alanie/treningi/trening_opcje_trener.png>]
-<../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png, id=612, 1413.78188pt x
+<../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png, id=575, 1413.78188pt x
  392.21532pt>
 File: ../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png Graphic file (type
  png)
 <use ../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png
-  used on input line 959.
+  used on input line 940.
 (pdftex.def)             Requested size: 418.25368pt x 116.03166pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1855,19 +1837,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
 0}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.963 
+l.944 
        <../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png>]
-<../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png, id=619, 1414.53468pt x
+<../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png, id=582, 1414.53468pt x
  310.15875pt>
 File: ../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png Graphic file (type
  png)
 <use ../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png
-  used on input line 968.
+  used on input line 949.
 (pdftex.def)             Requested size: 418.25368pt x 91.70427pt.
 
 
@@ -1878,29 +1860,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
+[48pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.973 \chapter
+l.954 \chapter
               {Specyfikacja wewnętrzna}pdfTeX warning (ext4): destination with
  the same identifier (name{figure.4.52}) has been already used, duplicate ignor
 ed
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.973 \chapter
+l.954 \chapter
               {Specyfikacja wewnętrzna} <../zrzuty_ekranu/dzialanie/bramki/bra
 mka_wejsciowa.png> <../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png>]
 Rozdzia\l  5.
-<../diagramy/architektura.png, id=627, 1206.5075pt x 703.62875pt>
+<../diagramy/architektura.png, id=590, 1206.5075pt x 703.62875pt>
 File: ../diagramy/architektura.png Graphic file (type png)
 <use ../diagramy/architektura.png>
-Package pdftex.def Info: ../diagramy/architektura.png  used on input line 983.
+Package pdftex.def Info: ../diagramy/architektura.png  used on input line 964.
 (pdftex.def)             Requested size: 418.25368pt x 243.92245pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51
+ [49
 
 ]
 
@@ -1911,14 +1893,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[50pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.993 	\item \textit
+l.974 	\item \textit
                     {Samson.Web.Application.Identity} - to projekt odpowiedz...
  <../diagramy/architektura.png>]
-Overfull \hbox (29.53807pt too wide) in paragraph at lines 993--994
+Overfull \hbox (29.53807pt too wide) in paragraph at lines 974--975
 \T1/lmr/m/n/12 �e-to-n�w JWT oraz spraw-dza-nie ich po-praw-no-�ci. \T1/lmr/m/i
 t/12 Sam-son.Web.Application.Identity
  []
@@ -1931,12 +1913,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53]
-<../diagramy/schemat_bazy.png, id=644, 987.69pt x 748.7975pt>
+[51]
+<../diagramy/schemat_bazy.png, id=607, 987.69pt x 748.7975pt>
 File: ../diagramy/schemat_bazy.png Graphic file (type png)
 <use ../diagramy/schemat_bazy.png>
-Package pdftex.def Info: ../diagramy/schemat_bazy.png  used on input line 1014.
-
+Package pdftex.def Info: ../diagramy/schemat_bazy.png  used on input line 995.
 (pdftex.def)             Requested size: 418.25368pt x 317.08644pt.
 
 
@@ -1947,10 +1928,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[52]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1959,11 +1937,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[55pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1031 
+l.1006 
         <../diagramy/schemat_bazy.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1973,7 +1951,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[56]
+[54]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1982,84 +1960,138 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[57pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1061 \chapter
-               {Weryfikacja i walidacja}]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[58
-
-]
-Rozdzia\l  6.
-[59]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[60pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1098 \chapter
-               {Podsumowanie i wnioski}]
-Rozdzia\l  7.
-(praca.bbl [61
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[62
-
-] [63])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[64] [65
-
-] [66] [67
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[68
-
-]
-Underfull \vbox (badness 5726) has occurred while \output is active []
-
- [69]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1068 
+       ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[57pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1092 
+       ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[58pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1107 K
+        lasy obsługi komend odpowiadają za aktualizację danych w bazie, n...
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1148 \end{figure}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.5.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1148 \end{figure}
+                   ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[60pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1150 \chapter
+               {Weryfikacja i walidacja}]
+Rozdzia\l  6.
+[61
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[62pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1187 \chapter
+               {Podsumowanie i wnioski}]
+Rozdzia\l  7.
+(praca.bbl [63
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[64
+
+] [65])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[66] [67
+
+] [68] [69
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2070,30 +2102,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [70]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+LaTeX Warning: Float too large for page by 687.60179pt on input line 1324.
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[71]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[72
+[71
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-225.
- (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [73]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[72pdfTeX warning (ext4): destination with the same identifier (name{figure.1..
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1326 \chapter
+               *{Zawartość dołączonej płyty}]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[73pdfTeX warning (ext4): destination with the same identifier (name{figure.1..
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1326 \chapter
+               *{Zawartość dołączonej płyty}]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2104,7 +2145,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [74
 
-] (praca.lof [75]
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+331.
+ (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [75]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2113,7 +2159,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[76])
+[76
+
+] (praca.lof [77]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[78])
 \tf@lof=\write5
 \openout5 = `praca.lof'.
 
@@ -2126,7 +2183,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[77]
+[79]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2135,28 +2192,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[78
+[80
 
 ] (praca.lot)
 \tf@lot=\write6
 \openout6 = `praca.lot'.
 
- [79] (praca.aux)
+ [81] (praca.aux)
 Package rerunfilecheck Info: File `praca.out' has not changed.
-(rerunfilecheck)             Checksum: 1C64D755B4A4ED484088ADE313A351A2;7455.
+(rerunfilecheck)             Checksum: 8E28226036A0E16E7A0F1BD103DFAD27;6773.
  ) 
 Here is how much of TeX's memory you used:
- 15166 strings out of 478927
- 243144 string characters out of 2862391
- 826025 words of memory out of 3000000
- 32345 multiletter control sequences out of 15000+600000
+ 15353 strings out of 478927
+ 246266 string characters out of 2862391
+ 995025 words of memory out of 3000000
+ 32463 multiletter control sequences out of 15000+600000
  475529 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,66p,1049b,1883s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,66p,1114b,1363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTe
-X/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/
-lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program
- Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/
+X/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-
+mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Fi
+les/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/
 dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
@@ -2167,9 +2224,9 @@ pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.
 pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on praca.pdf (83 pages, 2630718 bytes).
+Output written on praca.pdf (85 pages, 2654935 bytes).
 PDF statistics:
- 1066 PDF objects out of 1200 (max. 8388607)
- 335 named destinations out of 1000 (max. 500000)
- 598 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1153 PDF objects out of 1200 (max. 8388607)
+ 404 named destinations out of 1000 (max. 500000)
+ 574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

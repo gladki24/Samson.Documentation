@@ -5,61 +5,65 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram przypadków użycia.}}{14}{figure.3.1}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Strona z której można pobrać instalator serwera bazy danych MongoDB}}{21}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Rozpoczęcie instalacji serwera}}{21}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Umowa licencyjna \textit {MongoDB Community Edition}}}{22}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Typ instalacji w instalatorze \textit {MongoDB Community Edition}}}{22}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Początkowa konfiguracja serwera bazy danych}}{23}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Informacja o możliwości instalacji klienta bazy danych \textit {MongoDB Compass}}}{24}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Rozpoczęcie instalacji \textit {MongoDB}}}{24}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Zakończenie instalacji \textit {MongoDB}}}{25}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Strona twórców środowiska \textit {.NET}}}{26}{figure.4.9}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {.NET }5}}{26}{figure.4.10}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Zakończenie instalacji środowiska \textit {.NET 5}}}{27}{figure.4.11}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Strona Node.js}}{28}{figure.4.12}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {Node.js}}}{28}{figure.4.13}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Licencja środowiska \textit {Node.js}}}{29}{figure.4.14}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Ścieżka do folderu docelowego \textit {Node.js}}}{29}{figure.4.15}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Składniki instalatora Node.js}}{30}{figure.4.16}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Formularz umożliwający instalację dodatkowego narzędzia \textit {Cocolatey}}}{31}{figure.4.17}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Potwierdzenie instalacji środowiska \textit {Node.js}}}{32}{figure.4.18}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Instalacja paczki \textit {http-server}}}{32}{figure.4.19}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Kompilacja projektu \textit {ASP.NET}}}{33}{figure.4.20}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Przejście do folderu zawierającego plik wykonywalny}}{33}{figure.4.21}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Ustawienie wartości zmiennych środowiskowych}}{34}{figure.4.22}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Uruchomienie warstwy serwerowej aplikacji}}{34}{figure.4.23}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{35}{figure.4.24}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{35}{figure.4.25}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Rejestracja klienta}}{37}{figure.4.26}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Klient został zarejestrowany w systemie}}{37}{figure.4.27}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Widok logowania do systemu}}{38}{figure.4.28}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Widok po zalogowaniu do systemu}}{39}{figure.4.29}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Formularz tworzenia konta trenera personalnego}}{40}{figure.4.30}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Formularz tworzenia obiektu siłowni}}{40}{figure.4.31}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Formularz edycji i archiwizacji obiektów siłowni}}{41}{figure.4.32}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Formularz dodawania pomieszczenia do obiektu siłowni}}{41}{figure.4.33}%
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Formularz archiwizacji pomieszczenia}}{42}{figure.4.34}%
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Formularz dodawania sprzętu do ćwiczeń}}{42}{figure.4.35}%
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Formularz edycji i archiwizacji akcesoriów}}{43}{figure.4.36}%
-\contentsline {figure}{\numberline {4.37}{\ignorespaces Formularz dodawania karnetu do oferty}}{43}{figure.4.37}%
-\contentsline {figure}{\numberline {4.38}{\ignorespaces Formularz edycji i archiwizacji karnetów}}{44}{figure.4.38}%
-\contentsline {figure}{\numberline {4.39}{\ignorespaces Forumlarz tworzenia wydarzenia}}{44}{figure.4.39}%
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista wszystkich wydarzeń}}{45}{figure.4.40}%
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Lista utworzony wydarzeń przez trenera personalnego}}{45}{figure.4.41}%
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Lista wydarzeń klienta}}{45}{figure.4.42}%
-\contentsline {figure}{\numberline {4.43}{\ignorespaces Podgląd wydarzenia jako trener personalny}}{46}{figure.4.43}%
-\contentsline {figure}{\numberline {4.44}{\ignorespaces Pogląd wydarzenia jako klient}}{46}{figure.4.44}%
-\contentsline {figure}{\numberline {4.45}{\ignorespaces Formularz dodawania treningu}}{47}{figure.4.45}%
-\contentsline {figure}{\numberline {4.46}{\ignorespaces Lista dostępnych treningów indywidualnych}}{47}{figure.4.46}%
-\contentsline {figure}{\numberline {4.47}{\ignorespaces Lista treningów na które zapisał się klient}}{48}{figure.4.47}%
-\contentsline {figure}{\numberline {4.48}{\ignorespaces Lista utworzonych treningów przez trenera}}{48}{figure.4.48}%
-\contentsline {figure}{\numberline {4.49}{\ignorespaces Lista z dostępnymi opcjami zarządzania treningiem}}{48}{figure.4.49}%
-\contentsline {figure}{\numberline {4.50}{\ignorespaces Oferta karnetów oraz informacje o posiadanym karnecie}}{49}{figure.4.50}%
-\contentsline {figure}{\numberline {4.51}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wejściowej}}{50}{figure.4.51}%
-\contentsline {figure}{\numberline {4.52}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wyjściowej}}{50}{figure.4.52}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Strona z której można pobrać instalator serwera bazy danych MongoDB}}{19}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Rozpoczęcie instalacji serwera}}{19}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Umowa licencyjna \textit {MongoDB Community Edition}}}{20}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Typ instalacji w instalatorze \textit {MongoDB Community Edition}}}{20}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Początkowa konfiguracja serwera bazy danych}}{21}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Informacja o możliwości instalacji klienta bazy danych \textit {MongoDB Compass}}}{22}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Rozpoczęcie instalacji \textit {MongoDB}}}{22}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Zakończenie instalacji \textit {MongoDB}}}{23}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Strona twórców środowiska \textit {.NET}}}{24}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {.NET }5}}{24}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Zakończenie instalacji środowiska \textit {.NET 5}}}{25}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Strona Node.js}}{26}{figure.4.12}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {Node.js}}}{26}{figure.4.13}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Licencja środowiska \textit {Node.js}}}{27}{figure.4.14}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Ścieżka do folderu docelowego \textit {Node.js}}}{27}{figure.4.15}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Składniki instalatora Node.js}}{28}{figure.4.16}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Formularz umożliwający instalację dodatkowego narzędzia \textit {Cocolatey}}}{29}{figure.4.17}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Potwierdzenie instalacji środowiska \textit {Node.js}}}{30}{figure.4.18}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Instalacja paczki \textit {http-server}}}{30}{figure.4.19}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Kompilacja projektu \textit {ASP.NET}}}{31}{figure.4.20}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Przejście do folderu zawierającego plik wykonywalny}}{31}{figure.4.21}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Ustawienie wartości zmiennych środowiskowych}}{32}{figure.4.22}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Uruchomienie warstwy serwerowej aplikacji}}{32}{figure.4.23}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{33}{figure.4.24}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}}{33}{figure.4.25}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Rejestracja klienta}}{35}{figure.4.26}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Klient został zarejestrowany w systemie}}{35}{figure.4.27}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Widok logowania do systemu}}{36}{figure.4.28}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Widok po zalogowaniu do systemu}}{37}{figure.4.29}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Formularz tworzenia konta trenera personalnego}}{38}{figure.4.30}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Formularz tworzenia obiektu siłowni}}{38}{figure.4.31}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Formularz edycji i archiwizacji obiektów siłowni}}{39}{figure.4.32}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Formularz dodawania pomieszczenia do obiektu siłowni}}{39}{figure.4.33}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Formularz archiwizacji pomieszczenia}}{40}{figure.4.34}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Formularz dodawania sprzętu do ćwiczeń}}{40}{figure.4.35}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Formularz edycji i archiwizacji akcesoriów}}{41}{figure.4.36}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Formularz dodawania karnetu do oferty}}{41}{figure.4.37}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Formularz edycji i archiwizacji karnetów}}{42}{figure.4.38}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Forumlarz tworzenia wydarzenia}}{42}{figure.4.39}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista wszystkich wydarzeń}}{43}{figure.4.40}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Lista utworzony wydarzeń przez trenera personalnego}}{43}{figure.4.41}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Lista wydarzeń klienta}}{43}{figure.4.42}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Podgląd wydarzenia jako trener personalny}}{44}{figure.4.43}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Pogląd wydarzenia jako klient}}{44}{figure.4.44}%
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Formularz dodawania treningu}}{45}{figure.4.45}%
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Lista dostępnych treningów indywidualnych}}{45}{figure.4.46}%
+\contentsline {figure}{\numberline {4.47}{\ignorespaces Lista treningów na które zapisał się klient}}{46}{figure.4.47}%
+\contentsline {figure}{\numberline {4.48}{\ignorespaces Lista utworzonych treningów przez trenera}}{46}{figure.4.48}%
+\contentsline {figure}{\numberline {4.49}{\ignorespaces Lista z dostępnymi opcjami zarządzania treningiem}}{46}{figure.4.49}%
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Oferta karnetów oraz informacje o posiadanym karnecie}}{47}{figure.4.50}%
+\contentsline {figure}{\numberline {4.51}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wejściowej}}{48}{figure.4.51}%
+\contentsline {figure}{\numberline {4.52}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wyjściowej}}{48}{figure.4.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Architektura systemu}}{52}{figure.5.1}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Architektura systemu}}{50}{figure.5.1}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
@@ -88,8 +92,17 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Poglądowy schemat bazy danych}}{55}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Klasa \lstinline |descriptor_gaussian|.}}{57}{figure.5.3}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Poglądowy schemat bazy danych}}{53}{figure.5.2}%
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Metoda odczytu danych z kolekcji \textit {ExerciseMachineCollection} przy wykorzystaniu wstawek \textit {JavaScript}}}{56}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Metoda odczytu danych z kolekcji \textit {GymObjectCollection} przy wykorzystaniu wstawek składni \textit {LINQ}}}{57}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}}{58}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Metoda \textit {Handle} klasy \textit {CreateGymPassTypeCommandHandler}}}{59}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Klasa \textit {GymPassTypesQueryHandler}}}{59}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Metoda \textit {GetById} klasy \textit {EventController}}}{60}{figure.5.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {british}{}\relax 
@@ -120,3 +133,11 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Klasa \lstinline |descriptor_gaussian|.}}{72}{figure.1..1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Klasa \lstinline |MongoRepository|.}}{73}{figure.1..2}%

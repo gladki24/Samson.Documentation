@@ -351,26 +351,7 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 \end{figure}
 	
 	\section{Narzędzia}
-	
-	Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
-	
-	Językiem programowania użytym do stworzenia części serwerowej został C\# firmy Microsoft. Bliskie podobieństwo do języka Java oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego \cite{bib:csharp}.
-	
-	Platformą programistyczną warstwy serwerowej został .NET 5, który pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka C\#. Dzięki użyciu następcy .NET Core'a, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem Microsoft jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
-	
-	Do stworzenia interfejsu REST API została wykorzystana biblioteka ASP.NET Core, która pozwala na dodawanie metod HTTP, które będą następnie konsumowane przez warstwę prezentacji. ASP.NET Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu JWT jak i komunikację z wykorzystaniem protokołu HTTPS\cite{bib:asp}.
-	
-	W celu wykorzystania wzorca projektowego CQRS zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę Autofac, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników\cite{bib:autofactag}.
-	
-	Jako bazę danych wykorzystano MongoDB. MongoDB jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie JSON, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych NoSQL, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów\cite{bib:mongodb_guide}. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
-	
-	Językiem programowania użytym w części wizualnej aplikacji jest język TypeScript zaprojektowany przez firmę Microsoft. W odróżnieniu od języka JavaScript, TypeScript oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego\cite{bib:typescript}.
-	
-	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu SPA\cite{bib:anuglar}\cite{bib:typescript}.
-	
-	W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę Angular Material z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię Google Material do tworzenia warstw wizualizacji aplikacji internetowych.
-	
-	W warstwie prezentacji wykorzystano bibliotekę NgXS, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy Redux, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz tworzenie stanów, które są deterministyczne.
+	Do napisania projektu wykorzystano IDE (ang. \ang{Integrated development environment}) \textit{Visual Studio 2019}, które oferuję wiele narzędzi ułatwiających pisanie kodu w języku C\#. Głównymi zaletami tego środowiska jest bliska współpraca z środowiskiem \textit{.NET}, zapewnienie narzędzi w postaci odpluskwiacza (ang. \ang{debugger}) czy integracja z systemem kontroli wersji GIT. Innym użytym IDE wykorzystanym do pracy był \textit{WebStorm} firmy \textit{JetBrains} pozwalający na tworzenie aplikacji z platformą programistyczną \textit{Angular}. Do przeglądania kolekcji i dokumentów w bazie danych \textit{MongoDB} wykorzystano narzędzie \textit{MongoDB Compass}. Diagramy zostały utworzone dzięki wykorzystaniu narzędzi \textit{Astah UML} i \textit{diagrams.net}.
 	
 	\section {Metodyka pracy nad projektowaniem i implementacją}
 	
@@ -1017,46 +998,154 @@ Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza.
 \end{figure}
 
 \section{Wykorzystane zewnętrzne rozwiązania}
-\subsection{Wykorzystane platformy programistyczne}
-\subsection{Wykorzystane biblioteki}
+Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
+
+Językiem programowania użytym do stworzenia części serwerowej został \textit{C\#} firmy \textit{Microsoft}. Bliskie podobieństwo do języka Java oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego \cite{bib:csharp}.
+
+Platformą programistyczną warstwy serwerowej został \textit{.NET 5}, który pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka \textit{C\#}. Dzięki użyciu następcy \textit{.NET Core'a}, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem \textit{Microsoft} jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
+
+Do stworzenia interfejsu \textit{REST API} została wykorzystana biblioteka \textit{ASP.NET Core}, która pozwala na dodawanie metod HTTP, które będą następnie konsumowane przez warstwę prezentacji. \textit{ASP.NET} Core wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu \textit{JWT} jak i komunikację z wykorzystaniem protokołu HTTPS\cite{bib:asp}.
+
+W celu wykorzystania wzorca projektowego \textit{CQRS} (ang. \ang{command query responsibility separation}) zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę \textit{Autofac}, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników\cite{bib:autofactag}.
+
+Jako bazę danych wykorzystano \textit{MongoDB}. \textit{MongoDB} jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie \textit{JSON}, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych \textit{NoSQL}, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów\cite{bib:mongodb_guide}. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
+
+Językiem programowania użytym w części wizualnej aplikacji jest język \textit{TypeScript} zaprojektowany przez firmę \textit{Microsoft}. W odróżnieniu od języka \textit{JavaScript}, \textit{TypeScript} oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego\cite{bib:typescript}.
+
+Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka TypeScript oraz możliwość tworzenia aplikacji typu \textit{SPA}\cite{bib:anuglar}\cite{bib:typescript}.
+
+W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę \textit{Angular Material} z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię \textit{Google Material} do tworzenia warstw wizualizacji aplikacji internetowych.
+
+W warstwie prezentacji wykorzystano bibliotekę \textit{NgXS}, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy \textit{Redux}, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz tworzenie stanów, które są deterministyczne.
 
 \section{Przegląd najważniejszych klas}
+W trakcie pracy nad systemem zaistniała potrzeba stworzenia klasy pozwalającej na modyfikacje danych w bazie. Głównym założeniem było utworzenie klasy, która będzie wykorzystywać wzorzec repozytorium oraz metodę szablonową. Wzorzec repozytorium miał pomóc w stworzeniu klasy, której głównym zadaniem będzie realizowanie operacji \textit{CRUD}, natomiast wykorzystanie wzorca metody szablonowej miało pomóc w stworzeniu ogólnego algorytmu, który będzie uszczegółowiony w klasach pochodnych. Według tych zasad powstała klasa \textit{MongoRepository} reprezentująca ogólne algorytmy wykorzystywane do operacji \textit{CRUD} niedotyczące żadnej konkretnej kolekcji w bazie danych. Klasy pochodne \textit{MongoRepository}, wykorzystując klasę bazową, tworzyły interfejs do zarządzania dokumentami w konkretnej kolekcji.
 
-\section{Przegląd najważniejszych algorytmów}
+W projekcie można znaleźć wiele klas pełniących rolę klas odczytu danych. W takich przypadkach nie stworzono ogólnej klasy bazowej ze względu na niewielkie podobieństwo klas między sobą. Odczyt danych z bazy można osiągnąć na kilka sposobów przy wykorzystaniu sterownika \textit{.NET - MongoDB}. Pierwszy z nich to wykorzystanie wstawek w postaci języka \textit{JavaScript}, co pozwala na pisanie zapytań takich jak w konsoli \textit{MongoDB}. Jedną z takich klas, gdzie wykorzystano możliwości wstawek jest klasa \textit{ExerciseMachineReadModel}. Podstawowym zadaniem tej klasy jest odczyt danych z kolekcji \textit{ExerciseMachineCollection}, gdzie znajdują się informacje o posiadanym sprzęcie do ćwiczeń. Mimo, że \textit{MongoDB} jest nierelacyjną bazą danych, to dzięki wykorzystaniu operatora \textit{lookup} można stworzyć namiastkę złączeń (ang. \ang{join}), które są znane z relacyjnych baz danych. Poniżej zaprezentowana została metoda wykorzystująca operator \textit{lookup} i wcześniej wspominane wstawki kodu.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}			
+			private IAggregateFluent<BsonDocument> GetGetAllExerciseMachinesQuery()
+			{
+				var client = new MongoClient(_databaseConfiguration.ConnectionString);
+				var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
+				
+				var collection = database.GetCollection<ExerciseMachineEntity>("ExerciseMachineCollection");
+				
+				return collection
+					.Aggregate()
+					.AppendStage<BsonDocument>("{ $lookup: { from: 'GymObjectCollection', localField: 'LocalizationGymObjectId', foreignField: '_id', as: 'LocalizationGymObject'} }")
+					.AppendStage<BsonDocument>("{ $unwind: '$LocalizationGymObject' }");
+			}
+		}
+	\end{lstlisting}
+	\caption{Metoda odczytu danych z kolekcji \textit{ExerciseMachineCollection} przy wykorzystaniu wstawek \textit{JavaScript}}
+	\label{fig:exerciseMachineReadModel}
+\end{figure}
+Innym sposobem odczytu danych z bazy jest wykorzystanie składni \textit{LINQ}, która pozwala na m.in. tworzenie zapytań. Pomimo duży ograniczeń tego rozwiązania, \textit{LINQ} posiada możliwość tworzenia złączeń. Złączenia te są jednak bardzo ograniczone w porównaniu do baz relacyjnych. Poniżej przedstawiono fragment klasy \textit{GymObjectReadModel}, która odpowiada za odczyt danych z kolekcji \textit{GymObjectCollection}, gdzie znajdują się informacje o obiektach siłowni i pomieszczeniach. Jak widać składnia \textit{LINQ} pozwala na tworzenie zapytań, które przypominają składnie języka \textit{SQL}.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}			
+    public Task<GymObjectDto> GetById(ObjectId id)
+	{
+		var client = new MongoClient(_databaseConfiguration.ConnectionString);
+		var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
+	
+		var collection = database.GetCollection<GymObjectEntity>("GymObjectCollection");
 
-\section{Wykorzystane wzorce projektowe}
+		var query = from gymObject in collection.AsQueryable()
+			where gymObject.Id == id
+			select gymObject;
 
-Krótka wstawka kodu w linii tekstu jest możliwa, np. \lstinline|descriptor|, a nawet \lstinline|descriptor_gaussian|. 
-Dłuższe fragmenty lepiej jest umieszczać jako rysunek, np. kod na rysunku \ref{fig:pseudokod}, a naprawdę długie fragmenty – w załączniku.
-
-\begin{figure}
-\centering
-\begin{lstlisting}
-class descriptor_gaussian : virtual public descriptor
-{
-   protected:
-      /** core of the gaussian fuzzy set */
-      double _mean;
-      /** fuzzyfication of the gaussian fuzzy set */
-      double _stddev;
-      
-   public:
-      /** @param mean core of the set
-          @param stddev standard deviation */
-      descriptor_gaussian (double mean, double stddev);
-      descriptor_gaussian (const descriptor_gaussian & w);
-      virtual ~descriptor_gaussian();
-      virtual descriptor * clone () const;
-      
-      /** The method elaborates membership to the gaussian fuzzy set. */
-      virtual double getMembership (double x) const;
-     
-};
-\end{lstlisting}
-\caption{Klasa \lstinline|descriptor_gaussian|.}
-\label{fig:pseudokod}
+		return query
+			.SingleOrDefaultAsync()
+			.ContinueWith(result => _mapper.Map<GymObjectDto>(result.Result));
+	}
+	\end{lstlisting}
+\caption{Metoda odczytu danych z kolekcji \textit{GymObjectCollection} przy wykorzystaniu wstawek składni \textit{LINQ}}
+\label{fig:gymObjectReadModel}
 \end{figure}
 
+Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript} w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. W poniższym kodzie zaprezentowano metodę klasy 
+\textit{PersonalTrainerReadModel}, której zadaniem jest odczyt z bazy informacji o koncie trenera personalnego.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}			
+    public Task<PersonalTrainerDto> GetById(ObjectId id)
+	{
+		var client = new MongoClient(_databaseConfiguration.ConnectionString);
+		var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
+
+		var collection = database.GetCollection<PersonalTrainerEntity>("UserCollection");
+
+		var query = collection
+			.Aggregate()
+			.Match(clientEntity => clientEntity.Id == id)
+			.As<PersonalTrainerDto>();
+
+		return query.SingleOrDefaultAsync();
+	}
+	\end{lstlisting}
+	\caption{Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}
+	\label{fig:personalTrainerReadModel}
+\end{figure}
+
+\section{Przegląd wzorców projektowych}
+Poza wcześniej wymienionymi wzorcami metoda szablonowa i repozytorium do stworzenia aplikacji wykorzystano wzorzec \textit{CQRS}. Do implementacji wzorca \textit{CQRS} wykorzystuje się klasy komend i zapytań w celu rozdzielenia zadań dotyczących zapisu i odczytu danych. Komendy są obsługiwane przez klasy obsługi komend, gdzie wywoływane są metody serwisów aplikacyjnych do modyfikacji danych w bazie. Każda klasa obsługi komendy posiada metodę \textit{Handle}, która zostaje wywołana gdy zajdzie potrzeba obsłużenia żądania w postaci obiektu typu \textit{IRequest}. Poniżej przedstawiono kod metody \textit{Handle}, który fragmentem klasy \textit{CreateGymPassTypeCommandHandler}.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}			
+        public Task<ObjectId> Handle(CreateGymPassTypeCommand request, CancellationToken cancellationToken)
+		{
+			var dataStructure = _mapper.Map<CreateGymPassTypeCommand, CreateGymPassTypeDataStructure>(request);
+			return _service.Create(dataStructure);
+		}
+	\end{lstlisting}
+	\caption{Metoda \textit{Handle} klasy \textit{CreateGymPassTypeCommandHandler}}
+	\label{fig:commandHandler}
+\end{figure}
+Klasy obsługi komend odpowiadają za aktualizację danych w bazie, natomiast klasy obsługi odczytu mają za zadanie odczytać dane z bazy w celu przekazania ich do warstwy prezentacji. Poniżej zaprezentowana została klasa \textit{GymPassTypesQueryHandler}, która odpowiada za odczyt informacji o wszystkich typach karnetów w bazie.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+public class GymPassTypesQueryHandler : IRequestHandler<GetAllGymPassTypesQuery, List<GymPassTypeDto>>
+{
+	private readonly IGymPassReadModel _readModel;
+
+	public GymPassTypesQueryHandler(IGymPassReadModel readModel)
+	{
+		_readModel = readModel ?? throw new ArgumentNullException(nameof(readModel));
+	}
+
+	public Task<List<GymPassTypeDto>> Handle(GetAllGymPassTypesQuery query, CancellationToken cancellationToken)
+	{
+		return _readModel.GetAll();
+	}
+}
+	\end{lstlisting}
+	\caption{Klasa \textit{GymPassTypesQueryHandler}}
+	\label{fig:queryHangler}
+\end{figure}
+Dopełnieniem \textit{CQRS} jest wzorzec projektowy mediator, którego zadaniem jest przekazywanie obiektów klas odczytu i komend do odpowiednich klas obsługi odczytu i obsługi komend. Takie rozwiązanie pozwala na zwiększenie skalowalności systemu i usunięcie potrzeby wstrzykiwania serwisów aplikacyjnych do klas kontrolerów. Klasa mediatora odpowiada za poprawne dostarczenie obiektu żądania do obiektu klasy obsługi tego żądania. Poniżej przedstawiono fragment kodu klasy kontrolera \textit{EventController}, który odpowiada za udostępnienie metod \textit{CRUD} dotyczących obiektów klasy \textit{Event}. Na fragmencie widać jak wykorzystywany jest mediator do przekazania żądania odczytu informacji o wydarzeniu.
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+        public async Task<ActionResult> GetById(string id)
+		{
+			if (id.IsNullOrEmpty())
+			{
+				return BadRequest();
+			}
+			
+			var query = _mapper.Map<string, GetEventByIdQuery>(id);
+			var queryResult = await _mediator.Send(query);
+			var result = _mapper.Map<EventDto, EventViewModel>(queryResult);
+			return Ok(result);
+		}
+	\end{lstlisting}
+	\caption{Metoda \textit{GetById} klasy \textit{EventController}}
+	\label{fig:mediator}
+\end{figure}
 
 \chapter{Weryfikacja i walidacja}
 \begin{itemize}
@@ -1115,6 +1204,7 @@ class descriptor_gaussian : virtual public descriptor
 \addcontentsline{toc}{chapter}{Spis skrótów i symboli}
 
 \begin{itemize}
+	\item[CRUD] utwórz, odczytaj, aktualizuj, usuń - (ang. \ang{create, update, read, delete})
 \item[MVC] model -- widok -- kontroler (ang. \ang{model--view--controller}) 
 \item[SPA] jednostronicowa aplikacja internetowa (ang. \ang{Single page application})
 \item[CQRS] (ang. \ang{Command and Query Responsibility Segregation})
@@ -1130,92 +1220,108 @@ class descriptor_gaussian : virtual public descriptor
 \item[WWW] światowa rozległa sieć komputerowa (ang. \ang{World Wide Web})
 \item[DTO] obiekt transferu danych (ang. \ang{Data transfer object})
 \item[LINQ] (ang. \ang{Language-Integrated Query})
+\item[IDE] zintegrowane środowisko programistyczne (ang. \ang{Integrated development environment})
+\item[SQL] (ang. \ang{Structured Query Language})
 \end{itemize}
 
 
 \chapter*{Źródła}
 \addcontentsline{toc}{chapter}{Źródła}
+\begin{figure}
+	\centering
+	\begin{lstlisting}
+		class descriptor_gaussian : virtual public descriptor
+		{
+			protected:
+			/** core of the gaussian fuzzy set */
+			double _mean;
+			/** fuzzyfication of the gaussian fuzzy set */
+			double _stddev;
+			
+			public:
+			/** @param mean core of the set
+			@param stddev standard deviation */
+			descriptor_gaussian (double mean, double stddev);
+			descriptor_gaussian (const descriptor_gaussian & w);
+			virtual ~descriptor_gaussian();
+			virtual descriptor * clone () const;
+			
+			/** The method elaborates membership to the gaussian fuzzy set. */
+			virtual double getMembership (double x) const;
+			
+		};
+	\end{lstlisting}
+	\caption{Klasa \lstinline|descriptor_gaussian|.}
+	\label{fig:pseudokod}
+\end{figure}
 
-Jeżeli w pracy konieczne jest umieszczenie długich fragmentów kodu źródłowego, należy je przenieść do załącznika.
-
-\begin{lstlisting}
-partition fcm_possibilistic::doPartition
-                             (const dataset & ds)
-{
-   try
-   {
-      if (_nClusters < 1)
-         throw std::string ("unknown number of clusters");
-      if (_nIterations < 1 and _epsilon < 0)
-         throw std::string ("You should set a maximal number of iteration or minimal difference -- epsilon.");
-      if (_nIterations > 0 and _epsilon > 0)
-         throw std::string ("Both number of iterations and minimal epsilon set -- you should set either number of iterations or minimal epsilon.");
-   
-      auto mX = ds.getMatrix();
-      std::size_t nAttr = ds.getNumberOfAttributes();
-      std::size_t nX    = ds.getNumberOfData();
-      std::vector<std::vector<double>> mV;
-      mU = std::vector<std::vector<double>> (_nClusters);
-      for (auto & u : mU)
-         u = std::vector<double> (nX);
-      randomise(mU);
-      normaliseByColumns(mU);
-      calculateEtas(_nClusters, nX, ds);
-      if (_nIterations > 0)
-      {
-         for (int iter = 0; iter < _nIterations; iter++)
-         {
-            mV = calculateClusterCentres(mU, mX);
-            mU = modifyPartitionMatrix (mV, mX);
-         }
-      }
-      else if (_epsilon > 0)
-      {
-         double frob;
-         do 
-         {
-            mV = calculateClusterCentres(mU, mX);
-            auto mUnew = modifyPartitionMatrix (mV, mX);
-            
-            frob = Frobenius_norm_of_difference (mU, mUnew);
-            mU = mUnew;
-         } while (frob > _epsilon);
-      }
-      mV = calculateClusterCentres(mU, mX);
-      std::vector<std::vector<double>> mS = calculateClusterFuzzification(mU, mV, mX);
-      
-      partition part;
-      for (int c = 0; c < _nClusters; c++)
-      {
-         cluster cl; 
-         for (std::size_t a = 0; a < nAttr; a++)
-         {
-            descriptor_gaussian d (mV[c][a], mS[c][a]);
-            cl.addDescriptor(d);
-         }
-         part.addCluster(cl);
-      }
-      return part;
-   }
-   catch (my_exception & ex)                                  
-   {                                                       
-      throw my_exception (__FILE__, __FUNCTION__, __LINE__, ex.what()); 
-   }                                                          
-   catch (std::exception & ex)                                 
-   {                                                            
-      throw my_exceptionn (__FILE__, __FUNCTION__, __LINE__, ex.what()); 
-   }                                                            
-   catch (std::string & ex)                                     
-   {                                                            
-      throw my_exception (__FILE__, __FUNCTION__, __LINE__, ex);        
-   }                                                             
-   catch (...)                                                   
-   {                                                             
-      throw my_exception (__FILE__, __FUNCTION__, __LINE__, "unknown expection");       
-   }  
-}
-\end{lstlisting}
- 
+Klasa abstrakcyjna \textit{MongoRepository} wykorzystywana do wykonywania operacji \textit{CRUD} na kolekcjach bazy \textit{MongoDB}.
+\begin{figure}
+	\centering
+	\begin{lstlisting}
+		public abstract class MongoRepository<TModel, TEntity> : IRepository<TModel> where TModel : IAggregate where TEntity : IEntity
+		{
+			protected readonly IMongoCollection<TEntity> Collection;
+			protected readonly IMapper Mapper;
+			
+			public MongoRepository(IDatabaseConfiguration databaseConfiguration, IMapper mapper)
+			{
+				Mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+				
+				var client = new MongoClient(databaseConfiguration.ConnectionString);
+				var database = client.GetDatabase(databaseConfiguration.DatabaseName);
+				
+				Collection = database.GetCollection<TEntity>($"{typeof(TModel).Name}Collection");
+			}
+			
+			public MongoRepository(IDatabaseConfiguration databaseConfiguration, IMapper mapper, string collectionName)
+			{
+				Mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+				
+				var client = new MongoClient(databaseConfiguration.ConnectionString);
+				var database = client.GetDatabase(databaseConfiguration.DatabaseName);
+				
+				Collection = database.GetCollection<TEntity>(collectionName);
+			}
+			
+			public TModel Get(ObjectId id)
+			{
+				var entity = Collection.Find(model => model.Id == id).FirstOrDefault();
+				return Mapper.Map<TEntity, TModel>(entity);
+			}
+			
+			public List<TModel> Get()
+			{
+				var entities = Collection.Find(model => true).ToList();
+				return Mapper.Map<List<TEntity>, List<TModel>>(entities);
+			}
+			
+			public Task<ObjectId> Create(TModel model)
+			{
+				var entity = Mapper.Map<TModel, TEntity>(model);
+				var result = Collection.InsertOneAsync(entity).ContinueWith(_ => model.Id);
+				return result;
+			}
+			
+			public Task<ObjectId> Update(ObjectId id, TModel updatedModel)
+			{
+				var entity = Mapper.Map<TModel, TEntity>(updatedModel);
+				return Collection.ReplaceOneAsync(model => model.Id == id, entity).ContinueWith(_ => updatedModel.Id);
+			}
+			
+			public Task<ObjectId> Remove(TModel modelToDelete)
+			{
+				var entity = Mapper.Map<TModel, TEntity>(modelToDelete);
+				return Collection.DeleteOneAsync(model => model.Id == entity.Id).ContinueWith(_ => modelToDelete.Id);
+			}
+			
+			public Task<ObjectId> Remove(ObjectId id)
+			=> Collection.DeleteOneAsync(model => model.Id == id).ContinueWith(_ => id);
+		}
+	\end{lstlisting}
+	\caption{Klasa \lstinline|MongoRepository|.}
+	\label{fig:mongoRepository}
+\end{figure} 
 
 \chapter*{Zawartość dołączonej płyty}
 \addcontentsline{toc}{chapter}{Zawartość dołączonej płyty}
