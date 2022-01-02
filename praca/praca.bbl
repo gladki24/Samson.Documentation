@@ -1,37 +1,54 @@
 \begin{thebibliography}{10}
 
+\bibitem{bib:nuni}
+{ What is NUnit? }.
+\newblock \url{https://nunit.org/}.
+
 \bibitem{bib:anuglar}
-Angular: The modern web developer's platform.
+{Angular: The modern web developer's platform}.
+\newblock \url{https://angular.io/}.
 
 \bibitem{bib:wodguru}
-Funkcjonalności, które ułatwią zarządzanie twoim klubem.
+{Funkcjonalności, które ułatwią zarządzanie Twoim klubem}.
+\newblock \url{https://wod.guru/pl/funkcjonalnosci}.
 
 \bibitem{bib:requirementsLinux}
-Install .net on linux.
+{Install .NET on Linux}.
+\newblock \url{https://docs.microsoft.com/en-us/dotnet/core/install/linux}.
 
 \bibitem{bib:requirementsMac}
-Install .net on macos.
+{Install .NET on macOS}.
+\newblock \url{https://docs.microsoft.com/en-us/dotnet/core/install/macos}.
 
 \bibitem{bib:requirementsWin}
-Install .net on windows.
+{Install .NET on Windows}.
+\newblock
+  \url{https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net50}.
 
 \bibitem{bib:autofactag}
-Instance per lifetime scope.
+{Instance Per Lifetime Scope}.
+\newblock
+  \url{https://autofac.readthedocs.io/en/latest/lifetime/instance-scope.html#instance-per-matching-lifetime-scope}.
 
 \bibitem{bib:requirementsFramework}
-.net framework system requirements.
+{.NET Framework system requirements}.
+\newblock
+  \url{https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements}.
 
 \bibitem{bib:perfectgym}
-Oprogramowanie crm: Maksymalizuj potencjał zdobywania klientów dzięki
+{Oprogramowanie CRM: Maksymalizuj potencjał zdobywania klientów dzięki
   narzędziom do pozyskiwania leadów i zmieniaj kontakty w płacących
-  klientów.
+  klientów}.
+\newblock \url{https://www.perfectgym.com/pl/features/gym-crm}.
 
 \bibitem{bib:requirementsMongo}
-Production notes.
+{Production Notes}.
+\newblock
+  \url{https://docs.mongodb.com/manual/administration/production-notes/}.
 
 \bibitem{bib:csharp}
 Joseph Albahari,  Ben Albahari.
-\newblock {\em C\# 7.0 w pigułce}.
+\newblock {\em C 7.0 w pigułce}.
 \newblock Helion SA, ul. Kościuszki 1c, 44-100 Gliwice, 2018.
 
 \bibitem{bib:mongodb_guide}
@@ -46,7 +63,7 @@ Dino Esposito.
 
 \bibitem{bib:dotnet5introduction}
 Richard Lander.
-\newblock Introducing .net 5.
+\newblock {Introducing .NET 5}.
 
 \bibitem{bib:typescript}
 Nathan Rozentals.
