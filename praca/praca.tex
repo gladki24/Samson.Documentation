@@ -1011,6 +1011,8 @@ Do stworzenia interfejsu \textit{REST API} została wykorzystana biblioteka \tex
 
 W celu wykorzystania wzorca projektowego \textit{CQRS} (ang. \ang{command query responsibility separation}) zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę \textit{Autofac}, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników\cite{bib:autofactag}.
 
+Wykorzystanie paradygmatu programowania obiektowego prowadziło do potrzeby mapowania niektórych typów na inne. W celu sprawniejszego przeprowadzania takich mapowań wykorzystano bibliotekę \textit{AutoMapper}, która na podstawie podanego obiektu tworzy inny według schematu określonego w klasie profilu (ang. \ang{Profile}).
+
 Jako bazę danych wykorzystano \textit{MongoDB}. \textit{MongoDB} jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie \textit{JSON}, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych \textit{NoSQL}, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów\cite{bib:mongodb_guide}. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
 
 Językiem programowania użytym w części wizualnej aplikacji jest język \textit{TypeScript} zaprojektowany przez firmę \textit{Microsoft}. W odróżnieniu od języka \textit{JavaScript}, \textit{TypeScript} oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego\cite{bib:typescript}.
@@ -1207,13 +1209,33 @@ W celu przetestowania poprawności działania warstwy serwerowej wykorzystano r�
 	\caption{Interaktywna dokumentacja interfejsu \textit{REST API}}
 	\label{fig:swagger}
 \end{figure}
-Przy pomocy wcześniej wspominanej dokumentacji przetestowano poprawność działania końcówek (ang. \ang{endpoint}) interfejsu \textit{REST API}. Natomiast w celu całościowego sprawdzenia poprawności działania systemu wykonano szereg testów manualnych przy wykorzystaniu warstwy prezentacji. System był testowany według scenariuszy przedstawionych w podrozdziale \textbf{\nameref{UseExample}}.
+Przy pomocy wcześniej wspominanej dokumentacji przetestowano poprawność działania końcówek (ang. \ang{endpoint}) interfejsu \textit{REST API}. Natomiast w celu całościowego sprawdzenia poprawności działania systemu wykonano szereg testów manualnych przy wykorzystaniu warstwy prezentacji. System był testowany według scenariuszy, które odpowiadają funkcjonalnościom przedstawionym w podrozdziale \textbf{\nameref{UseExample}}.
 
 \section{Organizacja testów}
 Podczas pracy nad systemem równolegle tworzono kod testów jednostkowych, aby już w trakcie implementacji funkcjonalności wykrywać błędy w kodzie. Część błędów została wykryta już na etapie uruchamiania kodu testów jednostkowych. W takim przypadku poprawiono kod implementujący daną funkcjonalność w celu usunięci błędu. Inne błędy zostały wykryte w trakcie testów manualnych. W takim przypadku potrzebna była dodatkowa analiza kodu aplikacji. Po zidentyfikowaniu błędu, zostawał on usuwany, a następnie w celu uniknięcia przyszłych nieprawidłowości dopisywano test jednostkowych, którego zadaniem było dopilnowanie by taka sytuacja się nie powtórzyła.
 
 \section{Przykłady wykrytych i usuniętych błędów}
-W trakcie pracy nad systemem wykryto dzięki testom kilka błędów wynikających z niepoprawnej implementacji.
+W trakcie pracy nad systemem wykryto, dzięki testom kilka błędów wynikających z niepoprawnej implementacji. Jednym z przykładów niepoprawnego działania, było usuwanie konta użytkownika zamiast jego archiwizacja. Gdy ten sam użytkownik był zapisany na jakiś trening lub wydarzenie, a konto zostało usunięte całkowicie z bazy to w danych pojawiły się relacje do nieistniejącego konta co prowadziło do licznych błędów.
+
+Poprzedni błąd został wykryty przez testy manualne, natomiast udało się wykryć błąd przy pomocy testu jednostkowego. W systemie istnieje moduł, który odpowiada za kontrolę liczby osób, która znajduje się na siłowni. Maksymalna liczba osób była obliczana w niepoprawny sposób z powodu wykonywania dzielenia zamiast mnożenia w poniżej funkcji:
+\begin{figure} [H]
+	\centering
+	\begin{lstlisting}
+        public int CalcMaximumClientsCount()
+		{
+			if (CovidConfiguration == null)
+			return -1;
+			
+			var availableGymObjectArea = GymObjectArea();
+			/* (int) Math.Floor(availableGymObjectArea / CovidConfiguration.PersonFactorPerMeter); */
+			return (int) Math.Floor(availableGymObjectArea * CovidConfiguration.PersonFactorPerMeter);
+		}
+	\end{lstlisting}
+	\caption{Metoda licząca jaka jest maksymalna liczba osób, która znajduje się w jednej chwili w obiekcie siłowni}
+	\label{fig:calcMaxPeople}
+\end{figure}
+
+Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie błędów we wczesnym etapie tworzenia aplikacji. W systemie wykorzystano bibliotekę \textit{AutoMapper}, która pozwala na mapowanie obiektów z jednej klasy na inną według zdefiniowanego schematu. Gdy taki schemat nie został zdefiniowany, a funkcja \textit{Map} została wywołana to o błędzie użytkownik dowiadywał się dopiero gdy aplikacja została już uruchomiona. W takich przypadkach interaktywna dokumentacja pozwoliła na wykrywanie błędów i ich usuwanie jeszcze przed utworzeniem interfejsu użytkownika.
 
 \chapter{Podsumowanie i wnioski}
 \begin{itemize}
@@ -1300,7 +1322,7 @@ Do pracy dołączona jest płyta CD z~następującą zawartością:
 \begin{itemize}
 \item praca (źródła \LaTeX owe i końcowa wersja w \texttt{pdf}),
 \item źródła programu,
-\item dane testowe.
+\item dokumentacja kodu warstwy serwerowej.
 \end{itemize}
 
 \listoffigures

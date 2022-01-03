@@ -105,6 +105,8 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Metoda odczytu danych z kolekcji \textit {ExerciseMachineCollection} przy wykorzystaniu wstawek \textit {JavaScript}}}{54}{figure.5.3}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Metoda odczytu danych z kolekcji \textit {GymObjectCollection} przy wykorzystaniu wstawek składni \textit {LINQ}}}{55}{figure.5.4}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}}{56}{figure.5.5}%
@@ -117,6 +119,7 @@
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Interaktywna dokumentacja interfejsu \textit {REST API}}}{62}{figure.6.3}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Metoda licząca jaka jest maksymalna liczba osób, która znajduje się w jednej chwili w obiekcie siłowni}}{63}{figure.6.4}%
 \addvspace {10\p@ }
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 

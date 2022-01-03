@@ -92,6 +92,8 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
 \contentsline {section}{\numberline {5.5}Przegląd najważniejszych klas}{53}{section.5.5}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
