@@ -25,6 +25,10 @@
 \usepackage{setspace}
 \onehalfspacing
 
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{dotLabel}{.\space}
+\captionsetup{labelsep=dotLabel}
+\captionsetup[lstlisting]{justification=centering}
 
 \frenchspacing
 
@@ -40,22 +44,27 @@
 % listingi 
 \usepackage{listings}
 \lstset{%
-language=C++,%
+aboveskip=20pt,
+belowskip=0pt,
+language=[Sharp]C,%
 showspaces=false,%
 commentstyle=\textit,%
 identifierstyle=\textsf,%
 keywordstyle=\sffamily\bfseries, %\texttt, %
-%captionpos=b,%
+captionpos=b,%
 tabsize=2,%
 frame=lines,%
 numbers=left,%
 numberstyle=\tiny,%
 numbersep=5pt,%
 breaklines=true,%
-morekeywords={descriptor_gaussian,descriptor,partition,fcm_possibilistic,dataset,my_exception,exception,std,vector},%
+%morekeywords={},%
 escapeinside={@*}{*@},%
 %texcl=true, % wylacza tryb verbatim w komentarzach jednolinijkowych
 }
+
+\renewcommand{\lstlistingname}{Kod}
+\renewcommand{\lstlistlistingname}{Spis źródeł}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -167,7 +176,6 @@ escapeinside={@*}{*@},%
 
 \newcommand{\autor}{Seweryn Gładysz}
 \newcommand{\promotor}{dr inż. Ewa Płuciennik}
-\newcommand{\konsultant}{dr inż. Imię Nazwisko}
 \newcommand{\tytul}{System zarządzania siecią siłowni oparty o bazę dokumentową}
 \newcommand{\polsl}{Politechnika Śląska}
 \newcommand{\wydzial}{Wydział Automatyki, Elektroniki i Informatyki}
@@ -219,8 +227,8 @@ escapeinside={@*}{*@},%
 		\hbox{\otherfont autor: \autor}
 		\vspace{12pt}
 		\hbox{\otherfont kierujący pracą: \promotor}
-		\vspace{12pt}  % zakomentuj, jezeli nie ma konsultanta
-		\hbox{\otherfont konsultant: \konsultant} % zakomentuj, jezeli nie ma konsultanta
+		% \vspace{12pt}  % zakomentuj, jezeli nie ma konsultanta
+		% \hbox{\otherfont konsultant: \konsultant} % zakomentuj, jezeli nie ma konsultanta
 	}
 	\vfill 
  
@@ -250,9 +258,15 @@ escapeinside={@*}{*@},%
 
 \chapter*{Streszczenie}
 
+Czas pandemii koronawirusa stawia przed przedsiębiorcami nowe wyzwania, a cyfryzacja pozwala na automatyzację wielu czynności. Właściciele sieci siłowni są zmuszeni do ciągłego dostosowywania zasad działania siłowni do wymogów związanych z obostrzeniami sanitarnymi. Dzięki rozwojowi aplikacji internetowych istnieje możliwość zarządzania biznesem zarówno z poziomu komputera osobistego jak i smartfona.
+
+W pracy przedstawiono projekt aplikacji internetowej, która pozwala na zarządzanie siecią obiektów siłowni. Szczególny nacisk położono na możliwość definiowania zasad działania poszczególnych obiektów w kontekście obowiązujących restrykcji sanitarnych. System korzysta z dokumentowej bazy danych w celu skorzystania z zalet technologii \textit{NoSQL}. Warstwa prezentacji wykorzystuje możliwości współczesnych przeglądarek internetowych.
+
+W ramach pracy omówiono ideę stojącą za stworzeniem systemu oraz sposób jego projektowania. Opisane zostały metodyki pracy nad projektem, wykorzystane technologie oraz wybrane wzorce projektowe, które zostały użyte przy pracy nad aplikacją.
+
 Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego streszczenia. Streszczenie, wraz ze slowami kluczowymi, nie powinno przekroczyc jednej strony.
 
-{\bf Slowa kluczowe:} 2-5 slow (fraz) kluczowych, oddzielonych przecinkami
+{\bf Slowa kluczowe:} aplikacja internetowa, dokumentowa baza danych, .NET
 
 \addcontentsline{toc}{chapter}{Streszczenie}
 
@@ -274,11 +288,9 @@ Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego 
 \end{itemize}
 
 \chapter{Analiza tematu}
-W tej części zaprezentowana zostanie analiza tematu, w skład której wchodzi przedstawienie wyzwań, którym musi sprostać system oraz założenia dotyczące systemu. W dalszej części rozdziału znajduje się przegląd dostępnych rozwiązań na rynku komercyjnym.
+Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupy klientów. Stawia to nowe wyzwania w organizacji pracy i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
 
-Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupie klientów. Stawia to nowe wyzwania w organizacji pracy pracowników i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
-
-Innym problemem jest coraz większa liczba sieci siłowni, która w swojej ofercie zawiera możliwość udziału w wydarzeniach grupowych, które pozwalają na uczestnictwo w grupowej sesji, gdzie pracownik siłowni nadzoruje czy uczestnicy wykonują ćwiczenia w sposób bezpieczny dla ich zdrowia. Pozwolenie na zgłoszenie chęci udziału w takim wydarzeniu poprzez aplikacje internetową może zwiększyć atrakcyjność oferty danej sieci siłowni w obliczu rosnącej konkurencji na rynku sieci siłowni.
+Innym problemem jest coraz większa liczba sieci siłowni, która w swojej ofercie zawiera możliwość udziału w wydarzeniach grupowych, które pozwalają na uczestnictwo w grupowej sesji, gdzie pracownik siłowni nadzoruje czy uczestnicy wykonują ćwiczenia w sposób bezpieczny dla ich zdrowia. Pozwolenie na zgłoszenie chęci udziału w takim wydarzeniu poprzez aplikację internetową może zwiększyć atrakcyjność oferty danej sieci siłowni w obliczu rosnącej konkurencji na rynku sieci siłowni.
 
 Sieć siłowni zderza się z problemami, które nie są znane pojedynczym obiektom. Zarządzanie wyposażeniem może być utrudnione ze względu na liczbę posiadanych urządzeń i liczbę obiektów siłowni należących do sieci. System powinien gromadzić informacje na temat posiadanego sprzętu, aby skrócić czas, jaki jest potrzebny do przeprowadzenia inwentaryzacji posiadanych akcesoriów i sprzętów do ćwiczeń.
 
@@ -286,17 +298,17 @@ Innym wyzwaniem stawianym przed właścicielami siłowni jest stworzenie oferty 
 
 Wyzwaniem stawianym przez pandemię koronawirusa jest reagowanie na częste zmiany w przepisach dotyczących wstępu na obiekty sportowe. Taka sytuacja zmusza właścicieli do ciągłego monitorowania sytuacji i reagowania na zmiany dotyczące przepisów sanitarnych. Każda taka zmiana zmusza siłownię do wdrożenia nowych restrykcji w postaci limitów osób na siłowni. Pomocą w realizowaniu narzuconych obostrzeń byłoby stworzenie systemu, który ustalałby jaka jest maksymalna liczba osób w obiekcie na podstawie wprowadzonych danych. System powinien również zapewniać możliwość kontrolowania liczby osób, które znajdują się w danej chwili w obiekcie siłowni.
 
-Kolejnym problemem jest ilość użytkowników korzystających z system informatycznego. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać żądania dużej liczby klientów. Aby zapewnić ciągłość działania systemu ważne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonywane \textit{w górę} (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub \textit{w szerz} (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\cite{bib:mongodb_guide}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami.
+Kolejnym problemem jest liczba użytkowników korzystających z system informatycznego. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać żądania dużej liczby klientów. Aby zapewnić ciągłość działania systemu ważne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonywane \textit{w górę} (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub \textit{w szerz} (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\cite{bib:mongodb_guide}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami.
 
-Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań \cite{bib:perfectgym} \cite{bib:wodguru}, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, prowadzenie inwentarza wyposażenia oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
+Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań \cite{bib:perfectgym} \cite{bib:wodguru}, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, wyposażeniem oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
 
-Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawowe funkcjonalności potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, a tym samym złym doświadczeniom płynącym z korzystania z serwisu internetowego, system musi być podatny na zmiany. Aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa (ang. \ang{backend}) aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
+Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawową funkcjonalność potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością. Aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa (ang. \ang{backend}) aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
 
 \chapter{Wymagania i narzędzia}
-W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą zostać spełnione. W dalszej części znajdują się wymagania niefunkcjonalne oraz diagramy przypadków użycia. Rozdział kończy się opisem wykorzystanych narzędzi i metodyki pracy nad projektem.
+W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą zostać spełnione. W dalszej części znajdują się wymagania niefunkcjonalne oraz diagramy przypadków użycia. Rozdział kończy się opisem wykorzystanych narzędzi, zewnętrznych rozwiązań oraz metodyk pracy nad projektem.
 
 	\section{Wymagania funkcjonalne} 
-	Wymienione punkty stanowią listę wszystkich funkcjonalności jakie powinna oferować aplikacja. Opisują one jakie funkcje  zostały udostępnione użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
+	Wymienione punkty stanowią listę wszystkich funkcji jakie powinna oferować aplikacja. Opisują one zakres funkcjonalności udostępnionej użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
 		\begin{itemize}
 			\item Tworzenie konta trenera personalnego - w systemie powinna istnieć możliwość dodawania kont dla pracowników siłowni w celu zarządzania zasobami.
 			\item Rejestracja konta klienta - system powinien pozwalać na samodzielne zarejestrowanie się użytkowników w celu skorzystania z funkcjonalności serwisu internetowego.
@@ -345,15 +357,37 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 	\section {Diagram przypadków użycia (UML)}
 	Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
 	
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{diagram_przypadków_użycia.png}
+\begin{figure}[h!t!b]
+	\includegraphics[height=1\textheight, width=1\textwidth]{diagram_przypadków_użycia.png}
 	\caption{Diagram przypadków użycia}
 	\label{fig:diagramPrzpydakowUzyciaUML}
 \end{figure}
 	
 	\section{Narzędzia}
-	Do napisania projektu wykorzystano IDE (ang. \ang{Integrated development environment}) \textit{Visual Studio 2019}, które oferuję wiele narzędzi ułatwiających pisanie kodu w języku C\#. Głównymi zaletami tego środowiska jest bliska współpraca z środowiskiem \textit{.NET}, zapewnienie narzędzi w postaci odpluskwiacza (ang. \ang{debugger}) czy integracja z systemem kontroli wersji GIT. Do pracy wykorzystano również IDE \textit{WebStorm} firmy \textit{JetBrains}, które pozwala na tworzenie aplikacji z platformą programistyczną \textit{Angular}. Do przeglądania kolekcji i dokumentów w bazie danych \textit{MongoDB} wykorzystano narzędzie \textit{MongoDB Compass}. Diagramy zostały utworzone dzięki wykorzystaniu narzędzi \textit{Astah UML} i \textit{diagrams.net}.
+	Do napisania projektu wykorzystano IDE (ang. \ang{Integrated development environment}) \textit{Visual Studio 2019}, które oferuje wiele narzędzi ułatwiających pisanie kodu w języku \textit{C\#}. Głównymi zaletami tego środowiska jest bliska współpraca z środowiskiem \textit{.NET}, zapewnienie narzędzi w postaci odpluskwiacza (ang. \ang{debugger}) czy integracja z systemem kontroli wersji GIT. Do pracy wykorzystano również IDE \textit{WebStorm} firmy \textit{JetBrains}, które pozwala na tworzenie aplikacji z platformą programistyczną \textit{Angular}. Do przeglądania kolekcji i dokumentów w bazie danych \textit{MongoDB} wykorzystano narzędzie \textit{MongoDB Compass}. Diagramy zostały utworzone dzięki wykorzystaniu narzędzi \textit{Astah UML} i \textit{diagrams.net}.
+	
+	\section{Wykorzystane zewnętrzne rozwiązania}
+	Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
+	
+	Językiem programowania użytym do stworzenia części serwerowej został \textit{C\#} firmy \textit{Microsoft}. Bliskie podobieństwo do języka \textit{Java} oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego \cite{bib:csharp}.
+	
+	Platformą programistyczną warstwy serwerowej została technologia \textit{.NET 5}, która pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka \textit{C\#}. Dzięki użyciu następcy \textit{.NET Core'a}, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem \textit{Microsoft} jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
+	
+	Do stworzenia interfejsu \textit{REST API} została wykorzystana biblioteka \textit{ASP.NET Core}, która pozwala na dodawanie metod interfejsu \textit{REST API}, które będą następnie konsumowane przez warstwę prezentacji. \textit{ASP.NET Core} wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu \textit{JWT} jak i komunikację z wykorzystaniem protokołu HTTPS\cite{bib:asp}.
+	
+	W celu wykorzystania wzorca projektowego \textit{CQRS} (ang. \ang{command query responsibility separation}) zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę \textit{Autofac}, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników\cite{bib:autofactag}.
+	
+	Wykorzystanie paradygmatu programowania obiektowego prowadziło do potrzeby mapowania niektórych typów na inne. W celu sprawniejszego przeprowadzania takich mapowań wykorzystano bibliotekę \textit{AutoMapper}, która na podstawie podanego obiektu tworzy inny według schematu określonego w klasie profilu (ang. \ang{Profile}).
+	
+	Jako bazę danych wykorzystano \textit{MongoDB}. \textit{MongoDB} jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie \textit{JSON}, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych \textit{NoSQL}, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów\cite{bib:mongodb_guide}. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
+	
+	Językiem programowania użytym w części wizualnej aplikacji jest język \textit{TypeScript} zaprojektowany przez firmę \textit{Microsoft}. W odróżnieniu od języka \textit{JavaScript}, \textit{TypeScript} oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego\cite{bib:typescript}.
+	
+	Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka \textit{TypeScript} oraz możliwość tworzenia aplikacji typu \textit{SPA}\cite{bib:anuglar}\cite{bib:typescript}.
+	
+	W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę \textit{Angular Material} z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię \textit{Google Material} do tworzenia warstw wizualizacji aplikacji internetowych.
+	
+	W warstwie prezentacji wykorzystano bibliotekę \textit{NgXS}, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy \textit{Redux}, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz zarządzanie danymi poprzez tworzenie stanów (ang. \ang{states}).
 	
 	\section {Metodyka pracy nad projektowaniem i implementacją}
 	
@@ -375,7 +409,7 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 		\item \textit{Samson.Web.Models} - projekt zawierający modele, wyliczenia (ang. \ang{enum}) oraz modele domenowe aplikacji
 	\end{itemize}
 	
-	W następnych krokach implementowano aplikacje tworząc w pierwszej kolejności kontrolery platformy \textit{ASP.NET}, a w krokach późniejszych dodawano szczegóły implementacji w postaci domeny, warstwy zapisu, warstwy odczytu oraz serwisów aplikacyjnych. Najważniejsze klasy domenowe zostały uzupełnione testami jednostkowymi w celu zapewnienia poprawności działania. Gdy tworzenie część serwerowa aplikacji zostało zakończone, rozpoczęto prace nad warstwą interfejsu użytkownika. Warstwa prezentacji była implementowana w następującej kolejności:
+	W następnych krokach implementowano aplikację tworząc w pierwszej kolejności kontrolery platformy \textit{ASP.NET}, a w krokach późniejszych dodawano szczegóły implementacji w postaci domeny, warstwy zapisu, warstwy odczytu oraz serwisów aplikacyjnych. Najważniejsze klasy domenowe zostały uzupełnione testami jednostkowymi w celu zapewnienia poprawności działania. Gdy tworzenie część serwerowa aplikacji zostało zakończone, rozpoczęto prace nad warstwą interfejsu użytkownika. Warstwa prezentacji była implementowana w następującej kolejności:
 	\begin{enumerate}
 		\item Opakowanie komponentów z bibliotek zewnętrznych
 		\item Utworzenie widoków i formularzy
@@ -604,43 +638,28 @@ W kolejnych etapach instalacji użytkownik powinien uruchomić instalacje za pom
 Aby sprawdzić czy instalacja przebiegła pomyślnie, można uruchomić polecenie \textit{node -v}, które powinno zwrócić informację o zainstalowanej wersji \textit{Node.js}.
 
 \subsection {Instalacja \textit{http-server}}
-Ostatnim etapem instalacji systemu jest instalacja serwera WWW, który obsługuje możliwość przekierowań do pliku \textit{index.html}. Aby zainstalować serwer \textit{http-server} w terminalu trzeba uruchomić następujące polecenie:
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		npm install -g http-server
-	\end{lstlisting}
-	\caption{Instalacja paczki \textit{http-server}}
-	\label{fig:httpServerInstall}
-\end{figure}
+Ostatnim etapem instalacji systemu jest instalacja serwera WWW, który obsługuje możliwość przekierowań do pliku \textit{index.html}. Aby zainstalować serwer \textit{http-server} w terminalu trzeba uruchomić polecenie zaprezentowane na Kod \ref{lst:httpServerInstall}.
+\begin{lstlisting}[caption={Instalacja paczki \textit{http-server}}, label={lst:httpServerInstall}]
+	npm install -g http-server
+\end{lstlisting}
 
 Polecenie to zainstaluje paczkę \textit{npm} do użytku w obrębie całego systemu. Dzięki instalacji globalnej użytkownik będzie mógł uruchomić serwer WWW z każdej lokalizacji na dysku.
 
 \section {Sposób aktywacji}
 \subsection{Uruchomienie warstwy serwerowej}
-Aby uruchomić aplikację stworzoną z wykorzystaniem platformy \textit{.NET} istnieje potrzeba skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku \textit{exe} użytkownik musi przejść do folderu w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala wywołać komendy:
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		dotnet restore;
-		dotnet build --configuration Release
-	\end{lstlisting}
-	\caption{Kompilacja projektu \textit{ASP.NET}}
-	\label{fig:dotnetCompilation}
-\end{figure}
+Aby uruchomić aplikację stworzoną z wykorzystaniem platformy \textit{.NET} istnieje potrzeba skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku \textit{exe} użytkownik musi przejść do folderu w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala wywołać komendę pokazaną na Kod \ref{lst:dotnetCompilation}.
+\begin{lstlisting}[caption={Kompilacja projektu \textit{ASP.NET}}, label={lst:dotnetCompilation}]
+	dotnet restore;
+	dotnet build --configuration Release
+\end{lstlisting}
 Pierwsza z komend wymusza instalację zewnętrznych zależności, które są zawarte w postaci paczek \textit{NuGet'owych}. Paczki te pozwalają na udostępnianie kodu napisanego przy wykorzystaniu platformy \textit{.NET}, a następnie mogą zostać wykorzystane do innych projektów przy pomocy narzędzia \textit{NuGet}. Druga komenda buduje projekt i zwraca wynik w postaci dynamicznych bibliotek \textit{dll} i pliku wykonywalnego \textit{exe}.
 
-W folderze \textit{./Samson.Web.Application.WebHost/bin/Release/net5.0} powinien powstać folder zawierający wyniki kompilacji. Następnie w celu uruchomienia pliku wykonywalnego użytkownik powinien przejść do folderu \\ ./Samson.Web.Application.WebHost/bin/Release/net5.0 przy pomocy komendy:
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		cd ./Samson.Web.Application.WebHost/bin/Release/net5.0
-	\end{lstlisting}
-	\caption{Przejście do folderu zawierającego plik wykonywalny}
-	\label{fig:aspnetChangeFolder}
-\end{figure}
+W folderze \textit{./Samson.Web.Application.WebHost/bin/Release/net5.0} powinien powstać folder zawierający wyniki kompilacji. Następnie w celu uruchomienia pliku wykonywalnego użytkownik powinien przejść do folderu \\ ./Samson.Web.Application.WebHost/bin/Release/net5.0 przy pomocy komendy zaprezentowanej na Kod \ref{lst:aspnetChangeFolder}.
+\begin{lstlisting}[caption={Przejście do folderu zawierającego plik wykonywalny}, label={lst:aspnetChangeFolder}]
+	cd ./Samson.Web.Application.WebHost/bin/Release/net5.0
+\end{lstlisting}
 
-Aby uruchomić warstwę serwerową aplikacji wymagane jest dodanie odpowiednich zmiennych środowiskowych przy pomocy poniższego polecenia. Przeznaczenie zmiennych jest następujące:
+Aby uruchomić warstwę serwerową aplikacji wymagane jest dodanie odpowiednich zmiennych środowiskowych przy pomocy polecenia pokazanego na Kod \ref{lst:varEnvironment}. Przeznaczenie zmiennych jest następujące:
 \begin{itemize}
 	\item \textit{MongoDB:DatabaseName} - nazwa bazy danych jaka zostanie utworzona w środowisku \textit{MongoDB}.
 	\item \textit{Authentication:JWT:Key} - klucz wykorzystywany do funkcji mieszającej, która jest wykorzystywana do zabezpieczenia żetonu \textit{JWT}.
@@ -648,48 +667,28 @@ Aby uruchomić warstwę serwerową aplikacji wymagane jest dodanie odpowiednich 
 	\item \textit{ConnectionString:MongoDB:Atlas} - ciąg znaków określający parametry połączenia z bazą danych. Jeżeli w trakcie instalacji serwera \textit{MongoDB} wartości domyślnie nie zostały zmienione to proponowany ciąg znaków powinien pozwolić na poprawne połączenie z bazą danych.
 \end{itemize}
 Wartości parametrów mogą zostać zmodyfikowane, ale zalecane jest aby pozostały w niezmienionej formie ze względu na proponowaną w wcześniejszych krokach konfigurację.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		$env:MongoDB:DatabaseName="SamsonDatabase";
-		$env:Authentication:JWT:Key="Top secret key to provide JWT token";
-		$env:ASPNETCORE_ENVIRONMENT="Release"
-		$env:ConnectionString:MongoDB:Atlas="mongodb://localhost:27017/?readPreference=primary&ssl=false";
-	\end{lstlisting}
-	\caption{Ustawienie wartości zmiennych środowiskowych}
-	\label{fig:varEnvironment}
-\end{figure}
+\begin{lstlisting}[caption={Ustawienie wartości zmiennych środowiskowych}, label={lst:varEnvironment}]
+	$env:MongoDB:DatabaseName="SamsonDatabase";
+	$env:Authentication:JWT:Key="Top secret key to provide JWT token";
+	$env:ASPNETCORE_ENVIRONMENT="Release"
+	$env:ConnectionString:MongoDB:Atlas="mongodb://localhost:27017/?readPreference=primary&ssl=false";
+\end{lstlisting}
 
-Ostatnim krokiem w uruchomieniu warstwy serwerowej jest uruchomienie poniższego polecenia.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		start Samson.Web.Application.WebHost.exe
-	\end{lstlisting}
-	\caption{Uruchomienie warstwy serwerowej aplikacji}
-	\label{fig:aspNetRun}
-\end{figure}
+Ostatnim krokiem w uruchomieniu warstwy serwerowej jest uruchomienie polecenia przedstawionego na Kod \ref{lst:aspNetRun}.
+\begin{lstlisting}[caption={Uruchomienie warstwy serwerowej aplikacji}, label={lst:aspNetRun}]
+	start Samson.Web.Application.WebHost.exe
+\end{lstlisting}
 
 \subsection{Uruchomienie warstwy prezentacji}
-Tak jak w przypadku warstwy serwerowej, warstwa prezentacji musi zostać skompilowana do postaci, która może zostać obsłużona przez serwer WWW. Aby to zrobić trzeba uruchomić terminal a następnie przejść do lokalizacji w której znajduje się projekt \textit{Samson.Web.Ui}. Kolejnym krokiem jest wywołanie poleceń, które zainstalują wymagane zależności a następnie utworzą paczkę wynikową:
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		npm install; npm run build
-	\end{lstlisting}
-	\caption{Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}
-	\label{fig:installAndBuildAngularProejct}
-\end{figure}
+Tak jak w przypadku warstwy serwerowej, warstwa prezentacji musi zostać skompilowana do postaci, która może zostać obsłużona przez serwer WWW. Aby to zrobić trzeba uruchomić terminal a następnie przejść do lokalizacji w której znajduje się projekt \textit{Samson.Web.Ui}. Kolejnym krokiem jest wywołanie poleceń, które zainstalują wymagane zależności a następnie utworzą paczkę wynikową. Polecenia zostały wypisane na Kod \ref{lst:installAndBuildAngularProejct}.
+\begin{lstlisting}[caption={Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}, label={lst:installAndBuildAngularProejct}]
+	npm install; npm run build
+\end{lstlisting}
 
-Końcowym krokiem uruchamiania warstwy interfejsu użytkownika jest uruchomienie serwera WWW z opcją przekierowania do pliku \textit{index.html}.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		cd dist/samson-web-ui; http-server --proxy http://localhost:8080?
-	\end{lstlisting}
-	\caption{Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}
-	\label{fig:runWWWServer}
-\end{figure}
+Końcowym krokiem uruchamiania warstwy interfejsu użytkownika jest uruchomienie serwera WWW z opcją przekierowania do pliku \textit{index.html}. Polecenie zostało wypisane na Kod \ref{lst:runWWWServer}.
+\begin{lstlisting}[caption={Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}, label={lst:runWWWServer}]
+	cd dist/samson-web-ui; http-server --proxy http://localhost:8080?
+\end{lstlisting}
 
 Po wywołaniu poprzedniego polecania aplikacja internetowa powinna być dostępna pod adresem: \textit{http://localhost:8080}.
 
@@ -955,10 +954,7 @@ Zadaniem bramki wyjściowej jest usuwanie z listy klientów osób, które już n
 \end{figure}
 
 \chapter{Specyfikacja wewnętrzna}
-Rozdział przestawia ideę stająca za architekturą wykorzystaną do stworzenia projektu. Następnie opisana zostaje architektura systemu z podziałem na warstwy z uwzględnieniem komunikacji pomiędzy nimi. W dalszej części rozdziału znajduje się przedstawienie organizacji bazy danych i spis wykorzystanych bibliotek zewnętrznych. W kolejnej części znajduje się przegląd najważniejszych klas i algorytmów. Rozdział zakończony jest opisem zastosowanych wzorców projektowych.
-
-\section{Idea}
-Głównym celem stworzenia systemu była chęć ułatwienia prowadzenia sieci siłowni w dobie pandemii koronawirusa. System udostępnia rozwiązania pozwalające na kontrolowanie liczby osób znajdujących się na siłowni oraz zdefiniowanie różnych limitów z uwzględnieniem lokalizacji danego obiektu. W przypadku sieci siłowni istotne jest stworzenie rozwiązania, które będzie przygotowane na zmiany w liczbie siłowni i klientów. System powinien być na tyle skalowalny by obsłużyć dużą liczbę jednoczesnych żądań. Ponadto sieć siłowni powinna posiadać aplikacje internetową, która pozwoli na korzystanie z systemu na wielu różnych urządzeniach.
+Rozdział rozpoczyna się od opisania architektury systemu z podziałem na warstwy z uwzględnieniem komunikacji pomiędzy nimi. W dalszej części rozdziału znajduje się przedstawienie organizacji bazy danych. Następnie w rozdziale przedstawiono przegląd najważniejszych klas i algorytmów. Rozdział zakończony jest opisem zastosowanych wzorców projektowych.
 
 \section{Architektura systemu}
 System został podzielony na dwie główne warstwy. Architektura została zaprezentowana w postaci następującego rysunku:
@@ -987,11 +983,10 @@ Istotną częścią warstwy serwerowej jest baza danych, która odpowiada za prz
 \subsubsection{Warstwa prezentacji}
 Warstwa prezentacji wysyła żądania do warstwy serwerowej przy pomocy metod \textit{HTTP} i interfejsu \textit{REST API}, który jest punktem łączącym obie warstwy. Podstawowym zadaniem, które realizuje ta warstwa jest graficzna prezentacja funkcjonalności w celu uproszczenia korzystania z systemu.
 
-
 \section{Organizacja bazy danych}
 Baza danych \textit{MongoDB} jest dokumentową, niereleacyjną bazą danych \textit{NoSQL}, więc nie posiada typowej struktury bazy \textit{SQL}. W przeciwieństwie do baz relacyjnych w bazie \textit{MongoDB} często stosuje się denormalizacje struktury w celu poprawienia wydajności odczytu danych. Wadą tego rozwiązania jest potrzeba ręcznego aktualizowania powielonych dokumentów oraz mniejsza wydajność zapisu.
 
-Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza. Na schemacie uwzględnione zostały relacje, które mają charakter poglądowy ze względu na to, że w bazie \textit{MongoDB} nie istnieją prawdziwe relacje pomiędzy kolekcjami.
+Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza. Na schemacie uwzględnione zostały relacje, które utworzono przy wykorzystaniu referencji. Takie podejście pozwala na wprowadzenie normalizacji danych i uniknięcie powielania dokumentów\cite{bib:mongoRelations}.
 
 \begin{figure}[H]
 	\centering
@@ -1000,157 +995,104 @@ Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza.
 	\label{fig:schematbazy}
 \end{figure}
 
-\section{Wykorzystane zewnętrzne rozwiązania}
-Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
-
-Językiem programowania użytym do stworzenia części serwerowej został \textit{C\#} firmy \textit{Microsoft}. Bliskie podobieństwo do języka \textit{Java} oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego \cite{bib:csharp}.
-
-Platformą programistyczną warstwy serwerowej została technologia \textit{.NET 5}, która pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka \textit{C\#}. Dzięki użyciu następcy \textit{.NET Core'a}, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem \textit{Microsoft} jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
-
-Do stworzenia interfejsu \textit{REST API} została wykorzystana biblioteka \textit{ASP.NET Core}, która pozwala na dodawanie metod interfejsu \textit{REST API}, które będą następnie konsumowane przez warstwę prezentacji. \textit{ASP.NET Core} wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu \textit{JWT} jak i komunikację z wykorzystaniem protokołu HTTPS\cite{bib:asp}.
-
-W celu wykorzystania wzorca projektowego \textit{CQRS} (ang. \ang{command query responsibility separation}) zamiast domyślnego kontenera zależności wykorzystano zewnętrzną bibliotekę \textit{Autofac}, która udostępnia możliwość wstrzykiwania obiektów oznaczonych atrybutami oraz określanie cyklu życia serwisu przy pomocy znaczników\cite{bib:autofactag}.
-
-Wykorzystanie paradygmatu programowania obiektowego prowadziło do potrzeby mapowania niektórych typów na inne. W celu sprawniejszego przeprowadzania takich mapowań wykorzystano bibliotekę \textit{AutoMapper}, która na podstawie podanego obiektu tworzy inny według schematu określonego w klasie profilu (ang. \ang{Profile}).
-
-Jako bazę danych wykorzystano \textit{MongoDB}. \textit{MongoDB} jest dokumentową bazą danych pozwalająca na przechowywanie danych w formacie \textit{JSON}, który jest formatem czytelnym dla człowieka. Baza danych należy do nierelacyjnych baz danych \textit{NoSQL}, której głównymi zaletami są: elastyczny schemat bazy, łatwe skalowanie wszerz oraz możliwość tworzenia zaawansowanych zapytań i raportów\cite{bib:mongodb_guide}. Opcja skalowania bazy wszerz jest istotna w systemach, gdzie trzeba zachować ciągłość działania systemu przy rosnącej bazie użytkowników.
-
-Językiem programowania użytym w części wizualnej aplikacji jest język \textit{TypeScript} zaprojektowany przez firmę \textit{Microsoft}. W odróżnieniu od języka \textit{JavaScript}, \textit{TypeScript} oferuje typowanie w czasie kompilacji, co pozwala na unikanie błędów związanych z niezgodnością typów. Dodanie interfejsów i uogólnień funkcji względem JavaScriptu pozwala na pisanie kodu z wykorzystaniem paradygmatów programowania obiektowego i generycznego\cite{bib:typescript}.
-
-Do stworzenia interfejsu użytkownika została wykorzystana platforma programistyczna Angular, która pozwala na tworzenie aplikacji internetowych przy wykorzystaniu komponentów wielokrotnego użytku. Cechą charakterystyczną platformy jest natywne wykorzystanie języka \textit{TypeScript} oraz możliwość tworzenia aplikacji typu \textit{SPA}\cite{bib:anuglar}\cite{bib:typescript}.
-
-W celu zminimalizowania czasu potrzebnego na tworzenie komponentów warstwy prezentacji wykorzystano bibliotekę \textit{Angular Material} z gotowym zestawem rozwiązań. Kontrolki zawarte w bibliotece implementują filozofię \textit{Google Material} do tworzenia warstw wizualizacji aplikacji internetowych.
-
-W warstwie prezentacji wykorzystano bibliotekę \textit{NgXS}, która pozwala na wykorzystanie wzorca zarządzania stanem. Rozwiązanie implementuje wzorzec projektowy \textit{Redux}, którego główną zaletą jest ułatwienie odpluskwiania warstwy prezentacji oraz zarządzanie danymi poprzez tworzenie stanów (ang. \ang{states}).
-
 \section{Przegląd najważniejszych klas}
-W trakcie pracy nad systemem zaistniała potrzeba stworzenia klasy pozwalającej na modyfikacje danych w bazie. Głównym założeniem było utworzenie klasy, która będzie wykorzystywać wzorzec repozytorium oraz metodę szablonową. Wzorzec repozytorium miał pomóc w stworzeniu klasy, której głównym zadaniem będzie realizowanie operacji \textit{CRUD}, natomiast wykorzystanie wzorca metody szablonowej miało pomóc w stworzeniu ogólnego algorytmu, który będzie uszczegółowiony w klasach pochodnych. Według tych zasad powstała abstrakcyjna klasa \textit{MongoRepository} reprezentująca ogólne algorytmy wykorzystywane do operacji \textit{CRUD}. Klasa implementuje operacje, które nie dotyczą żadnej, konkretnej kolekcji w bazie danych. To klasy pochodne \textit{MongoRepository}, wykorzystując klasę bazową, tworzą interfejs do zarządzania dokumentami w konkretnej kolekcji.
+W trakcie pracy nad systemem zaistniała potrzeba stworzenia klasy pozwalającej na modyfikacje danych w bazie. Głównym założeniem było utworzenie klasy, która będzie wykorzystywać wzorzec repozytorium oraz metodę szablonową. Wzorzec repozytorium miał pomóc w stworzeniu klasy, której głównym zadaniem będzie realizowanie operacji \textit{CRUD}, natomiast wykorzystanie wzorca metody szablonowej miało pomóc w stworzeniu ogólnego algorytmu, który będzie uszczegółowiony w klasach pochodnych. Według tych zasad powstała abstrakcyjna klasa \textit{MongoRepository} reprezentująca ogólne algorytmy wykorzystywane do operacji \textit{CRUD}. Klasa implementuje operacje, które nie dotyczą żadnej, konkretnej kolekcji w bazie danych. To klasy pochodne \textit{MongoRepository}, wykorzystując klasę bazową, tworzą interfejs do zarządzania dokumentami w konkretnej kolekcji. Kod klasy został zaprezentowany na Kod \ref{lst:mongoRepository}
 
-W projekcie można znaleźć wiele klas, które pełnią rolę klas odczytu danych. W takich przypadkach nie stworzono ogólnej klasy bazowej ze względu na niewielkie podobieństwo klas między sobą. Odczyt danych z bazy można osiągnąć na kilka sposobów przy wykorzystaniu sterownika \textit{.NET - MongoDB}. Pierwszy z nich to wykorzystanie wstawek w postaci języka \textit{JavaScript}, co pozwala na pisanie zapytań takich jak w konsoli \textit{MongoDB}. Jedną z takich klas, gdzie wykorzystano możliwości wstawek jest klasa \textit{ExerciseMachineReadModel}. Podstawowym zadaniem tej klasy jest odczyt danych z kolekcji \textit{ExerciseMachineCollection}, gdzie znajdują się informacje o posiadanym sprzęcie do ćwiczeń. Mimo, że \textit{MongoDB} jest nierelacyjną bazą danych, to dzięki wykorzystaniu operatora \textit{lookup} można stworzyć namiastkę złączeń (ang. \ang{join}), które są znane z relacyjnych baz danych. Poniżej zaprezentowana została metoda wykorzystująca operator \textit{lookup} i wcześniej wspominane wstawki kodu.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}			
-			private IAggregateFluent<BsonDocument> GetGetAllExerciseMachinesQuery()
-			{
-				var client = new MongoClient(_databaseConfiguration.ConnectionString);
-				var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
-				
-				var collection = database.GetCollection<ExerciseMachineEntity>("ExerciseMachineCollection");
-				
-				return collection
-					.Aggregate()
-					.AppendStage<BsonDocument>("{ $lookup: { from: 'GymObjectCollection', localField: 'LocalizationGymObjectId', foreignField: '_id', as: 'LocalizationGymObject'} }")
-					.AppendStage<BsonDocument>("{ $unwind: '$LocalizationGymObject' }");
-			}
-		}
-	\end{lstlisting}
-	\caption{Metoda odczytu danych z kolekcji \textit{ExerciseMachineCollection} przy wykorzystaniu wstawek \textit{JavaScript}}
-	\label{fig:exerciseMachineReadModel}
-\end{figure}
-Innym sposobem odczytu danych z bazy jest wykorzystanie składni \textit{LINQ}, która pozwala na m.in. tworzenie zapytań. Pomimo duży ograniczeń tego rozwiązania, \textit{LINQ} posiada możliwość tworzenia złączeń. Złączenia te są jednak bardzo ograniczone w porównaniu do baz relacyjnych. Poniżej przedstawiono fragment klasy \textit{GymObjectReadModel}, która odpowiada za odczyt danych z kolekcji \textit{GymObjectCollection}, gdzie znajdują się informacje o obiektach siłowni i pomieszczeniach. Jak widać składnia \textit{LINQ} pozwala na tworzenie zapytań, które przypominają składnie języka \textit{SQL}.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}			
-    public Task<GymObjectDto> GetById(ObjectId id)
+W projekcie można znaleźć wiele klas, które pełnią rolę klas odczytu danych. W takich przypadkach nie stworzono ogólnej klasy bazowej ze względu na niewielkie podobieństwo klas między sobą. Odczyt danych z bazy można osiągnąć na kilka sposobów przy wykorzystaniu sterownika \textit{.NET - MongoDB}. Pierwszy z nich to wykorzystanie wstawek w postaci języka \textit{JavaScript}, co pozwala na pisanie zapytań takich jak w konsoli \textit{MongoDB}. Jedną z takich klas, gdzie wykorzystano możliwości wstawek jest klasa \textit{ExerciseMachineReadModel}. Podstawowym zadaniem tej klasy jest odczyt danych z kolekcji \textit{ExerciseMachineCollection}, gdzie znajdują się informacje o posiadanym sprzęcie do ćwiczeń. Mimo, że \textit{MongoDB} jest nierelacyjną bazą danych, to dzięki wykorzystaniu operatora \textit{lookup} można stworzyć namiastkę złączeń (ang. \ang{join}), które są znane z relacyjnych baz danych. Na Kod \ref{lst:exerciseMachineReadModel} zaprezentowana została metoda wykorzystująca operator \textit{lookup} i wcześniej wspominane wstawki kodu.
+\begin{lstlisting}[caption={Metoda odczytu danych z kolekcji \textit{ExerciseMachineCollection} przy wykorzystaniu wstawek \textit{JavaScript}}, label={lst:exerciseMachineReadModel}]
+	private IAggregateFluent<BsonDocument> GetGetAllExerciseMachinesQuery()
 	{
 		var client = new MongoClient(_databaseConfiguration.ConnectionString);
 		var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
-	
-		var collection = database.GetCollection<GymObjectEntity>("GymObjectCollection");
-
-		var query = from gymObject in collection.AsQueryable()
-			where gymObject.Id == id
-			select gymObject;
-
-		return query
-			.SingleOrDefaultAsync()
-			.ContinueWith(result => _mapper.Map<GymObjectDto>(result.Result));
-	}
-	\end{lstlisting}
-\caption{Metoda odczytu danych z kolekcji \textit{GymObjectCollection} przy wykorzystaniu wstawek składni \textit{LINQ}}
-\label{fig:gymObjectReadModel}
-\end{figure}
-
-Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript} w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. W poniższym kodzie zaprezentowano metodę klasy 
-\textit{PersonalTrainerReadModel}, której zadaniem jest odczyt z bazy informacji o koncie trenera personalnego.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}			
-    public Task<PersonalTrainerDto> GetById(ObjectId id)
-	{
-		var client = new MongoClient(_databaseConfiguration.ConnectionString);
-		var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
-
-		var collection = database.GetCollection<PersonalTrainerEntity>("UserCollection");
-
-		var query = collection
-			.Aggregate()
-			.Match(clientEntity => clientEntity.Id == id)
-			.As<PersonalTrainerDto>();
-
-		return query.SingleOrDefaultAsync();
-	}
-	\end{lstlisting}
-	\caption{Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}
-	\label{fig:personalTrainerReadModel}
-\end{figure}
-
-\section{Przegląd wzorców projektowych}
-Poza wcześniej wymienionymi wzorcami repozytorium i metoda szablonowa do stworzenia aplikacji wykorzystano wzorzec \textit{CQRS}. Do implementacji wzorca \textit{CQRS} wykorzystuje się klasy komend i zapytań w celu rozdzielenia zadań dotyczących zapisu i odczytu danych. Komendy są obsługiwane przez klasy obsługi komend, gdzie wywoływane są metody serwisów aplikacyjnych do modyfikacji danych w bazie. Każda klasa obsługi komendy posiada metodę \textit{Handle}, która zostaje wywołana gdy zajdzie potrzeba obsłużenia żądania w postaci obiektu typu \textit{IRequest}. Poniżej przedstawiono kod metody \textit{Handle}, która jest fragmentem klasy \textit{CreateGymPassTypeCommandHandler}.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}			
-        public Task<ObjectId> Handle(CreateGymPassTypeCommand request, CancellationToken cancellationToken)
-		{
-			var dataStructure = _mapper.Map<CreateGymPassTypeCommand, CreateGymPassTypeDataStructure>(request);
-			return _service.Create(dataStructure);
-		}
-	\end{lstlisting}
-	\caption{Metoda \textit{Handle} klasy \textit{CreateGymPassTypeCommandHandler}}
-	\label{fig:commandHandler}
-\end{figure}
-Klasy obsługi komend odpowiadają za aktualizację danych w bazie, natomiast klasy obsługi odczytu mają za zadanie odczytać dane z bazy w celu przekazania ich do warstwy prezentacji. Poniżej zaprezentowana została klasa \textit{GymPassTypesQueryHandler}, która odpowiada za odczyt informacji o wszystkich typach karnetów w bazie.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-public class GymPassTypesQueryHandler : IRequestHandler<GetAllGymPassTypesQuery, List<GymPassTypeDto>>
-{
-	private readonly IGymPassReadModel _readModel;
-
-	public GymPassTypesQueryHandler(IGymPassReadModel readModel)
-	{
-		_readModel = readModel ?? throw new ArgumentNullException(nameof(readModel));
-	}
-
-	public Task<List<GymPassTypeDto>> Handle(GetAllGymPassTypesQuery query, CancellationToken cancellationToken)
-	{
-		return _readModel.GetAll();
+		
+		var collection = database.GetCollection<ExerciseMachineEntity>("ExerciseMachineCollection");
+		
+		return collection
+		.Aggregate()
+		.AppendStage<BsonDocument>("{ $lookup: { from: 'GymObjectCollection', localField: 'LocalizationGymObjectId', foreignField: '_id', as: 'LocalizationGymObject'} }")
+		.AppendStage<BsonDocument>("{ $unwind: '$LocalizationGymObject' }");
 	}
 }
-	\end{lstlisting}
-	\caption{Klasa \textit{GymPassTypesQueryHandler}}
-	\label{fig:queryHangler}
-\end{figure}
-Dopełnieniem \textit{CQRS} jest wzorzec projektowy mediator, którego zadaniem jest przekazywanie obiektów klas odczytu i komend do odpowiednich klas obsługi odczytu i obsługi komend. Takie rozwiązanie pozwala na zwiększenie skalowalności systemu i usunięcie potrzeby wstrzykiwania serwisów aplikacyjnych do klas kontrolerów. Klasa mediatora odpowiada za poprawne dostarczenie obiektu żądania do obiektu klasy obsługi tego żądania. Poniżej przedstawiono fragment kodu klasy kontrolera \textit{EventController}, który odpowiada za udostępnienie metod \textit{CRUD} dotyczących obiektów klasy \textit{Event}. Na fragmencie widać jak wykorzystywany jest mediator do przekazania żądania odczytu informacji o wydarzeniu.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-        public async Task<ActionResult> GetById(string id)
+\end{lstlisting}
+Innym sposobem odczytu danych z bazy jest wykorzystanie składni \textit{LINQ}, która pozwala na m.in. tworzenie zapytań. Pomimo duży ograniczeń tego rozwiązania, \textit{LINQ} posiada możliwość tworzenia złączeń. Złączenia te są jednak bardzo ograniczone w porównaniu do baz relacyjnych. Na Kod \ref{lst:gymObjectReadModel} przedstawiono fragment klasy \textit{GymObjectReadModel}, która odpowiada za odczyt danych z kolekcji \textit{GymObjectCollection}, gdzie znajdują się informacje o obiektach siłowni i pomieszczeniach. Jak widać składnia \textit{LINQ} pozwala na tworzenie zapytań, które przypominają składnie języka \textit{SQL}.
+\begin{lstlisting}[caption={Metoda odczytu danych z kolekcji \textit{GymObjectCollection} przy wykorzystaniu wstawek składni \textit{LINQ}}, label={lst:gymObjectReadModel}]
+	public Task<GymObjectDto> GetById(ObjectId id)
+	{
+		var client = new MongoClient(_databaseConfiguration.ConnectionString);
+		var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
+		
+		var collection = database.GetCollection<GymObjectEntity>("GymObjectCollection");
+		
+		var query = from gymObject in collection.AsQueryable()
+		where gymObject.Id == id
+		select gymObject;
+		
+		return query
+		.SingleOrDefaultAsync()
+		.ContinueWith(result => _mapper.Map<GymObjectDto>(result.Result));
+	}
+\end{lstlisting}
+
+Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript} w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. Na Kod \ref{lst:personalTrainerReadModel} zaprezentowano metodę klasy 
+\textit{PersonalTrainerReadModel}, której zadaniem jest odczyt z bazy informacji o koncie trenera personalnego.
+\begin{lstlisting}[caption={Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}, label={lst:personalTrainerReadModel}]
+	public Task<PersonalTrainerDto> GetById(ObjectId id)
+	{
+		var client = new MongoClient(_databaseConfiguration.ConnectionString);
+		var database = client.GetDatabase(_databaseConfiguration.DatabaseName);
+		
+		var collection = database.GetCollection<PersonalTrainerEntity>("UserCollection");
+		
+		var query = collection
+		.Aggregate()
+		.Match(clientEntity => clientEntity.Id == id)
+		.As<PersonalTrainerDto>();
+		
+		return query.SingleOrDefaultAsync();
+	}
+\end{lstlisting}
+
+\section{Przegląd wzorców projektowych}
+Poza wcześniej wymienionymi wzorcami repozytorium i metoda szablonowa do stworzenia aplikacji wykorzystano wzorzec \textit{CQRS}. Do implementacji wzorca \textit{CQRS} wykorzystuje się klasy komend i zapytań w celu rozdzielenia zadań dotyczących zapisu i odczytu danych. Komendy są obsługiwane przez klasy obsługi komend, gdzie wywoływane są metody serwisów aplikacyjnych do modyfikacji danych w bazie. Każda klasa obsługi komendy posiada metodę \textit{Handle}, która zostaje wywołana gdy zajdzie potrzeba obsłużenia żądania w postaci obiektu typu \textit{IRequest}. Na Kod \ref{lst:commandHandler} widać metodę \textit{Handle}, która jest fragmentem klasy \textit{CreateGymPassTypeCommandHandler}.
+\begin{lstlisting}[caption={Metoda \textit{Handle} klasy \textit{CreateGymPassTypeCommandHandler}}, label={lst:commandHandler}]
+	public Task<ObjectId> Handle(CreateGymPassTypeCommand request, CancellationToken cancellationToken)
+	{
+		var dataStructure = _mapper.Map<CreateGymPassTypeCommand, CreateGymPassTypeDataStructure>(request);
+		return _service.Create(dataStructure);
+	}
+\end{lstlisting}
+Klasy obsługi komend odpowiadają za aktualizację danych w bazie, natomiast klasy obsługi odczytu mają za zadanie odczytać dane z bazy w celu przekazania ich do warstwy prezentacji. Na Kod \ref{lst:queryHangler} zaprezentowana została klasa \textit{GymPassTypesQueryHandler}, która odpowiada za odczyt informacji o wszystkich typach karnetów w bazie.
+\begin{lstlisting}[caption={Klasa \textit{GymPassTypesQueryHandler}}, label={lst:queryHangler}]
+	public class GymPassTypesQueryHandler : IRequestHandler<GetAllGymPassTypesQuery, List<GymPassTypeDto>>
+	{
+		private readonly IGymPassReadModel _readModel;
+		
+		public GymPassTypesQueryHandler(IGymPassReadModel readModel)
 		{
-			if (id.IsNullOrEmpty())
-			{
-				return BadRequest();
-			}
-			
-			var query = _mapper.Map<string, GetEventByIdQuery>(id);
-			var queryResult = await _mediator.Send(query);
-			var result = _mapper.Map<EventDto, EventViewModel>(queryResult);
-			return Ok(result);
+			_readModel = readModel ?? throw new ArgumentNullException(nameof(readModel));
 		}
-	\end{lstlisting}
-	\caption{Metoda \textit{GetById} klasy \textit{EventController}}
-	\label{fig:mediator}
-\end{figure}
+		
+		public Task<List<GymPassTypeDto>> Handle(GetAllGymPassTypesQuery query, CancellationToken cancellationToken)
+		{
+			return _readModel.GetAll();
+		}
+	}
+\end{lstlisting}
+Dopełnieniem \textit{CQRS} jest wzorzec projektowy mediator, którego zadaniem jest przekazywanie obiektów klas odczytu i komend do odpowiednich klas obsługi odczytu i obsługi komend. Takie rozwiązanie pozwala na zwiększenie skalowalności systemu i usunięcie potrzeby wstrzykiwania serwisów aplikacyjnych do klas kontrolerów. Klasa mediatora odpowiada za poprawne dostarczenie obiektu żądania do obiektu klasy obsługi tego żądania. Poniżej przedstawiono fragment kodu klasy kontrolera \textit{EventController}, który odpowiada za udostępnienie metod \textit{CRUD} dotyczących obiektów klasy \textit{Event}. Na Kod \ref{lst:mediator} widać jak wykorzystywany jest mediator do przekazania żądania odczytu informacji o wydarzeniu.
+\begin{lstlisting}[caption={Metoda \textit{GetById} klasy \textit{EventController}}, label={lst:mediator}]
+	public async Task<ActionResult> GetById(string id)
+	{
+		if (id.IsNullOrEmpty())
+		{
+			return BadRequest();
+		}
+		
+		var query = _mapper.Map<string, GetEventByIdQuery>(id);
+		var queryResult = await _mediator.Send(query);
+		var result = _mapper.Map<EventDto, EventViewModel>(queryResult);
+		return Ok(result);
+	}
+\end{lstlisting}
 
 \chapter{Weryfikacja i walidacja}
 W tej części pracy opisano sposoby weryfikacji i walidacji tworzonego projektu. W pierwszej części przedstawiono metody testowania kodu aplikacji oraz jego przykłady. Następnie zaprezentowano sposób w jaki zorganizowano testy. Rozdział zakończony jest paroma przykładami błędów, które zostały wykryte dzięki testom.
@@ -1158,50 +1100,40 @@ W tej części pracy opisano sposoby weryfikacji i walidacji tworzonego projektu
 \section{Sposoby testowania}
 W trakcie pisania kodu systemu zaszła potrzeba sprawdzenia poprawności jego działania, aby to zrobić wykorzystano testy jednostkowe i manualne. Kod części serwerowej został przetestowany przy pomocy testów jednostkowych i manualnych, natomiast warstwa prezentacji została przetestowana przy pomocy testów manualnych. W celu utworzenia testów jednostkowych wykorzystano bibliotekę \textit{NUnit}.
 
-Testy jednostkowe pozwoliły na testowanie pojedynczych metod i klas przy pomocy kodu \textit{C\#}. Przetestowane zostały metody klas obiektów domenowych w których znajdowała się logika biznesowa systemu. Przykładowo poniżej przedstawiono kod testu jednostkowego, który odpowiadał za sprawdzenie poprawności operacji przedłużenia terminu ważności karnetu.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-		[Test]
-		public void Client_SecondGymPassExtendEndDate()
-		{
-			var gymPass = CreateTestGymPass();
-			var endDate = DateTime.Now;
-			endDate = endDate.AddDays(20);
-			
-			_client.ExtendPass(gymPass);
-			_client.ExtendPass(gymPass);
-			
-			var compareResult = _client.Subscription.EndDate.DayOfYear - endDate.DayOfYear;
-			Assert.Zero(compareResult, "Another extensions should add days to subscription duration");
-		}
-	\end{lstlisting}
-	\caption{Przykładowy test klasy \textit{ClientUnitTest}}
-	\label{fig:secondGymPassExtendEndDate}
-\end{figure}
+Testy jednostkowe pozwoliły na testowanie pojedynczych metod i klas przy pomocy kodu \textit{C\#}. Przetestowane zostały metody klas obiektów domenowych w których znajdowała się logika biznesowa systemu. Przykładowo na Kod \ref{lst:secondGymPassExtendEndDate} przedstawiono test jednostkowy, który odpowiada za sprawdzenie poprawności operacji przedłużenia terminu ważności karnetu.
+\begin{lstlisting}[caption={Przykładowy test klasy \textit{ClientUnitTest}}, label={lst:secondGymPassExtendEndDate}]
+	[Test]
+	public void Client_SecondGymPassExtendEndDate()
+	{
+		var gymPass = CreateTestGymPass();
+		var endDate = DateTime.Now;
+		endDate = endDate.AddDays(20);
+		
+		_client.ExtendPass(gymPass);
+		_client.ExtendPass(gymPass);
+		
+		var compareResult = _client.Subscription.EndDate.DayOfYear - endDate.DayOfYear;
+		Assert.Zero(compareResult, "Another extensions should add days to subscription duration");
+	}
+\end{lstlisting}
 
-Poza testami obiektów domenowych, napisano również testy, których zadaniem była kontrola przestrzegania konwencji jakie zostały narzucone w projekcie. Przyjęte konwencje są istotne ze względu na kontener wstrzykiwania zależności, który został użyty. Instancje niektórych klas powinny zostać dodane do kontenera w celu późniejszego wstrzyknięcia ich, aby tego dokonać system musi rozróżniać, które instancje klas powinny się w tym kontenerze znajdować. Rozwiązaniem tego problemu było dodanie atrybutów, które pełniły rolę znaczników klas, których instancje powinny się w takim kontenerze znajdować. Aby programista nie musiał poświęcać czasu na przeszukiwania projektu w celu odnalezienia klas, które takiego atrybutu nie mają, stworzono klasę \textit{ConventionUnitTest}, gdzie znajduje się kod testów jednostkowych odpowiedzialnych za kontrolę przyjętych konwencji. Poniżej przedstawiono test odpowiedzialny za sprawdzenie czy klasy repozytorium posiadają atrybut \textit{RepositoryAttribute}.
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-        [Test]
-		public void Repositories_AreAnnotatedByAttribute_Repository()
+Poza testami obiektów domenowych, napisano również testy, których zadaniem była kontrola przestrzegania konwencji jakie zostały narzucone w projekcie. Przyjęte konwencje są istotne ze względu na kontener wstrzykiwania zależności, który został użyty. Instancje niektórych klas powinny zostać dodane do kontenera w celu późniejszego wstrzyknięcia ich, aby tego dokonać system musi rozróżniać, które instancje klas powinny się w tym kontenerze znajdować. Rozwiązaniem tego problemu było dodanie atrybutów, które pełniły rolę znaczników klas, których instancje powinny się w takim kontenerze znajdować. Aby programista nie musiał poświęcać czasu na przeszukiwania projektu w celu odnalezienia klas, które takiego atrybutu nie mają, stworzono klasę \textit{ConventionUnitTest}, gdzie znajduje się kod testów jednostkowych odpowiedzialnych za kontrolę przyjętych konwencji. Na Kod \ref{lst:repositoryAttributeUnitTest} przedstawiono test odpowiedzialny za sprawdzenie czy klasy repozytorium posiadają atrybut \textit{RepositoryAttribute}.
+\begin{lstlisting}[caption={Przykładowy test klasy \textit{ConventionUnitTest}}, label={lst:repositoryAttributeUnitTest}]
+	[Test]
+	public void Repositories_AreAnnotatedByAttribute_Repository()
+	{
+		var classEndingInRepository = from type in _persistenceTypes
+		where !type.FullName.IsNullOrEmpty() && !type.IsInterface
+		where type.FullName.EndsWith("Repository")
+		select type;
+		
+		foreach (var repository in classEndingInRepository)
 		{
-			var classEndingInRepository = from type in _persistenceTypes
-			where !type.FullName.IsNullOrEmpty() && !type.IsInterface
-			where type.FullName.EndsWith("Repository")
-			select type;
-			
-			foreach (var repository in classEndingInRepository)
-			{
-				var hasRepositoryAttribute = repository.IsDefined(typeof(RepositoryAttribute), false);
-				Assert.True(hasRepositoryAttribute, $"Repository has to be annotated by RepositoryAttribute: {repository.Name}");
-			}
+			var hasRepositoryAttribute = repository.IsDefined(typeof(RepositoryAttribute), false);
+			Assert.True(hasRepositoryAttribute, $"Repository has to be annotated by RepositoryAttribute: {repository.Name}");
 		}
-	\end{lstlisting}
-	\caption{Przykładowy test klasy \textit{ConventionUnitTest}}
-	\label{fig:repositoryAttributeUnitTest}
-\end{figure}
+	}
+\end{lstlisting}
 W celu przetestowania poprawności działania warstwy serwerowej wykorzystano również testy manualne. Projekt \textit{ASP.NET} posiada domyślnie włączone automatyczne generowanie interaktywnej dokumentacji \textit{Swagger}, która pozwala na manualne testowanie interfejsu \textit{REST API}.
 \begin{figure}[H]
 	\centering
@@ -1217,23 +1149,18 @@ Podczas pracy nad systemem równolegle tworzono kod testów jednostkowych, aby j
 \section{Przykłady wykrytych i usuniętych błędów}
 W trakcie pracy nad systemem wykryto, dzięki testom kilka błędów wynikających z niepoprawnej implementacji. Jednym z przykładów niepoprawnego działania, było usuwanie konta użytkownika zamiast jego archiwizacja. Gdy ten sam użytkownik był zapisany na jakiś trening lub wydarzenie, a konto zostało usunięte całkowicie z bazy to w danych pojawiły się relacje do nieistniejącego konta co prowadziło do licznych błędów.
 
-Poprzedni błąd został wykryty przez testy manualne, natomiast udało się wykryć błąd przy pomocy testu jednostkowego. W systemie istnieje moduł, który odpowiada za kontrolę liczby osób, która znajduje się na siłowni. Maksymalna liczba osób była obliczana w niepoprawny sposób z powodu wykonywania dzielenia zamiast mnożenia w poniżej funkcji:
-\begin{figure} [H]
-	\centering
-	\begin{lstlisting}
-        public int CalcMaximumClientsCount()
-		{
-			if (CovidConfiguration == null)
-			return -1;
-			
-			var availableGymObjectArea = GymObjectArea();
-			/* (int) Math.Floor(availableGymObjectArea / CovidConfiguration.PersonFactorPerMeter); */
-			return (int) Math.Floor(availableGymObjectArea * CovidConfiguration.PersonFactorPerMeter);
-		}
-	\end{lstlisting}
-	\caption{Metoda licząca jaka jest maksymalna liczba osób, która znajduje się w jednej chwili w obiekcie siłowni}
-	\label{fig:calcMaxPeople}
-\end{figure}
+Poprzedni błąd został wykryty przez testy manualne, natomiast udało się wykryć błąd przy pomocy testu jednostkowego. W systemie istnieje moduł, który odpowiada za kontrolę liczby osób, która znajduje się na siłowni. Maksymalna liczba osób była obliczana w niepoprawny sposób z powodu wykonywania dzielenia zamiast mnożenia. Poprawiona funkcja została zaprezentowana na Kod \ref{lst:calcMaxPeople}
+\begin{lstlisting}[caption={Metoda licząca jaka jest maksymalna liczba osób, która znajduje się w jednej chwili w obiekcie siłowni}, label={lst:calcMaxPeople}]
+	public int CalcMaximumClientsCount()
+	{
+		if (CovidConfiguration == null)
+		return -1;
+		
+		var availableGymObjectArea = GymObjectArea();
+		/* (int) Math.Floor(availableGymObjectArea / CovidConfiguration.PersonFactorPerMeter); */
+		return (int) Math.Floor(availableGymObjectArea * CovidConfiguration.PersonFactorPerMeter);
+	}
+\end{lstlisting}
 
 Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie błędów we wczesnym etapie tworzenia aplikacji. W systemie wykorzystano bibliotekę \textit{AutoMapper}, która pozwala na mapowanie obiektów z jednej klasy na inną według zdefiniowanego schematu. Gdy taki schemat nie został zdefiniowany, a funkcja \textit{Map} została wywołana to o błędzie użytkownik dowiadywał się dopiero gdy aplikacja została już uruchomiona. W takich przypadkach interaktywna dokumentacja pozwoliła na wykrywanie błędów i ich usuwanie jeszcze przed utworzeniem interfejsu użytkownika.
 
@@ -1279,46 +1206,41 @@ Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie
 
 \chapter*{Źródła}
 \addcontentsline{toc}{chapter}{Źródła}
-\begin{figure}
-	\centering
-	\begin{lstlisting}
-		public abstract class MongoRepository<TModel, TEntity> : IRepository<TModel> where TModel : IAggregate where TEntity : IEntity
-		{
-			protected readonly IMongoCollection<TEntity> Collection;
-			protected readonly IMapper Mapper;
-			
-			public MongoRepository(IDatabaseConfiguration databaseConfiguration, IMapper mapper)
-			{...}
+\begin{lstlisting}[caption={Klasa \textit{MongoRepository}}, label={lst:mongoRepository}, nolol=true]
+	public abstract class MongoRepository<TModel, TEntity> : IRepository<TModel> where TModel : IAggregate where TEntity : IEntity
+	{
+		protected readonly IMongoCollection<TEntity> Collection;
+		protected readonly IMapper Mapper;
+		
+		public MongoRepository(IDatabaseConfiguration databaseConfiguration, IMapper mapper)
+		{...}
+		
+		public MongoRepository(IDatabaseConfiguration databaseConfiguration, IMapper mapper, string collectionName)
+		{...}
+		
+		public TModel Get(ObjectId id)
+		{...}
+		
+		public List<TModel> Get()
+		{...}
+		
+		public Task<ObjectId> Create(TModel model)
+		{...}
+		
+		public Task<ObjectId> Update(ObjectId id, TModel updatedModel)
+		{...}
+		
+		public Task<ObjectId> Remove(TModel modelToDelete)
+		{...}
+		
+		public Task<ObjectId> Remove(ObjectId id) => ...
+	}
+\end{lstlisting}
 
-			public MongoRepository(IDatabaseConfiguration databaseConfiguration, IMapper mapper, string collectionName)
-			{...}
-			
-			public TModel Get(ObjectId id)
-			{...}
-			
-			public List<TModel> Get()
-			{...}
-			
-			public Task<ObjectId> Create(TModel model)
-			{...}
-			
-			public Task<ObjectId> Update(ObjectId id, TModel updatedModel)
-			{...}
-			
-			public Task<ObjectId> Remove(TModel modelToDelete)
-			{...}
-			
-			public Task<ObjectId> Remove(ObjectId id) => ...
-		}
-	\end{lstlisting}
-	\caption{Klasa \lstinline|MongoRepository|.}
-	\label{fig:mongoRepository}
-\end{figure} 
-
-\chapter*{Zawartość dołączonej płyty}
+\chapter*{Spis załączników elektronicznych}
 \addcontentsline{toc}{chapter}{Zawartość dołączonej płyty}
 
-Do pracy dołączona jest płyta CD z~następującą zawartością:
+Do pracy dołączona jest następującą zawartością:
 \begin{itemize}
 \item praca (źródła \LaTeX owe i końcowa wersja w \texttt{pdf}),
 \item źródła programu,
@@ -1326,7 +1248,8 @@ Do pracy dołączona jest płyta CD z~następującą zawartością:
 \end{itemize}
 
 \listoffigures
-\listoftables
+	
+\lstlistoflistings
 	
 \end{appendices}
 

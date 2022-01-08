@@ -1,12 +1,13 @@
 \begin{thebibliography}{10}
 
-\bibitem{bib:nuni}
-{ What is NUnit? }.
-\newblock \url{https://nunit.org/}.
-
 \bibitem{bib:anuglar}
 {Angular: The modern web developer's platform}.
 \newblock \url{https://angular.io/}.
+
+\bibitem{bib:mongoRelations}
+{Data Model Design}.
+\newblock
+  \url{https://docs.mongodb.com/manual/core/data-model-design/#std-label-data-modeling-referencing}.
 
 \bibitem{bib:wodguru}
 {Funkcjonalności, które ułatwią zarządzanie Twoim klubem}.

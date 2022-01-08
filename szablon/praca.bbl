@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{bib:url}
+{Autor, jesli znany}.
+\newblock https://www.fbi.gov/news/stories/forging-papers-to-sell-fake-art.
+  dost{\k{e}}p 6.05.2017.
+
+\bibitem{bib:artykul}
+Imi{\k{e}} Nazwisko,  Imi{\k{e}} Nazwisko.
+\newblock Tytu{\l} artyku{\l}u w czasopi{\'{s}}mie.
+\newblock {\em Tytu{\l} czasopisma}, 157(8):1092--1113, 2016.
+
+\bibitem{bib:ksiazka}
+Imi{\k{e}} Nazwisko,  Imi{\k{e}} Nazwisko.
+\newblock {\em Tytu{\l} ksi{\k{a}}{\.{z}}ki}.
+\newblock Wydawnictwo, Warszawa, 2017.
+
+\bibitem{bib:konferencja}
+Imi{\k{e}} Nazwisko, Imi{\k{e}} Nazwisko, Imi{\k{e}}~I. Nazwisko.
+\newblock Tytu{\l} artyku{\l}u konferencyjnego.
+\newblock {\em Nazwa konferecji}, strony 5346--5349, 2006.
+
+\end{thebibliography}

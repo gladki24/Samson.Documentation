@@ -12,17 +12,17 @@ I was expecting a `,' or a `}'---line 53 of file bibliografia.bib
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in bib:perfectgym
 Warning--to sort, need author or key in bib:wodguru
+Warning--to sort, need author or key in bib:autofactag
+Warning--to sort, need author or key in bib:anuglar
 Warning--to sort, need author or key in bib:requirementsWin
 Warning--to sort, need author or key in bib:requirementsMac
 Warning--to sort, need author or key in bib:requirementsLinux
 Warning--to sort, need author or key in bib:requirementsMongo
 Warning--to sort, need author or key in bib:requirementsFramework
-Warning--to sort, need author or key in bib:autofactag
-Warning--to sort, need author or key in bib:anuglar
-Warning--to sort, need author or key in bib:nuni
+Warning--to sort, need author or key in bib:mongoRelations
 You've used 15 entries,
             2129 wiz_defined-function locations,
-            571 strings with 5905 characters,
+            572 strings with 6007 characters,
 and the built_in function-call counts, 2793 in all, are:
 = -- 257
 > -- 62
