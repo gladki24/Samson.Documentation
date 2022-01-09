@@ -3,7 +3,10 @@
 \addvspace {10\p@ }
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram przypadków użycia\relax }}{14}{figure.caption.3}%
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
@@ -20,9 +23,8 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram przypadków użycia\relax }}{18}{figure.caption.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Strona z której można pobrać instalator serwera bazy danych MongoDB\relax }}{21}{figure.caption.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Strona, z której można pobrać instalator serwera bazy danych MongoDB\relax }}{21}{figure.caption.4}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Rozpoczęcie instalacji serwera\relax }}{21}{figure.caption.5}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Umowa licencyjna \textit {MongoDB Community Edition}\relax }}{22}{figure.caption.6}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Typ instalacji w instalatorze \textit {MongoDB Community Edition}\relax }}{22}{figure.caption.7}%
@@ -61,7 +63,7 @@
 \contentsline {figure}{\numberline {4.37}{\ignorespaces Pogląd wydarzenia jako klient\relax }}{43}{figure.caption.50}%
 \contentsline {figure}{\numberline {4.38}{\ignorespaces Formularz dodawania treningu\relax }}{44}{figure.caption.52}%
 \contentsline {figure}{\numberline {4.39}{\ignorespaces Lista dostępnych treningów indywidualnych\relax }}{44}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista treningów na które zapisał się klient\relax }}{45}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista treningów, na które zapisał się klient\relax }}{45}{figure.caption.55}%
 \contentsline {figure}{\numberline {4.41}{\ignorespaces Lista utworzonych treningów przez trenera\relax }}{45}{figure.caption.56}%
 \contentsline {figure}{\numberline {4.42}{\ignorespaces Lista z dostępnymi opcjami zarządzania treningiem\relax }}{45}{figure.caption.57}%
 \contentsline {figure}{\numberline {4.43}{\ignorespaces Oferta karnetów oraz informacje o posiadanym karnecie\relax }}{46}{figure.caption.58}%
@@ -105,6 +107,8 @@
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
+\babel@toc {british}{}\relax 
+\babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \babel@toc {british}{}\relax 

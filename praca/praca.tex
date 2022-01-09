@@ -278,14 +278,11 @@ Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego 
 
 \chapter{Wstęp}
 
-\begin{itemize}
-\item wprowadzenie w problem/zagadnienie
-\item osadzenie problemu w dziedzinie
-\item cel pracy
-\item zakres pracy
-\item zwięzła charakterystyka rozdziałów
-\item jednoznaczne określenie wkładu autora, w przypadku prac wieloosobowych – tabela z autorstwem poszczególnych elementów pracy
-\end{itemize}
+Głównym celem tego projektu jest stworzenie systemu informatycznego pozwalającego na prowadzenie sieci siłowni z wykorzystaniem dokumentowej bazy danych. W ramach pracy założono, że spełnione zostaną wymagania funkcjonalne związane z obostrzeniami sanitarnymi. Prowadzenie obiektu siłowni jest utrudnione w czasie pandemii ze względu na częste zmiany w przepisach związanych z ograniczeniami pandemicznymi. Wymienione wcześniej problemy były głównym powodem powstania tego projektu.
+
+Wykorzystanie dokumentowej bazy danych jest związane z zaletami baz \textit{NoSQL}. Niektóre cechy wcześniej wymienionych baz nie są dostępne dla relacyjnych baz danych. Jedną z takich cech jest duża podatność na zmiany w strukturze względem relacyjnych baz oraz przystosowanie do skalowania wszerz\cite{bib:noSqlVsSql}.
+
+Pracę podzielono na rozdziały, gdzie pierwszy został poświęcony analizie tematu. Analiza zawiera informacje o idei powstania systemu oraz wyzwaniach z którymi projekt będzie musiał się mierzyć. Kolejny rozdział został poświęcony wymaganiom i narzędziom. Wymagania w rozdziale \ref{chap:Wymagania} zostały podzielone na funkcjonalne i niefunkcjonalne, a w kolejnych podrozdziałach opisano narzędzia, które wykorzystano do ich realizacji. Rozdział \ref{chap:external} opisuje wymagania sprzętowe, kategorie użytkowników oraz przykłady działania aplikacji. Poza tym zawiera wyczerpującą instrukcję instalacji i uruchamiania systemu. W rozdziale \ref{chap:internal} skupiono się na opisie architektury i przyjętej organizacji bazy danych. W kolejnych podrozdziałach przedstawiono przegląd najważniejszych klas i wzorców projektowych. Rozdział \ref{chap:validation} poświęcono testom jakim został poddany system. W ramach rozdziału opisano sposoby i organizacje testów z podziałem na testy jednostkowe i manualne. Ostatni rozdział \ref{chap:summary} przedstawia wnioski i obserwacje do jakich doszło w trakcie prac. Rozdział kończy się przedstawieniem propozycji usprawnienia systemu w przypadku kontynuowania pracy nad nim.
 
 \chapter{Analiza tematu}
 Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupy klientów. Stawia to nowe wyzwania w organizacji pracy i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
@@ -300,14 +297,22 @@ Wyzwaniem stawianym przez pandemię koronawirusa jest reagowanie na częste zmia
 
 Kolejnym problemem jest liczba użytkowników korzystających z system informatycznego. Sieć siłowni w przeciwieństwie do pojedynczego obiektu musi obsługiwać żądania dużej liczby klientów. Aby zapewnić ciągłość działania systemu ważne jest aby stworzone oprogramowanie było skalowalne. Skalowanie może zostać wykonywane \textit{w górę} (poprzez zmodyfikowanie serwera w celu poprawy jego wydajności) lub \textit{w szerz} (rozdzielenie obciążenia pomiędzy większą liczbą serwerów)\cite{bib:mongodb_guide}. W wielu przypadkach skalowanie w górę jest zbyt kosztowne lub niemożliwe ze względu na ograniczenia technologiczne. W takim przypadku z pomocą przychodzi skalowanie wszerz, które pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami.
 
+Poza skalowalnością, baza danych powinna posiadać mechanizmy, które zapewnią szybkie przywrócenie działania w przypadku awarii. Klienci, którzy będą doświadczać częstych problemów nie będą chętnie korzystać z proponowanego systemu. W sieci siłowni liczba klientów jest zdecydowanie większa niż w przypadku pojedynczego obiektu, co może generować ewentualne problemy.
+
+Rozwiązaniem problemu skalowalności i awaryjności może być wykorzystanie bazy \textit{NoSQL}. Jedną z takich baz jest \textit{MongoDB}, która pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami. Podział ten, w przypadku \textit{MongoDB}, realizowany jest poprzez wykorzystanie mechanizmu partycjonowania danych (ang. \ang{sharding}). Idea tego rozwiązania polega na podzieleniu danych na podzbiory, które są następnie umieszczane na różnych serwerach. Podział ten może zostać skonfigurowany w takich sposób, aby dane częściej wykorzystywane znajdowały się na maszynach o większej wydajności. Inną zaletą partycjonowania danych jest możliwość stworzenia zbioru replik. W przypadku awarii jednej z maszyn, inna przejmuje jej obowiązki, aby zapewnić ciągłość w działaniu\cite{bib:mongodb_guide}.
+
+Kolejną zaletą wykorzystania dokumentowej bazy danych jest elastyczność schematu\cite{bib:noSqlVsSql}. System, zwłaszcza w początkowej fazie rozwoju, będzie poddawany dużej liczbie zmian w schemacie bazy. \textit{NoSQL} charakteryzuje się łatwością wprowadzenia zmian w tym aspekcie.
+
 Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań \cite{bib:perfectgym} \cite{bib:wodguru}, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, wyposażeniem oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
 
-Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawową funkcjonalność potrzebne w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością. Aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa (ang. \ang{backend}) aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
+Tworzony system powinien zapewnić wsparcie pracownikom w spełnianiu aktualnych norm i obostrzeń sanitarnych oraz dostarczyć podstawową funkcjonalność potrzebną w prowadzeniu działalności sieci siłowni. W celu uniknięcia problemów z wydajnością, aplikacja powinna cechować się skalowalnością w celu zapewnienia szybkości i ciągłości działania nawet w przypadku dużej liczby aktywnych użytkowników. Aby to osiągnąć system powinien zostać utworzony przy pomocy infrastruktury, która pozwoli na skalowanie wszerz. Warstwa serwerowa (ang. \ang{backend}) aplikacji powinna zostać utworzona w technologii i przy pomocy metodyk, które pozwolą na łatwe dostosowanie aplikacji do architektury mikro-usług.
 
 \chapter{Wymagania i narzędzia}
+\label{chap:Wymagania}
 W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą zostać spełnione. W dalszej części znajdują się wymagania niefunkcjonalne oraz diagramy przypadków użycia. Rozdział kończy się opisem wykorzystanych narzędzi, zewnętrznych rozwiązań oraz metodyk pracy nad projektem.
 
 	\section{Wymagania funkcjonalne} 
+	\label{sec:req}
 	Wymienione punkty stanowią listę wszystkich funkcji jakie powinna oferować aplikacja. Opisują one zakres funkcjonalności udostępnionej użytkownikowi poprzez warstwę prezentacji oraz interfejs REST API.
 		\begin{itemize}
 			\item Tworzenie konta trenera personalnego - w systemie powinna istnieć możliwość dodawania kont dla pracowników siłowni w celu zarządzania zasobami.
@@ -355,9 +360,11 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 		\end{itemize}
 	
 	\section {Diagram przypadków użycia (UML)}
-	Diagram przypadków użycia pozwala na przedstawienie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów.
+	Diagram przypadków użycia pozwala na zaprezentowanie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów. Wymagania funkcjonalne z podrozdziału \ref{sec:req} przeniesione zostały na schemat, a następnie przydzielone do wcześniej zdefiniowanych aktorów.
 	
-\begin{figure}[h!t!b]
+	W systemie wydzielono aktorów: \textit{trener personalny} i \textit{klient sieci siłowni}, którzy są szczególnymi przypadkami aktora \textit{zarejestrowany użytkownik}. Poza tym wydzielono również aktorów takich jak \textit{bramka wejściowa} i \textit{bramka wyjściowa}, którzy będą odpowiedzialni za kontrolowanie liczby osób na siłowni. Ostatnim aktorem obecnym w systemie jest \textit{użytkownik niezarejestrowany}, którego rola sprowadza się do możliwości zarejestrowania się w systemie.
+	
+\begin{figure}[H]
 	\includegraphics[height=1\textheight, width=1\textwidth]{diagram_przypadków_użycia.png}
 	\caption{Diagram przypadków użycia}
 	\label{fig:diagramPrzpydakowUzyciaUML}
@@ -371,7 +378,7 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 	
 	Językiem programowania użytym do stworzenia części serwerowej został \textit{C\#} firmy \textit{Microsoft}. Bliskie podobieństwo do języka \textit{Java} oraz wiele usprawnień względem niego pozwala na tworzenie oprogramowania przy wykorzystaniu technik programowania obiektowego, funkcyjnego czy generycznego \cite{bib:csharp}.
 	
-	Platformą programistyczną warstwy serwerowej została technologia \textit{.NET 5}, która pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka \textit{C\#}. Dzięki użyciu następcy \textit{.NET Core'a}, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem \textit{Microsoft} jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
+	Platformą programistyczną warstwy serwerowej została technologia \textit{.NET 5}, która pozwala na tworzenie aplikacji wieloplatformowych z pomocą języka \textit{C\#}. Dzięki użyciu następcy \textit{.NET Core'a}, aplikacja może zostać uruchomiona zarówno na urządzeniach z systemem \textit{Microsoft} jak i dystrybucjach systemu Linux co pozwala na elastyczność względem wyboru środowiska, w którym aplikacja będzie pracować \cite{bib:dotnet5introduction}.
 	
 	Do stworzenia interfejsu \textit{REST API} została wykorzystana biblioteka \textit{ASP.NET Core}, która pozwala na dodawanie metod interfejsu \textit{REST API}, które będą następnie konsumowane przez warstwę prezentacji. \textit{ASP.NET Core} wspiera wykorzystanie kontenerów wstrzykiwania zależności, obsługę autoryzacji przy pomocy żetonu \textit{JWT} jak i komunikację z wykorzystaniem protokołu HTTPS\cite{bib:asp}.
 	
@@ -418,6 +425,7 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 	\end{enumerate}
 
 \chapter{Specyfikacja zewnętrzna}
+\label{chap:external}
 W tym rozdziale znajduje się spis wymagań sprzętowych, których spełnienie jest wymagane do poprawnego działania systemu. W dalszej części znajduje się instrukcja instalacji systemu oraz opis sposobu jego aktywacji. Kolejne podrozdziały opisują kategorie użytkowników i metody, które zostały wykorzystane do zabezpieczenia wrażliwych danych. Rozdział kończy się przykładami działania aplikacji w postaci zrzutów ekranu i opisów.
 
 \section {Wymagania sprzętowe}
@@ -453,7 +461,7 @@ Aby aplikacja działała w poprawny sposób spełnione muszą być poniższe wym
 		\end{itemize}
 	\end{itemize}
 
-Są to minimalne wymagania do uruchomienia bazy danych \textit{MongoDB} oraz aplikacji z wykorzystaniem platformy uruchomieniowej \textit{.NET 5}. Ponadto wymagane są dodatkowe zasoby potrzebne do uruchomienia przeglądarki w której wyświetlony zostanie interfejs użytkownika.
+Są to minimalne wymagania do uruchomienia bazy danych \textit{MongoDB} oraz aplikacji z wykorzystaniem platformy uruchomieniowej \textit{.NET 5}. Ponadto wymagane są dodatkowe zasoby potrzebne do uruchomienia przeglądarki, w której wyświetlony zostanie interfejs użytkownika.
 
 \section {Instalacja}
 
@@ -463,7 +471,7 @@ W celu zainstalowania aplikacji, trzeba spełnić wymagania wymienione w poprzed
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodbsite}
-	\caption{Strona z której można pobrać instalator serwera bazy danych MongoDB}
+	\caption{Strona, z której można pobrać instalator serwera bazy danych MongoDB}
 	\label{fig:mongodbsite}
 \end{figure}
 \afterpage{\clearpage}
@@ -647,7 +655,7 @@ Polecenie to zainstaluje paczkę \textit{npm} do użytku w obrębie całego syst
 
 \section {Sposób aktywacji}
 \subsection{Uruchomienie warstwy serwerowej}
-Aby uruchomić aplikację stworzoną z wykorzystaniem platformy \textit{.NET} istnieje potrzeba skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku \textit{exe} użytkownik musi przejść do folderu w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala wywołać komendę pokazaną na Kod \ref{lst:dotnetCompilation}.
+Aby uruchomić aplikację stworzoną z wykorzystaniem platformy \textit{.NET} istnieje potrzeba skompilowania jej do pliku wykonywalnego. W celu utworzenia pliku \textit{exe} użytkownik musi przejść do folderu, w którym znajduje się projekt \textit{Samson.Web.Application}, a następnie z poziomu terminala wywołać komendę pokazaną na Kod \ref{lst:dotnetCompilation}.
 \begin{lstlisting}[caption={Kompilacja projektu \textit{ASP.NET}}, label={lst:dotnetCompilation}]
 	dotnet restore;
 	dotnet build --configuration Release
@@ -680,7 +688,7 @@ Ostatnim krokiem w uruchomieniu warstwy serwerowej jest uruchomienie polecenia p
 \end{lstlisting}
 
 \subsection{Uruchomienie warstwy prezentacji}
-Tak jak w przypadku warstwy serwerowej, warstwa prezentacji musi zostać skompilowana do postaci, która może zostać obsłużona przez serwer WWW. Aby to zrobić trzeba uruchomić terminal a następnie przejść do lokalizacji w której znajduje się projekt \textit{Samson.Web.Ui}. Kolejnym krokiem jest wywołanie poleceń, które zainstalują wymagane zależności a następnie utworzą paczkę wynikową. Polecenia zostały wypisane na Kod \ref{lst:installAndBuildAngularProejct}.
+Tak jak w przypadku warstwy serwerowej, warstwa prezentacji musi zostać skompilowana do postaci, która może zostać obsłużona przez serwer WWW. Aby to zrobić trzeba uruchomić terminal a następnie przejść do lokalizacji, w której znajduje się projekt \textit{Samson.Web.Ui}. Kolejnym krokiem jest wywołanie poleceń, które zainstalują wymagane zależności a następnie utworzą paczkę wynikową. Polecenia zostały wypisane na Kod \ref{lst:installAndBuildAngularProejct}.
 \begin{lstlisting}[caption={Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}, label={lst:installAndBuildAngularProejct}]
 	npm install; npm run build
 \end{lstlisting}
@@ -774,7 +782,7 @@ W formularzu edycji obiektów powinna wyświetlić się możliwość wybrania wc
 
 
 \subsubsection{Zarządzanie pomieszczeniami}
-System udostępnia możliwość dodawania pomieszczeń do obiektów siłowni. Pomieszczenia są istotne ze względu na możliwość przypisania do nich akcesoriów do ćwiczeń oraz wyliczania maksymalnej liczby osób, która może znajdować się na siłowni. W formularzu muszą zostać podane informacje o siłowni w której znajduje się pomieszczenie, nazwa pomieszczenia oraz jego szerokość i długość.
+System udostępnia możliwość dodawania pomieszczeń do obiektów siłowni. Pomieszczenia są istotne ze względu na możliwość przypisania do nich akcesoriów do ćwiczeń oraz wyliczania maksymalnej liczby osób, która może znajdować się na siłowni. W formularzu muszą zostać podane informacje o siłowni, w której znajduje się pomieszczenie, nazwa pomieszczenia oraz jego szerokość i długość.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie}
@@ -792,7 +800,7 @@ Wcześniej utworzone pomieszczenie może zostać zarchiwizowane.
 
 
 \subsubsection{Zarządzaniem sprzętem do ćwiczeń i akcesoriami}
-System informatyczny powinien udostępniać możliwość stworzenia listy posiadanych akcesoriów do ćwiczeń. Dzięki takiej liście personel ma dostęp do informacji o posiadanym sprzęcie co pozwala na przeprowadzanie inwentaryzacji zasobów. Aby dodać sprzęt wymagane jest podanie informacji o kodzie producenta, nazwie, typie oraz siłowni w której znajduje się akcesorium.
+System informatyczny powinien udostępniać możliwość stworzenia listy posiadanych akcesoriów do ćwiczeń. Dzięki takiej liście personel ma dostęp do informacji o posiadanym sprzęcie co pozwala na przeprowadzanie inwentaryzacji zasobów. Aby dodać sprzęt wymagane jest podanie informacji o kodzie producenta, nazwie, typie oraz siłowni, w której znajduje się akcesorium.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun}
@@ -829,7 +837,7 @@ Wcześniej utworzone karnety mogą zostać zaktualizowane lub zarchiwizowane.
 \subsection{Wydarzenia}
 Moduł wydarzeń udostępnia możliwość tworzenia, przeglądania, anulowania i zgłaszania chęci wzięcia udziału w wydarzeniu w zależności od rodzaju konta użytkownika.
 \subsubsection{Tworzenie wydarzenia}
-Konto trenera personalnego pozwala na tworzenie wydarzeń w których będą mogli brać udział klienci w określonym czasie.
+Konto trenera personalnego pozwala na tworzenie wydarzeń, w których będą mogli brać udział klienci w określonym czasie.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia}
@@ -854,7 +862,7 @@ Trenerzy personalni mają dodatkowo możliwość wyświetlenia listy wydarzeń, 
 	\label{fig:trenerlistawydarzen}
 \end{figure}
 
-Klienci natomiast mają możliwość wyświetlenia wydarzeń w których zgłosili chęć wzięcia udziału.
+Klienci natomiast mają możliwość wyświetlenia wydarzeń, w których zgłosili chęć wzięcia udziału.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen}
@@ -880,7 +888,7 @@ Klient na tym samym widoku zobaczy opcję zgłoszenia chęci udziału w wydarzen
 \end{figure}
 
 \subsection{Treningi indywidualne}
-Kolejnym modułem w systemie jest moduł treningów indywidualnych. Moduł ten pozwala na organizowanie treningów w których brać będzie udział klient pod nadzorem trenera personalnego. Pozwala to na utworzenie oferty dostosowanej do klientów, którzy chcą ćwiczyć pod okiem specjalistów.
+Kolejnym modułem w systemie jest moduł treningów indywidualnych. Moduł ten pozwala na organizowanie treningów, w których brać będzie udział klient pod nadzorem trenera personalnego. Pozwala to na utworzenie oferty dostosowanej do klientów, którzy chcą ćwiczyć pod okiem specjalistów.
 
 \subsubsection{Tworzenie treningów indywidualnych}
 Trener personalny posiada możliwość utworzenia treningu. Aby dodać trening, użytkownik z rolą trenera musi wskazać w formularzu, gdzie odbędzie się trening oraz w jakim terminie.
@@ -900,11 +908,11 @@ System pozwala klientom na pogląd listy dostępnych treningów. Treningi w stat
 	\label{fig:klientdostepnetreningi}
 \end{figure}
 
-Z perspektywy klienta dostępna jest również lista treningów na które się zapisał.
+Z perspektywy klienta dostępna jest również lista treningów, na które się zapisał.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow}
-	\caption{Lista treningów na które zapisał się klient}
+	\caption{Lista treningów, na które zapisał się klient}
 	\label{fig:klientlistatreningow}
 \end{figure}
 
@@ -954,6 +962,7 @@ Zadaniem bramki wyjściowej jest usuwanie z listy klientów osób, które już n
 \end{figure}
 
 \chapter{Specyfikacja wewnętrzna}
+\label{chap:internal}
 Rozdział rozpoczyna się od opisania architektury systemu z podziałem na warstwy z uwzględnieniem komunikacji pomiędzy nimi. W dalszej części rozdziału znajduje się przedstawienie organizacji bazy danych. Następnie w rozdziale przedstawiono przegląd najważniejszych klas i algorytmów. Rozdział zakończony jest opisem zastosowanych wzorców projektowych.
 
 \section{Architektura systemu}
@@ -966,7 +975,7 @@ System został podzielony na dwie główne warstwy. Architektura została zaprez
 \end{figure}
 
 \subsubsection{Warstwa serwerowa}
-Warstwa serwerowa to część aplikacji znajdująca się na serwerze. Jej głównym zadaniem jest obsługiwanie żądań wysyłanych przez część kliencką systemu. Warstwa serwerowa składa się z głównego projektu \textit{Samson.Web.Application} w którego skład wchodzą projekty platformy .NET:
+Warstwa serwerowa to część aplikacji znajdująca się na serwerze. Jej głównym zadaniem jest obsługiwanie żądań wysyłanych przez część kliencką systemu. Warstwa serwerowa składa się z głównego projektu \textit{Samson.Web.Application}, w którego skład wchodzą projekty platformy .NET:
 \begin{itemize}
 	\item \textit{Samson.Web.Application} - projekt w skład którego wchodzą serwisy aplikacyjne realizujące logikę biznesową. Ważnymi składowymi projektu są klasy obsługi komend (ang. \ang{command handler}), których zadaniem jest aktualizacja danych oraz klasy obsługi zapytań (ang. \ang{query handler}), które odpowiadają za odczyt danych z bazy.
 	\item \textit{Samson.Web.Application.Api} - projekt, który przy pomocy kontrolerów (ang. \ang{controllers}) obsługuje otrzymane żądania z warstwy klienckiej. Metoda klasy kontrolera tworzy komendę (ang. \ang{command}) lub zapytanie (ang. \ang{query}), które jest następnie przekazywane do mediatora (ang. \ang{mediator}). Mediator rozdziela je do odpowiedniej klasy obsługi komendy lub klasy obsługi zapytań. Takie podejście pozwala na stworzenie skalowalnej architektury podatnej na zmiany. Dzięki takiemu podejściu klasy kontrolerów nie muszą wstrzykiwać zależności w postaci serwisów aplikacyjny lub klas repozytorium (ang. \ang{repository}).
@@ -974,7 +983,7 @@ Warstwa serwerowa to część aplikacji znajdująca się na serwerze. Jej głów
 	\item \textit{Samson.Web.Application.Infrastructure} - projekt w skład, którego wchodzą atrybuty, oprogramowanie pośrednie (ang. \ang{middleware}) oraz klasy wykorzystywane w pozostały projektach warstwy serwerowej. Projekt zawiera także klasy globalnej obsługi błędów (ang. \ang{global error handler}), których zadaniem jest przechwytywanie wyjątków (ang. \ang{exception}), które nie zostały wcześniej obsłużone.
 	\item \textit{Samson.Web.Application.Models} - projekt zawierający klasy modeli, obiekty transferu danych (ang. \ang{data transfer object}), struktury danych oraz wyliczenia (ang. \ang{enum}).
 	\item \textit{Samson.Web.Application.Persistence} - projekt pełniący kluczową rolę, jeśli chodzi o zapis danych. Projekt zawiera klasy encji (ang. \ang{entity}) oraz klasy repozytoriów. Klasy repozytoriów tworzą warstwę odpowiedzialną za aktualizację danych przy pomocy sterownika \textit{MongoDB .NET Driver}.
-	\item \textit{Samson.Web.Application.ReadModels} - w przeciwieństwie do poprzedniego projektu, w skład \textit{Samson.Web.Application.ReadModels} wchodzą klasy odpowiedzialne za odczyt danych z bazy. Zadanie to jest realizowana przy wykorzystaniu klas odczytu modeli (ang. \ang{read model}) w których znajduje się kod realizujący zapytania do bazy przy pomocy wstawek \textit{JavaScript} lub składni \textit{LINQ}.
+	\item \textit{Samson.Web.Application.ReadModels} - w przeciwieństwie do poprzedniego projektu, w skład \textit{Samson.Web.Application.ReadModels} wchodzą klasy odpowiedzialne za odczyt danych z bazy. Zadanie to jest realizowana przy wykorzystaniu klas odczytu modeli (ang. \ang{read model}), w których znajduje się kod realizujący zapytania do bazy przy pomocy wstawek \textit{JavaScript} lub składni \textit{LINQ}.
 	\item \textit{Samson.Web.Application.UnitTests} - projekt zawierający kod testów jednostkowych
 	\item \textit{Samson.Web.Application.WebHost} - projekt, który jest punktem początkowym aplikacji. W projekcie można znaleźć pliki konfiguracji z rozszerzeniem \textit{JSON}.
 \end{itemize}
@@ -994,6 +1003,17 @@ Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza.
 	\caption{Poglądowy schemat bazy danych}
 	\label{fig:schematbazy}
 \end{figure}
+
+Poszczególne kolekcje zostały podzielone według funkcjonalności, którym odpowiadają:
+\begin{itemize}
+	\item \textit{ExerciseMachineCollection} - kolekcja zawierająca informacje o akcesoriach do ćwiczeń. Dokumenty w kolekcji zawierają referencję do \textit{GymObjectCollection}. Referencja została zrealizowana przy pomocy klucza \textit{LocalizationGymObjectId}, który pozwala na określenie gdzie znajduje się dany przyrząd do ćwiczeń.
+	\item \textit{GymObjectCollection} - kolekcja przechowująca informacje o obiektach i pomieszczeniach siłowni.
+	\item \textit{EventCollection} - zawiera informację o wydarzeniach organizowanych przez sieć. Kolekcja ta posiada referencje do kolekcji \textit{GymObjectCollection} i \textit{UserCollection}.
+	\item \textit{IndividualTraniningCollection} - kolekcja odpowiedzialna za przechowywanie informacji o treningach indywidualnych. W celu określenia miejsca treningu posiada referencję do kolekcji \textit{GymObjectCollection}. Organizator i klienci biorący udział w wydarzeniu są odnajdywani w bazie przy użyciu referencji do \textit{UserCollection}.
+	\item \textit{EntranceCollection} - kolekcja zawierająca informacje o klientach, którzy znajdują się wewnątrz siłowni.
+	\item \textit{UserCollection} - kolekcja przechowująca informacje o klientach i trenerach personalnych.
+	\item \textit{GymPassTypeCollection} - kolekcja w ramach, której znajdują się dokumenty opisujące rodzaje karnetów, które są oferowane przez sieć.
+\end{itemize}
 
 \section{Przegląd najważniejszych klas}
 W trakcie pracy nad systemem zaistniała potrzeba stworzenia klasy pozwalającej na modyfikacje danych w bazie. Głównym założeniem było utworzenie klasy, która będzie wykorzystywać wzorzec repozytorium oraz metodę szablonową. Wzorzec repozytorium miał pomóc w stworzeniu klasy, której głównym zadaniem będzie realizowanie operacji \textit{CRUD}, natomiast wykorzystanie wzorca metody szablonowej miało pomóc w stworzeniu ogólnego algorytmu, który będzie uszczegółowiony w klasach pochodnych. Według tych zasad powstała abstrakcyjna klasa \textit{MongoRepository} reprezentująca ogólne algorytmy wykorzystywane do operacji \textit{CRUD}. Klasa implementuje operacje, które nie dotyczą żadnej, konkretnej kolekcji w bazie danych. To klasy pochodne \textit{MongoRepository}, wykorzystując klasę bazową, tworzą interfejs do zarządzania dokumentami w konkretnej kolekcji. Kod klasy został zaprezentowany na Kod \ref{lst:mongoRepository}
@@ -1033,7 +1053,7 @@ Innym sposobem odczytu danych z bazy jest wykorzystanie składni \textit{LINQ}, 
 	}
 \end{lstlisting}
 
-Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript} w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. Na Kod \ref{lst:personalTrainerReadModel} zaprezentowano metodę klasy 
+Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript}, w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. Na Kod \ref{lst:personalTrainerReadModel} zaprezentowano metodę klasy 
 \textit{PersonalTrainerReadModel}, której zadaniem jest odczyt z bazy informacji o koncie trenera personalnego.
 \begin{lstlisting}[caption={Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}, label={lst:personalTrainerReadModel}]
 	public Task<PersonalTrainerDto> GetById(ObjectId id)
@@ -1095,12 +1115,13 @@ Dopełnieniem \textit{CQRS} jest wzorzec projektowy mediator, którego zadaniem 
 \end{lstlisting}
 
 \chapter{Weryfikacja i walidacja}
+\label{chap:validation}
 W tej części pracy opisano sposoby weryfikacji i walidacji tworzonego projektu. W pierwszej części przedstawiono metody testowania kodu aplikacji oraz jego przykłady. Następnie zaprezentowano sposób w jaki zorganizowano testy. Rozdział zakończony jest paroma przykładami błędów, które zostały wykryte dzięki testom.
 
 \section{Sposoby testowania}
 W trakcie pisania kodu systemu zaszła potrzeba sprawdzenia poprawności jego działania, aby to zrobić wykorzystano testy jednostkowe i manualne. Kod części serwerowej został przetestowany przy pomocy testów jednostkowych i manualnych, natomiast warstwa prezentacji została przetestowana przy pomocy testów manualnych. W celu utworzenia testów jednostkowych wykorzystano bibliotekę \textit{NUnit}.
 
-Testy jednostkowe pozwoliły na testowanie pojedynczych metod i klas przy pomocy kodu \textit{C\#}. Przetestowane zostały metody klas obiektów domenowych w których znajdowała się logika biznesowa systemu. Przykładowo na Kod \ref{lst:secondGymPassExtendEndDate} przedstawiono test jednostkowy, który odpowiada za sprawdzenie poprawności operacji przedłużenia terminu ważności karnetu.
+Testy jednostkowe pozwoliły na testowanie pojedynczych metod i klas przy pomocy kodu \textit{C\#}. Przetestowane zostały metody klas obiektów domenowych, w których znajdowała się logika biznesowa systemu. Przykładowo na Kod \ref{lst:secondGymPassExtendEndDate} przedstawiono test jednostkowy, który odpowiada za sprawdzenie poprawności operacji przedłużenia terminu ważności karnetu.
 \begin{lstlisting}[caption={Przykładowy test klasy \textit{ClientUnitTest}}, label={lst:secondGymPassExtendEndDate}]
 	[Test]
 	public void Client_SecondGymPassExtendEndDate()
@@ -1165,11 +1186,16 @@ Poprzedni błąd został wykryty przez testy manualne, natomiast udało się wyk
 Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie błędów we wczesnym etapie tworzenia aplikacji. W systemie wykorzystano bibliotekę \textit{AutoMapper}, która pozwala na mapowanie obiektów z jednej klasy na inną według zdefiniowanego schematu. Gdy taki schemat nie został zdefiniowany, a funkcja \textit{Map} została wywołana to o błędzie użytkownik dowiadywał się dopiero gdy aplikacja została już uruchomiona. W takich przypadkach interaktywna dokumentacja pozwoliła na wykrywanie błędów i ich usuwanie jeszcze przed utworzeniem interfejsu użytkownika.
 
 \chapter{Podsumowanie i wnioski}
-\begin{itemize}
-\item uzyskane wyniki w świetle postawionych celów i zdefiniowanych wyżej wymagań
-\item kierunki ewentualnych danych prac (rozbudowa funkcjonalna …)
-\item problemy napotkane w trakcie pracy
-\end{itemize}
+\label{chap:summary}
+Praca nad projektem przyniosła rezultaty w postaci systemu spełniającego określone wcześniej wymagania. Udało się pokryć zakres funkcjonalny związany z obostrzeniami pandemicznymi, co było główną przesłanką do rozpoczęcia prac nad tym projektem. Wybór aplikacji internetowej pozwoliło na utworzenie systemu dostępnego dla większości systemów operacyjnych. Poza spełnieniem wymagań funkcjonalnych, udało się również wykorzystać nowoczesne technologie, które zapewniają dłuższe wsparcie producentów.
+
+W ramach projektu udało się stworzyć dokument, który opisuje sposób działania systemu oraz idee, które za nim stały. W trakcie tworzenia systemu położono nacisk na architekturę, która pozwoli na skalowanie. Poza tym zwrócono również uwagę na odpowiednią dokumentacje kodu, aby rozwiązanie mogło być rozwijane w kilkuosobowym zespole. Zaproponowana architektura pozwala również na zmianę architektury monolitycznej na mikro-usługową, co pozwoliłoby na pracę w większych zespołach.
+
+Mimo, że rozwiązanie posiada wiele cech produktu komercyjnego, wymaga ono dopracowania w warstwie prezentacji. Niektóre z widoków powinny zostać zaprojektowane na nowo, tak aby były bardzie intuicyjne dla użytkownika. Poza zwiększeniem przejrzystości formularzy, kolejnym krokiem w rozwoju systemu powinno być dostosowanie aplikacji do zasad RWD. Jest to istotne ze względu na duży udział urządzeń mobilnych w generowaniu ruchu na stronach internetowych\cite{bib:mobileVsDesktop}.
+
+Na rynku komercyjnym znajduje się wiele innych rozwiązań, które oferują większe możliwości pod względem funkcjonalnym. Naturalnym krokiem byłoby dodanie modułu recepcji oraz barów z odżywkami dla klientów. Poza nowymi modułami rozszerzone powinny być również te istniejące. Moduł karnetów powinien zostać rozszerzony o integracje z systemem płatności. Na rynku znajduje się wielu pośredników, którzy udostępniają API pozwalające na płatność w wygodny dla klienta sposób.
+
+W celu komercjalizacji systemu ważne jest dodanie ról dla pozostały pracowników sieci siłowni. Konto trenera personalnego powinno mieć inne uprawnienia od konta administratora systemu. Natomiast w razie dodania modułu recepcji istotne byłoby dodanie roli recepcjonisty, który nie potrzebowałby dostępu do modułu treningów indywidualnych.
  
 \bibliographystyle{plplain}
 \bibliography{bibliografia}
@@ -1196,6 +1222,7 @@ Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie
 	\item[NoSQL] nierelacyjna baza danych
 	\item[LINQ] (ang. \ang{Language-Integrated Query})
 	\item[REST] (ang. \ang{Representational state transfer})
+	\item[RWD] (ang. \ang{Responsive web design})
 	\item[SDK] zestaw narzędzi dla programistów (ang. \ang{Software development kit})
 	\item[SPA] jednostronicowa aplikacja internetowa (ang. \ang{Single page application})
 	\item[SQL] (ang. \ang{Structured Query Language})

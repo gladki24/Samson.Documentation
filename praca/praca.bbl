@@ -49,13 +49,24 @@
 
 \bibitem{bib:csharp}
 Joseph Albahari,  Ben Albahari.
-\newblock {\em C 7.0 w pigułce}.
+\newblock {\em C\# 7.0 w pigułce}.
 \newblock Helion SA, ul. Kościuszki 1c, 44-100 Gliwice, 2018.
+
+\bibitem{bib:noSqlVsSql}
+Benjamin Anderson,  Brad Nicholson.
+\newblock {SQL vs. NoSQL Databases: What's the Difference?}
+\newblock \url{https://www.ibm.com/cloud/blog/sql-vs-nosql}.
 
 \bibitem{bib:mongodb_guide}
 Shannon Bradshaw, Eoin Brazil, Kristina Chodorow.
 \newblock {\em Przewodnik po MongoDB: Wydajna i skalowalna baza danych}.
 \newblock Helion SA, ul. Kościuszki 1c, 44-100 Gliwice, 2021.
+
+\bibitem{bib:mobileVsDesktop}
+Eric Enge.
+\newblock {Mobile vs. Desktop Usage in 2020}.
+\newblock
+  \url{https://www.perficient.com/insights/research-hub/mobile-vs-desktop-usage}.
 
 \bibitem{bib:asp}
 Dino Esposito.
@@ -65,6 +76,7 @@ Dino Esposito.
 \bibitem{bib:dotnet5introduction}
 Richard Lander.
 \newblock {Introducing .NET 5}.
+\newblock \url{https://devblogs.microsoft.com/dotnet/introducing-net-5/}.
 
 \bibitem{bib:typescript}
 Nathan Rozentals.
