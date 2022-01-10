@@ -264,8 +264,6 @@ W pracy przedstawiono projekt aplikacji internetowej, która pozwala na zarządz
 
 W ramach pracy omówiono ideę stojącą za stworzeniem systemu oraz sposób jego projektowania. Opisane zostały metodyki pracy nad projektem, wykorzystane technologie oraz wybrane wzorce projektowe, które zostały użyte przy pracy nad aplikacją.
 
-Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego streszczenia. Streszczenie, wraz ze slowami kluczowymi, nie powinno przekroczyc jednej strony.
-
 {\bf Slowa kluczowe:} aplikacja internetowa, dokumentowa baza danych, .NET
 
 \addcontentsline{toc}{chapter}{Streszczenie}
@@ -278,7 +276,7 @@ Streszczenie pracy -odpowiednie pole w systemie APD powinno zawierac kopie tego 
 
 \chapter{Wstęp}
 
-Głównym celem tego projektu jest stworzenie systemu informatycznego pozwalającego na prowadzenie sieci siłowni z wykorzystaniem dokumentowej bazy danych. W ramach pracy założono, że spełnione zostaną wymagania funkcjonalne związane z obostrzeniami sanitarnymi. Prowadzenie obiektu siłowni jest utrudnione w czasie pandemii ze względu na częste zmiany w przepisach związanych z ograniczeniami pandemicznymi. Wymienione wcześniej problemy były głównym powodem powstania tego projektu.
+Głównym celem tego projektu jest stworzenie systemu informatycznego pozwalającego na prowadzenie sieci siłowni z wykorzystaniem dokumentowej bazy danych. Podstawowym założeniem projektu jest przygotowanie systemu w taki sposób, aby właściciele mogli dostosowywać zasady działania obiektów sportowych do aktualnie obowiązujących restrykcji sanitarnych. Prowadzenie obiektu siłowni jest utrudnione w czasie pandemii ze względu na częste zmiany w przepisach związanych z ograniczeniami pandemicznymi. Wymienione wcześniej problemy były głównym powodem powstania tego projektu.
 
 Wykorzystanie dokumentowej bazy danych jest związane z zaletami baz \textit{NoSQL}. Niektóre cechy wcześniej wymienionych baz nie są dostępne dla relacyjnych baz danych. Jedną z takich cech jest duża podatność na zmiany w strukturze względem relacyjnych baz oraz przystosowanie do skalowania wszerz\cite{bib:noSqlVsSql}.
 
@@ -301,7 +299,7 @@ Poza skalowalnością, baza danych powinna posiadać mechanizmy, które zapewni�
 
 Rozwiązaniem problemu skalowalności i awaryjności może być wykorzystanie bazy \textit{NoSQL}. Jedną z takich baz jest \textit{MongoDB}, która pozwala na rozdzielenie obciążenia pomiędzy różnymi maszynami. Podział ten, w przypadku \textit{MongoDB}, realizowany jest poprzez wykorzystanie mechanizmu partycjonowania danych (ang. \ang{sharding}). Idea tego rozwiązania polega na podzieleniu danych na podzbiory, które są następnie umieszczane na różnych serwerach. Podział ten może zostać skonfigurowany w takich sposób, aby dane częściej wykorzystywane znajdowały się na maszynach o większej wydajności. Inną zaletą partycjonowania danych jest możliwość stworzenia zbioru replik. W przypadku awarii jednej z maszyn, inna przejmuje jej obowiązki, aby zapewnić ciągłość w działaniu\cite{bib:mongodb_guide}.
 
-Kolejną zaletą wykorzystania dokumentowej bazy danych jest elastyczność schematu\cite{bib:noSqlVsSql}. System, zwłaszcza w początkowej fazie rozwoju, będzie poddawany dużej liczbie zmian w schemacie bazy. \textit{NoSQL} charakteryzuje się łatwością wprowadzenia zmian w tym aspekcie.
+Kolejną zaletą wykorzystania dokumentowej bazy danych jest elastyczność schematu\cite{bib:noSqlVsSql}. System, zwłaszcza w początkowej fazie rozwoju, będzie poddawany dużej liczbie zmian w schemacie bazy. \textit{NoSQL}, a w szczególności baza \textit{MongoDB} charakteryzuje się łatwością wprowadzenia zmian w tym aspekcie\cite{bib:mongoPros}.
 
 Aktualnie w sieci Internet możemy znaleźć wiele dostępnych rozwiązań \cite{bib:perfectgym} \cite{bib:wodguru}, które pokrywają wymagania funkcjonalne systemu. Duża część oferowanych aplikacji posiada możliwość zarządzania bazą klientów, wyposażeniem oraz opcję tworzenia bogatej oferty karnetów. Największe aplikacje posiadają w swoim zakresie funkcjonalnym rozwiązania wymienionych problemów, jednak żadne z nich nie posiada modułu odpowiedzialnego za zarządzanie dostępem do siłowni pod kątem obowiązujących przepisów sanitarnych. W celu zaproponowania systemu informatycznego, który będzie konkurencyjny na rynku, system powinien posiadać taki moduł.
 
@@ -360,12 +358,12 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 		\end{itemize}
 	
 	\section {Diagram przypadków użycia (UML)}
-	Diagram przypadków użycia pozwala na zaprezentowanie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów. Wymagania funkcjonalne z podrozdziału \ref{sec:req} przeniesione zostały na schemat, a następnie przydzielone do wcześniej zdefiniowanych aktorów.
+	Diagram przypadków użycia pozwala na zaprezentowanie interakcji użytkowników z aplikacją i przedstawienie wymogów funkcjonalnych systemu w formie diagramów. Wymagania funkcjonalne z podrozdziału \ref{sec:req} przeniesione zostały na schemat, a następnie przydzielone do wcześniej zdefiniowanych aktorów. Rezultaty pracy nad schematem można zobaczyć na rysunku \ref{fig:diagramPrzpydakowUzyciaUML}.
 	
 	W systemie wydzielono aktorów: \textit{trener personalny} i \textit{klient sieci siłowni}, którzy są szczególnymi przypadkami aktora \textit{zarejestrowany użytkownik}. Poza tym wydzielono również aktorów takich jak \textit{bramka wejściowa} i \textit{bramka wyjściowa}, którzy będą odpowiedzialni za kontrolowanie liczby osób na siłowni. Ostatnim aktorem obecnym w systemie jest \textit{użytkownik niezarejestrowany}, którego rola sprowadza się do możliwości zarejestrowania się w systemie.
 	
-\begin{figure}[H]
-	\includegraphics[height=1\textheight, width=1\textwidth]{diagram_przypadków_użycia.png}
+\begin{figure}[htbp]
+	\includegraphics[width=1\linewidth, keepaspectratio]{diagram_przypadków_użycia_xs.png}
 	\caption{Diagram przypadków użycia}
 	\label{fig:diagramPrzpydakowUzyciaUML}
 \end{figure}
@@ -467,118 +465,107 @@ Są to minimalne wymagania do uruchomienia bazy danych \textit{MongoDB} oraz apl
 
 \subsection{Instalacja bazy danych MongoDB}
 W celu zainstalowania aplikacji, trzeba spełnić wymagania wymienione w poprzednim punkcie. Instalacja zostaje rozpoczęta od pobrania i zainstalowania serwera bazy danych \textit{MongoDB} w wersji Community \href{https://www.mongodb.com/try/download/community}{z strony twórców}.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodbsite}
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodbsite}
 	\caption{Strona, z której można pobrać instalator serwera bazy danych MongoDB}
 	\label{fig:mongodbsite}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
 Instalacja oprogramowania do zarządzania bazą danych rozpoczyna się od uruchomienia wcześniej pobranego kreatora.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb1}
-	\caption{Rozpoczęcie instalacji serwera}
+	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb1}
+	\caption{Widok powitalny instalatora MongoDB}
 	\label{fig:mongodb1}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
+\newpage
 Po zapoznaniu się z warunkami licencyjnymi, aby kontynuować użytkownik musi zaznaczyć pole z podpisem \textit{I accept the terms in the License Agreement}, a następnie przycisnąć \textit{Next}.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb2}
+	\includegraphics[width=0.65\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb2}
 	\caption{Umowa licencyjna \textit{MongoDB Community Edition}}
 	\label{fig:mongodb2}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
 W widoku formularza wyboru typu instalacji trzeba wybrać opcję \textit{Completed}, aby zainstalować wszystkie potrzebne narzędzia do działania serwera.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb3}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb3}
 	\caption{Typ instalacji w instalatorze \textit{MongoDB Community Edition}}
 	\label{fig:mongodb3}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
 W następnym widoku, gdzie widać konfiguracje serwera, ustawienia powinny zostać domyślne.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb4}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb4}
 	\caption{Początkowa konfiguracja serwera bazy danych}
 	\label{fig:mongodb4}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
 Po naciśnięciu przycisku \textit{Next} powinna być widoczna opcja zainstalowania \textit{MongoDB Compass}. Oprogramowanie \textit{MongoDB Compass} jest opcjonalne, więc opcja instalacji może zostać odznaczona.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mogndodb5}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mogndodb5}
 	\caption{Informacja o możliwości instalacji klienta bazy danych \textit{MongoDB Compass}}
 	\label{fig:mogndodb5}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
+\newpage
 W następnym kroku, aby zainstalować serwer bazy danych trzeba nacisnąć przycisk \textit{Install}.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb6}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb6}
 	\caption{Rozpoczęcie instalacji \textit{MongoDB}}
 	\label{fig:mongodb6}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
 Aby zakończyć działanie kreatora po zakończeniu się procesu instalacji trzeba przycisnąć przycisk \textit{Finish}. W tym momencie na maszynie użytkownika powinna znajdować się zainstalowana bazy danych \textit{MongoDB}.
-\FloatBarrier
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb_finish}
+	\includegraphics[width=0.65\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb_finish}
 	\caption{Zakończenie instalacji \textit{MongoDB}}
 	\label{fig:mongodbfinish}
 \end{figure}
-\afterpage{\clearpage}
 \FloatBarrier
 
 \subsection{Instalacja środowiska .NET 5}
 Podobnie jak w przypadku \textit{MongoDB}, aby zainstalować środowisko \textit{.NET 5} trzeba przejść na \href{https://dotnet.microsoft.com/en-us/download/dotnet/5.0}{stronę, gdzie możliwe jest pobranie \textit{SDK .NET 5}}. W pierwszej kolejności wymagane jest wybranie odpowiedniej wersji instalatora dla zainstalowanego systemu operacyjnego oraz architektury maszyny.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk}
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk}
 	\caption{Strona twórców środowiska \textit{.NET}}
 	\label{fig:dotnetsdk}
 \end{figure}
+\FloatBarrier
 
 W kolejnym kroku trzeba uruchomić pobrany kreator instalacji \textit{SDK .NET 5}. Pierwszym widokiem jest formularz informujący o dostępnej dokumentacji oraz składnikach instalacji. Po zapoznaniu się z informacji trzeba przycisnąć przycisk \textit{Zainstaluj} w celu instalacji środowiska uruchomieniowego.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet1}
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet1}
 	\caption{Rozpoczęcie instalacji środowiska \textit{.NET }5}
 	\label{fig:dotnet1}
 \end{figure}
+\FloatBarrier
 
-W kolejnym kroku kreator zainstaluje na maszynie wymagane składniki. Kiedy działanie instalatora dobiegnie końca, użytkownik powinien zamknąć kreator przy pomocy przycisku \textit{Zamknij}.
+Następnie kreator zainstaluje na maszynie wymagane składniki. Kiedy działanie instalatora dobiegnie końca, użytkownik powinien zamknąć kreator przy pomocy przycisku \textit{Zamknij}.
 
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish}
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish}
 	\caption{Zakończenie instalacji środowiska \textit{.NET 5}}
 	\label{fig:dotnetfinish}
 \end{figure}
+\FloatBarrier
 
 Aby sprawdzić czy instalacja przebiegła pomyślnie trzeba uruchomić konsolę \textit{Windows Powershell} dla systemów rodziny \textit{Windows} lub odpowiedniego terminala dla posiadanej dystrybucji \textit{Linux}. Następnie trzeba wpisać komendę \textit{dotnet --version}. Jeśli instalacja przebiegła pomyślnie użytkownik powinien zobaczyć w konsoli informację o zainstalowanej wersji środowiska \textit{.NET}.
 
@@ -588,60 +575,65 @@ Przedostatnim krokiem, jaki trzeba wykonać, aby zainstalować projekt jest inst
 W pierwszej kolejności zainstalowana musi być platforma uruchomieniowa \textit{Node.js}, która pozwala na wykonywanie skryptów napisanych w języku \textit{JavaScript}. Kreator instalacji można pobrać z strony twórców \href{https://nodejs.org/en/}{środowiska}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node_page}
+	\includegraphics[width=0.8\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node_page}
 	\caption{Strona Node.js}
 	\label{fig:nodepage}
 \end{figure}
 
 Kolejnym krokiem jest uruchomienie programu instalującego środowisko uruchomieniowe. Aby to zrobić trzeba przejść do lokalizacji na dysku gdzie pobrano plik instalatora a następnie uruchomić go. Wyświetlony powinien zostać następujący widok.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node1}
+	\includegraphics[width=0.65\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node1}
 	\caption{Rozpoczęcie instalacji środowiska \textit{Node.js}}
 	\label{fig:node1}
 \end{figure}
+\FloatBarrier
 
 Po przyciśnięciu przycisku \textit{Next} oczom użytkownika powinien ukazać się formularz z informacjami o licencji oprogramowania. Aby przejść dalej użytkownik powinien zapoznać sie z licencją a następnie zaakceptować ją. Po zaakceptowaniu licencji użytkownik musi przejść do kolejnego widoku za pomocą przycisku \textit{Next}.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node2}
+	\includegraphics[width=0.65\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node2}
 	\caption{Licencja środowiska \textit{Node.js}}
 	\label{fig:node2}
 \end{figure}
+\FloatBarrier
 
+\newpage
 Następnym etapem instalacji jest wybór ścieżki do folderu, gdzie ma zostać zainstalowane oprogramowanie. Po wyborze dogodnej lokalizacji trzeba przejść do kolejnego widoku.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node3}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node3}
 	\caption{Ścieżka do folderu docelowego \textit{Node.js}}
 	\label{fig:node3}
 \end{figure}
 
-W kolejnym kroku użytkownik musi wybrać składniki instalacji. W tym przypadku pozostać powinny domyślne opcje. Istotne jest aby zainstalowane zostało narzędzie \textit{NPM}, które pozwoli na instalacje serwera WWW.
 
-\begin{figure}[H]
+W kolejnym kroku użytkownik musi wybrać składniki instalacji. W tym przypadku pozostać powinny domyślne opcje. Istotne jest aby zainstalowane zostało narzędzie \textit{NPM}, które pozwoli na instalacje serwera WWW.
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node4}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node4}
 	\caption{Składniki instalatora Node.js}
 	\label{fig:node4}
 \end{figure}
+\FloatBarrier
 
 Jednym z ostatnich kroków instalatora jest widok z informacją o możliwości zainstalowania dodatkowego narzędzia \textit{Chocolatey}. Narzędzie to nie jest potrzebne do działania, więc można wyłączyć opcję instalacji narzędzia.
-
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node5}
-	\caption{Formularz umożliwający instalację dodatkowego narzędzia \textit{Cocolatey}}
+	\includegraphics[width=0.6\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node5}
+	\caption{Formularz umożliwiający instalację dodatkowego narzędzia \textit{Cocolatey}}
 	\label{fig:node5}
 \end{figure}
+\FloatBarrier
 
 W kolejnych etapach instalacji użytkownik powinien uruchomić instalacje za pomocą przycisku \textit{Install}. Po zakończonej instalacji instalator powinien wyświetlić informację o zakończeniu pracy.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node6}
+	\includegraphics[width=0.55\linewidth]{../zrzuty_ekranu/instalacja_nodejs/node6}
 	\caption{Potwierdzenie instalacji środowiska \textit{Node.js}}
 	\label{fig:node6}
 \end{figure}
+\FloatBarrier
 
 Aby sprawdzić czy instalacja przebiegła pomyślnie, można uruchomić polecenie \textit{node -v}, które powinno zwrócić informację o zainstalowanej wersji \textit{Node.js}.
 
@@ -693,7 +685,7 @@ Tak jak w przypadku warstwy serwerowej, warstwa prezentacji musi zostać skompil
 	npm install; npm run build
 \end{lstlisting}
 
-Końcowym krokiem uruchamiania warstwy interfejsu użytkownika jest uruchomienie serwera WWW z opcją przekierowania do pliku \textit{index.html}. Polecenie zostało wypisane na Kod \ref{lst:runWWWServer}.
+Końcowym krokiem uruchamiania warstwy interfejsu użytkownika jest uruchomienie serwera WWW z opcją przekierowania do pliku \textit{index.html}. Polecenie zostało przedstawione na Kod \ref{lst:runWWWServer}.
 \begin{lstlisting}[caption={Polecenie, które tworzy paczkę możliwą do uruchomienia przez serwer WWW}, label={lst:runWWWServer}]
 	cd dist/samson-web-ui; http-server --proxy http://localhost:8080?
 \end{lstlisting}
@@ -720,254 +712,269 @@ W tej części pracy zaprezentowano przykładowe scenariusze działania systemu.
 Jako pierwsze zaprezentowane zostanie logowanie i rejestracja w systemie. Są to jedne z początkowych widoków jakie zobaczy użytkownik korzystając z systemu.
 \subsubsection{Rejestracja}
 Rejestracja pozwala na utworzenie, konta klienta. Konto daje dostęp do systemu i jego możliwości.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja}
 	\caption{Rejestracja klienta}
 	\label{fig:rejestracja}
 \end{figure}
+\FloatBarrier
 Jeżeli użytkownik wypełni wszystkie wymagane dane oraz wybierze nazwę konta, która nie została wcześniej wykorzystana przez innego użytkownika to powinien zobacz informację o poprawnie utworzonym koncie.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone}
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone}
 	\caption{Klient został zarejestrowany w systemie}
 	\label{fig:kontoutworzone}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Logowanie}
 Klient i trener personalny ma możliwość zalogowania się do systemu w celu skorzystania z jego funkcjonalności.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie}
+	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie}
 	\caption{Widok logowania do systemu}
 	\label{fig:logowanie}
 \end{figure}
+\FloatBarrier
 Użytkownik zostanie zalogowany jeśli wypełni w sposób poprawny dane w formularzu logowania.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano}
+	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano}
 	\caption{Widok po zalogowaniu do systemu}
 	\label{fig:zalogowano}
 \end{figure}
+\FloatBarrier
 
 \subsection{Administracja systemem}
 System powinien udostępniać możliwość zarządzania systemem oraz zasobami sieci siłowni przy jego pomocy. Aplikacja pozwala na zarządzanie obiektami siłowni, pomieszczeniami, które do tych obiektów zostały przypisane, sprzętem do ćwiczeń, akcesoriami oraz ofertą karnetów.
 
 \subsubsection{Dodawanie konta trenerów personalnych}
 Użytkownik ma możliwość utworzenia konta trenera personalnego.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_personalnego}
+	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_personalnego}
 	\caption{Formularz tworzenia konta trenera personalnego}
 	\label{fig:tworzeniekontatrenerapersonalnego}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Zarządzanie obiektami siłowni}
 Trenerzy personalni pełnią rolę administratorów, co pozwala im na zarządzanie obiektami siłowni.
 W pierwszej kolejności utworzony zostanie nowy obiekt sieci siłowni. W trakcie procesu dodawania obiektu wymagane jest, aby podana została nazwa oraz ilość osób jaka może przebywać na jednym metrze kwadratowym siłowni.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/obiekty/tworzenie}
+	\includegraphics[width=0.75\linewidth]{../zrzuty_ekranu/dzialanie/obiekty/tworzenie}
 	\caption{Formularz tworzenia obiektu siłowni}
 	\label{fig:tworzenie}
 \end{figure}
+\FloatBarrier
 
+\newpage
 W formularzu edycji obiektów powinna wyświetlić się możliwość wybrania wcześniej utworzonej siłowni w celu aktualizacji informacji o niej. Widok ten poza edycją pozwala również na zarchiwizowanie obiektu siłowni.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/obiekty/edycja}
 	\caption{Formularz edycji i archiwizacji obiektów siłowni}
 	\label{fig:edycja}
 \end{figure}
+\FloatBarrier
 
 
 \subsubsection{Zarządzanie pomieszczeniami}
 System udostępnia możliwość dodawania pomieszczeń do obiektów siłowni. Pomieszczenia są istotne ze względu na możliwość przypisania do nich akcesoriów do ćwiczeń oraz wyliczania maksymalnej liczby osób, która może znajdować się na siłowni. W formularzu muszą zostać podane informacje o siłowni, w której znajduje się pomieszczenie, nazwa pomieszczenia oraz jego szerokość i długość.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie}
 	\caption{Formularz dodawania pomieszczenia do obiektu siłowni}
 	\label{fig:dodawanie_pomieszczenia}
 \end{figure}
+\FloatBarrier
 
 Wcześniej utworzone pomieszczenie może zostać zarchiwizowane.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie}
 	\caption{Formularz archiwizacji pomieszczenia}
 	\label{fig:archwizacja_pomieszczenia}
 \end{figure}
+\FloatBarrier
 
 
 \subsubsection{Zarządzaniem sprzętem do ćwiczeń i akcesoriami}
 System informatyczny powinien udostępniać możliwość stworzenia listy posiadanych akcesoriów do ćwiczeń. Dzięki takiej liście personel ma dostęp do informacji o posiadanym sprzęcie co pozwala na przeprowadzanie inwentaryzacji zasobów. Aby dodać sprzęt wymagane jest podanie informacji o kodzie producenta, nazwie, typie oraz siłowni, w której znajduje się akcesorium.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun}
 	\caption{Formularz dodawania sprzętu do ćwiczeń}
 	\label{fig:dodawanieakcesoriun}
 \end{figure}
+\FloatBarrier
 
 Wcześniej utworzone informacje o akcesorium mogą zostać zaktualizowane lub zarchiwizowane przy pomocy formularza.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium}
 	\caption{Formularz edycji i archiwizacji akcesoriów}
 	\label{fig:aktualizacjaakcesorium}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Zarządzanie ofertą karnetów}
 Ostatnią funkcjonalnością udostępnioną przez moduł administracji jest funkcja zarządzania ofertą karnetów. System pozwala na utworzenie nowego typu karnetu, jeśli podane zostaną informacje o jego nazwie, czasie trwania w dniach oraz cenie.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu}
+	\includegraphics[width=0.8\linewidth]{../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu}
 	\caption{Formularz dodawania karnetu do oferty}
 	\label{fig:tworzeniekarnetu}
 \end{figure}
+\FloatBarrier
 
 Wcześniej utworzone karnety mogą zostać zaktualizowane lub zarchiwizowane.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu}
+	\includegraphics[width=0.8\linewidth]{../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu}
 	\caption{Formularz edycji i archiwizacji karnetów}
 	\label{fig:edycjakarnetu}
 \end{figure}
-
+\FloatBarrier
 
 \subsection{Wydarzenia}
 Moduł wydarzeń udostępnia możliwość tworzenia, przeglądania, anulowania i zgłaszania chęci wzięcia udziału w wydarzeniu w zależności od rodzaju konta użytkownika.
 \subsubsection{Tworzenie wydarzenia}
 Konto trenera personalnego pozwala na tworzenie wydarzeń, w których będą mogli brać udział klienci w określonym czasie.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia}
-	\caption{Forumlarz tworzenia wydarzenia}
+	\includegraphics[width=0.8\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia}
+	\caption{Formularz tworzenia wydarzenia}
 	\label{fig:dodawaniewydarzenia}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Listy wydarzeń}
 Klienci i trenerzy personalni mają dostęp do listy wszystkich wydarzeń. Z poziomu tej listy użytkownicy mogą przejść do poglądu wydarzenia, gdzie znajdują się dodatkowe opcje zarządzania wydarzeniem.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia}
 	\caption{Lista wszystkich wydarzeń}
 	\label{fig:wszystkiewydarzenia}
 \end{figure}
-
+\FloatBarrier
 Trenerzy personalni mają dodatkowo możliwość wyświetlenia listy wydarzeń, które sami utworzyli.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen}
 	\caption{Lista utworzony wydarzeń przez trenera personalnego}
 	\label{fig:trenerlistawydarzen}
 \end{figure}
-
+\FloatBarrier
+\newpage
 Klienci natomiast mają możliwość wyświetlenia wydarzeń, w których zgłosili chęć wzięcia udziału.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen}
+	\includegraphics[width=0.9\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen}
 	\caption{Lista wydarzeń klienta}
 	\label{fig:klientlistawydarzen}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Podgląd wydarzeń}
 Systemu udostępnia widok podglądu wydarzenia. Użytkownicy mogą przeglądać wszystkie wydarzenia, ale dostępne opcje są zależne od roli jaką pełnią. Trener personalny w podglądzie wydarzenia zobaczy opcję anulowania wydarzenia.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie}
+	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie}
 	\caption{Podgląd wydarzenia jako trener personalny}
 	\label{fig:trenerpodladwydarzenie}
 \end{figure}
-
-Klient na tym samym widoku zobaczy opcję zgłoszenia chęci udziału w wydarzeniu lub zrezygnowania z udziału w wydarzeniu.
-\begin{figure}[H]
+\FloatBarrier
+Klient na tym samym widoku zobaczy opcję zgłoszenia chęci udziału w wydarzeniu lub zrezygnowania z niego.
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia}
 	\caption{Pogląd wydarzenia jako klient}
 	\label{fig:klientpodladwydarzenia}
 \end{figure}
-
+\FloatBarrier
 \subsection{Treningi indywidualne}
 Kolejnym modułem w systemie jest moduł treningów indywidualnych. Moduł ten pozwala na organizowanie treningów, w których brać będzie udział klient pod nadzorem trenera personalnego. Pozwala to na utworzenie oferty dostosowanej do klientów, którzy chcą ćwiczyć pod okiem specjalistów.
+\FloatBarrier
 
+\newpage
 \subsubsection{Tworzenie treningów indywidualnych}
 Trener personalny posiada możliwość utworzenia treningu. Aby dodać trening, użytkownik z rolą trenera musi wskazać w formularzu, gdzie odbędzie się trening oraz w jakim terminie.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu}
 	\caption{Formularz dodawania treningu}
 	\label{fig:dodawanietreningu}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Listy treningów indywidualnych}
 System pozwala klientom na pogląd listy dostępnych treningów. Treningi w statusie \textit{Open} oznaczają treningi, w których żaden użytkownik nie zgłosił chęci wzięcia udziału.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi}
 	\caption{Lista dostępnych treningów indywidualnych}
 	\label{fig:klientdostepnetreningi}
 \end{figure}
-
-Z perspektywy klienta dostępna jest również lista treningów, na które się zapisał.
-\begin{figure}[H]
+\FloatBarrier
+Z perspektywy klienta dostępna jest również lista treningów, na które się zapisał. Dzięki tej liście klient będzie mógł sprawdzić na jakich treningach był oraz jakie go jeszcze czekają.
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow}
 	\caption{Lista treningów, na które zapisał się klient}
 	\label{fig:klientlistatreningow}
 \end{figure}
-
-Trener personalny natomiast posiada możliwość poglądu utworzonych przez siebie wydarzeń.
-\begin{figure}[H]
+\FloatBarrier
+Trener personalny natomiast posiada możliwość poglądu utworzonych przez siebie wydarzeń. Lista pozwala na odwołanie treningu lub potwierdzenie go.\\To jakie opcje są dostępne jest zależne od statusu w jakim znajduje się dany trening.
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow}
+	\includegraphics[width=0.9\linewidth]{../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow}
 	\caption{Lista utworzonych treningów przez trenera}
 	\label{fig:trenerlistatreningow}
 \end{figure}
-
-Lista pozwala na odwołanie treningu lub potwierdzenie go. To jakie opcje są dostępne jest zależne od statusu w jakim znajduje się dany trening.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener}
-	\caption{Lista z dostępnymi opcjami zarządzania treningiem}
-	\label{fig:treningopcjetrener}
-\end{figure}
+\FloatBarrier
 
 \subsection{Karnety}
 System posiada moduł karnetów, gdzie klient może sprawdzić ważność karnetu, dostępną ofertę, zakupić lub przedłużyć karnet.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/karnety/lista_karnetow}
+	\includegraphics[width=0.5\linewidth]{../zrzuty_ekranu/dzialanie/karnety/lista_karnetow}
 	\caption{Oferta karnetów oraz informacje o posiadanym karnecie}
 	\label{fig:listakarnetow}
 \end{figure}
+\FloatBarrier
 
 \subsection{Tryb bramek}
 Istotnym z punktu widzenia pandemicznych obostrzeń jest moduł bramek. System udostępnia tryb bramek, które pozwala na podłączenie aplikacji do bramek i wyświetlaczy w celu kontroli liczby osób znajdujących aktualnie na siłowni.
 \subsubsection{Bramka wejściowa}
 Głównym zadaniem bramki wejściowej jest kontrolowanie ważności posiadanego karnetu oraz kontroli czy na siłowni nie znajduje się zbyt duża liczba osób w stosunku do obowiązujących obostrzeń. Aby wejść na siłownie klient musi podać lub zeskanować za pomocą skanera swój kod identyfikacyjny. Formularz powinien w tym momencie wyświetlić informację o tym czy istnieje możliwość wejścia na siłownie. To czy można wejść na siłownię zależy od liczby osób, która znajduje się na siłowni oraz ważności karnetu klienta.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa}
+	\includegraphics[width=0.8\linewidth]{../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa}
 	\caption{Widok wyświetlany na wyświetlaczu bramki wejściowej}
 	\label{fig:bramkawejsciowa}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Bramka wyjściowa}
 Zadaniem bramki wyjściowej jest usuwanie z listy klientów osób, które już nie korzystają z usług danego obiektu siłowni.
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa}
 	\caption{Widok wyświetlany na wyświetlaczu bramki wyjściowej}
 	\label{fig:bramkawyjsciowa}
 \end{figure}
+\FloatBarrier
 
 \chapter{Specyfikacja wewnętrzna}
 \label{chap:internal}
 Rozdział rozpoczyna się od opisania architektury systemu z podziałem na warstwy z uwzględnieniem komunikacji pomiędzy nimi. W dalszej części rozdziału znajduje się przedstawienie organizacji bazy danych. Następnie w rozdziale przedstawiono przegląd najważniejszych klas i algorytmów. Rozdział zakończony jest opisem zastosowanych wzorców projektowych.
 
 \section{Architektura systemu}
-System został podzielony na dwie główne warstwy. Architektura została zaprezentowana w postaci następującego rysunku:
-\begin{figure}[H]
+System został podzielony na dwie główne warstwy. Architektura została zaprezentowana na rysunku \ref{fig:architektura}.
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{../diagramy/architektura}
 	\caption{Architektura systemu}
@@ -997,7 +1004,7 @@ Baza danych \textit{MongoDB} jest dokumentową, niereleacyjną bazą danych \tex
 
 Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza. Na schemacie uwzględnione zostały relacje, które utworzono przy wykorzystaniu referencji. Takie podejście pozwala na wprowadzenie normalizacji danych i uniknięcie powielania dokumentów\cite{bib:mongoRelations}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{../diagramy/schemat_bazy}
 	\caption{Poglądowy schemat bazy danych}
@@ -1055,7 +1062,7 @@ Innym sposobem odczytu danych z bazy jest wykorzystanie składni \textit{LINQ}, 
 
 Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript}, w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. Na Kod \ref{lst:personalTrainerReadModel} zaprezentowano metodę klasy 
 \textit{PersonalTrainerReadModel}, której zadaniem jest odczyt z bazy informacji o koncie trenera personalnego.
-\begin{lstlisting}[caption={Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu wstawek składni metod sterownika}, label={lst:personalTrainerReadModel}]
+\begin{lstlisting}[caption={Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu metod sterownika}, label={lst:personalTrainerReadModel}]
 	public Task<PersonalTrainerDto> GetById(ObjectId id)
 	{
 		var client = new MongoClient(_databaseConfiguration.ConnectionString);
@@ -1155,10 +1162,10 @@ Poza testami obiektów domenowych, napisano również testy, których zadaniem b
 		}
 	}
 \end{lstlisting}
-W celu przetestowania poprawności działania warstwy serwerowej wykorzystano również testy manualne. Projekt \textit{ASP.NET} posiada domyślnie włączone automatyczne generowanie interaktywnej dokumentacji \textit{Swagger}, która pozwala na manualne testowanie interfejsu \textit{REST API}.
-\begin{figure}[H]
+W celu przetestowania poprawności działania warstwy serwerowej wykorzystano również testy manualne. Projekt \textit{ASP.NET} posiada domyślnie włączone, automatyczne generowanie interaktywnej dokumentacji \textit{Swagger}, która pozwala na manualne testowanie interfejsu \textit{REST API}. Część wygenerowanej dokumentacji przedstawiono na rysunku \ref{fig:swagger}.
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\linewidth]{../zrzuty_ekranu/testy/swagger}
+	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/testy/swagger}
 	\caption{Interaktywna dokumentacja interfejsu \textit{REST API}}
 	\label{fig:swagger}
 \end{figure}
@@ -1187,11 +1194,11 @@ Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie
 
 \chapter{Podsumowanie i wnioski}
 \label{chap:summary}
-Praca nad projektem przyniosła rezultaty w postaci systemu spełniającego określone wcześniej wymagania. Udało się pokryć zakres funkcjonalny związany z obostrzeniami pandemicznymi, co było główną przesłanką do rozpoczęcia prac nad tym projektem. Wybór aplikacji internetowej pozwoliło na utworzenie systemu dostępnego dla większości systemów operacyjnych. Poza spełnieniem wymagań funkcjonalnych, udało się również wykorzystać nowoczesne technologie, które zapewniają dłuższe wsparcie producentów.
+Praca nad projektem przyniosła rezultaty w postaci systemu spełniającego określone wcześniej wymagania. Udało się pokryć zakres funkcjonalny związany z obostrzeniami pandemicznymi, co było główną przesłanką do rozpoczęcia prac nad nim. Wybór aplikacji internetowej pozwolił na utworzenie systemu dostępnego dla większości systemów operacyjnych. Poza spełnieniem wymagań funkcjonalnych, udało się również wykorzystać nowoczesne technologie, które zapewniają dłuższe wsparcie producentów.
 
-W ramach projektu udało się stworzyć dokument, który opisuje sposób działania systemu oraz idee, które za nim stały. W trakcie tworzenia systemu położono nacisk na architekturę, która pozwoli na skalowanie. Poza tym zwrócono również uwagę na odpowiednią dokumentacje kodu, aby rozwiązanie mogło być rozwijane w kilkuosobowym zespole. Zaproponowana architektura pozwala również na zmianę architektury monolitycznej na mikro-usługową, co pozwoliłoby na pracę w większych zespołach.
+W ramach projektu udało się stworzyć dokument, który opisuje sposób działania systemu oraz ideę, która za nim stała. W trakcie tworzenia systemu położono nacisk na architekturę, która pozwoli na skalowanie. Poza tym zwrócono również uwagę na odpowiednią dokumentacje kodu, aby rozwiązanie mogło być rozwijane w kilkuosobowym zespole. Zaproponowana architektura pozwala również na zmianę architektury monolitycznej na mikro-usługową, co pozwoliłoby na pracę w większych zespołach.
 
-Mimo, że rozwiązanie posiada wiele cech produktu komercyjnego, wymaga ono dopracowania w warstwie prezentacji. Niektóre z widoków powinny zostać zaprojektowane na nowo, tak aby były bardzie intuicyjne dla użytkownika. Poza zwiększeniem przejrzystości formularzy, kolejnym krokiem w rozwoju systemu powinno być dostosowanie aplikacji do zasad RWD. Jest to istotne ze względu na duży udział urządzeń mobilnych w generowaniu ruchu na stronach internetowych\cite{bib:mobileVsDesktop}.
+Mimo, że rozwiązanie posiada wiele cech produktu komercyjnego, wymaga ono dopracowania w warstwie prezentacji. Niektóre z widoków powinny zostać zaprojektowane na nowo, tak aby były bardzie intuicyjne dla użytkownika. Poza poprawieniem przejrzystości formularzy, kolejnym krokiem w rozwoju systemu powinno być dostosowanie aplikacji do zasad RWD. Jest to istotne ze względu na duży udział urządzeń mobilnych w generowaniu ruchu na stronach internetowych\cite{bib:mobileVsDesktop}.
 
 Na rynku komercyjnym znajduje się wiele innych rozwiązań, które oferują większe możliwości pod względem funkcjonalnym. Naturalnym krokiem byłoby dodanie modułu recepcji oraz barów z odżywkami dla klientów. Poza nowymi modułami rozszerzone powinny być również te istniejące. Moduł karnetów powinien zostać rozszerzony o integracje z systemem płatności. Na rynku znajduje się wielu pośredników, którzy udostępniają API pozwalające na płatność w wygodny dla klienta sposób.
 
@@ -1265,7 +1272,7 @@ W celu komercjalizacji systemu ważne jest dodanie ról dla pozostały pracownik
 \end{lstlisting}
 
 \chapter*{Spis załączników elektronicznych}
-\addcontentsline{toc}{chapter}{Zawartość dołączonej płyty}
+\addcontentsline{toc}{chapter}{Spis załączników elektronicznych}
 
 Do pracy dołączona jest następującą zawartością:
 \begin{itemize}

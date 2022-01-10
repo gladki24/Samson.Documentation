@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.16)  9 JAN 2022 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.16)  10 JAN 2022 22:23
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -689,41 +689,43 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 
 ]
 (praca.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+0.
  (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+0.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-8.
+10.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-8.
+10.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 8.
+(Font)              <12> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+(Font)              <6> on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -746,7 +748,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.273 \cleardoublepage
+l.271 \cleardoublepage
                        [1
 
 
@@ -754,7 +756,7 @@ l.273 \cleardoublepage
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.273 \cleardoublepage
+l.271 \cleardoublepage
                        [2
 
 ]
@@ -812,7 +814,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Rozdzia\l  3.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-18.
+16.
 (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [9]
@@ -843,12 +845,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-<diagram_przypadków_użycia.png, id=307, 1379.90532pt x 1340.00626pt>
-File: diagram_przypadków_użycia.png Graphic file (type png)
-<use diagram_przypadków_użycia.png>
-Package pdftex.def Info: diagram_przypadków_użycia.png  used on input line 36
-8.
-(pdftex.def)             Requested size: 418.24908pt x 591.52658pt.
+<diagram_przypadków_użycia_xs.png, id=310, 1041.8925pt x 1364.84906pt>
+File: diagram_przypadków_użycia_xs.png Graphic file (type png)
+<use diagram_przypadków_użycia_xs.png>
+Package pdftex.def Info: diagram_przypadków_użycia_xs.png  used on input line
+ 366.
+(pdftex.def)             Requested size: 418.25368pt x 547.88759pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -862,9 +864,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-Overfull \vbox (24.49637pt too high) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -873,7 +872,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14 <./diagram_przypadków_użycia.png>]
+[14 <./diagram_przypadków_użycia_xs.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -892,7 +891,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-Overfull \hbox (3.38707pt too wide) in paragraph at lines 409--410
+Overfull \hbox (3.38707pt too wide) in paragraph at lines 407--408
 \T1/lmr/m/n/12 formy ASP.NET, mo-dele wy-ko-rzy-sty-wane do za-py-ta� HTTP oraz
  klasy obiek-
  []
@@ -919,14 +918,17 @@ Rozdzia\l  4.
 [19
 
 ]
-<../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png, id=369, 1429.59094pt x 688
+<../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png, id=372, 1429.59094pt x 688
 .07062pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png Graphic file (type png
 )
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png  us
-ed on input line 473.
-(pdftex.def)             Requested size: 313.69025pt x 150.97704pt.
+ed on input line 470.
+(pdftex.def)             Requested size: 418.25368pt x 201.30971pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -937,53 +939,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb1.png, id=374, 371.88937pt x 292.091
+<../zrzuty_ekranu/instalcja_mongodb/mongodb1.png, id=377, 371.88937pt x 292.091
 25pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb1.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb1.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb1.png  used 
-on input line 484.
-(pdftex.def)             Requested size: 209.12683pt x 164.25633pt.
-<../zrzuty_ekranu/instalcja_mongodb/mongodb2.png, id=375, 371.88937pt x 292.091
+on input line 479.
+(pdftex.def)             Requested size: 313.69025pt x 246.38896pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21 <../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png> <../zrzuty_ekranu/inst
+alcja_mongodb/mongodb1.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb2.png, id=385, 371.88937pt x 292.091
 25pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb2.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb2.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb2.png  used 
-on input line 495.
-(pdftex.def)             Requested size: 209.12683pt x 164.25633pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[21
-
- <../zrzuty_ekranu/instalcja_mongodb/mongodbsite.png> <../zrzuty_ekranu/instalc
-ja_mongodb/mongodb1.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb3.png, id=383, 371.88937pt x 290.585
+on input line 489.
+(pdftex.def)             Requested size: 271.86234pt x 213.53235pt.
+<../zrzuty_ekranu/instalcja_mongodb/mongodb3.png, id=386, 371.88937pt x 290.585
 63pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb3.png  used 
-on input line 506.
-(pdftex.def)             Requested size: 209.12683pt x 163.40967pt.
-<../zrzuty_ekranu/instalcja_mongodb/mongodb4.png, id=384, 371.13657pt x 289.08p
+on input line 498.
+(pdftex.def)             Requested size: 250.95476pt x 196.09692pt.
+<../zrzuty_ekranu/instalcja_mongodb/mongodb4.png, id=387, 371.13657pt x 289.08p
 t>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb4.png  used 
-on input line 517.
-(pdftex.def)             Requested size: 209.12683pt x 162.8938pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+on input line 507.
+(pdftex.def)             Requested size: 250.95476pt x 195.47345pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -993,28 +987,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22
-
-
- <../zrzuty_ekranu/instalcja_mongodb/mongodb2.png> <../zrzuty_ekranu/instalcja_
-mongodb/mongodb3.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png, id=391, 372.64218pt x 291.33
+[22 <../zrzuty_ekranu/instalcja_mongodb/mongodb2.png> <../zrzuty_ekranu/instalc
+ja_mongodb/mongodb3.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png, id=394, 372.64218pt x 291.33
 844pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mogndodb5.png  used
- on input line 528.
-(pdftex.def)             Requested size: 209.12683pt x 163.49515pt.
-<../zrzuty_ekranu/instalcja_mongodb/mongodb6.png, id=392, 371.13657pt x 289.832
-81pt>
-File: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png  used 
-on input line 539.
-(pdftex.def)             Requested size: 209.12683pt x 163.31801pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+ on input line 516.
+(pdftex.def)             Requested size: 250.95476pt x 196.20041pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1024,27 +1005,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23
-
-
- <../zrzuty_ekranu/instalcja_mongodb/mongodb4.png> <../zrzuty_ekranu/instalcja_
-mongodb/mogndodb5.png>]
-<../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png, id=399, 369.63094pt x 2
+[23 <../zrzuty_ekranu/instalcja_mongodb/mongodb4.png> <../zrzuty_ekranu/instalc
+ja_mongodb/mogndodb5.png>]
+<../zrzuty_ekranu/instalcja_mongodb/mongodb6.png, id=401, 371.13657pt x 289.832
+81pt>
+File: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb6.png  used 
+on input line 526.
+(pdftex.def)             Requested size: 250.95476pt x 195.9825pt.
+<../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png, id=402, 369.63094pt x 2
 89.83281pt>
 File: ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalcja_mongodb/mongodb_finish.png 
- used on input line 550.
-(pdftex.def)             Requested size: 209.12683pt x 163.98138pt.
-<../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png, id=401, 1428.08531pt x 687
+ used on input line 535.
+(pdftex.def)             Requested size: 271.86234pt x 213.1727pt.
+<../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png, id=404, 1428.08531pt x 687
 .31781pt>
 File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png Graphic file (type png
 )
 <use ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png  us
-ed on input line 561.
-(pdftex.def)             Requested size: 313.69025pt x 150.96916pt.
+ed on input line 545.
+(pdftex.def)             Requested size: 418.25368pt x 201.29921pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1054,29 +1039,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24
-
-
- <../zrzuty_ekranu/instalcja_mongodb/mongodb6.png> <../zrzuty_ekranu/instalcja_
-mongodb/mongodb_finish.png>]
-<../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png, id=408, 484.05844pt x 359.844
+[24 <../zrzuty_ekranu/instalcja_mongodb/mongodb6.png> <../zrzuty_ekranu/instalc
+ja_mongodb/mongodb_finish.png>]
+<../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png, id=411, 484.05844pt x 359.844
 38pt>
 File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png  used 
-on input line 569.
-(pdftex.def)             Requested size: 209.12683pt x 155.46582pt.
-<../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png, id=409, 488.57532pt x 3
+on input line 554.
+(pdftex.def)             Requested size: 292.77629pt x 217.65434pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25 <../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png>]
+<../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png, id=417, 488.57532pt x 3
 62.85562pt>
 File: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png 
- used on input line 578.
-(pdftex.def)             Requested size: 209.12683pt x 155.31618pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+ used on input line 564.
+(pdftex.def)             Requested size: 292.77629pt x 217.44376pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1086,52 +1078,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25
-
- <../zrzuty_ekranu/instalacja_dotnet5/dotnet_sdk.png> <../zrzuty_ekranu/instala
-cja_dotnet5/dotnet1.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node_page.png, id=417, 1429.59094pt x 621.0
+[26 <../zrzuty_ekranu/instalacja_dotnet5/dotnet1.png> <../zrzuty_ekranu/instala
+cja_dotnet5/dotnet_finish.png>]
+<../zrzuty_ekranu/instalacja_nodejs/node_page.png, id=425, 1429.59094pt x 621.0
 7031pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node_page.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node_page.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node_page.png  used
- on input line 591.
-(pdftex.def)             Requested size: 209.12683pt x 90.8442pt.
+ on input line 578.
+(pdftex.def)             Requested size: 334.60422pt x 145.36398pt.
 
-Overfull \hbox (14.45465pt too wide) in paragraph at lines 588--594
+Overfull \hbox (14.45465pt too wide) in paragraph at lines 575--581
 []\T1/lmr/m/n/12 W pierw-szej ko-lej-no-�ci za-in-sta-lo-wana musi by� plat-for
 ma uru-cho-mie-niowa \T1/lmr/m/it/12 Node.js\T1/lmr/m/n/12 ,
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26 <../zrzuty_ekranu/instalacja_dotnet5/dotnet_finish.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node1.png, id=423, 372.64218pt x 290.58563p
+<../zrzuty_ekranu/instalacja_nodejs/node1.png, id=426, 372.64218pt x 290.58563p
 t>
 File: ../zrzuty_ekranu/instalacja_nodejs/node1.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node1.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node1.png  used on 
-input line 599.
-(pdftex.def)             Requested size: 209.12683pt x 163.0727pt.
-<../zrzuty_ekranu/instalacja_nodejs/node2.png, id=424, 370.38374pt x 289.08pt>
-File: ../zrzuty_ekranu/instalacja_nodejs/node2.png Graphic file (type png)
-<use ../zrzuty_ekranu/instalacja_nodejs/node2.png>
-Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node2.png  used on 
-input line 607.
-(pdftex.def)             Requested size: 209.12683pt x 163.22021pt.
+input line 586.
+(pdftex.def)             Requested size: 271.86234pt x 212.00603pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1141,51 +1111,61 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <../zrzuty_ekranu/instalacja_nodejs/node_page.png> <../zrzuty_ekranu/instal
-acja_nodejs/node1.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node3.png, id=432, 370.38374pt x 289.83281p
+[27 <../zrzuty_ekranu/instalacja_nodejs/node_page.png>]
+<../zrzuty_ekranu/instalacja_nodejs/node2.png, id=433, 370.38374pt x 289.08pt>
+File: ../zrzuty_ekranu/instalacja_nodejs/node2.png Graphic file (type png)
+<use ../zrzuty_ekranu/instalacja_nodejs/node2.png>
+Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node2.png  used on 
+input line 595.
+(pdftex.def)             Requested size: 271.86234pt x 212.18672pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28 <../zrzuty_ekranu/instalacja_nodejs/node1.png> <../zrzuty_ekranu/instalacja
+_nodejs/node2.png>]
+<../zrzuty_ekranu/instalacja_nodejs/node3.png, id=440, 370.38374pt x 289.83281p
 t>
 File: ../zrzuty_ekranu/instalacja_nodejs/node3.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node3.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node3.png  used on 
-input line 615.
-(pdftex.def)             Requested size: 209.12683pt x 163.64526pt.
-<../zrzuty_ekranu/instalacja_nodejs/node4.png, id=433, 371.88937pt x 292.84406p
+input line 605.
+(pdftex.def)             Requested size: 250.95476pt x 196.38052pt.
+<../zrzuty_ekranu/instalacja_nodejs/node4.png, id=441, 371.88937pt x 292.84406p
 t>
 File: ../zrzuty_ekranu/instalacja_nodejs/node4.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node4.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node4.png  used on 
-input line 624.
-(pdftex.def)             Requested size: 209.12683pt x 164.67969pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[28 <../zrzuty_ekranu/instalacja_nodejs/node2.png> <../zrzuty_ekranu/instalacja
-_nodejs/node3.png>]
-<../zrzuty_ekranu/instalacja_nodejs/node5.png, id=440, 370.38374pt x 289.08pt>
+input line 614.
+(pdftex.def)             Requested size: 250.95476pt x 197.62099pt.
+<../zrzuty_ekranu/instalacja_nodejs/node5.png, id=442, 370.38374pt x 289.08pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node5.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node5.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node5.png  used on 
-input line 633.
-(pdftex.def)             Requested size: 209.12683pt x 163.22021pt.
-<../zrzuty_ekranu/instalacja_nodejs/node6.png, id=441, 372.64218pt x 289.08pt>
+input line 623.
+(pdftex.def)             Requested size: 250.95476pt x 195.87044pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29 <../zrzuty_ekranu/instalacja_nodejs/node3.png> <../zrzuty_ekranu/instalacja
+_nodejs/node4.png>]
+<../zrzuty_ekranu/instalacja_nodejs/node6.png, id=449, 372.64218pt x 289.08pt>
 File: ../zrzuty_ekranu/instalacja_nodejs/node6.png Graphic file (type png)
 <use ../zrzuty_ekranu/instalacja_nodejs/node6.png>
 Package pdftex.def Info: ../zrzuty_ekranu/instalacja_nodejs/node6.png  used on 
-input line 641.
-(pdftex.def)             Requested size: 209.12683pt x 162.22774pt.
-
-Underfull \vbox (badness 3735) has occurred while \output is active []
-
+input line 632.
+(pdftex.def)             Requested size: 230.04079pt x 178.45581pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1195,20 +1175,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29 <../zrzuty_ekranu/instalacja_nodejs/node4.png> <../zrzuty_ekranu/instalacja
-_nodejs/node5.png>]
+[30 <../zrzuty_ekranu/instalacja_nodejs/node5.png> <../zrzuty_ekranu/instalacja
+_nodejs/node6.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 650.
+nput line 642.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[30 <../zrzuty_ekranu/instalacja_nodejs/node6.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1236,16 +1207,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [33]
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png, id=494, 1445
-.4pt x 687.31781pt>
-File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png Graphic 
-file (type png)
-<use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png>
-Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejes
-tracja.png  used on input line 725.
-(pdftex.def)             Requested size: 418.25368pt x 198.88707pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1635) has occurred while \output is active []
 
 
 
@@ -1257,44 +1219,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34]
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png, id=500, 
-1445.4pt x 685.05937pt>
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png, id=501, 1035
+.87pt x 743.77875pt>
+File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png Graphic 
+file (type png)
+<use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png>
+Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejes
+tracja.png  used on input line 717.
+(pdftex.def)             Requested size: 418.25368pt x 300.32082pt.
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png, id=502, 
+1038.12843pt x 710.655pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png Grap
 hic file (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto
-_utworzone.png  used on input line 732.
-(pdftex.def)             Requested size: 418.25368pt x 198.23355pt.
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png, id=501, 1445.4
-pt x 687.31781pt>
+_utworzone.png  used on input line 725.
+(pdftex.def)             Requested size: 292.77629pt x 200.4134pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35 <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png>]
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png, id=510, 1038.8
+8126pt x 535.2497pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logow
-anie.png  used on input line 741.
-(pdftex.def)             Requested size: 418.25368pt x 198.88707pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[35 <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/rejestracja.png> <../zrzu
-ty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png>]
-<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png, id=508, 1445.
-4pt x 687.31781pt>
+anie.png  used on input line 735.
+(pdftex.def)             Requested size: 313.69025pt x 161.61337pt.
+<../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png, id=511, 819.0
+6pt x 741.52031pt>
 File: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png Graphic f
 ile (type png)
 <use ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalog
-owano.png  used on input line 748.
-(pdftex.def)             Requested size: 418.25368pt x 198.88707pt.
+owano.png  used on input line 743.
+(pdftex.def)             Requested size: 313.69025pt x 283.99832pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1304,27 +1270,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36 <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png> <../zrzuty
-_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png>]
+[36 <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/konto_utworzone.png> <../
+zrzuty_ekranu/dzialanie/rejestracja_logowanie/logowanie.png>]
 <../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_personaln
-ego.png, id=516, 1445.4pt x 686.565pt>
+ego.png, id=521, 781.41937pt x 828.09375pt>
 File: ../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_pers
 onalnego.png Graphic file (type png)
 <use ../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_perso
 nalnego.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie
-_konta_trenera_personalnego.png  used on input line 760.
-(pdftex.def)             Requested size: 418.25368pt x 198.66922pt.
-<../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png, id=517, 1420.55719pt x 374.1
-4781pt>
-File: ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png Graphic file (type png)
-<use ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png>
-Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png  used
- on input line 770.
-(pdftex.def)             Requested size: 418.25368pt x 110.1614pt.
+_konta_trenera_personalnego.png  used on input line 756.
+(pdftex.def)             Requested size: 209.12683pt x 221.61713pt.
 
-Underfull \vbox (badness 2573) has occurred while \output is active []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1334,26 +1293,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37 <../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_perso
-nalnego.png>]
-<../zrzuty_ekranu/dzialanie/obiekty/edycja.png, id=525, 1418.29875pt x 458.4628
-1pt>
+[37 <../zrzuty_ekranu/dzialanie/rejestracja_logowanie/zalogowano.png>]
+<../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png, id=529, 1780.40157pt x 860.4
+6469pt>
+File: ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png Graphic file (type png)
+<use ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png>
+Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png  used
+ on input line 767.
+(pdftex.def)             Requested size: 313.69025pt x 151.60768pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38 <../zrzuty_ekranu/dzialanie/trener_personalny/tworzenie_konta_trenera_perso
+nalnego.png> <../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png>]
+<../zrzuty_ekranu/dzialanie/obiekty/edycja.png, id=539, 1385.175pt x 865.73438p
+t>
 File: ../zrzuty_ekranu/dzialanie/obiekty/edycja.png Graphic file (type png)
 <use ../zrzuty_ekranu/dzialanie/obiekty/edycja.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/obiekty/edycja.png  used on
- input line 778.
-(pdftex.def)             Requested size: 418.25368pt x 135.19638pt.
-<../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png, id=526, 1445.4pt x 624
-.83438pt>
+ input line 777.
+(pdftex.def)             Requested size: 418.25368pt x 261.4pt.
+<../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png, id=540, 1389.69188pt x
+ 906.38625pt>
 File: ../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png Graphic file (type
  png)
 <use ../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png
   used on input line 788.
-(pdftex.def)             Requested size: 418.25368pt x 180.80643pt.
+(pdftex.def)             Requested size: 418.25368pt x 272.78928pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1363,27 +1339,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38 <../zrzuty_ekranu/dzialanie/obiekty/tworzenie.png> <../zrzuty_ekranu/dziala
-nie/obiekty/edycja.png>]
-<../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png, id=534, 1407.00656pt x 
-362.85562pt>
+[39 <../zrzuty_ekranu/dzialanie/obiekty/edycja.png>]
+<../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png, id=549, 1400.23125pt x 
+696.35156pt>
 File: ../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/pomieszczenia/usuwanie.png 
- used on input line 796.
-(pdftex.def)             Requested size: 418.25368pt x 107.86092pt.
-<../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png, id=535, 1394.20
-876pt x 615.80063pt>
+ used on input line 797.
+(pdftex.def)             Requested size: 418.25368pt x 207.99329pt.
+<../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png, id=550, 1009.52
+156pt x 902.6222pt>
 File: ../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png Graphic fil
 e (type png)
 <use ../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesor
-iun.png  used on input line 806.
-(pdftex.def)             Requested size: 418.25368pt x 184.73221pt.
-
-Underfull \vbox (badness 7326) has occurred while \output is active []
-
+iun.png  used on input line 808.
+(pdftex.def)             Requested size: 418.25368pt x 373.96146pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1393,24 +1365,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39 <../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png> <../zrzuty_ekranu/
+[40 <../zrzuty_ekranu/dzialanie/pomieszczenia/dodawanie.png> <../zrzuty_ekranu/
 dzialanie/pomieszczenia/usuwanie.png>]
-<../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png, id=544, 1398
-.72563pt x 630.10406pt>
+<../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png, id=559, 809.
+27344pt x 863.47594pt>
 File: ../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png Graphic 
 file (type png)
 <use ../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akce
-sorium.png  used on input line 814.
-(pdftex.def)             Requested size: 418.25368pt x 188.40773pt.
-<../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png, id=545, 1413.78188pt
- x 376.40625pt>
+sorium.png  used on input line 817.
+(pdftex.def)             Requested size: 418.25368pt x 446.26956pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41 <../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png>]
+<../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png, id=567, 816.80156pt 
+x 511.15968pt>
 File: ../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png Graphic file (ty
 pe png)
 <use ../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.p
-ng  used on input line 823.
-(pdftex.def)             Requested size: 418.25368pt x 111.35477pt.
+ng  used on input line 827.
+(pdftex.def)             Requested size: 334.60422pt x 209.39743pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1420,90 +1408,95 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <../zrzuty_ekranu/dzialanie/akcesoria/dodawanie_akcesoriun.png> <../zrzuty_
-ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png>]
-<../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png, id=553, 1411.52344pt x 
-456.95718pt>
+[42 <../zrzuty_ekranu/dzialanie/akcesoria/aktualizacja_akcesorium.png>]
+<../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png, id=575, 816.04875pt x 6
+21.07031pt>
 File: ../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/karnety/edycja_karnetu.png 
- used on input line 831.
-(pdftex.def)             Requested size: 418.25368pt x 135.40083pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png, id=554, 1419.0
-5156pt x 533.74406pt>
+ used on input line 836.
+(pdftex.def)             Requested size: 334.60422pt x 254.65942pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[43 <../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png> <../zrzuty_ekran
+u/dzialanie/karnety/edycja_karnetu.png>]
+<../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png, id=584, 788.19
+469pt x 861.2175pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarz
-enia.png  used on input line 843.
-(pdftex.def)             Requested size: 418.25368pt x 157.31467pt.
-
-Underfull \vbox (badness 1838) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[41 <../zrzuty_ekranu/dzialanie/karnety/tworzenie_karnetu.png> <../zrzuty_ekran
-u/dzialanie/karnety/edycja_karnetu.png>]
-<../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png, id=562, 1415.2
-875pt x 246.9225pt>
+enia.png  used on input line 848.
+(pdftex.def)             Requested size: 334.60422pt x 365.59865pt.
+<../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png, id=585, 824.32
+968pt x 290.58563pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarz
-enia.png  used on input line 852.
-(pdftex.def)             Requested size: 418.25368pt x 72.96959pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png, id=563, 1416.
-04031pt x 252.945pt>
+enia.png  used on input line 858.
+(pdftex.def)             Requested size: 418.25368pt x 147.43849pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44 <../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png>]
+<../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png, id=593, 827.3
+4094pt x 291.33844pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png Graphic f
 ile (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_lista_wyd
-arzen.png  used on input line 860.
-(pdftex.def)             Requested size: 418.25368pt x 74.71075pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png, id=564, 1410.
-77063pt x 246.1697pt>
+arzen.png  used on input line 866.
+(pdftex.def)             Requested size: 418.25368pt x 147.287pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[45 <../zrzuty_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png> <../zrzuty
+_ekranu/dzialanie/wydarzenia/trener_lista_wydarzen.png>]
+<../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png, id=604, 829.5
+9938pt x 292.09125pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png Graphic f
 ile (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wyd
-arzen.png  used on input line 868.
-(pdftex.def)             Requested size: 418.25368pt x 72.98003pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[42 <../zrzuty_ekranu/dzialanie/wydarzenia/dodawanie_wydarzenia.png> <../zrzuty
-_ekranu/dzialanie/wydarzenia/wszystkie_wydarzenia.png> <../zrzuty_ekranu/dziala
-nie/wydarzenia/trener_lista_wydarzen.png>]
-<../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png, id=573, 14
-16.79312pt x 317.68687pt>
+arzen.png  used on input line 875.
+(pdftex.def)             Requested size: 376.42575pt x 132.53178pt.
+<../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png, id=605, 78
+6.68906pt x 579.66562pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png Graphi
 c file (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/trener_podlad_wy
-darzenie.png  used on input line 877.
-(pdftex.def)             Requested size: 418.25368pt x 93.78467pt.
-<../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png, id=574, 14
-12.27625pt x 315.42844pt>
+darzenie.png  used on input line 885.
+(pdftex.def)             Requested size: 292.77629pt x 215.73775pt.
+<../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png, id=606, 78
+8.9475pt x 583.42969pt>
 File: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png Graphi
 c file (type png)
 <use ../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wy
-darzenia.png  used on input line 885.
-(pdftex.def)             Requested size: 418.25368pt x 93.41637pt.
+darzenia.png  used on input line 893.
+(pdftex.def)             Requested size: 418.25368pt x 309.29637pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1513,68 +1506,81 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43 <../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png> <../zrzut
-y_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png> <../zrzuty_ekranu/d
-zialanie/wydarzenia/klient_podlad_wydarzenia.png>]
-<../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png, id=583, 1413.02907
-pt x 430.60875pt>
+[46 <../zrzuty_ekranu/dzialanie/wydarzenia/klient_lista_wydarzen.png> <../zrzut
+y_ekranu/dzialanie/wydarzenia/trener_podlad_wydarzenie.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[47 <../zrzuty_ekranu/dzialanie/wydarzenia/klient_podlad_wydarzenia.png>]
+<../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png, id=622, 810.77907p
+t x 708.39656pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png Graphic file (
 type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu
-.png  used on input line 897.
-(pdftex.def)             Requested size: 418.25368pt x 127.45555pt.
-<../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png, id=584, 1413
-.78188pt x 245.41687pt>
+.png  used on input line 907.
+(pdftex.def)             Requested size: 418.25368pt x 365.44983pt.
+<../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png, id=623, 764.
+10469pt x 417.81094pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png Graphic 
 file (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_tr
-eningi.png  used on input line 906.
-(pdftex.def)             Requested size: 418.25368pt x 72.6033pt.
-<../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png, id=585, 1414.5
-3468pt x 246.1697pt>
+eningi.png  used on input line 917.
+(pdftex.def)             Requested size: 418.25368pt x 228.70018pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[48 <../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png>]
+<../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png, id=632, 762.59
+906pt x 331.2375pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/klient_lista_treni
-ngow.png  used on input line 914.
-(pdftex.def)             Requested size: 418.25368pt x 72.7847pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[44 <../zrzuty_ekranu/dzialanie/treningi/dodawanie_treningu.png> <../zrzuty_ekr
-anu/dzialanie/treningi/klient_dostepne_treningi.png>]
-<../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png, id=594, 1410.7
-7063pt x 244.66406pt>
+ngow.png  used on input line 925.
+(pdftex.def)             Requested size: 418.25368pt x 181.6707pt.
+<../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png, id=633, 780.66
+656pt x 285.31593pt>
 File: ../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png Graphic fi
 le (type png)
 <use ../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/trener_lista_treni
-ngow.png  used on input line 922.
-(pdftex.def)             Requested size: 418.25368pt x 72.53366pt.
-<../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png, id=595, 1409.265
-pt x 240.9pt>
-File: ../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png Graphic file
- (type png)
-<use ../zrzuty_ekranu/dzialanie/treningi/trening_opcje_trener.png>
-Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/treningi/trening_opcje_tren
-er.png  used on input line 930.
-(pdftex.def)             Requested size: 418.25368pt x 71.49495pt.
-<../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png, id=596, 1416.79312pt x 
-487.8225pt>
+ngow.png  used on input line 933.
+(pdftex.def)             Requested size: 376.42575pt x 137.57265pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[49 <../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi.png> <../zrzu
+ty_ekranu/dzialanie/treningi/klient_lista_treningow.png>]
+<../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png, id=642, 750.55406pt x 7
+90.45313pt>
 File: ../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png Graphic file (type 
 png)
 <use ../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png 
- used on input line 939.
-(pdftex.def)             Requested size: 418.25368pt x 144.01059pt.
+ used on input line 943.
+(pdftex.def)             Requested size: 209.12683pt x 220.23984pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1584,25 +1590,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45 <../zrzuty_ekranu/dzialanie/treningi/klient_lista_treningow.png> <../zrzuty
-_ekranu/dzialanie/treningi/trener_lista_treningow.png> <../zrzuty_ekranu/dziala
-nie/treningi/trening_opcje_trener.png>]
-<../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png, id=605, 1413.78188pt x
- 392.21532pt>
+[50 <../zrzuty_ekranu/dzialanie/treningi/trener_lista_treningow.png> <../zrzuty
+_ekranu/dzialanie/karnety/lista_karnetow.png>]
+<../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png, id=651, 751.30687pt x 
+630.85687pt>
 File: ../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png Graphic file (type
  png)
 <use ../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png
-  used on input line 950.
-(pdftex.def)             Requested size: 418.25368pt x 116.03166pt.
-<../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png, id=606, 1414.53468pt x
- 310.15875pt>
+  used on input line 955.
+(pdftex.def)             Requested size: 334.60422pt x 280.96626pt.
+<../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png, id=652, 746.03719pt x 
+493.845pt>
 File: ../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png Graphic file (type
  png)
 <use ../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png>
 Package pdftex.def Info: ../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png
-  used on input line 959.
-(pdftex.def)             Requested size: 418.25368pt x 91.70427pt.
+  used on input line 965.
+(pdftex.def)             Requested size: 418.25368pt x 276.86026pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1612,8 +1617,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46 <../zrzuty_ekranu/dzialanie/karnety/lista_karnetow.png> <../zrzuty_ekranu/d
-zialanie/bramki/bramka_wejsciowa.png>]
+[51 <../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1622,38 +1626,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47 <../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[48
-
-]
+[52 <../zrzuty_ekranu/dzialanie/bramki/bramka_wyjsciowa.png>]
 Rozdzia\l  5.
-<../diagramy/architektura.png, id=624, 1206.5075pt x 703.62875pt>
+<../diagramy/architektura.png, id=669, 1206.5075pt x 703.62875pt>
 File: ../diagramy/architektura.png Graphic file (type png)
 <use ../diagramy/architektura.png>
-Package pdftex.def Info: ../diagramy/architektura.png  used on input line 972.
+Package pdftex.def Info: ../diagramy/architektura.png  used on input line 979.
 (pdftex.def)             Requested size: 418.25368pt x 243.92245pt.
+[53
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[50 <../diagramy/architektura.png>]
-Overfull \hbox (29.53807pt too wide) in paragraph at lines 982--983
+]
+Overfull \hbox (29.53807pt too wide) in paragraph at lines 989--990
 \T1/lmr/m/n/12 �e-to-n�w JWT oraz spraw-dza-nie ich po-praw-no-�ci. \T1/lmr/m/i
 t/12 Sam-son.Web.Application.Identity
  []
@@ -1666,17 +1649,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[51]
-<../diagramy/schemat_bazy.png, id=642, 987.69pt x 748.7975pt>
+[54 <../diagramy/architektura.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55]
+<../diagramy/schemat_bazy.png, id=687, 987.69pt x 748.7975pt>
 File: ../diagramy/schemat_bazy.png Graphic file (type png)
 <use ../diagramy/schemat_bazy.png>
-Package pdftex.def Info: ../diagramy/schemat_bazy.png  used on input line 1002.
+Package pdftex.def Info: ../diagramy/schemat_bazy.png  used on input line 1009.
 
 (pdftex.def)             Requested size: 418.25368pt x 317.08644pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1685,17 +1674,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[53 <../diagramy/schemat_bazy.png>]
-Overfull \hbox (0.40015pt too wide) in paragraph at lines 1013--1014
+[56 <../diagramy/schemat_bazy.png>]
+Overfull \hbox (0.40015pt too wide) in paragraph at lines 1020--1021
 []\T1/lmr/m/it/12 EntranceCollection \T1/lmr/m/n/12 - ko-lek-cja za-wie-ra-j�ca
  in-for-ma-cje o klien-tach, kt�-rzy znaj-
  []
@@ -1708,41 +1688,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[54]
-Underfull \vbox (badness 1466) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[55]
-Underfull \vbox (badness 4036) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[56]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [57]
-Underfull \vbox (badness 2103) has occurred while \output is active []
+Underfull \vbox (badness 1968) has occurred while \output is active []
 
 
 
@@ -1754,7 +1701,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [58]
-Underfull \vbox (badness 2435) has occurred while \output is active []
+Underfull \vbox (badness 3375) has occurred while \output is active []
 
 
 
@@ -1766,6 +1713,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [59]
+Underfull \vbox (badness 3375) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1775,11 +1725,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60]
-Rozdzia\l  6.
-[61
 
-]
-Underfull \vbox (badness 2435) has occurred while \output is active []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1791,16 +1746,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [62]
-<../zrzuty_ekranu/testy/swagger.png, id=801, 952.30782pt x 939.51pt>
-File: ../zrzuty_ekranu/testy/swagger.png Graphic file (type png)
-<use ../zrzuty_ekranu/testy/swagger.png>
-Package pdftex.def Info: ../zrzuty_ekranu/testy/swagger.png  used on input line
- 1161.
-(pdftex.def)             Requested size: 292.77629pt x 288.83669pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1818,16 +1763,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[64 <../zrzuty_ekranu/testy/swagger.png>]
+[64
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
+]
+Rozdzia\l  6.
 [65]
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1837,11 +1780,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66]
+<../zrzuty_ekranu/testy/swagger.png, id=847, 699.36281pt x 949.29657pt>
+File: ../zrzuty_ekranu/testy/swagger.png Graphic file (type png)
+<use ../zrzuty_ekranu/testy/swagger.png>
+Package pdftex.def Info: ../zrzuty_ekranu/testy/swagger.png  used on input line
+ 1168.
+(pdftex.def)             Requested size: 418.25368pt x 567.72824pt.
+
+
+LaTeX Warning: Float too large for page by 0.69803pt on input line 1171.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[67]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[68 <../zrzuty_ekranu/testy/swagger.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[69]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[70]
 Rozdzia\l  7.
 
 Underfull \vbox (badness 2343) has occurred while \output is active []
 
- [67
+ [71
 
 ]
 (praca.bbl
@@ -1853,30 +1842,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[68]
+[72]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
 .
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 8--11
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+[]\T1/lmr/m/n/12 Advantages of Mon-goDB.  []$\T1/lmtt/m/n/12 https : / / www . 
+mongodb . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 []\T1/lmr/m/n/12 Data Mo-del De-sign.  []$\T1/lmtt/m/n/12 https : / / docs . mo
 ngodb . com / manual / core /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
 []\T1/lmr/m/n/12 Instance Per Li-fe-time Scope.  []$\T1/lmtt/m/n/12 https : / /
  autofac .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
 \T1/lmtt/m/n/12 readthedocs . io / en / latest / lifetime / instance-[]scope . 
 html #
  []
 
-[69
+[73
 
 ])
 
@@ -1887,31 +1882,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[70] [71
-
-] [72] [73
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [74] [75
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[76] [77
+] [76] [77
 
 ]
 
@@ -1922,9 +1895,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[78
+[78] [79
 
-] (praca.lof [79])
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[80] [81
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[82
+
+] (praca.lof [83])
 \tf@lof=\write5
 \openout5 = `praca.lof'.
 
@@ -1937,24 +1932,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[80] (praca.lol)
+[84] (praca.lol)
 \tf@lol=\write6
 \openout6 = `praca.lol'.
 
- [81
+ [85
 
 ] (praca.aux)
 Package rerunfilecheck Info: File `praca.out' has not changed.
-(rerunfilecheck)             Checksum: EC0B97C403D2C1689FEBFA0897DE1FC1;7274.
+(rerunfilecheck)             Checksum: 688AD782C470273342B61DC8B570816D;7298.
  ) 
 Here is how much of TeX's memory you used:
- 16353 strings out of 478927
- 267740 string characters out of 2862391
- 788763 words of memory out of 3000000
- 33482 multiletter control sequences out of 15000+600000
+ 16346 strings out of 478927
+ 267110 string characters out of 2862391
+ 800763 words of memory out of 3000000
+ 33472 multiletter control sequences out of 15000+600000
  475529 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,66p,1298b,1899s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,66p,1298b,1897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTe
 X/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8
 r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Fil
@@ -1966,9 +1961,9 @@ m/lmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Pr
 ogram Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helv
 etic/uhvr8a.pfb>
-Output written on praca.pdf (85 pages, 2736762 bytes).
+Output written on praca.pdf (89 pages, 3266789 bytes).
 PDF statistics:
- 1174 PDF objects out of 1200 (max. 8388607)
- 381 named destinations out of 1000 (max. 500000)
- 595 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1221 PDF objects out of 1440 (max. 8388607)
+ 385 named destinations out of 1000 (max. 500000)
+ 590 words of extra memory for PDF output out of 10000 (max. 10000000)
 

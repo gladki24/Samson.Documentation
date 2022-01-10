@@ -5,6 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: plplain.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
+Warning--to sort, need author or key in bib:mongoPros
 Warning--to sort, need author or key in bib:perfectgym
 Warning--to sort, need author or key in bib:wodguru
 Warning--to sort, need author or key in bib:autofactag
@@ -15,45 +16,45 @@ Warning--to sort, need author or key in bib:requirementsLinux
 Warning--to sort, need author or key in bib:requirementsMongo
 Warning--to sort, need author or key in bib:requirementsFramework
 Warning--to sort, need author or key in bib:mongoRelations
-You've used 17 entries,
+You've used 18 entries,
             2129 wiz_defined-function locations,
-            583 strings with 6392 characters,
-and the built_in function-call counts, 3251 in all, are:
-= -- 302
-> -- 82
+            587 strings with 6492 characters,
+and the built_in function-call counts, 3410 in all, are:
+= -- 317
+> -- 83
 < -- 0
-+ -- 39
++ -- 40
 - -- 22
-* -- 122
-:= -- 463
-add.period$ -- 41
-call.type$ -- 17
-change.case$ -- 58
+* -- 127
+:= -- 480
+add.period$ -- 43
+call.type$ -- 18
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 139
-empty$ -- 385
+cite$ -- 29
+duplicate$ -- 146
+empty$ -- 408
 format.name$ -- 22
-if$ -- 754
+if$ -- 794
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 18
 missing$ -- 8
-newline$ -- 78
+newline$ -- 82
 num.names$ -- 14
-pop$ -- 136
+pop$ -- 144
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 47
 quote$ -- 0
-skip$ -- 131
+skip$ -- 139
 stack$ -- 0
-substring$ -- 85
-swap$ -- 17
+substring$ -- 90
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
-warning$ -- 10
+type$ -- 64
+warning$ -- 11
 while$ -- 14
-width$ -- 19
-write$ -- 143
-(There were 10 warnings)
+width$ -- 20
+write$ -- 150
+(There were 11 warnings)

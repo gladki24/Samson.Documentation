@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{bib:mongoPros}
+{Advantages of MongoDB}.
+\newblock \url{https://www.mongodb.com/advantages-of-mongodb}.
+
 \bibitem{bib:anuglar}
 {Angular: The modern web developer's platform}.
 \newblock \url{https://angular.io/}.
