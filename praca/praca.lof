@@ -6,6 +6,10 @@
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \addvspace {10\p@ }
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\babel@toc {british}{}
+\babel@toc {polish}{}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram przypadków użycia\relax }}{14}{figure.caption.3}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
@@ -19,59 +23,57 @@
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\babel@toc {british}{}
-\babel@toc {polish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Strona, z której można pobrać instalator serwera bazy danych MongoDB\relax }}{23}{figure.caption.4}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Widok powitalny instalatora MongoDB\relax }}{24}{figure.caption.5}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Umowa licencyjna \textit {MongoDB Community Edition}\relax }}{25}{figure.caption.6}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Typ instalacji w instalatorze \textit {MongoDB Community Edition}\relax }}{25}{figure.caption.7}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Początkowa konfiguracja serwera bazy danych\relax }}{26}{figure.caption.8}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Informacja o możliwości instalacji klienta bazy danych \textit {MongoDB Compass}\relax }}{26}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Rozpoczęcie instalacji \textit {MongoDB}\relax }}{27}{figure.caption.10}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Zakończenie instalacji \textit {MongoDB}\relax }}{28}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Strona twórców środowiska \textit {.NET}\relax }}{29}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {.NET }5\relax }}{29}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Zakończenie instalacji środowiska \textit {.NET 5}\relax }}{30}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Strona Node.js\relax }}{31}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {Node.js}\relax }}{32}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Licencja środowiska \textit {Node.js}\relax }}{33}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Ścieżka do folderu docelowego \textit {Node.js}\relax }}{33}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Składniki instalatora Node.js\relax }}{34}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Formularz umożliwiający instalację dodatkowego narzędzia \textit {Cocolatey}\relax }}{35}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Potwierdzenie instalacji środowiska \textit {Node.js}\relax }}{35}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Rejestracja klienta\relax }}{41}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Klient został zarejestrowany w systemie\relax }}{42}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Widok logowania do systemu\relax }}{42}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Widok po zalogowaniu do systemu\relax }}{43}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Formularz tworzenia konta trenera personalnego\relax }}{44}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Formularz tworzenia obiektu siłowni\relax }}{44}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Formularz edycji i archiwizacji obiektów siłowni\relax }}{45}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Formularz dodawania pomieszczenia do obiektu siłowni\relax }}{46}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Formularz archiwizacji pomieszczenia\relax }}{46}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Formularz dodawania sprzętu do ćwiczeń\relax }}{47}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Formularz edycji i archiwizacji akcesoriów\relax }}{48}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Formularz dodawania karnetu do oferty\relax }}{49}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Formularz edycji i archiwizacji karnetów\relax }}{49}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Formularz tworzenia wydarzenia\relax }}{50}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Lista wszystkich wydarzeń\relax }}{51}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Lista utworzony wydarzeń przez trenera personalnego\relax }}{51}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Lista wydarzeń klienta\relax }}{52}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Podgląd wydarzenia jako trener personalny\relax }}{52}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.37}{\ignorespaces Pogląd wydarzenia jako klient\relax }}{53}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.38}{\ignorespaces Formularz dodawania treningu\relax }}{54}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.39}{\ignorespaces Lista dostępnych treningów indywidualnych\relax }}{55}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista treningów, na które zapisał się klient\relax }}{55}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Lista utworzonych treningów przez trenera\relax }}{56}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Oferta karnetów oraz informacje o posiadanym karnecie\relax }}{56}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.43}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wejściowej\relax }}{58}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.44}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wyjściowej\relax }}{59}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Strona, z której można pobrać instalator serwera bazy danych MongoDB\relax }}{21}{figure.caption.4}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Widok powitalny instalatora MongoDB\relax }}{21}{figure.caption.5}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Umowa licencyjna \textit {MongoDB Community Edition}\relax }}{22}{figure.caption.6}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Typ instalacji w instalatorze \textit {MongoDB Community Edition}\relax }}{22}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Początkowa konfiguracja serwera bazy danych\relax }}{23}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Informacja o możliwości instalacji klienta bazy danych \textit {MongoDB Compass}\relax }}{23}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Rozpoczęcie instalacji \textit {MongoDB}\relax }}{24}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Zakończenie instalacji \textit {MongoDB}\relax }}{24}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Strona twórców środowiska \textit {.NET}\relax }}{25}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {.NET }5\relax }}{26}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Zakończenie instalacji środowiska \textit {.NET 5}\relax }}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Strona Node.js\relax }}{27}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Rozpoczęcie instalacji środowiska \textit {Node.js}\relax }}{28}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Licencja środowiska \textit {Node.js}\relax }}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Ścieżka do folderu docelowego \textit {Node.js}\relax }}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Składniki instalatora Node.js\relax }}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Formularz umożliwiający instalację dodatkowego narzędzia \textit {Cocolatey}\relax }}{30}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Potwierdzenie instalacji środowiska \textit {Node.js}\relax }}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Rejestracja klienta\relax }}{35}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Klient został zarejestrowany w systemie\relax }}{36}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Widok logowania do systemu\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Widok po zalogowaniu do systemu\relax }}{37}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Formularz tworzenia konta trenera personalnego\relax }}{38}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Formularz tworzenia obiektu siłowni\relax }}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Formularz edycji i archiwizacji obiektów siłowni\relax }}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Formularz dodawania pomieszczenia do obiektu siłowni\relax }}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Formularz archiwizacji pomieszczenia\relax }}{40}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Formularz dodawania sprzętu do ćwiczeń\relax }}{41}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Formularz edycji i archiwizacji akcesoriów\relax }}{42}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Formularz dodawania karnetu do oferty\relax }}{43}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Formularz edycji i archiwizacji karnetów\relax }}{43}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Formularz tworzenia wydarzenia\relax }}{44}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Lista wszystkich wydarzeń\relax }}{45}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Lista utworzony wydarzeń przez trenera personalnego\relax }}{45}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Lista wydarzeń klienta\relax }}{46}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Podgląd wydarzenia jako trener personalny\relax }}{46}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Pogląd wydarzenia jako klient\relax }}{47}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Formularz dodawania treningu\relax }}{48}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Lista dostępnych treningów indywidualnych\relax }}{49}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Lista treningów, na które zapisał się klient\relax }}{49}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Lista utworzonych treningów przez trenera\relax }}{50}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Oferta karnetów oraz informacje o posiadanym karnecie\relax }}{50}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wejściowej\relax }}{51}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Widok wyświetlany na wyświetlaczu bramki wyjściowej\relax }}{52}{figure.caption.61}%
 \addvspace {10\p@ }
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Architektura systemu\relax }}{62}{figure.caption.62}%
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Architektura systemu\relax }}{54}{figure.caption.62}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
@@ -96,15 +98,13 @@
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Poglądowy schemat bazy danych\relax }}{65}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Poglądowy schemat bazy danych\relax }}{56}{figure.caption.65}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \addvspace {10\p@ }
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Interaktywna dokumentacja interfejsu \textit {REST API}\relax }}{76}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Interaktywna dokumentacja interfejsu \textit {REST API}\relax }}{68}{figure.caption.66}%
 \addvspace {10\p@ }
 \babel@toc {british}{}
 \babel@toc {polish}{}

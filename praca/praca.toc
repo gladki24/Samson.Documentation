@@ -8,9 +8,9 @@
 \babel@toc {polish}{}
 \contentsline {chapter}{\numberline {3}Wymagania i narzędzia}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Wymagania funkcjonalne}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Wymagania niefunkcjonalne}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Wymagania niefunkcjonalne}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Diagram przypadków użycia (UML)}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Narzędzia}{15}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Narzędzia}{13}{section.3.4}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
@@ -22,57 +22,49 @@
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\contentsline {section}{\numberline {3.6}Metodyka pracy nad projektowaniem i implementacją}{17}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Metodyka pracy nad projektowaniem i implementacją}{16}{section.3.6}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Wymagania sprzętowe}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Instalacja}{23}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Instalacja bazy danych MongoDB}{23}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Instalacja środowiska .NET 5}{28}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Instalacja środowiska Node.js}{30}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Instalacja \textit {http-server}}{36}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Sposób aktywacji}{36}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Uruchomienie warstwy serwerowej}{36}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Uruchomienie warstwy prezentacji}{38}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Kategorie użytkowników}{39}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Kwestie bezpieczeństwa}{39}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Przykład działania}{40}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Rejestracja i logowanie}{40}{subsection.4.6.1}%
-\contentsline {subsubsection}{Rejestracja}{40}{section*.22}%
-\contentsline {subsubsection}{Logowanie}{42}{section*.25}%
-\contentsline {subsection}{\numberline {4.6.2}Administracja systemem}{43}{subsection.4.6.2}%
-\contentsline {subsubsection}{Dodawanie konta trenerów personalnych}{43}{section*.28}%
-\contentsline {subsubsection}{Zarządzanie obiektami siłowni}{44}{section*.30}%
-\contentsline {subsubsection}{Zarządzanie pomieszczeniami}{45}{section*.33}%
-\contentsline {subsubsection}{Zarządzaniem sprzętem do ćwiczeń i akcesoriami}{47}{section*.36}%
-\contentsline {subsubsection}{Zarządzanie ofertą karnetów}{48}{section*.39}%
-\contentsline {subsection}{\numberline {4.6.3}Wydarzenia}{50}{subsection.4.6.3}%
-\contentsline {subsubsection}{Tworzenie wydarzenia}{50}{section*.42}%
-\contentsline {subsubsection}{Listy wydarzeń}{51}{section*.44}%
-\contentsline {subsubsection}{Podgląd wydarzeń}{52}{section*.48}%
-\contentsline {subsection}{\numberline {4.6.4}Treningi indywidualne}{53}{subsection.4.6.4}%
-\contentsline {subsubsection}{Tworzenie treningów indywidualnych}{54}{section*.51}%
-\contentsline {subsubsection}{Listy treningów indywidualnych}{54}{section*.53}%
-\contentsline {subsection}{\numberline {4.6.5}Karnety}{56}{subsection.4.6.5}%
-\contentsline {subsection}{\numberline {4.6.6}Tryb bramek}{57}{subsection.4.6.6}%
-\contentsline {subsubsection}{Bramka wejściowa}{57}{section*.58}%
-\contentsline {subsubsection}{Bramka wyjściowa}{58}{section*.60}%
-\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{61}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Architektura systemu}{61}{section.5.1}%
-\contentsline {subsubsection}{Warstwa serwerowa}{61}{section*.63}%
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\babel@toc {british}{}
-\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wymagania sprzętowe}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Instalacja}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Instalacja bazy danych MongoDB}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Instalacja środowiska .NET 5}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Instalacja środowiska Node.js}{27}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Instalacja \textit {http-server}}{31}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Sposób aktywacji}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Uruchomienie warstwy serwerowej}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Uruchomienie warstwy prezentacji}{33}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Kategorie użytkowników}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Kwestie bezpieczeństwa}{34}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Przykład działania}{35}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Rejestracja i logowanie}{35}{subsection.4.6.1}%
+\contentsline {subsubsection}{Rejestracja}{35}{section*.22}%
+\contentsline {subsubsection}{Logowanie}{36}{section*.25}%
+\contentsline {subsection}{\numberline {4.6.2}Administracja systemem}{37}{subsection.4.6.2}%
+\contentsline {subsubsection}{Dodawanie konta trenerów personalnych}{37}{section*.28}%
+\contentsline {subsubsection}{Zarządzanie obiektami siłowni}{38}{section*.30}%
+\contentsline {subsubsection}{Zarządzanie pomieszczeniami}{39}{section*.33}%
+\contentsline {subsubsection}{Zarządzaniem sprzętem do ćwiczeń i akcesoriami}{41}{section*.36}%
+\contentsline {subsubsection}{Zarządzanie ofertą karnetów}{42}{section*.39}%
+\contentsline {subsection}{\numberline {4.6.3}Wydarzenia}{44}{subsection.4.6.3}%
+\contentsline {subsubsection}{Tworzenie wydarzenia}{44}{section*.42}%
+\contentsline {subsubsection}{Listy wydarzeń}{45}{section*.44}%
+\contentsline {subsubsection}{Podgląd wydarzeń}{46}{section*.48}%
+\contentsline {subsection}{\numberline {4.6.4}Treningi indywidualne}{47}{subsection.4.6.4}%
+\contentsline {subsubsection}{Tworzenie treningów indywidualnych}{48}{section*.51}%
+\contentsline {subsubsection}{Listy treningów indywidualnych}{48}{section*.53}%
+\contentsline {subsection}{\numberline {4.6.5}Karnety}{50}{subsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.6.6}Tryb bramek}{51}{subsection.4.6.6}%
+\contentsline {subsubsection}{Bramka wejściowa}{51}{section*.58}%
+\contentsline {subsubsection}{Bramka wyjściowa}{52}{section*.60}%
+\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Architektura systemu}{53}{section.5.1}%
+\contentsline {subsubsection}{Warstwa serwerowa}{53}{section*.63}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
@@ -93,21 +85,6 @@
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\contentsline {subsubsection}{Warstwa prezentacji}{64}{section*.64}%
-\contentsline {section}{\numberline {5.2}Organizacja bazy danych}{64}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Przegląd najważniejszych klas}{66}{section.5.3}%
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\contentsline {section}{\numberline {5.4}Przegląd wzorców projektowych}{70}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{73}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Sposoby testowania}{73}{section.6.1}%
-\babel@toc {british}{}
-\babel@toc {polish}{}
-\contentsline {section}{\numberline {6.2}Organizacja testów}{77}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Przykłady wykrytych i usuniętych błędów}{77}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{79}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{82}{chapter*.67}%
-\contentsline {chapter}{Spis skrótów i symboli}{85}{appendix*.68}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
@@ -116,6 +93,21 @@
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
+\contentsline {subsubsection}{Warstwa prezentacji}{55}{section*.64}%
+\contentsline {section}{\numberline {5.2}Organizacja bazy danych}{56}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Przegląd najważniejszych klas}{57}{section.5.3}%
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {5.4}Przegląd wzorców projektowych}{61}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{65}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Sposoby testowania}{65}{section.6.1}%
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {6.2}Organizacja testów}{67}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Przykłady wykrytych i usuniętych błędów}{69}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{71}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{74}{chapter*.67}%
+\contentsline {chapter}{Spis skrótów i symboli}{77}{appendix*.68}%
 \babel@toc {british}{}
 \babel@toc {polish}{}
 \babel@toc {british}{}
@@ -146,5 +138,13 @@
 \babel@toc {polish}{}
 \babel@toc {british}{}
 \babel@toc {polish}{}
-\contentsline {chapter}{Źródła}{87}{appendix*.69}%
-\contentsline {chapter}{Spis załączników elektronicznych}{89}{appendix*.70}%
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\babel@toc {british}{}
+\babel@toc {polish}{}
+\contentsline {chapter}{Źródła}{79}{appendix*.69}%
+\contentsline {chapter}{Spis załączników elektronicznych}{81}{appendix*.70}%

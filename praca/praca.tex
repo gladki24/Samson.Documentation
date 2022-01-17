@@ -264,7 +264,7 @@ W pracy przedstawiono projekt aplikacji internetowej, która pozwala na zarządz
 
 W ramach pracy omówiono ideę stojącą za stworzeniem systemu oraz sposób jego projektowania. Opisane zostały metodyki pracy nad projektem, wykorzystane technologie oraz wybrane wzorce projektowe, które zostały użyte przy pracy nad aplikacją.
 
-{\bf Slowa kluczowe: NoSQL, MongoDB, sieć siłowni
+{\bf Slowa kluczowe: NoSQL, MongoDB, sieć siłowni}
 
 \addcontentsline{toc}{chapter}{Streszczenie}
 
@@ -280,10 +280,10 @@ Głównym celem tego projektu jest stworzenie systemu informatycznego pozwalają
 
 Wykorzystanie dokumentowej bazy danych jest związane z zaletami baz \textit{NoSQL}. Niektóre cechy wcześniej wymienionych baz nie są dostępne dla relacyjnych baz danych. Jedną z takich cech jest duża podatność na zmiany w strukturze względem relacyjnych baz oraz przystosowanie do skalowania wszerz \cite{bib:noSqlVsSql}.
 
-Pracę podzielono na rozdziały, gdzie pierwszy został poświęcony analizie tematu. Analiza zawiera informacje o idei powstania systemu oraz wyzwaniach z którymi projekt będzie musiał się mierzyć. Kolejny rozdział został poświęcony wymaganiom i narzędziom. Wymagania w rozdziale \ref{chap:Wymagania} zostały podzielone na funkcjonalne i niefunkcjonalne, a w kolejnych podrozdziałach opisano narzędzia, które wykorzystano do ich realizacji. Rozdział \ref{chap:external} opisuje wymagania sprzętowe, kategorie użytkowników oraz przykłady działania aplikacji. Poza tym zawiera wyczerpującą instrukcję instalacji i uruchamiania systemu. W rozdziale \ref{chap:internal} skupiono się na opisie architektury i przyjętej organizacji bazy danych. W kolejnych podrozdziałach przedstawiono przegląd najważniejszych klas i wzorców projektowych. Rozdział \ref{chap:validation} poświęcono testom jakim został poddany system. W ramach rozdziału opisano sposoby i organizacje testów z podziałem na testy jednostkowe i manualne. Ostatni rozdział \ref{chap:summary} przedstawia wnioski i obserwacje do jakich doszło w trakcie prac. Rozdział kończy się przedstawieniem propozycji usprawnienia systemu w przypadku kontynuowania pracy nad nim.
+Pracę podzielono na rozdziały, gdzie pierwszy został poświęcony analizie tematu. Analiza zawiera informacje o idei powstania systemu oraz wyzwaniach z~którymi projekt będzie musiał się mierzyć. Kolejny rozdział został poświęcony wymaganiom i narzędziom. Wymagania w rozdziale \ref{chap:Wymagania} zostały podzielone na funkcjonalne i niefunkcjonalne, a w kolejnych podrozdziałach opisano narzędzia, które wykorzystano do ich realizacji. Rozdział \ref{chap:external} opisuje wymagania sprzętowe, kategorie użytkowników oraz przykłady działania aplikacji. Poza tym zawiera wyczerpującą instrukcję instalacji i uruchamiania systemu. W rozdziale \ref{chap:internal} skupiono się na opisie architektury i przyjętej organizacji bazy danych. W kolejnych podrozdziałach przedstawiono przegląd najważniejszych klas i wzorców projektowych. Rozdział \ref{chap:validation} poświęcono testom jakim został poddany system. W ramach rozdziału opisano sposoby i organizacje testów z podziałem na testy jednostkowe i manualne. Ostatni rozdział \ref{chap:summary} przedstawia wnioski i obserwacje do jakich doszło w trakcie prac. Rozdział kończy się przedstawieniem propozycji usprawnienia systemu w przypadku kontynuowania pracy nad nim.
 
 \chapter{Analiza tematu}
-Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupy klientów. Stawia to nowe wyzwania w organizacji pracy i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
+Na rynku siłowni widać coraz większą konkurencję, a właściciele szukają sposobów jak zachęcić nowych klientów do uczęszczania na ich siłownie. Wiele z sieci pozwala na całodobowe korzystanie z ich obiektów, aby sprostać wymaganiom jak największej grupy klientów. Stawia to nowe wyzwania w organizacji pracy i sposobie działania obiektów. Dużym usprawnieniem byłaby możliwość zrezygnowania z~recepcji na rzecz bramek wejściowych i wyjściowych, które kontrolowałby ważność karnetu oraz pilnowałby, aby w tej samej chwili na siłowni nie znajdowała się zbyt duża liczba osób.
 
 Innym problemem jest coraz większa liczba sieci siłowni, która w swojej ofercie zawiera możliwość udziału w wydarzeniach grupowych, które pozwalają na uczestnictwo w grupowej sesji, gdzie pracownik siłowni nadzoruje czy uczestnicy wykonują ćwiczenia w sposób bezpieczny dla ich zdrowia. Pozwolenie na zgłoszenie chęci udziału w takim wydarzeniu poprzez aplikację internetową może zwiększyć atrakcyjność oferty danej sieci siłowni w obliczu rosnącej konkurencji na rynku sieci siłowni.
 
@@ -369,7 +369,7 @@ W tym rozdziale opisane zostaną wymagania funkcjonalne systemu, które muszą z
 \end{figure}
 	
 	\section{Narzędzia}
-	Do napisania projektu wykorzystano IDE (ang. \ang{Integrated development environment}) \textit{Visual Studio 2019}, które oferuje wiele narzędzi ułatwiających pisanie kodu w języku \textit{C\#}. Głównymi zaletami tego środowiska jest bliska współpraca z środowiskiem \textit{.NET}, zapewnienie narzędzi w postaci odpluskwiacza (ang. \ang{debugger}) czy integracja z systemem kontroli wersji GIT. Do pracy wykorzystano również IDE \textit{WebStorm} firmy \textit{JetBrains}, które pozwala na tworzenie aplikacji z platformą programistyczną \textit{Angular}. Do przeglądania kolekcji i dokumentów w bazie danych \textit{MongoDB} wykorzystano narzędzie \textit{MongoDB Compass}. Diagramy zostały utworzone dzięki wykorzystaniu narzędzi \textit{Astah UML} i \textit{diagrams.net}.
+	Do napisania projektu wykorzystano IDE (ang. \ang{Integrated development environment}) \textit{Visual Studio 2019}, które oferuje wiele narzędzi ułatwiających pisanie kodu w języku \textit{C\#}. Głównymi zaletami tego środowiska jest bliska współpraca z~środowiskiem \textit{.NET}, zapewnienie narzędzi w postaci odpluskwiacza (ang. \ang{debugger}) czy integracja z systemem kontroli wersji GIT. Do pracy wykorzystano również IDE \textit{WebStorm} firmy \textit{JetBrains}, które pozwala na tworzenie aplikacji z~platformą programistyczną \textit{Angular}. Do przeglądania kolekcji i dokumentów w~bazie danych \textit{MongoDB} wykorzystano narzędzie \textit{MongoDB Compass}. Diagramy zostały utworzone dzięki wykorzystaniu narzędzi \textit{Astah UML} i \textit{diagrams.net}.
 	
 	\section{Wykorzystane zewnętrzne rozwiązania}
 	Do projektu zostały wykorzystane nowoczesne platformy programistyczne i biblioteki, które posiadają aktualne wsparcie twórców. Wybrano narzędzia w taki sposób, aby pokryć wymagania funkcjonalne projektu oraz wykorzystać technologie, które są aktualnie wykorzystywane w sposób komercyjny.
@@ -483,7 +483,7 @@ Instalacja oprogramowania do zarządzania bazą danych rozpoczyna się od urucho
 \FloatBarrier
 
 \newpage
-Po zapoznaniu się z warunkami licencyjnymi, aby kontynuować użytkownik musi zaznaczyć pole z podpisem \textit{I accept the terms in the License Agreement}, a następnie przycisnąć \textit{Next}.
+Po zapoznaniu się z warunkami licencyjnymi, aby kontynuować użytkownik musi zaznaczyć pole z podpisem \textit{I accept the terms in the License Agreement}, a~następnie przycisnąć \textit{Next}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.65\linewidth]{../zrzuty_ekranu/instalcja_mongodb/mongodb2}
@@ -567,7 +567,7 @@ Następnie kreator zainstaluje na maszynie wymagane składniki. Kiedy działanie
 \end{figure}
 \FloatBarrier
 
-Aby sprawdzić czy instalacja przebiegła pomyślnie trzeba uruchomić konsolę \textit{Windows Powershell} dla systemów rodziny \textit{Windows} lub odpowiedniego terminala dla posiadanej dystrybucji \textit{Linux}. Następnie trzeba wpisać komendę \textit{dotnet --version}. Jeśli instalacja przebiegła pomyślnie użytkownik powinien zobaczyć w konsoli informację o zainstalowanej wersji środowiska \textit{.NET}.
+Aby sprawdzić czy instalacja przebiegła pomyślnie trzeba uruchomić konsolę \textit{Windows Powershell} dla systemów rodziny \textit{Windows} lub odpowiedniego terminala dla posiadanej dystrybucji \textit{Linux}. Następnie trzeba wpisać komendę \textit{dotnet --version}. Jeśli instalacja przebiegła pomyślnie użytkownik powinien zobaczyć w~konsoli informację o zainstalowanej wersji środowiska \textit{.NET}.
 
 \subsection{Instalacja środowiska Node.js}
 Przedostatnim krokiem, jaki trzeba wykonać, aby zainstalować projekt jest instalacja środowiska, które pozwoli na uruchomienie serwera WWW dzięki, któremu będzie można uruchomić aplikację stworzoną przy pomocy platformy programistycznej Angular. Serwer WWW musi mieć możliwość przekierowania wszystkich zapytań do wybranego adresu URL. Jest to istotne w przypadku aplikacji typu \textit{SPA}, gdzie to aplikacja odpowiada za nawigacje pomiędzy widokami. W tej pracy zaprezentowana zostanie instalacja serwera \textit{http-server}, który obsługuje takie przekierowania.
@@ -661,7 +661,7 @@ W folderze \textit{./Samson.Web.Application.WebHost/bin/Release/net5.0} powinien
 
 Aby uruchomić warstwę serwerową aplikacji wymagane jest dodanie odpowiednich zmiennych środowiskowych przy pomocy polecenia pokazanego na Kod \ref{lst:varEnvironment}. Przeznaczenie zmiennych jest następujące:
 \begin{itemize}
-	\item \textit{MongoDB:DatabaseName} - nazwa bazy danych jaka zostanie utworzona w środowisku \textit{MongoDB}.
+	\item \textit{MongoDB:DatabaseName} - nazwa bazy danych jaka zostanie utworzona w~środowisku \textit{MongoDB}.
 	\item \textit{Authentication:JWT:Key} - klucz wykorzystywany do funkcji mieszającej, która jest wykorzystywana do zabezpieczenia żetonu \textit{JWT}.
 	\item \textit{ASPNETCORE\_ENVIRONMENT} - oznaczenie typu środowiska. Nie powinna zostać zmieniana.
 	\item \textit{ConnectionString:MongoDB:Atlas} - ciąg znaków określający parametry połączenia z bazą danych. Jeżeli w trakcie instalacji serwera \textit{MongoDB} wartości domyślnie nie zostały zmienione to proponowany ciąg znaków powinien pozwolić na poprawne połączenie z bazą danych.
@@ -696,7 +696,7 @@ Po wywołaniu poprzedniego polecania aplikacja internetowa powinna być dostępn
 
 Aplikacja internetowa kategoryzuje użytkowników na dwie kategorie:
 \begin{itemize}
-	\item Trenerów personalnych - pełnią rolę administratorów w systemie. Posiadają możliwość modyfikacji zasobów siłowni, takich jak sprzęt do ćwiczeń, obiekty siłowni, pomieszczeń oraz możliwość organizacji wydarzeń i treningów indywidualnych.
+	\item Trenerów personalnych - pełnią rolę administratorów \ref{UseExample}ystemie. Posiadają możliwość modyfikacji zasobów siłowni, takich jak sprzęt do ćwiczeń, obiekty siłowni, pomieszczeń oraz możliwość organizacji wydarzeń i treningów indywidualnych.
 	\item Klientów - użytkownicy którzy posiadają możliwość zakupu karnetu , zgłoszenia chęci udziału w treningu indywidualnym lub wydarzeniu.
 \end{itemize}
 
@@ -911,7 +911,7 @@ Trener personalny posiada możliwość utworzenia treningu. Aby dodać trening, 
 \FloatBarrier
 
 \subsubsection{Listy treningów indywidualnych}
-System pozwala klientom na pogląd listy dostępnych treningów. Treningi w statusie \textit{Open} oznaczają treningi, w których żaden użytkownik nie zgłosił chęci wzięcia udziału.
+System pozwala klientom na pogląd listy dostępnych treningów. Treningi w~statusie \textit{Open} oznaczają treningi, w których żaden użytkownik nie zgłosił chęci wzięcia udziału.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{../zrzuty_ekranu/dzialanie/treningi/klient_dostepne_treningi}
@@ -947,9 +947,9 @@ System posiada moduł karnetów, gdzie klient może sprawdzić ważność karnet
 \FloatBarrier
 
 \subsection{Tryb bramek}
-Istotnym z punktu widzenia pandemicznych obostrzeń jest moduł bramek. System udostępnia tryb bramek, które pozwala na podłączenie aplikacji do bramek i wyświetlaczy w celu kontroli liczby osób znajdujących aktualnie na siłowni.
+Istotnym z punktu widzenia pandemicznych obostrzeń jest moduł bramek. System udostępnia tryb bramek, które pozwala na podłączenie aplikacji do bramek i~wyświetlaczy w celu kontroli liczby osób znajdujących aktualnie na siłowni.
 \subsubsection{Bramka wejściowa}
-Głównym zadaniem bramki wejściowej jest kontrolowanie ważności posiadanego karnetu oraz kontroli czy na siłowni nie znajduje się zbyt duża liczba osób w stosunku do obowiązujących obostrzeń. Aby wejść na siłownie klient musi podać lub zeskanować za pomocą skanera swój kod identyfikacyjny. Formularz powinien w tym momencie wyświetlić informację o tym czy istnieje możliwość wejścia na siłownie. To czy można wejść na siłownię zależy od liczby osób, która znajduje się na siłowni oraz ważności karnetu klienta.
+Głównym zadaniem bramki wejściowej jest kontrolowanie ważności posiadanego karnetu oraz kontroli czy na siłowni nie znajduje się zbyt duża liczba osób w~stosunku do obowiązujących obostrzeń. Aby wejść na siłownie klient musi podać lub zeskanować za pomocą skanera swój kod identyfikacyjny. Formularz powinien w tym momencie wyświetlić informację o tym czy istnieje możliwość wejścia na siłownie. To czy można wejść na siłownię zależy od liczby osób, która znajduje się na siłowni oraz ważności karnetu klienta.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{../zrzuty_ekranu/dzialanie/bramki/bramka_wejsciowa}
@@ -1002,7 +1002,7 @@ Warstwa prezentacji wysyła żądania do warstwy serwerowej przy pomocy metod \t
 \section{Organizacja bazy danych}
 Baza danych \textit{MongoDB} jest dokumentową, niereleacyjną bazą danych \textit{NoSQL}, więc nie posiada typowej struktury bazy \textit{SQL}. W przeciwieństwie do baz relacyjnych w bazie \textit{MongoDB} często stosuje się denormalizacje struktury w celu poprawienia wydajności odczytu danych. Wadą tego rozwiązania jest potrzeba ręcznego aktualizowania powielonych dokumentów oraz mniejsza wydajność zapisu.
 
-Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza. Na schemacie uwzględnione zostały relacje, które utworzono przy wykorzystaniu referencji. Takie podejście pozwala na wprowadzenie normalizacji danych i uniknięcie powielania dokumentów \cite{bib:mongoRelations}.
+Zaprezentowany schemat bazy prezentuje kolekcje dokumentów, jakie zawiera baza. Na schemacie uwzględnione zostały relacje, które utworzono przy wykorzystaniu referencji. Takie podejście pozwala na wprowadzenie normalizacji danych i~uniknięcie powielania dokumentów \cite{bib:mongoRelations}.
 
 \begin{figure}[htbp]
 	\centering
@@ -1025,7 +1025,7 @@ Poszczególne kolekcje zostały podzielone według funkcjonalności, którym odp
 \section{Przegląd najważniejszych klas}
 W trakcie pracy nad systemem zaistniała potrzeba stworzenia klasy pozwalającej na modyfikacje danych w bazie. Głównym założeniem było utworzenie klasy, która będzie wykorzystywać wzorzec repozytorium oraz metodę szablonową. Wzorzec repozytorium miał pomóc w stworzeniu klasy, której głównym zadaniem będzie realizowanie operacji \textit{CRUD}, natomiast wykorzystanie wzorca metody szablonowej miało pomóc w stworzeniu ogólnego algorytmu, który będzie uszczegółowiony w klasach pochodnych. Według tych zasad powstała abstrakcyjna klasa \textit{MongoRepository} reprezentująca ogólne algorytmy wykorzystywane do operacji \textit{CRUD}. Klasa implementuje operacje, które nie dotyczą żadnej, konkretnej kolekcji w bazie danych. To klasy pochodne \textit{MongoRepository}, wykorzystując klasę bazową, tworzą interfejs do zarządzania dokumentami w konkretnej kolekcji. Kod klasy został zaprezentowany na Kod \ref{lst:mongoRepository}
 
-W projekcie można znaleźć wiele klas, które pełnią rolę klas odczytu danych. W takich przypadkach nie stworzono ogólnej klasy bazowej ze względu na niewielkie podobieństwo klas między sobą. Odczyt danych z bazy można osiągnąć na kilka sposobów przy wykorzystaniu sterownika \textit{.NET - MongoDB}. Pierwszy z nich to wykorzystanie wstawek w postaci języka \textit{JavaScript}, co pozwala na pisanie zapytań takich jak w konsoli \textit{MongoDB}. Jedną z takich klas, gdzie wykorzystano możliwości wstawek jest klasa \textit{ExerciseMachineReadModel}. Podstawowym zadaniem tej klasy jest odczyt danych z kolekcji \textit{ExerciseMachineCollection}, gdzie znajdują się informacje o posiadanym sprzęcie do ćwiczeń. Mimo, że \textit{MongoDB} jest nierelacyjną bazą danych, to dzięki wykorzystaniu operatora \textit{lookup} można stworzyć namiastkę złączeń (ang. \ang{join}), które są znane z relacyjnych baz danych. Na Kod \ref{lst:exerciseMachineReadModel} zaprezentowana została metoda wykorzystująca operator \textit{lookup} i wcześniej wspominane wstawki kodu.
+W projekcie można znaleźć wiele klas, które pełnią rolę klas odczytu danych. W~takich przypadkach nie stworzono ogólnej klasy bazowej ze względu na niewielkie podobieństwo klas między sobą. Odczyt danych z bazy można osiągnąć na kilka sposobów przy wykorzystaniu sterownika \textit{.NET - MongoDB}. Pierwszy z nich to wykorzystanie wstawek w postaci języka \textit{JavaScript}, co pozwala na pisanie zapytań takich jak w konsoli \textit{MongoDB}. Jedną z takich klas, gdzie wykorzystano możliwości wstawek jest klasa \textit{ExerciseMachineReadModel}. Podstawowym zadaniem tej klasy jest odczyt danych z kolekcji \textit{ExerciseMachineCollection}, gdzie znajdują się informacje o posiadanym sprzęcie do ćwiczeń. Mimo, że \textit{MongoDB} jest nierelacyjną bazą danych, to dzięki wykorzystaniu operatora \textit{lookup} można stworzyć namiastkę złączeń (ang. \ang{join}), które są znane z relacyjnych baz danych. Na Kod \ref{lst:exerciseMachineReadModel} zaprezentowana została metoda wykorzystująca operator \textit{lookup} i wcześniej wspominane wstawki kodu.
 \begin{lstlisting}[caption={Metoda odczytu danych z kolekcji \textit{ExerciseMachineCollection} przy wykorzystaniu wstawek \textit{JavaScript}}, label={lst:exerciseMachineReadModel}]
 	private IAggregateFluent<BsonDocument> GetGetAllExerciseMachinesQuery()
 	{
@@ -1060,7 +1060,7 @@ Innym sposobem odczytu danych z bazy jest wykorzystanie składni \textit{LINQ}, 
 	}
 \end{lstlisting}
 
-Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript}, w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w klasie \textit{ExerciseMachineReadModel}. Na Kod \ref{lst:personalTrainerReadModel} zaprezentowano metodę klasy 
+Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych w bibliotece sterownika \textit{MongoDB .NET Driver}. Posiadają takie same parametry jak te z języka \textit{JavaScript}, w którym domyślnie tworzone są zapytania dla bazy \textit{MongoDB}. Z powodu braku niektórych metod względem tych z języka \textit{JavaScript}, programista jest zmuszony do umieszczania wstawek kodu takich jak w~klasie \textit{ExerciseMachineReadModel}. Na Kod \ref{lst:personalTrainerReadModel} zaprezentowano metodę klasy 
 \textit{PersonalTrainerReadModel}, której zadaniem jest odczyt z bazy informacji o koncie trenera personalnego.
 \begin{lstlisting}[caption={Metoda odczytu informacji o koncie trenera personalnego przy wykorzystaniu metod sterownika}, label={lst:personalTrainerReadModel}]
 	public Task<PersonalTrainerDto> GetById(ObjectId id)
@@ -1080,7 +1080,7 @@ Ostatnim sposobem odczytu danych z bazy jest wykorzystanie metod przygotowanych 
 \end{lstlisting}
 
 \section{Przegląd wzorców projektowych}
-Poza wcześniej wymienionymi wzorcami repozytorium i metoda szablonowa do stworzenia aplikacji wykorzystano wzorzec \textit{CQRS}. Do implementacji wzorca \textit{CQRS} wykorzystuje się klasy komend i zapytań w celu rozdzielenia zadań dotyczących zapisu i odczytu danych. Komendy są obsługiwane przez klasy obsługi komend, gdzie wywoływane są metody serwisów aplikacyjnych do modyfikacji danych w bazie. Każda klasa obsługi komendy posiada metodę \textit{Handle}, która zostaje wywołana gdy zajdzie potrzeba obsłużenia żądania w postaci obiektu typu \textit{IRequest}. Na Kod \ref{lst:commandHandler} widać metodę \textit{Handle}, która jest fragmentem klasy \textit{CreateGymPassTypeCommandHandler}.
+Poza wcześniej wymienionymi wzorcami repozytorium i metoda szablonowa do stworzenia aplikacji wykorzystano wzorzec \textit{CQRS}. Do implementacji wzorca \textit{CQRS} wykorzystuje się klasy komend i zapytań w celu rozdzielenia zadań dotyczących zapisu i odczytu danych. Komendy są obsługiwane przez klasy obsługi komend, gdzie wywoływane są metody serwisów aplikacyjnych do modyfikacji danych w~bazie. Każda klasa obsługi komendy posiada metodę \textit{Handle}, która zostaje wywołana gdy zajdzie potrzeba obsłużenia żądania w postaci obiektu typu \textit{IRequest}. Na Kod \ref{lst:commandHandler} widać metodę \textit{Handle}, która jest fragmentem klasy \textit{CreateGymPassTypeCommandHandler}.
 \begin{lstlisting}[caption={Metoda \textit{Handle} klasy \textit{CreateGymPassTypeCommandHandler}}, label={lst:commandHandler}]
 	public Task<ObjectId> Handle(CreateGymPassTypeCommand request, CancellationToken cancellationToken)
 	{
@@ -1128,7 +1128,7 @@ W tej części pracy opisano sposoby weryfikacji i walidacji tworzonego projektu
 \section{Sposoby testowania}
 W trakcie pisania kodu systemu zaszła potrzeba sprawdzenia poprawności jego działania, aby to zrobić wykorzystano testy jednostkowe i manualne. Kod części serwerowej został przetestowany przy pomocy testów jednostkowych i manualnych, natomiast warstwa prezentacji została przetestowana przy pomocy testów manualnych. W celu utworzenia testów jednostkowych wykorzystano bibliotekę \textit{NUnit}.
 
-Testy jednostkowe pozwoliły na testowanie pojedynczych metod i klas przy pomocy kodu \textit{C\#}. Przetestowane zostały metody klas obiektów domenowych, w których znajdowała się logika biznesowa systemu. Przykładowo na Kod \ref{lst:secondGymPassExtendEndDate} przedstawiono test jednostkowy, który odpowiada za sprawdzenie poprawności operacji przedłużenia terminu ważności karnetu.
+Testy jednostkowe pozwoliły na testowanie pojedynczych metod i klas przy pomocy kodu \textit{C\#}. Przetestowane zostały metody klas obiektów domenowych, w~których znajdowała się logika biznesowa systemu. Przykładowo na Kod \ref{lst:secondGymPassExtendEndDate} przedstawiono test jednostkowy, który odpowiada za sprawdzenie poprawności operacji przedłużenia terminu ważności karnetu.
 \begin{lstlisting}[caption={Przykładowy test klasy \textit{ClientUnitTest}}, label={lst:secondGymPassExtendEndDate}]
 	[Test]
 	public void Client_SecondGymPassExtendEndDate()
@@ -1178,7 +1178,7 @@ Podczas pracy nad systemem równolegle tworzono kod testów jednostkowych, aby j
 W trakcie pracy nad systemem wykryto, dzięki testom kilka błędów wynikających z niepoprawnej implementacji. Jednym z przykładów niepoprawnego działania, było usuwanie konta użytkownika zamiast jego archiwizacja. Gdy ten sam użytkownik był zapisany na jakiś trening lub wydarzenie, a konto zostało usunięte całkowicie z bazy to w danych pojawiły się relacje do nieistniejącego konta co prowadziło do licznych błędów.
 
 Poprzedni błąd został wykryty przez testy manualne, natomiast udało się wykryć błąd przy pomocy testu jednostkowego. W systemie istnieje moduł, który odpowiada za kontrolę liczby osób, która znajduje się na siłowni. Maksymalna liczba osób była obliczana w niepoprawny sposób z powodu wykonywania dzielenia zamiast mnożenia. Poprawiona funkcja została zaprezentowana na Kod \ref{lst:calcMaxPeople}
-\begin{lstlisting}[caption={Metoda licząca jaka jest maksymalna liczba osób, która znajduje się w jednej chwili w obiekcie siłowni}, label={lst:calcMaxPeople}]
+\begin{lstlisting}[caption={Metoda licząca jaka jest maksymalna liczba osób, która znajduje się w~jednej chwili w~obiekcie siłowni}, label={lst:calcMaxPeople}]
 	public int CalcMaximumClientsCount()
 	{
 		if (CovidConfiguration == null)
@@ -1194,9 +1194,9 @@ Wykorzystanie interaktywnej dokumentacji \textit{Swagger} pozwoliło na wykrycie
 
 \chapter{Podsumowanie i wnioski}
 \label{chap:summary}
-Praca nad projektem przyniosła rezultaty w postaci systemu spełniającego określone wcześniej wymagania. Udało się pokryć zakres funkcjonalny związany z obostrzeniami pandemicznymi, co było główną przesłanką do rozpoczęcia prac nad nim. Wybór aplikacji internetowej pozwolił na utworzenie systemu dostępnego dla większości systemów operacyjnych. Poza spełnieniem wymagań funkcjonalnych, udało się również wykorzystać nowoczesne technologie, które zapewniają dłuższe wsparcie producentów.
+Praca nad projektem przyniosła rezultaty w postaci systemu spełniającego określone wcześniej wymagania. Udało się pokryć zakres funkcjonalny związany z~obostrzeniami pandemicznymi, co było główną przesłanką do rozpoczęcia prac nad nim. Wybór aplikacji internetowej pozwolił na utworzenie systemu dostępnego dla większości systemów operacyjnych. Poza spełnieniem wymagań funkcjonalnych, udało się również wykorzystać nowoczesne technologie, które zapewniają dłuższe wsparcie producentów.
 
-W ramach projektu udało się stworzyć dokument, który opisuje sposób działania systemu oraz ideę, która za nim stała. W trakcie tworzenia systemu położono nacisk na architekturę, która pozwoli na skalowanie. Poza tym zwrócono również uwagę na odpowiednią dokumentacje kodu, aby rozwiązanie mogło być rozwijane w kilkuosobowym zespole. Zaproponowana architektura pozwala również na zmianę architektury monolitycznej na mikro-usługową, co pozwoliłoby na pracę w większych zespołach.
+W ramach projektu udało się stworzyć dokument, który opisuje sposób działania systemu oraz ideę, która za nim stała. W trakcie tworzenia systemu położono nacisk na architekturę, która pozwoli na skalowanie. Poza tym zwrócono również uwagę na odpowiednią dokumentacje kodu, aby rozwiązanie mogło być rozwijane w~kilkuosobowym zespole. Zaproponowana architektura pozwala również na zmianę architektury monolitycznej na mikro-usługową, co pozwoliłoby na pracę w większych zespołach.
 
 Mimo, że rozwiązanie posiada wiele cech produktu komercyjnego, wymaga ono dopracowania w warstwie prezentacji. Niektóre z widoków powinny zostać zaprojektowane na nowo, tak aby były bardzie intuicyjne dla użytkownika. Poza poprawieniem przejrzystości formularzy, kolejnym krokiem w rozwoju systemu powinno być dostosowanie aplikacji do zasad RWD. Jest to istotne ze względu na duży udział urządzeń mobilnych w generowaniu ruchu na stronach internetowych \cite{bib:mobileVsDesktop}.
 
