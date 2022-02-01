@@ -1,0 +1,5 @@
+The time of the coronavirus pandemic poses new challenges for entrepreneurs, and digitization allows for the automation of many activities. The owners of the gym network are forced to constantly adapt the principles of the gym's operation to the requirements related to sanitary restrictions. Thanks to the development of internet applications, it is possible to manage business both from a personal computer and a smartphone.
+
+The paper presents a design of a web application that allows you to manage a network of gym facilities. Particular emphasis was placed on the possibility of defining the principles of operation of individual facilities in the context of the applicable sanitary restrictions. The system uses a document database to take advantage of NoSQL technology. The presentation layer uses the possibilities of modern web browsers.
+
+The work discusses the idea behind the creation of the system and the method of its design. Project work methodologies, technologies used and selected design patterns that were used while working on the application were described.

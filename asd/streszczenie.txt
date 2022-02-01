@@ -1,0 +1,5 @@
+Czas pandemii koronawirusa stawia przed przedsiębiorcami nowe wyzwania, a cyfryzacja pozwala na automatyzację wielu czynności. Właściciele sieci siłowni są zmuszeni do ciągłego dostosowywania zasad działania siłowni do wymogów związanych z obostrzeniami sanitarnymi. Dzięki rozwojowi aplikacji internetowych istnieje możliwość zarządzania biznesem zarówno z poziomu komputera osobistego jak i smartfona.
+
+W pracy przedstawiono projekt aplikacji internetowej, która pozwala na zarządzanie siecią obiektów siłowni. Szczególny nacisk położono na możliwość definiowania zasad działania poszczególnych obiektów w kontekście obowiązujących restrykcji sanitarnych. System korzysta z dokumentowej bazy danych w celu skorzystania z zalet technologii \textit{NoSQL}. Warstwa prezentacji wykorzystuje możliwości współczesnych przeglądarek internetowych.
+
+W ramach pracy omówiono ideę stojącą za stworzeniem systemu oraz sposób jego projektowania. Opisane zostały metodyki pracy nad projektem, wykorzystane technologie oraz wybrane wzorce projektowe, które zostały użyte przy pracy nad aplikacją.
